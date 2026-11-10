@@ -1,0 +1,92 @@
+{
+  "split": "all",
+  "backend": "local",
+  "n_questions": 34,
+  "thresholds": {
+    "sufficient": 0.6,
+    "partial": 0.26
+  },
+  "retrieval": {
+    "direct": {
+      "n": 6,
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "MRR": 1.0
+    },
+    "paraphrased": {
+      "n": 10,
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "MRR": 1.0
+    },
+    "conceptual": {
+      "n": 4,
+      "recall@1": 0.75,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "MRR": 0.833
+    },
+    "exercise": {
+      "n": 4,
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "MRR": 1.0
+    },
+    "multi_chunk": {
+      "n": 3,
+      "recall@1": 0.444,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "MRR": 1.0
+    },
+    "ALL": {
+      "n": 27,
+      "recall@1": 0.901,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "MRR": 0.975
+    }
+  },
+  "misses_at_5": [],
+  "hints": {
+    "direct": {
+      "sufficient": 5,
+      "partial": 1,
+      "insufficient": 0
+    },
+    "paraphrased": {
+      "sufficient": 10,
+      "partial": 0,
+      "insufficient": 0
+    },
+    "conceptual": {
+      "sufficient": 3,
+      "partial": 1,
+      "insufficient": 0
+    },
+    "exercise": {
+      "sufficient": 3,
+      "partial": 1,
+      "insufficient": 0
+    },
+    "multi_chunk": {
+      "sufficient": 3,
+      "partial": 0,
+      "insufficient": 0
+    },
+    "unanswerable": {
+      "sufficient": 0,
+      "partial": 0,
+      "insufficient": 4
+    },
+    "ambiguous": {
+      "sufficient": 1,
+      "partial": 2,
+      "insufficient": 0
+    }
+  },
+  "seconds": 0.08
+}

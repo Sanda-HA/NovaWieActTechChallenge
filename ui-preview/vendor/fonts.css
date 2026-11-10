@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'Kufam';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(fonts/C8c-4cY7pG7w_oSJDszBXsKCcBH3pKk7qQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Kufam';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(fonts/C8c-4cY7pG7w_oSJDszBXsKCcBH3SK47qQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Kufam';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(fonts/C8c-4cY7pG7w_oSJDszBXsKCcBH3ca47qQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Kufam';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(fonts/C8c-4cY7pG7w_oSJDszBXsKCcBH3Fq47qQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Readex Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(fonts/SLXnc1bJ7HE5YDoGPuzj_dh8uc7wUy8ZQQyX2KY8TL0kGZN6blTCv0Smgg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Readex Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/SLXnc1bJ7HE5YDoGPuzj_dh8uc7wUy8ZQQyX2KY8TL0kGZN6blTC4USmgg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Readex Pro';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(fonts/SLXnc1bJ7HE5YDoGPuzj_dh8uc7wUy8ZQQyX2KY8TL0kGZN6blTC00Smgg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Readex Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(fonts/SLXnc1bJ7HE5YDoGPuzj_dh8uc7wUy8ZQQyX2KY8TL0kGZN6blTCP0Omgg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Readex Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(fonts/SLXnc1bJ7HE5YDoGPuzj_dh8uc7wUy8ZQQyX2KY8TL0kGZN6blTCBkOmgg.ttf) format('truetype');
+}
+

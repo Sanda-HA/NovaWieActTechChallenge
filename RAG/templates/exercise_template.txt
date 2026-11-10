@@ -1,0 +1,24 @@
+---
+document_id: math_4eme_se_0XX
+country: Tunisia
+educational_level: secondary
+grade: 4eme_annee_secondaire
+section: sciences_experimentales
+subject: Mathematics
+topic: Name of the chapter these exercises train
+content_type: exercise
+language: fr
+source: Exact origin of the exercises (or: written by the team)
+---
+<!-- page: 1 -->
+## Exercice 1 : short title naming the skill
+
+**Énoncé.** The full statement, with all the data needed to solve it.
+
+**Solution.** Step by step, each step on its own sentence, ending with the final result stated clearly.
+
+## Exercice 2 : short title naming the skill
+
+**Énoncé.** ...
+
+**Solution.** ...

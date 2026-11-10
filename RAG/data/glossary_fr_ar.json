@@ -1,0 +1,38 @@
+{
+  "_comment": "FR / AR / EN term map used for cross-language retrieval, plus Derja (Arabizi) words normalised to French before retrieval. Extend it per subject; have a teacher review the Arabic.",
+  "concepts": [
+    {"id": "continuity", "fr": ["continuité", "continue", "fonction continue", "rupture"], "ar": ["الاستمرارية", "مستمرة", "استمرارية"], "en": ["continuity", "continuous"]},
+    {"id": "derivability", "fr": ["dérivabilité", "dérivable", "fonction dérivable"], "ar": ["الاشتقاقية", "قابلة للاشتقاق", "اشتقاقية"], "en": ["differentiability", "differentiable"]},
+    {"id": "derivative", "fr": ["nombre dérivé", "dérivée", "taux d'accroissement"], "ar": ["العدد المشتق", "المشتق", "نسبة التغير"], "en": ["derivative", "difference quotient"]},
+    {"id": "tangent", "fr": ["tangente", "coefficient directeur"], "ar": ["المماس"], "en": ["tangent line", "tangent"]},
+    {"id": "limit", "fr": ["limite"], "ar": ["نهاية"], "en": ["limit"]},
+    {"id": "ivt", "fr": ["théorème des valeurs intermédiaires", "valeurs intermédiaires"], "ar": ["مبرهنة القيم الوسيطية", "القيم الوسيطية"], "en": ["intermediate value theorem"]},
+    {"id": "conditional_probability", "fr": ["probabilité conditionnelle", "probabilité de A sachant B", "sachant"], "ar": ["الاحتمال الشرطي", "علما أن"], "en": ["conditional probability"]},
+    {"id": "probability", "fr": ["probabilité", "probabilités"], "ar": ["احتمال", "الاحتمالات"], "en": ["probability"]},
+    {"id": "independence", "fr": ["indépendance", "événements indépendants", "indépendants"], "ar": ["الاستقلال", "مستقلين"], "en": ["independence", "independent events"]},
+    {"id": "binomial", "fr": ["loi binomiale", "épreuves répétées"], "ar": ["القانون الثنائي"], "en": ["binomial distribution", "binomial"]},
+    {"id": "sequence", "fr": ["suite numérique", "suite", "suites"], "ar": ["متتالية", "المتتاليات"], "en": ["sequence"]},
+    {"id": "geometric", "fr": ["suite géométrique", "géométrique", "raison"], "ar": ["متتالية هندسية"], "en": ["geometric sequence"]},
+    {"id": "arithmetic", "fr": ["suite arithmétique", "arithmétique"], "ar": ["متتالية حسابية"], "en": ["arithmetic sequence"]},
+    {"id": "induction", "fr": ["récurrence", "raisonnement par récurrence", "hérédité"], "ar": ["الاستدلال بالتراجع"], "en": ["induction", "proof by induction"]},
+    {"id": "capacitor", "fr": ["condensateur", "capacité"], "ar": ["مكثف"], "en": ["capacitor", "capacitance"]},
+    {"id": "time_constant", "fr": ["constante de temps", "dipôle RC", "circuit RC"], "ar": ["ثابت الزمن"], "en": ["time constant", "RC circuit"]},
+    {"id": "exercise", "fr": ["exercice", "exercices"], "ar": ["تمرين", "تمارين"], "en": ["exercise", "exercises"]}
+  ],
+  "derja_words": {
+    "chnowa": "qu'est-ce que",
+    "chniya": "qu'est-ce que",
+    "kifech": "comment",
+    "kifah": "comment",
+    "3lech": "pourquoi",
+    "aleh": "pourquoi",
+    "fhemni": "explique",
+    "nhseb": "calculer",
+    "nehseb": "calculer",
+    "tamrin": "exercice",
+    "tmarin": "exercices",
+    "mafhemtech": "pas compris",
+    "derivee": "dérivée",
+    "limit": "limite"
+  }
+}

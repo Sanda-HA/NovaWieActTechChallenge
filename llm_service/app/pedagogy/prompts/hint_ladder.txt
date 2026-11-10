@@ -1,0 +1,7 @@
+Prépare une échelle d'indices pour l'exercice, à partir des extraits. Réponds UNIQUEMENT en JSON:
+{{"final_answer": "le résultat final, court",
+ "rungs": ["une question qui guide sans rien révéler",
+           "un rappel de la notion utile",
+           "la prochaine étape concrète, sans le résultat",
+           "la solution complète, étape par étape"]}}
+Les trois premiers éléments ne doivent JAMAIS contenir le résultat final.

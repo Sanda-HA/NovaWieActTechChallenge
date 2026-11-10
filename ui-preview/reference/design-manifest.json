@@ -1,0 +1,557 @@
+{
+  "manifestVersion": 3,
+  "name": "EdNova",
+  "namespace": "EdNova",
+  "files": [
+    "01-direction.md",
+    "02-mascot.md",
+    "03-voice.md",
+    "04-gamification.md",
+    "05-screens.md",
+    "assets/Badges/README.md",
+    "assets/Logo/README.md",
+    "assets/Mascot/README.md",
+    "assets/Mastery/README.md",
+    "assets/Streak/README.md",
+    "components/AchievementBadge/README.md",
+    "components/AiLabel/README.md",
+    "components/AnswerBadge/README.md",
+    "components/AnswerBubble/README.md",
+    "components/BusyBanner/README.md",
+    "components/Button/README.md",
+    "components/ChapterMap/README.md",
+    "components/ChoiceTile/README.md",
+    "components/Composer/README.md",
+    "components/FeedbackControl/README.md",
+    "components/GuidedActionBar/README.md",
+    "components/HintLadder/README.md",
+    "components/HomeOverview/README.md",
+    "components/Icon/README.md",
+    "components/Mascot/README.md",
+    "components/MasteryRow/README.md",
+    "components/MasteryTessera/README.md",
+    "components/MathText/README.md",
+    "components/NavRail/README.md",
+    "components/NextStepChip/README.md",
+    "components/QuizCard/README.md",
+    "components/Receipt/README.md",
+    "components/SourceChip/README.md",
+    "components/StageIndicator/README.md",
+    "components/Streak/README.md",
+    "components/StudentMessage/README.md",
+    "components/StudyTimer/README.md",
+    "components/TextField/README.md",
+    "components/VerdictCard/README.md",
+    "components/WellbeingMessage/README.md",
+    "components/bundle.css",
+    "components/bundle.js",
+    "components/index.d.ts",
+    "components/lib/katex.min.js",
+    "components/lib/react-dom.production.min.js",
+    "components/lib/react.production.min.js",
+    "licenses/fluent-emoji-sources.md",
+    "tokens.css"
+  ],
+  "libraries": [
+    {
+      "name": "react",
+      "version": "18.3.1",
+      "global": "React",
+      "file": "components/lib/react.production.min.js"
+    },
+    {
+      "name": "react-dom",
+      "version": "18.3.1",
+      "global": "ReactDOM",
+      "file": "components/lib/react-dom.production.min.js"
+    },
+    {
+      "name": "katex",
+      "version": "0.16.47",
+      "global": "katex",
+      "file": "components/lib/katex.min.js"
+    }
+  ],
+  "components": [
+    {
+      "name": "NavRail",
+      "group": "Navigation",
+      "summary": "The app’s main navigation: a floating pill of icon tiles on the left of the screen on laptops, and a labelled bottom bar on phones."
+    },
+    {
+      "name": "HomeOverview",
+      "group": "Pages",
+      "summary": "The home screen as one coaching view: the weakest chapter, today’s time, the streak and a single next step, with nothing to sell."
+    },
+    {
+      "name": "Button",
+      "group": "Actions",
+      "summary": "The one button: primary (argile) for the single action a view is for, secondary (outlined) by default, quiet for low-emphasis actions, danger for deleting the…"
+    },
+    {
+      "name": "TextField",
+      "group": "Actions",
+      "summary": "A labelled input with helper text and an inline error that says how to fix it; password fields get a show/hide toggle."
+    },
+    {
+      "name": "MathText",
+      "group": "Foundations",
+      "summary": "Typesets maths with KaTeX: every formula in EdNova goes through it, so no raw x^2 or sqrt() ever reaches the screen."
+    },
+    {
+      "name": "Icon",
+      "group": "Foundations",
+      "summary": "EdNova’s own line icons: a 24px grid, 1.75 stroke, round caps and joins, drawn in currentColor so they take the colour of their text."
+    },
+    {
+      "name": "Mascot",
+      "group": "Foundations",
+      "summary": "Nova, EdNova’s axolotl, in five states: welcoming, thinking, cheering, encouraging and calm."
+    },
+    {
+      "name": "AnswerBubble",
+      "group": "Tutor",
+      "summary": "One tutor answer: the badge saying where it comes from, the AI label, typeset text, the textbook pages it cites, then next step, feedback and receipt."
+    },
+    {
+      "name": "StudentMessage",
+      "group": "Tutor",
+      "summary": "The student’s own message: a sunken tile on the right of the conversation, with formulas typeset like everything else."
+    },
+    {
+      "name": "AnswerBadge",
+      "group": "Tutor",
+      "summary": "Says where an answer comes from, in one of six fixed variants, always with an icon and words so it never relies on colour."
+    },
+    {
+      "name": "SourceChip",
+      "group": "Tutor",
+      "summary": "The textbook passage an answer comes from: book plus a page tile, EdNova’s visual signature under every course answer."
+    },
+    {
+      "name": "AiLabel",
+      "group": "Tutor",
+      "summary": "The small, always-visible “réponse générée par IA” mark that sits on every AI reply."
+    },
+    {
+      "name": "StageIndicator",
+      "group": "Tutor",
+      "summary": "The live thinking steps of a streamed answer: four tesserae that set one by one while Nova thinks."
+    },
+    {
+      "name": "Composer",
+      "group": "Tutor",
+      "summary": "The question field: Libre or Guidé mode, Enter to send, Shift+Enter for a new line, and a live typeset preview of any $…$ maths."
+    },
+    {
+      "name": "NextStepChip",
+      "group": "Tutor",
+      "summary": "One suggested next move after an answer (practise, review a prerequisite, or move on); tapping it sends the ready-made message."
+    },
+    {
+      "name": "FeedbackControl",
+      "group": "Tutor",
+      "summary": "Thumbs up, or thumbs down with one reason (wrong, unclear, too long, not my level), then a quiet thank-you."
+    },
+    {
+      "name": "Receipt",
+      "group": "Tutor",
+      "summary": "“Comment cette réponse a été faite”: model calls, tokens, cache hits, duration and the agent’s steps, folded by default."
+    },
+    {
+      "name": "BusyBanner",
+      "group": "Tutor",
+      "summary": "Busy mode without an error: a calm countdown that retries on its own, and the course excerpt in the meantime."
+    },
+    {
+      "name": "WellbeingMessage",
+      "group": "Tutor",
+      "summary": "The calm reply to a distress message: dusk surface, pebble shape, Nova at rest, generous text, no buttons and never any maths."
+    },
+    {
+      "name": "HintLadder",
+      "group": "Guided practice",
+      "summary": "Guided mode drawn as a staircase of tesserae: each hint opened is a step climbed, and “Ma réponse” is the top step."
+    },
+    {
+      "name": "GuidedActionBar",
+      "group": "Guided practice",
+      "summary": "Guided mode’s three moves (a hint, my answer, a new question) next to the compact ladder."
+    },
+    {
+      "name": "VerdictCard",
+      "group": "Guided practice",
+      "summary": "The verdict on an explanation or an attempt: what is missing, then a guiding question, never the answer."
+    },
+    {
+      "name": "QuizCard",
+      "group": "Onboarding",
+      "summary": "The diagnostic quiz: one question per card, number keys 1 to 4, then a result card that sets the learning style and starting level."
+    },
+    {
+      "name": "ChoiceTile",
+      "group": "Onboarding",
+      "summary": "A large selectable tile for onboarding and settings choices: one of a set (radio) or several (checkbox)."
+    },
+    {
+      "name": "MasteryTessera",
+      "group": "Progress",
+      "summary": "One chapter’s mastery as a 2×2 tessera that fills from the bottom: 0 tiles (dashed), 1, 2 or 4."
+    },
+    {
+      "name": "MasteryRow",
+      "group": "Progress",
+      "summary": "One chapter in the progress list: tessera, name, attempts / solved / confusions, a three-segment bar and the level word."
+    },
+    {
+      "name": "ChapterMap",
+      "group": "Progress",
+      "summary": "The chapters as a mosaic floor: one tile per chapter coloured by mastery, prerequisites drawn as grout lines that never cross a label."
+    },
+    {
+      "name": "StudyTimer",
+      "group": "Progress",
+      "summary": "Start and stop a study session; minutes today and this week and the streak are shown plainly, as information, never as a score."
+    },
+    {
+      "name": "Streak",
+      "group": "Progress",
+      "summary": "The streak as a jasmine that grows: bud (1 day), flower (3), bouquet (7), machmoum (14), golden machmoum (30)."
+    },
+    {
+      "name": "AchievementBadge",
+      "group": "Progress",
+      "summary": "A badge cut from a mosaic material; its shape gains points with rarity: Argile (square), Faïence (octagon), Marbre (8 points), Lapis (12), Or (16)."
+    }
+  ],
+  "assetGroups": [
+    {
+      "name": "Mascot",
+      "tile": "l",
+      "order": [
+        "nova-welcoming.svg",
+        "nova-thinking.svg",
+        "nova-cheering.svg",
+        "nova-encouraging.svg",
+        "nova-calm.svg",
+        "nova-axolotl-character-sheet.svg"
+      ],
+      "files": [
+        {
+          "path": "assets/Mascot/nova-welcoming.svg",
+          "id": "ad92a7733c04706da5a4a799132a68f9"
+        },
+        {
+          "path": "assets/Mascot/nova-thinking.svg",
+          "id": "38aa465ff2a3caf2ac9eefcd6b95f2af"
+        },
+        {
+          "path": "assets/Mascot/nova-cheering.svg",
+          "id": "553acf03f4a42468cf1cda80c9dcdac0"
+        },
+        {
+          "path": "assets/Mascot/nova-encouraging.svg",
+          "id": "e4965e69fbea47e6df038bce24eef7e3"
+        },
+        {
+          "path": "assets/Mascot/nova-calm.svg",
+          "id": "3e4638bcf20c18bdbe70a36ececd1abf"
+        },
+        {
+          "path": "assets/Mascot/nova-axolotl-character-sheet.svg",
+          "id": "31e020e88fcf0586dd18109a4ee476a7"
+        }
+      ]
+    },
+    {
+      "name": "Badges",
+      "order": [
+        "badge-argile.svg",
+        "badge-faience.svg",
+        "badge-marbre.svg",
+        "badge-lapis.svg",
+        "badge-or.svg",
+        "badge-locked.svg"
+      ],
+      "files": [
+        {
+          "path": "assets/Badges/badge-argile.svg",
+          "id": "df6c83f4a721a4ca84731d1ab042e6ee"
+        },
+        {
+          "path": "assets/Badges/badge-faience.svg",
+          "id": "df1c845d03e158f5154eac6641cd3762"
+        },
+        {
+          "path": "assets/Badges/badge-marbre.svg",
+          "id": "3695a2c8aff5577fec3aed0f57d840a4"
+        },
+        {
+          "path": "assets/Badges/badge-lapis.svg",
+          "id": "bdb3b87ebe1df9173e37a19bb6f3c1f4"
+        },
+        {
+          "path": "assets/Badges/badge-or.svg",
+          "id": "f0f0cf83de6273120966c85aa618b043"
+        },
+        {
+          "path": "assets/Badges/badge-locked.svg",
+          "id": "b4d6f5beeb2510f0867f76b03027e12f"
+        }
+      ]
+    },
+    {
+      "name": "Streak",
+      "order": [
+        "streak-bouton.svg",
+        "streak-fleur.svg",
+        "streak-bouquet.svg",
+        "streak-machmoum.svg",
+        "streak-machmoum-or.svg"
+      ],
+      "files": [
+        {
+          "path": "assets/Streak/streak-bouton.svg",
+          "id": "8403f135b0ef43f0d721677c6a962cc6"
+        },
+        {
+          "path": "assets/Streak/streak-fleur.svg",
+          "id": "e0b9cdb73f9ce366362850ab4e05f332"
+        },
+        {
+          "path": "assets/Streak/streak-bouquet.svg",
+          "id": "60a1d2494fe96cdf94b0a86983108bd2"
+        },
+        {
+          "path": "assets/Streak/streak-machmoum.svg",
+          "id": "fefd81c2c17725b602dfae5cb065c844"
+        },
+        {
+          "path": "assets/Streak/streak-machmoum-or.svg",
+          "id": "7f8d3354b70d02c09148bb7f9c5b808e"
+        }
+      ]
+    },
+    {
+      "name": "Mastery",
+      "tile": "s",
+      "order": [
+        "mastery-unknown.svg",
+        "mastery-weak.svg",
+        "mastery-medium.svg",
+        "mastery-strong.svg"
+      ],
+      "files": [
+        {
+          "path": "assets/Mastery/mastery-unknown.svg",
+          "id": "433da3c0d0819abf0a469408f0cf2d4a"
+        },
+        {
+          "path": "assets/Mastery/mastery-weak.svg",
+          "id": "9de17e16440d36f3137736ba4984fe1e"
+        },
+        {
+          "path": "assets/Mastery/mastery-medium.svg",
+          "id": "bdd6f0aadb989fda1b85296f7685c7ec"
+        },
+        {
+          "path": "assets/Mastery/mastery-strong.svg",
+          "id": "f0b5d6f31585caa98e3e7e5feabf550a"
+        }
+      ]
+    },
+    {
+      "name": "Logo",
+      "order": [
+        "ednova-logo.svg",
+        "ednova-logo-dark.svg",
+        "ednova-mark.svg",
+        "ednova-mark-nuit.svg",
+        "ednova-mark-mono.svg"
+      ],
+      "files": [
+        {
+          "path": "assets/Logo/ednova-logo.svg",
+          "id": "6557fba9c450fc9f9c441021f8dea2c6"
+        },
+        {
+          "path": "assets/Logo/ednova-logo-dark.svg",
+          "id": "3060136b45e664ad447a3f06548a8ebb"
+        },
+        {
+          "path": "assets/Logo/ednova-mark.svg",
+          "id": "a90bed56d32ea3757f16ad7adf61ba67"
+        },
+        {
+          "path": "assets/Logo/ednova-mark-nuit.svg",
+          "id": "0b077d061b8b04af00942f288c24cf6a"
+        },
+        {
+          "path": "assets/Logo/ednova-mark-mono.svg",
+          "id": "677d1bbe5286f87776e2f250113a06f2"
+        }
+      ]
+    }
+  ],
+  "storage": {
+    "files": {
+      "assets/Badges/badge-argile.svg": {
+        "store": "blob",
+        "id": "df6c83f4a721a4ca84731d1ab042e6ee",
+        "bytes": 12247,
+        "type": "image/svg+xml"
+      },
+      "assets/Badges/badge-faience.svg": {
+        "store": "blob",
+        "id": "df1c845d03e158f5154eac6641cd3762",
+        "bytes": 11686,
+        "type": "image/svg+xml"
+      },
+      "assets/Badges/badge-lapis.svg": {
+        "store": "blob",
+        "id": "bdb3b87ebe1df9173e37a19bb6f3c1f4",
+        "bytes": 10170,
+        "type": "image/svg+xml"
+      },
+      "assets/Badges/badge-locked.svg": {
+        "store": "blob",
+        "id": "b4d6f5beeb2510f0867f76b03027e12f",
+        "bytes": 9449,
+        "type": "image/svg+xml"
+      },
+      "assets/Badges/badge-marbre.svg": {
+        "store": "blob",
+        "id": "3695a2c8aff5577fec3aed0f57d840a4",
+        "bytes": 11481,
+        "type": "image/svg+xml"
+      },
+      "assets/Badges/badge-or.svg": {
+        "store": "blob",
+        "id": "f0f0cf83de6273120966c85aa618b043",
+        "bytes": 15051,
+        "type": "image/svg+xml"
+      },
+      "assets/Logo/ednova-logo-dark.svg": {
+        "store": "blob",
+        "id": "3060136b45e664ad447a3f06548a8ebb",
+        "bytes": 4675,
+        "type": "image/svg+xml"
+      },
+      "assets/Logo/ednova-logo.svg": {
+        "store": "blob",
+        "id": "6557fba9c450fc9f9c441021f8dea2c6",
+        "bytes": 4640,
+        "type": "image/svg+xml"
+      },
+      "assets/Logo/ednova-mark-mono.svg": {
+        "store": "blob",
+        "id": "677d1bbe5286f87776e2f250113a06f2",
+        "bytes": 890,
+        "type": "image/svg+xml"
+      },
+      "assets/Logo/ednova-mark-nuit.svg": {
+        "store": "blob",
+        "id": "0b077d061b8b04af00942f288c24cf6a",
+        "bytes": 1070,
+        "type": "image/svg+xml"
+      },
+      "assets/Logo/ednova-mark.svg": {
+        "store": "blob",
+        "id": "a90bed56d32ea3757f16ad7adf61ba67",
+        "bytes": 1049,
+        "type": "image/svg+xml"
+      },
+      "assets/Mascot/nova-axolotl-character-sheet.svg": {
+        "store": "blob",
+        "id": "31e020e88fcf0586dd18109a4ee476a7",
+        "bytes": 51078,
+        "type": "image/svg+xml"
+      },
+      "assets/Mascot/nova-calm.svg": {
+        "store": "blob",
+        "id": "3e4638bcf20c18bdbe70a36ececd1abf",
+        "bytes": 9835,
+        "type": "image/svg+xml"
+      },
+      "assets/Mascot/nova-cheering.svg": {
+        "store": "blob",
+        "id": "553acf03f4a42468cf1cda80c9dcdac0",
+        "bytes": 11506,
+        "type": "image/svg+xml"
+      },
+      "assets/Mascot/nova-encouraging.svg": {
+        "store": "blob",
+        "id": "e4965e69fbea47e6df038bce24eef7e3",
+        "bytes": 10184,
+        "type": "image/svg+xml"
+      },
+      "assets/Mascot/nova-thinking.svg": {
+        "store": "blob",
+        "id": "38aa465ff2a3caf2ac9eefcd6b95f2af",
+        "bytes": 11058,
+        "type": "image/svg+xml"
+      },
+      "assets/Mascot/nova-welcoming.svg": {
+        "store": "blob",
+        "id": "ad92a7733c04706da5a4a799132a68f9",
+        "bytes": 9577,
+        "type": "image/svg+xml"
+      },
+      "assets/Mastery/mastery-medium.svg": {
+        "store": "blob",
+        "id": "bdd6f0aadb989fda1b85296f7685c7ec",
+        "bytes": 11447,
+        "type": "image/svg+xml"
+      },
+      "assets/Mastery/mastery-strong.svg": {
+        "store": "blob",
+        "id": "f0b5d6f31585caa98e3e7e5feabf550a",
+        "bytes": 10299,
+        "type": "image/svg+xml"
+      },
+      "assets/Mastery/mastery-unknown.svg": {
+        "store": "blob",
+        "id": "433da3c0d0819abf0a469408f0cf2d4a",
+        "bytes": 12616,
+        "type": "image/svg+xml"
+      },
+      "assets/Mastery/mastery-weak.svg": {
+        "store": "blob",
+        "id": "9de17e16440d36f3137736ba4984fe1e",
+        "bytes": 11979,
+        "type": "image/svg+xml"
+      },
+      "assets/Streak/streak-bouquet.svg": {
+        "store": "blob",
+        "id": "60a1d2494fe96cdf94b0a86983108bd2",
+        "bytes": 21271,
+        "type": "image/svg+xml"
+      },
+      "assets/Streak/streak-bouton.svg": {
+        "store": "blob",
+        "id": "8403f135b0ef43f0d721677c6a962cc6",
+        "bytes": 11920,
+        "type": "image/svg+xml"
+      },
+      "assets/Streak/streak-fleur.svg": {
+        "store": "blob",
+        "id": "e0b9cdb73f9ce366362850ab4e05f332",
+        "bytes": 19586,
+        "type": "image/svg+xml"
+      },
+      "assets/Streak/streak-machmoum-or.svg": {
+        "store": "blob",
+        "id": "7f8d3354b70d02c09148bb7f9c5b808e",
+        "bytes": 53626,
+        "type": "image/svg+xml"
+      },
+      "assets/Streak/streak-machmoum.svg": {
+        "store": "blob",
+        "id": "fefd81c2c17725b602dfae5cb065c844",
+        "bytes": 51044,
+        "type": "image/svg+xml"
+      }
+    },
+    "blobBytesUsed": 389434
+  }
+}

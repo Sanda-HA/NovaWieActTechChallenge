@@ -1,0 +1,28 @@
+---
+document_id: math_4eme_se_0XX
+country: Tunisia
+educational_level: secondary
+grade: 4eme_annee_secondaire
+section: sciences_experimentales
+subject: Mathematics
+topic: ONE TOPIC ONLY
+content_type: course
+language: fr
+source: Exact origin of the content (title, author or site, chapter) - this is shown to the student as the citation
+---
+<!-- page: 1 -->
+## Title of the first idea
+
+<!-- type: definition -->
+**Définition (name of the notion).** One precise definition, with its conditions, in 1 to 3 sentences.
+
+<!-- type: course -->
+## Title of the second idea
+
+Explanation in short paragraphs. State a theorem as: "Si ... alors ...". Put a small example right after it.
+Write formulas in plain Unicode: lim f(x) = f(a) quand x → a ; p(A | B) = p(A ∩ B) / p(B) ; u_n = u_0 × q^n.
+
+<!-- page: 2 -->
+## Title of the third idea
+
+Keep each section to ONE idea and under about 900 characters: a chunk never crosses a heading.

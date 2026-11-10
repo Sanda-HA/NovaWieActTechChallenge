@@ -1,0 +1,33 @@
+{
+  "subject": "math",
+  "version": 1,
+  "subtopics": [
+    {"slug":"loi_binomiale","label":"Loi binomiale","parent":"probabilites"},
+    {"slug":"denombrement","label":"Dénombrement","parent":"probabilites"},
+    {"slug":"probabilites_conditionnelles","label":"Probabilités conditionnelles","parent":"probabilites"},
+    {"slug":"variables_aleatoires","label":"Variables aléatoires","parent":"probabilites"}
+  ],
+  "program": "4ème année secondaire, section mathématiques",
+  "status": "DRAFT: Ons checks every slug, label and link against the official program before the demo",
+  "topics": [
+    {"slug": "limites_continuite", "label": "Limites et continuité", "prerequisites": [], "next": ["derivabilite"]},
+    {"slug": "suites", "label": "Suites réelles", "prerequisites": ["limites_continuite"], "next": ["integrales"]},
+    {"slug": "derivabilite", "label": "Dérivabilité", "prerequisites": ["limites_continuite"], "next": ["etude_fonctions"]},
+    {"slug": "etude_fonctions", "label": "Étude de fonctions", "prerequisites": ["derivabilite"], "next": ["primitives"]},
+    {"slug": "primitives", "label": "Primitives", "prerequisites": ["derivabilite"], "next": ["integrales", "logarithme"]},
+    {"slug": "integrales", "label": "Calcul intégral", "prerequisites": ["primitives"], "next": ["equations_differentielles"]},
+    {"slug": "logarithme", "label": "Fonction logarithme népérien", "prerequisites": ["primitives", "etude_fonctions"], "next": ["exponentielle"]},
+    {"slug": "exponentielle", "label": "Fonction exponentielle", "prerequisites": ["logarithme"], "next": ["equations_differentielles"]},
+    {"slug": "equations_differentielles", "label": "Équations différentielles", "prerequisites": ["exponentielle", "derivabilite"], "next": []},
+    {"slug": "nombres_complexes", "label": "Nombres complexes", "prerequisites": [], "next": ["similitudes"]},
+    {"slug": "probabilites", "label": "Probabilités", "prerequisites": [], "next": ["statistiques"]},
+    {"slug": "statistiques", "label": "Statistiques", "prerequisites": [], "next": []},
+    {"slug": "geometrie_espace", "label": "Géométrie dans l'espace", "prerequisites": [], "next": []},
+    {"slug": "isometries_plan", "label": "Isométries du plan", "prerequisites": [], "next": ["deplacements_antideplacements"]},
+    {"slug": "deplacements_antideplacements", "label": "Déplacements et antidéplacements", "prerequisites": ["isometries_plan"], "next": ["similitudes"]},
+    {"slug": "similitudes", "label": "Similitudes", "prerequisites": ["deplacements_antideplacements", "nombres_complexes"], "next": []},
+    {"slug": "coniques", "label": "Coniques", "prerequisites": [], "next": []},
+    {"slug": "divisibilite_z", "label": "Divisibilité dans Z", "prerequisites": [], "next": ["identite_bezout"]},
+    {"slug": "identite_bezout", "label": "Identité de Bézout", "prerequisites": ["divisibilite_z"], "next": []}
+  ]
+}

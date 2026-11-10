@@ -1,0 +1,32 @@
+[
+  {
+    "chunk_id": "math_4sc_derivee_001",
+    "content": "Une fonction f est dérivable en a si le taux de variation (f(a+h)-f(a))/h admet une limite finie quand h tend vers 0. Cette limite est le nombre dérivé f'(a).",
+    "score": 0,
+    "source": "Manuel Math 4e Sc, ch. 3",
+    "page": 41,
+    "topic": "derivabilite",
+    "content_type": "course",
+    "language": "fr"
+  },
+  {
+    "chunk_id": "math_4sc_continuite_001",
+    "content": "Une fonction f est continue en a si la limite de f(x) quand x tend vers a est égale à f(a). Toute fonction dérivable en a est continue en a.",
+    "score": 0,
+    "source": "Manuel Math 4e Sc, ch. 2",
+    "page": 23,
+    "topic": "limites_continuite",
+    "content_type": "course",
+    "language": "fr"
+  },
+  {
+    "chunk_id": "math_4sc_exo_derivee_004",
+    "content": "Exercice : étudier la dérivabilité de f(x) = |x - 1| en 1. Corrigé : le taux de variation tend vers 1 à droite et -1 à gauche, donc f n'est pas dérivable en 1.",
+    "score": 0,
+    "source": "Bac 2019 session principale",
+    "page": 2,
+    "topic": "derivabilite",
+    "content_type": "exercise",
+    "language": "fr"
+  }
+]

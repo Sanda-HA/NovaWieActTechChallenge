@@ -1,0 +1,2 @@
+L'élève n'a pas compris l'explication précédente. Change d'approche: {alt_style}.
+Pars d'un exemple concret avant la définition. Termine par une question très simple.

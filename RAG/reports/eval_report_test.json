@@ -1,0 +1,133 @@
+{
+  "split": "test",
+  "backend": "local",
+  "n_questions": 34,
+  "thresholds": {
+    "sufficient": 0.6,
+    "partial": 0.26
+  },
+  "retrieval": {
+    "direct": {
+      "n": 21,
+      "recall@1": 0.619,
+      "recall@3": 0.905,
+      "recall@5": 0.905,
+      "MRR": 0.762
+    },
+    "paraphrased": {
+      "n": 5,
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "MRR": 1.0
+    },
+    "conceptual": {
+      "n": 2,
+      "recall@1": 0.5,
+      "recall@3": 0.5,
+      "recall@5": 0.5,
+      "MRR": 0.5
+    },
+    "exercise": {
+      "n": 2,
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "MRR": 1.0
+    },
+    "multi_chunk": {
+      "n": 1,
+      "recall@1": 0.5,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "MRR": 1.0
+    },
+    "ALL": {
+      "n": 31,
+      "recall@1": 0.694,
+      "recall@3": 0.903,
+      "recall@5": 0.903,
+      "MRR": 0.806
+    }
+  },
+  "misses_at_5": [
+    "c04",
+    "ma_e01",
+    "ma_c01"
+  ],
+  "hints": {
+    "direct": {
+      "sufficient": 16,
+      "partial": 5,
+      "insufficient": 0
+    },
+    "paraphrased": {
+      "sufficient": 5,
+      "partial": 0,
+      "insufficient": 0
+    },
+    "conceptual": {
+      "sufficient": 1,
+      "partial": 1,
+      "insufficient": 0
+    },
+    "exercise": {
+      "sufficient": 1,
+      "partial": 1,
+      "insufficient": 0
+    },
+    "multi_chunk": {
+      "sufficient": 1,
+      "partial": 0,
+      "insufficient": 0
+    },
+    "unanswerable": {
+      "sufficient": 0,
+      "partial": 0,
+      "insufficient": 2
+    },
+    "ambiguous": {
+      "sufficient": 0,
+      "partial": 1,
+      "insufficient": 0
+    }
+  },
+  "ablation": {
+    "bm25 only": {
+      "n": 31,
+      "recall@1": 0.661,
+      "recall@3": 0.855,
+      "recall@5": 0.855,
+      "MRR": 0.769
+    },
+    "dense only": {
+      "n": 31,
+      "recall@1": 0.694,
+      "recall@3": 0.903,
+      "recall@5": 0.903,
+      "MRR": 0.806
+    },
+    "RRF fusion": {
+      "n": 31,
+      "recall@1": 0.694,
+      "recall@3": 0.919,
+      "recall@5": 0.919,
+      "MRR": 0.823
+    },
+    "hybrid + rerank": {
+      "n": 31,
+      "recall@1": 0.726,
+      "recall@3": 0.919,
+      "recall@5": 0.919,
+      "MRR": 0.839
+    },
+    "hybrid + rerank + glossary": {
+      "n": 31,
+      "recall@1": 0.694,
+      "recall@3": 0.903,
+      "recall@5": 0.903,
+      "MRR": 0.806
+    }
+  },
+  "seconds": 7.29
+}

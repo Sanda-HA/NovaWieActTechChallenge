@@ -1,0 +1,9 @@
+# Which model class writes each step. Calibrate with evaluation/benchmark.py and document the evidence.
+compact_steps: [triage, evidence, clarify, direct_answer, summary, grade_attempt, peer_check]
+mid_steps: [hint_ladder, multi_search_answer, repair]
+answer:
+  mid_if_needs_reasoning: true
+  mid_if_difficulty_at_least: 3
+  mid_if_language: [darija]
+  mid_if_evidence: [partial]       # synthesis from incomplete evidence is harder
+  compact_otherwise: true          # grounded rewrite of a sufficient passage

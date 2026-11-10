@@ -1,0 +1,24 @@
+{
+  "preferences": [
+    {"id": "p1", "question": "Quand tu découvres une nouvelle notion, tu préfères…",
+     "options": {"step_by_step": "des étapes numérotées", "examples": "un exemple résolu d'abord",
+                 "visual": "un schéma ou un graphique", "analogy": "une comparaison avec la vie de tous les jours"}},
+    {"id": "p2", "question": "Quand tu bloques sur un exercice, tu aimerais…",
+     "options": {"step_by_step": "qu'on te donne la prochaine étape", "examples": "voir un exercice semblable corrigé",
+                 "visual": "qu'on te dessine la situation", "analogy": "qu'on te l'explique avec une image"}}
+  ],
+  "styles_probe": {
+    "id": "s1", "concept": "la révision espacée",
+    "versions": {
+      "step_by_step": "1) Apprends une notion. 2) Essaie de la retrouver de mémoire le lendemain. 3) Reviens-y quelques jours plus tard.",
+      "examples": "Si tu apprends cinq mots lundi, teste-toi mardi puis vendredi au lieu de relire la liste cinq fois lundi.",
+      "visual": "Imagine trois points sur un calendrier : lundi → mardi → vendredi. Chaque point représente un rappel de la même notion.",
+      "analogy": "C'est comme répéter une chanson plusieurs jours de suite : chaque répétition ravive ce que tu commençais à oublier."
+    }
+  },
+  "level_check": [
+    {"id": "l1", "question": "Comment vérifier que tu as compris une leçon ?", "options": ["L’expliquer sans notes", "Relire seulement le titre", "Recopier le texte", "Compter les pages"], "answer": "L’expliquer sans notes"},
+    {"id": "l2", "question": "Tu veux retenir une notion jusqu’à la semaine prochaine. Que fais-tu ?", "options": ["Prévoir plusieurs rappels", "Tout relire en une fois", "Attendre la veille", "Lire seulement le résumé"], "answer": "Prévoir plusieurs rappels"},
+    {"id": "l3", "question": "Après une erreur, quelle action t’aide à progresser ?", "options": ["Chercher sa cause puis réessayer", "Effacer la réponse", "Passer à un autre sujet", "Copier la correction"], "answer": "Chercher sa cause puis réessayer"}
+  ]
+}
