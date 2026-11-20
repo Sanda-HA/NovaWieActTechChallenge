@@ -11,7 +11,6 @@ language: fr
 source: Livre scolaire - Mathématiques, 4e année secondaire, section Mathématiques, Tome 2 (Ministère de l'Éducation/enseignement, Tunisie) - manuel officiel distribué publiquement
 ---
 <!-- page: 162 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 162 Identité de Bezout Dans ce chapitre on désigne par ` l’ensemble des entiers naturels et par ] l’ensemble des entiers. I. PGCD de deux entiers Activité 1 Déterminer a b  dans chacun des cas suivants 1. a 465
 
@@ -44,7 +43,6 @@ u nous permet d'affirmer que 2003 365 365 178 1 
  .
 
 <!-- page: 163 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 163 Identité de Bezout 2. Recherche de 4010 365  . En tapant ' ' ab 4010 365 = c , la calculatrice affiche 10 72 73. Ce qui signifie que 4010 72 10 365 73
 
@@ -97,7 +95,6 @@ et 21a 28b
  nous permet de généraliser les propriétés du plus grand commun diviseur de deux entiers naturels non nuls à celles du plus grand commun diviseur de deux entiers non nuls.
 
 <!-- page: 164 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 164 Identité de Bezout Propriétés Soit a et b deux entiers non nuls. < Si b divise a alors a b b . 
 
@@ -154,7 +151,6 @@ a a b .a et b a b .b c c
 .
 
 <!-- page: 165 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 165 Identité de Bezout Exercice résolu 1 Pour tout entier n, on pose a 2n 5 et b n 3
 
@@ -213,7 +209,6 @@ sont de la forme 2n 5 et n 3
 a ,b est solution de E alors 43 divise b et 71 divise a. 2. En déduire l’ensemble des solutions de E .
 
 <!-- page: 166 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 166 Identité de Bezout Activité 6 Résoudre dans u ] ] les équations ci-dessous. a. 13x 9y 0. b. 20x 17y. c. 21x 35y 0.
 
@@ -278,7 +273,6 @@ x y mod 5 { sont tous les couples de la forme (x,x 5k) tels que x et k
   ] ] .
 
 <!-- page: 167 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 167 Identité de Bezout Montrons que tout couple de cette forme est solution de (E). Si (x, y) (x,x 5k) avec x et k
 
@@ -311,7 +305,6 @@ a b a b ab  u 
 .
 
 <!-- page: 168 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 168 Identité de Bezout Cette dernière conséquence nous permet d’affirmer que les propriétés du plus petit commun multiple de deux entiers non nuls sont les mêmes que celles du plus petit commun multiple de deux entiers naturels non nuls. Propriétés Soit a et b deux entiers non nuls. < Si b divise a alors a b a . 
 
@@ -356,7 +349,6 @@ a 1 mod 8 , a 1 mod 12 , a 225. ­ { ° { ® ° d ¯ IV. Inverses modulo b Activ
 m 34 1 7 u od { .
 
 <!-- page: 169 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 169 Identité de Bezout Théorème Soit a et b deux entiers naturels non nuls tels que b 2 t et a b 1  . Alors il existe un unique entier non nul u appartenant à ^ ` 0, 1, ...,b 1
 
@@ -423,7 +415,6 @@ x 10 mod 13 { alors
 ].
 
 <!-- page: 170 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 170 Identité de Bezout V. Identité de Bezout Activité 1 1. a. Déterminer un inverse de 25 modulo 13. b. En déduire deux entiers u et v tels que 25u 13v 1
 
@@ -476,7 +467,6 @@ et alors da u db v au bv d c c
 .
 
 <!-- page: 171 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 171 Identité de Bezout Solution 1. En tapant ' ' 22826 ab/c 537 la calculatrice affiche 42 272 537 . On en déduit que 22826 537 272 537 1. 
 
@@ -529,7 +519,6 @@ x, y est solution de E , si et seulement si,
 . b. En déduire les solutions de E .
 
 <!-- page: 172 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 172 Identité de Bezout 3. Soit l'équation
 
@@ -574,7 +563,6 @@ b. Montrer qu’à l’intérieur du rectangle ABOC. il existe deux points I et 
 Déterminer les points M de coordonnées entières appartenant à (OA), revient à résoudre dans u ] ] , l’équation 12x 7y 0.
 
 <!-- page: 173 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 173 Identité de Bezout Les entiers 12 et 7 étant premiers entre eux, il en résulte que
 
@@ -653,7 +641,6 @@ u
 A A .
 
 <!-- page: 174 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 174 Identité de Bezout QCM Cocher la réponse exacte. 1. L’entier 5 est un inverse modulo 6 de 5. 5.
 
@@ -712,7 +699,6 @@ n 1
 est son propre inverse modulo n.
 
 <!-- page: 175 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 175 Identité de Bezout 1 Déterminer a b  dans chacun des cas ci-dessous. 1. a 558 et b 1235
 
@@ -793,7 +779,6 @@ a b a bn a b n 1 
 12x 30y mod 15 { .
 
 <!-- page: 176 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 176 Identité de Bezout 13 Déterminer l’ensemble des couples (x, y) tels que
 
@@ -856,7 +841,6 @@ b. Résoudre dans u ] ] l’équation E . 3. Déterminer l’ensemble des entier
 23 Soit p, q et u trois nombres premiers. On pose n = pqu et on suppose que p–1, q–1 et u–1 divisent n–1. Soit a un entier premier avec n. 1. Montrer que p 1 a 1 (mod p) { , q 1 a 1 (mod q) { . et u 1 a 1 (mod u) { . En déduire les congruences n 1 a 1 (mod p) { , n 1 a 1 (mod q) { . et n 1 a 1 (mod u) { . 2. Montrer que n 1 a 1 (mod n) { . 3. Décomposer 561 en produit de facteurs premiers et montrer que 560 224 1 (mod 561) { . 4. Montrer que 1728 561 1 (mod 1729) { .
 
 <!-- page: 177 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 177 Identité de Bezout 24 1. Soit a et b des entiers naturels non nuls tels que
 
@@ -953,7 +937,6 @@ et 2 y 4pq
 et p et q sont des carrés parfaits. 3. En déduire l'ensemble des éléments de E. 4. Donner tous les triplets de E tels que z 18. d
 
 <!-- page: 178 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 178 Identité de Bezout 29 On considère les dix caractères A, B, C, D, E, F, G, H, I et J auxquels on associe dans l’ordre les entiers de 1 à 10. On note ^ ` 1, 2,3,...,10 : . On appelle message tout mot ayant un sens ou non formé avec ces dix caractères. Soit a un entier compris entre 1 et 10. On désigne par f l’application qui à tout élément i de : associe le reste de ia modulo 11. 1. On suppose que a = 5. a. Coder à l’aide de f le message « BAC » en utilisant la grille de chiffrement ci-dessous Message B A C i 2 1 3
 

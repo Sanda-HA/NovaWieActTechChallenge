@@ -41,6 +41,19 @@ def chat_response(**overrides) -> dict:
     }
 
 
+def quiz_response(topic: str = "derivabilite") -> dict:
+    source = {"chunk_id": "math_4sc_derivee_001", "source": "Manuel Math 4e Sc, ch. 3", "page": 41}
+    return {
+        "topic": topic,
+        "questions": [
+            {"id": f"q{i}", "question": f"Question {i} ?", "choices": ["a", "b", "c", "d"],
+             "answer_index": i % 4, "explanation": f"Explication {i}.", "source": source}
+            for i in (1, 2, 3)
+        ],
+        "trace": [], "receipt": {}, "capacity_level": "FULL",
+    }
+
+
 class FakeAgent:
     """Stands in for llm_service: records every request, answers with canned bodies."""
 
@@ -75,6 +88,14 @@ class FakeAgent:
                                              "diagnosed": False, "topics": [], "subtopics": []})
         if path == "/group/check":
             return httpx.Response(200, json={"verdict": "unknown"})
+        if path == "/quiz":
+            return httpx.Response(200, json=quiz_response((body or {}).get("topic", "derivabilite")))
+        if path == "/room/goal":
+            return httpx.Response(200, json={"goal": "Comprendre la dérivabilité."})
+        if path == "/room/prompt":
+            return httpx.Response(200, json={"question": "Qu'en pensez-vous ?"})
+        if path == "/room/notes":
+            return httpx.Response(200, json={"notes": ["Dérivable implique continue.", "Revoir |x| en 0."]})
         if path == "/feedback":
             return httpx.Response(200, json={"removed_from_cache": 0})
         return httpx.Response(200, json={"path": path})
@@ -83,16 +104,28 @@ class FakeAgent:
         return [body for _, p, body in self.calls if p == path][-1]
 
 
+SUITE_LOCK = 4_171_101  # arbitrary advisory-lock key shared by every run of this suite
+
+
 @pytest.fixture(scope="session", autouse=True)
 def database():
     try:
-        engine.connect().close()
+        guard = engine.connect()
     except OperationalError:
         pytest.skip("Postgres not reachable: set TEST_DATABASE_URL (see README)")
-    cfg = Config(str(ALEMBIC_INI))
-    command.downgrade(cfg, "base")
-    command.upgrade(cfg, "head")
-    yield
+    # A second run on the same database would drop the tables under the first one's open transactions,
+    # and the two processes then wait on each other forever. Runs queue here instead.
+    guard.execute(text("SELECT pg_advisory_lock(:key)"), {"key": SUITE_LOCK})
+    guard.commit()
+    try:
+        cfg = Config(str(ALEMBIC_INI))
+        command.downgrade(cfg, "base")
+        command.upgrade(cfg, "head")
+        yield
+    finally:
+        guard.execute(text("SELECT pg_advisory_unlock(:key)"), {"key": SUITE_LOCK})
+        guard.commit()
+        guard.close()
 
 
 @pytest.fixture(autouse=True)

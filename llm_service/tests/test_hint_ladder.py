@@ -55,7 +55,7 @@ def test_incomplete_ladder_is_rejected():
 )
 async def test_answer_boundaries(text, final, expected):
     client = FakeClient({"correct": False})
-    correct, _ = await grade_attempt(text, Ladder(final, ["a"] * 4), client, Trace())
+    correct, *_ = await grade_attempt(text, Ladder(final, ["a"] * 4), client, Trace())
     assert correct is expected
 
 
@@ -80,7 +80,7 @@ def test_parse_ladder_rejects_invalid_shapes(final, rungs):
 
 async def test_grade_rejects_string_boolean():
     client = FakeClient({"correct": "false"})
-    correct, _ = await grade_attempt("wrong", Ladder("42", ["a"] * 4), client, Trace())
+    correct, *_ = await grade_attempt("wrong", Ladder("42", ["a"] * 4), client, Trace())
     assert not correct
 
 
@@ -102,11 +102,36 @@ async def test_compile_uses_one_call():
 
 async def test_exact_attempt_is_graded_without_a_call():
     client = FakeClient()
-    ok, _ = await grade_attempt("je trouve f'(1) = 6", Ladder("f'(1) = 6", ["a"] * 4), client, Trace())
+    ok, *_ = await grade_attempt("je trouve f'(1) = 6", Ladder("f'(1) = 6", ["a"] * 4), client, Trace())
     assert ok and client.calls == []
 
 
 async def test_other_attempts_are_graded_by_compact():
     client = FakeClient({"correct": False, "feedback": "Presque, revois le signe."})
-    ok, feedback = await grade_attempt("f'(1) = -6", Ladder("f'(1) = 6", ["a"] * 4), client, Trace())
+    ok, feedback, _ = await grade_attempt("f'(1) = -6", Ladder("f'(1) = 6", ["a"] * 4), client, Trace())
     assert not ok and "signe" in feedback and client.calls[0][0] is Tier.COMPACT
+
+
+@pytest.mark.parametrize("kind", ["concept", "calculation", "notation", "incomplete"])
+async def test_incorrect_attempt_carries_a_mistake_type(kind):
+    client = FakeClient({"correct": False, "feedback": "Revois.", "mistake_type": kind})
+    _, _, mistake = await grade_attempt("f'(1) = -6", Ladder("f'(1) = 6", ["a"] * 4), client, Trace())
+    assert mistake == kind
+
+
+@pytest.mark.parametrize("raw", ["algebra", 3, None, ["concept"]])
+async def test_invalid_mistake_type_becomes_none(raw):
+    client = FakeClient({"correct": False, "feedback": "Revois.", "mistake_type": raw})
+    _, _, mistake = await grade_attempt("f'(1) = -6", Ladder("f'(1) = 6", ["a"] * 4), client, Trace())
+    assert mistake is None
+
+
+async def test_correct_attempt_has_no_mistake_type():
+    client = FakeClient({"correct": True, "feedback": "Bien", "mistake_type": "concept"})
+    _, _, mistake = await grade_attempt("autre forme", Ladder("42", ["a"] * 4), client, Trace())
+    assert mistake is None
+
+
+async def test_exact_match_has_no_mistake_type():
+    _, _, mistake = await grade_attempt("42", Ladder("42", ["a"] * 4), FakeClient(), Trace())
+    assert mistake is None

@@ -11,7 +11,6 @@ language: fr
 source: Livre scolaire - Mathématiques, 4e année secondaire, section Mathématiques, Tome 2 (Ministère de l'Éducation/enseignement, Tunisie) - manuel officiel distribué publiquement
 ---
 <!-- page: 75 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 75 Similitudes Dans tout le chapitre, le plan est orienté dans le sens direct. I. Homothéties et translations Définition (rappel) Soit I un point et k un réel non nul. On appelle homothétie de centre I et de rapport k l’application du plan dans lui-même qui à tout point M associe l’unique point Mc tel que IM = kIM c JJJG JJJG . Activité 1 Dans la figure ci-contre, ABCD est un trapèze et M est un point. Les droites (AD) et (BC) se coupent en O. On désigne par h l’homothétie de centre O qui transforme A en D 1. Montrer que h transforme B en C. 2. Construire l’image du point M par h. A O B M D C Théorème ( propriété caractéristique d’une homothétie ) Soit k un réel non nul et différent de 1. Une application f est une homothétie de rapport k, si et seulement si, pour tous points M et N d’images Mc et Nc par f , M N = kMN c c JJJJJG JJJJG . Démonstration Si f est une homothétie de rapport k, alors pour tous points M et N d’images Mcet Nc par f , M N = M I +IN = k( MI +IN ) = k MN c c c c JJJJJG JJJG JJJG JJJG JJG JJJJG . Réciproquement, soit une application f telle que M N = kMN c c JJJJJG JJJJG , pour tous points M et N d’images Mcet Nc par f. Montrons que f est une homothétie. Soit A un point d'image A c et I le barycentre des points pondérés
 
@@ -24,12 +23,10 @@ A , 1 c de sorte que IA kIA c JJJG JJG . Pour tout point M du plan d’image Mc,
 JJJG JJJG JJJJJG JJG JJJJG JJJG . Le résultat en découle. Théorème Toute homothétie conserve les mesures des angles orientés.
 
 <!-- page: 76 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 76 Similitudes Démonstration Soit h une homothétie de rapport k et A, B , C trois points du plan deux à deux distincts. On note A , B et C c c c leurs images respectives par h . On peut alors écrire n n n > @ (A B , A C ) (kAB , kAC) (AB , AC) 2ʌ c c c c { { JJJJG JJJJG JJJG JJJG JJJG JJJG . Composée de deux homothéties Théorème La composée de deux homothéties de rapports respectifs 1 2 k et k est une homothétie de rapport 1 2 k k si 1 2 k k 1 z , une translation si 1 2 k k 1 . Démonstration Soit 1 2 k et k deux réels non nuls et 1 2 h et h deux homothéties de rapports respectifs 1 2 k et k . Pour tous points M et N du plan d’images respectives Mc et Nc par 2 1 h h D , 2 1 M N =k k MN c c JJJJJG JJJJG . Si 1 2 k k 1 z , alors 2 1 h h D est une homothétie de rapport 1 2 k k . Si 1 2 k k 1 , alors M N = MN c c JJJJJG JJJJG et par conséquent 2 1 h h D est une translation. Activité 2 Soit A et B deux points distincts du plan et 1 2 h et h deux homothéties de centres respectifs A et B et de rapports respectifs 2 et 1 3 . Construire le centre de chacune des homothéties 2 1 h h D et 1 2 h h D . Activité 3 Soit t une translation de vecteur u G et h une homothétie de rapport k z 1. 1. a. Soit A et B deux points du plan et A et B c c leurs images respectives par h t D . Montrer que A B = kAB c c JJJJG JJJG . b. Quelle est alors la nature de h t D ? 2. Déterminer de même la nature de t h D . L’activité précédente permet d’énoncer le théorème ci-dessous. Théorème La composée d’une translation et d’une homothétie de rapport k z 1 est une homothétie de rapport k.
 
 <!-- page: 77 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 77 Similitudes Homothétie et nombres complexes Théorème Soit f une application du plan dans lui-même qui à tout M d’affixe z associe le point Mc d’affixe zc. L’application f est une homothétie de rapport k z 1, si et seulement si, il existe un nombre complexe b tel que z kz b c
 
@@ -46,7 +43,6 @@ JJJG JJJG JJJJJG JJG JJJJG JJJG . Le résultat en découle. Théorème Toute hom
 D . Déterminer les images de A, B et C par S. Définition Soit k un réel strictement positif. On appelle similitude de rapport k, toute application du plan dans lui-même telle que pour tous points A et B d’images respectives Ac et Bc, A B = k AB c c .
 
 <!-- page: 78 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 78 Similitudes Exemples Les isométries sont des similitudes de rapport 1. Toute homothétie de rapport k est une similitude de rapport k . Théorème La composée de deux similitudes de rapports respectifs k et kc est une similitude de rapport kkc . Démonstration Soit f une similitude de rapport k et g une similitude de rapport k'. Soit A et B deux points du plan, A et B c c leurs images respectives par f et A et B cc cc les images respectives de A et B c c par g . On peut écrire A B = k A B = k k AB cc cc c c c c . Par suite, g f D est une similitude de rapport kkc . Théorème Une application du plan dans lui-même est une similitude, si et seulement si, elle est la composée d’une homothétie et d’une isométrie. Démonstration Soit f une similitude de rapport k et h une homothétie de rapport k. On peut écrire 1 f h (h f )
 
@@ -59,7 +55,6 @@ D une similitude telle que h est une homothétie de rapport k et g est une isom�
 JJJJG JJJJG JJJJJG JJJJJG JJJG JJJG .
 
 <!-- page: 79 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 79 Similitudes Les propriétés ci-dessous découlent des propriétés des homothéties et des isométries. Propriétés < Une similitude de rapport k est une bijection et sa réciproque est une similitude de rapport 1 k . < Une similitude conserve les angles géométriques. < Une similitude conserve l’orthogonalité. < Une similitude conserve l’alignement et le barycentre. < Une similitude transforme un segment en un segment. < Une similitude transforme une droite en une droite. < Une similitude conserve le parallélisme. < Une similitude transforme un cercle en un cercle et conserve le contact. < Soit A, B, C, D, E, F des points du plan et A', B', C', D', E', F' leurs images respectives par une similitude. Si AB aCD bEF où a et b
 
@@ -84,7 +79,6 @@ D D . < f g
 D D .
 
 <!-- page: 80 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 80 Similitudes III. Similitudes directes – Similitudes indirectes Activité 1 Soit h et 1 h deux homothéties et g et 1 g deux isométries telles que 1 1 h g h g .
 
@@ -93,7 +87,6 @@ D D 1. Montrer que 1 1 h h D est un déplacement. 2. Montrer que g est un dépla
 D est la similitude directe qui envoie A sur C et B sur D.
 
 <!-- page: 81 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 81 Similitudes De même, on sait qu’il existe un unique antidéplacement 1 g qui envoie A sur C et B sur 1 B . Si h est l’homothétie de centre C qui envoie 1 B sur D alors 1 f h g
 
@@ -116,7 +109,6 @@ A, 1 et
 B, k . Montrer que M appartient à E, si et seulement si, MG.MG' 0 JJJJG JJJJJG . 3. En déduire que E est le cercle de diamètre > @ G c .
 
 <!-- page: 82 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 82 Similitudes Activité 2 Soit A et B deux points distincts du plan. Déterminer et construire dans chacun des cas, l’ensemble F des points M du plan tels que a.
 
@@ -145,7 +137,6 @@ n > @ IA, I A 2ʌ ș c c { JJG JJJG . Il en résulte que les points I et Ic sont
 n > @ IM,IM 2ʌ ș c { JJG JJJG .
 
 <!-- page: 83 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 83 Similitudes Exercice résolu 1 Soit A, B, C et D des points distincts tels que 1 BD = AC 3 et n > @ ʌ (AC, BD) 2ʌ 3 { JJJG JJJG . Construire le centre I de la similitude directe S qui transforme A en B et C en D. Solution Le centre I de S vérifie IA 3IB
 
@@ -162,7 +153,6 @@ et I B IB c c c
 . c. En déduire le centre de f. Exercice résolu 2 Dans la figure ci-contre, C et c C sont deux cercles de centres respectifs O et Oc et se coupent en A et B. 1. a. Montrer qu’il existe une unique similitude directe f de centre A, qui transforme C en c C . b. Préciser le rapport et l’angle de f. 2. Soit M un point de C. a. Construire son image Mc par f. b. Comparer n n (OA,OM) et (O A,O M ) c c c JJJG JJJJG JJJJG JJJJJG . c. En déduire que les points M, B et Mc sont alignés.
 
 <!-- page: 84 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 84 Similitudes Solution 1. a. On sait qu’il existe une unique similitude directe qui envoie A sur A et O sur Oc. Cette similitude transforme nécessairement C en c C . b. Il s’agit de la similitude de centre A, de rapport OA OA c et d'angle n (AO,AO )c JJJG JJJJG . 2. a. Le point Mc appartient au cercle c C et vérifie n n > @ (AM,AM ) (AO,AO ) 2 c c { S JJJJG JJJJG JJJG JJJJG . Le point Mc appartient donc à l'intersection du cercle c C avec la demi-droite [AX) telle que n n > @ (AM,AX) (AO,AO ) 2 c { S JJJJG JJJG JJJG JJJJG . b. On sait qu’une similitude directe conserve les mesures des angles orientés. On en déduit que n n > @ (OA,OM) (O A,O M ) 2 c c c { S JJJG JJJJG JJJJG JJJJJG . c. Les angles au centre n n (OM,OA) et (O M ,O A ) c c c c JJJJG JJJG JJJJJG JJJJG vérifient les égalités n n (OM,OA) 2(BM,BA) 2k ,k
 
@@ -179,7 +169,6 @@ D D . Théorème Toute similitude directe de centre I, de rapport k z 1 et d’a
 D D où h est l’homothétie de centre I et de rapport k et r est la rotation de centre I et d’angle T. Cette décomposition s’appelle forme réduite de f. Activité 2 Soit I un point du plan. Donner la forme réduite de la similitudes h r D dans chacun des cas suivants.
 
 <!-- page: 85 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 85 Similitudes 1. h est l’homothétie de centre I et de rapport 1 2
 
@@ -210,7 +199,6 @@ et > @ I I z z arg 2 z z § · c { T S ¨ ¸
 z . Le théorème en découle sachant que la relation précédente est vraie pour M I .
 
 <!-- page: 86 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 86 Similitudes Activité 2 Le plan est rapporté à un repère orthonormé direct
 
@@ -231,7 +219,6 @@ D . On en déduit alors que IJ = k JI puis que I = J car k z 1. L’unicité ré
 D . 1. Soit E et F les symétriques respectifs de C et D par rapport à la droite (AB). Déterminer les images par f des points Oc , E et F. A F D C E O O' I I' B 2. Soit I le point d'intersection de [AE] et (OO') et I'son symétrique par rapport à la droite (AB). Montrer que Ic appartient à [AC] et en déduire que I est le centre de f.
 
 <!-- page: 87 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 87 Similitudes V. 1 Forme réduite d’une similitude indirecte Activité 1 Soit f une similitude indirecte de centre I et de rapport k 1 z . On désigne par h l'homothétie de centre I et de rapport k. 1. Montrer que 1 h f D est une symétrie orthogonale d'ax e une droite D passant par I. 2. Soit M un point distinct de I et Mc son image par f. Montrer que M appartient à D, si et seulement si, IM kIM c JJJG JJJG . 3. Montrer que D D h S S h
 
@@ -250,7 +237,6 @@ n
 n > @ ,IM' 2 ʌ u u,IM { G JJG G JJJG , pour tout point M distinct de I, d’image Mc par f .
 
 <!-- page: 88 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 88 Similitudes Propriété Soit f une similitude indirecte de centre I, de rapport différent de 1 et d’axe D. Si u G est un vecteur directeur de D, alors
 
@@ -277,7 +263,6 @@ et I 2 ab b z 1 a
 est l’affixe du point I.
 
 <!-- page: 89 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 89 Similitudes Démonstration On suppose que le plan est rapporté à un repère orthonormé direct
 
@@ -310,7 +295,6 @@ O,i, j G G . Soit f la similitude indirecte qui à tout point M d’affixe z, as
 où z désigne le conjugué de z. 1. Montrer que f est une similitude indirecte dont on déterminera le rapport et le centre I. 2. Déterminer l’ensemble des M d’affixe z tels que IM 2IM c JJJG JJJG . En déduire une équation de l’axe de f.
 
 <!-- page: 90 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 90 Similitudes QCM Cocher la réponse exacte. Le plan est muni d’un repère orthonormé direct
 
@@ -341,7 +325,6 @@ l'homothétie h I, 4 . La similitude directe de centre I, de rapport 4 et d'angl
 AC f S D est une similitude directe de même rapport que f qui envoie A sur B et C sur D.
 
 <!-- page: 91 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 91 Similitudes Dans tous les exercices le plan est orienté dans le sens direct. 1 Soit ABC un triangle équilatéral de centre G tel que n > @ (AB,AC) 2 3 S { S JJJG JJJG . Déterminer, dans chacun des cas, le rapport et l'angle de la similitude directe f. a. f fixe B et envoie A sur C. b. f fixe B et envoie C sur G. c. f fixe G et envoie B sur C. 2 1. Soit S une similitude directe. Donner la nature de 1 S f S D D dans chacun des cas ci-dessous. a. f est une translation de vecteur non nul. b. f est une rotation d'angle non nul. c. f est une homothétie de rapport différent de 1. d. f est une symétrie orthogonale d'axe passant par le centre de S. 2. Reprendre la question précédente en supposant que S est une similitude indirecte. 3 Soit ABCD un carré de côté 1, de centre O et tel que n > @ (AB,AD) 2 2 S { S JJJG JJJG . On note I le milieu de [AO]. 1. a. Montrer qu'il existe une unique similitude directe S qui envoie A sur O et B sur I. b. Déterminer le rapport et l'angle de S. 2. a. Donner l'écriture complexe de S dans le repère orthonormé (A, AB, AD) JJJG JJJG . b. Déterminer le centre de S. 4 Soit ABC un triangle non isocèle , rectangle en A et tel que n > @ (AB,AC) 2 2 S { S JJJG JJJG . On désigne par H le projeté orthogonal de A sur (BC) et on note f la similitude directe qui envoie B sur A et A sur C. 1. Déterminer les éléments caractéristiques de f. 2. Soit M un point variable de [AB]. La perpendiculaire à (HM) menée de H coupe [AC] en N. Montrer que le cercle de diamètre [MN] passe par un point fixe. 5 Soit ABCD un carré de centre O et tel que n > @ (AB,AD) 2 2 S { S JJJG JJJG . Soit S la similitude directe de centre D qui envoie O sur C. 1. Déterminer le rapport et l'angle de S. 2. Déterminer l'image du point A par S. 3. Construire l'image du point C par S. 6 Soit un triangle direct ABC et M un point du plan. Soit S la similitude directe de centre A qui envoie B sur C. Construire l'image de M dans chacun des cas ci-dessous. 1. Le point M n'appartient pas à (AB). 2. Le point M appartient à la droite (AB) privée des points A et B. 7 Soit ABC un triangle isocèle et rectangle en A tel que n > @ (AB,AC) 2 2 S { S JJJG JJJG . On désigne par Ac le symétrique de A par rapport à C. 1. a. Préciser le rapport et l'angle de la similitude directe S qui envoie Ac sur C et C sur B. b. Déterminer l'image par S de la droite (AC). 2. a. Soit I le centre de S. Montrer que le triangle ICB est rectangle isocèle. b. Construire I. c. Construire l'image du cercle de centre C et de rayon CA. 8 Soit ABCD un carré direct de centre O. 1. a. Préciser l’angle et le rapport de la similitude directe S qui envoie A sur O et B sur D. b. Construire le centre de f. c. Déterminer S D . 2. Existe-t-il une similitude directe qui envoie A sur O, B sur D et D sur C ? 9 Soit A et B deux points. On désigne par h l’homothétie de centre A et de rapport 2 et par r la rotation de centre B et d’angle 2 S . On pose S r h. D 1. Montrer que S est une similitude directe et déterminer son rapport et son angle. 2. Soit O le centre de la similitude S et
 
@@ -354,7 +337,6 @@ JJJG JJJJG b. Construire le point O. 3. Soit
 B h B . c Construire le centre de la similitude S h r c D et préciser son angle et son rapport.
 
 <!-- page: 92 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 92 Similitudes 10 Dans la figure ci-dessous le triangle ABR est isocèle et rectangle en B, le triangle BCP est isocèle et rectangle en C et le triangle CAQ est isocèle et rectangle en A. On note respectivement par P S , Q S et R S les similitudes directes de centres P, Q et R. On suppose de plus que les trois similitudes sont de rapport 2 et d'angle 4 S . Soit R P Q f S S S
 
@@ -365,7 +347,6 @@ O S B , la droite (MB) recoupe c C en un point Nc et la droite (BM )c recoupe C 
 et que les droites (BN) et (BN )c sont perpendiculaires. 3. Soit les carrés MBM Pc et NBN Q c . a. Quel est l'ensemble des points P et l'ensemble des points Q lorsque M varie ? b. Montrer que la droite (PQ) passe par un point fixe.
 
 <!-- page: 93 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 93 Similitudes 15 Soit la transformation f du plan qui, à tout point M d’affixe z, associe le point M' d’affixe z 2iz 3 i c . 1. Soit B le point d’affixe i et C le point d’affixe 1 . On désigne par B et C c c les images respectives de B et C par f. Déterminer
 
@@ -402,7 +383,6 @@ g A P et g C Q
 M . La figure ci-dessous représente un rectangle d’or ABCD et un carré ABFE. 1. Vérifier que 1 1 M M . En déduire que EFCD est un rectangle d’or. 2. Soit f la similitude directe qui envoie A sur D et D sur C. Préciser son rapport et son angle.
 
 <!-- page: 94 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 94 Similitudes 3. Quelle est l’image de C par f ? 4. En déduire que l’intersection O de (AC) et (DF) est invariant par f. 5. Montrer que les droites (AC) et (DF) sont perpendiculaires et que si G désigne l’intersection de (AC) et (EF) alors ED EG
 
@@ -439,7 +419,6 @@ et n > @ (OA,OC) 2 2 S { S JJJG JJJG . La médiatrice D du segment [OB] coupe la
 . d. Soit D f(D) c . Montrer que Dcest le symétrique de B par rapport à C. 2. Soit S la similitude directe qui envoie A sur B et I sur D. a. Déterminer le rapport et l'angle de S.
 
 <!-- page: 95 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 95 Similitudes b. Soit C le cercle de diamètre [AB] et c C le cercle de diamètre [ID]. Montrer que C et c C sont sécants en I et en un autre point : . Montrer que : est le centre de S. 3. Soit g f S
 

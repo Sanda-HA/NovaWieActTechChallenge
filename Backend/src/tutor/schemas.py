@@ -2,7 +2,6 @@ import uuid
 from datetime import datetime
 from typing import Literal
 from pydantic import BaseModel, Field
-from ..contracts import ChatResult
 
 TutorSubject = Literal[
     "math", "svt", "physics", "chemistry", "french", "english", "history",

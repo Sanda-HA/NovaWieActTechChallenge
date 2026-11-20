@@ -41,8 +41,7 @@ def get_owned_session(db, user, session_id):
     return s
 
 
-def agent_payload(db, user, session, data: MessageIn) -> dict:
-    profile = get_or_create_profile(db, user)
+def agent_payload(profile, user, session, data: MessageIn) -> dict:
     payload = {
         "session_id": str(session.id),
         "learner_id": learner_pseudonym(user.id),
@@ -78,12 +77,21 @@ def record_turn(db, session_id, response: dict, latency_ms: int):
     db.commit()
 
 
+def tutor_result(response: dict, plan: str) -> dict:
+    result = ChatResult.model_validate({**response, **answer_label(response)})
+    if result.next_step and result.next_step.kind == "practice_mistake" and plan != "pro":
+        result.next_step = None
+    return result.model_dump(exclude_unset=True)
+
+
 async def send_message(db, agent: AgentClient, user, session, data: MessageIn) -> dict:
-    payload = agent_payload(db, user, session, data)
+    profile = get_or_create_profile(db, user)
+    plan = profile.student_plan
+    payload = agent_payload(profile, user, session, data)
     started = time.perf_counter()
     response = await agent.chat(payload)
     try:
-        response = ChatResult.model_validate({**response, **answer_label(response)}).model_dump(exclude_unset=True)
+        response = tutor_result(response, plan)
     except ValidationError as exc:
         raise HTTPException(502, {"error": "agent_error"}) from exc
     record_turn(db, session.id, response, int((time.perf_counter() - started) * 1000))
@@ -91,7 +99,9 @@ async def send_message(db, agent: AgentClient, user, session, data: MessageIn) -
 
 
 async def stream_message(db, agent: AgentClient, user, session, data: MessageIn) -> AsyncIterator[str]:
-    payload = agent_payload(db, user, session, data)
+    profile = get_or_create_profile(db, user)
+    plan = profile.student_plan
+    payload = agent_payload(profile, user, session, data)
     session_id = session.id
     started = time.perf_counter()
     events = await agent.chat_events(payload)
@@ -100,7 +110,7 @@ async def stream_message(db, agent: AgentClient, user, session, data: MessageIn)
         async for kind, body in events:
             if kind == "result":
                 try:
-                    body = ChatResult.model_validate({**body, **answer_label(body)}).model_dump(exclude_unset=True)
+                    body = tutor_result(body, plan)
                 except ValidationError:
                     yield 'event: error\ndata: {"error": "agent_error"}\n\n'
                     return

@@ -67,3 +67,23 @@ async def test_stalled_stream_ends_with_an_error(monkeypatch):
 
     events = await asyncio.wait_for(consume(), 0.2)
     assert events[-1] == ("error", {"error": "agent_unavailable"})
+
+
+@pytest.mark.asyncio
+async def test_unreachable_agent_is_logged_with_its_address(caplog):
+    # The test database migration runs alembic's fileConfig, which disables loggers created before it.
+    caplog.set_level("WARNING")
+    interface.logger.disabled = False
+
+    def refuse(request):
+        raise httpx.ConnectError("refused", request=request)
+
+    client = AgentClient("http://127.0.0.1:8100", transport=httpx.MockTransport(refuse))
+    try:
+        with pytest.raises(HTTPException) as error:
+            await client.progress("learner-pseudonym")
+        assert error.value.detail == {"error": "agent_unavailable"}
+    finally:
+        await client.aclose()
+    assert "unreachable at http://127.0.0.1:8100" in caplog.text
+    assert "learner-pseudonym" not in caplog.text

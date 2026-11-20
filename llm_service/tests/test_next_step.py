@@ -29,3 +29,30 @@ def test_solved_with_many_hints_practises_again_and_unknown_topic_gives_nothing(
 
 def test_english_labels():
     assert recommend("derivabilite", "answered", Profile(), G, lang="en")["label"].startswith("Practise")
+
+
+def _with_mistakes(n: int, topic: str = "derivabilite") -> Profile:
+    p = Profile()
+    for _ in range(n):
+        p.record_mistake(topic, None, "calculation")
+    return p
+
+
+def test_two_mistakes_on_a_topic_recommend_practising_them():
+    step = recommend("derivabilite", "answered", _with_mistakes(2), G)
+    assert step["kind"] == "practice_mistake" and step["request"]["mode"] == "guided"
+    assert "Dérivabilité" in step["label"] and step["request"]["message"]
+
+
+def test_one_mistake_does_not_trigger_it():
+    assert recommend("derivabilite", "answered", _with_mistakes(1), G)["kind"] == "exercise"
+
+
+def test_mistakes_on_another_topic_do_not_trigger_it():
+    assert recommend("derivabilite", "answered", _with_mistakes(3, "integrales"), G)["kind"] == "exercise"
+
+
+def test_practice_mistake_text_exists_in_every_language():
+    for lang in ("fr", "en", "ar"):
+        step = recommend("derivabilite", "answered", _with_mistakes(2), G, lang=lang)
+        assert step["kind"] == "practice_mistake" and "{" not in step["label"]

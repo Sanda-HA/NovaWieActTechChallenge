@@ -1,8 +1,9 @@
 from pydantic import BaseModel, Field
 import uuid
+from ..student_plans import LearnerInput
 
 
-class UserCreate(BaseModel):
+class UserCreate(LearnerInput):
     pseudo: str = Field(pattern=r"^[A-Za-z0-9]{3,30}$" )
     password: str = Field(min_length=8)
     language: str = "fr"

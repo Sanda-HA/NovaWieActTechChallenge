@@ -1,3 +1,5 @@
+import json
+
 from app.sessions import Ladder, LearnerStore, Profile, TopicStats
 
 
@@ -32,3 +34,20 @@ def test_learner_profile_persists(tmp_path):
     store.save("pseudo-42")
     again = LearnerStore(path).get("pseudo-42")
     assert again.style == "visual" and again.topics["derivabilite"].attempts == 1
+
+
+def test_mistakes_are_capped_at_the_twenty_newest():
+    p = Profile()
+    for i in range(25):
+        p.record_mistake("derivabilite", None, "concept", ts=float(i))
+    assert len(p.mistakes) == 20
+    assert [m["ts"] for m in p.mistakes] == [float(i) for i in range(5, 25)]
+
+
+def test_mistakes_round_trip_and_old_profiles_still_load():
+    p = Profile()
+    p.record_mistake("derivabilite", "taux", "notation", ts=1.0)
+    assert Profile.from_json(p.to_json()).mistakes == p.mistakes
+    legacy = json.loads(Profile().to_json())
+    del legacy["mistakes"]
+    assert Profile.from_json(json.dumps(legacy)).mistakes == []

@@ -1,5 +1,7 @@
 import asyncio
+import time
 from collections import OrderedDict, defaultdict
+from contextvars import ContextVar
 from typing import Awaitable, Callable, Literal
 from uuid import uuid4
 
@@ -14,32 +16,34 @@ from app.capacity.fairness import FairShare
 from app.capacity.governor import CapacityGovernor, Level
 from app.capacity.resilient import CapacityUnavailable, ResilientClient
 from app.pedagogy.confusion import is_confused, wants_hint
-from app.pedagogy.generator import MAX_TOKENS, build_messages, shrink
+from app.pedagogy.generator import MAX_TOKENS, build_messages, evidence_keys, shrink
 from app.pedagogy.hint_ladder import compile_ladder, grade_attempt
 from app.pedagogy.next_step import recommend
 from app.pedagogy.topics import UNKNOWN, TopicGraph
-from app.providers.platform import CeilingExceeded
+from app.providers.platform import CeilingExceeded, Tier
 from app.routing.router import ModelRouter, RouteContext
 from app.safety.privacy import is_distress, redact, wellbeing_message
 from app.sessions import Ladder, LearnerStore, Profile, Session, SessionStore, TopicStats
-from app.trace import Badge, Trace
-from app.validation.validator import check_answer, matches_answer, strip_invented
+from app.trace import DEGRADED_EVENTS, NO_CACHE_EVENTS, Badge, Trace
+from app.validation.validator import (
+    check_answer,
+    matches_answer,
+    resolve_keys,
+    strip_invented,
+    strip_prompt_echo,
+    supporting_chunk,
+)
 
 Stage = Callable[[str], Awaitable[None]]
-DEGRADED_EVENTS = {
-    "fallback_compact",
-    "fallback_compact_timeout",
-    "eco_downgrade",
-    "capacity_unavailable",
-    "excerpt_only",
-    "request_timeout",
-}
-NO_CACHE_EVENTS = DEGRADED_EVENTS | {"rag_unavailable", "repair_failed", "ceiling_exceeded"}
+# Monotonic instant by which the request must be answered; stages read it to skip work that cannot finish.
+_deadline: ContextVar[float | None] = ContextVar("request_deadline", default=None)
+REPAIR_SLACK_S = 3.0  # time kept back for the excerpt fallback when deciding whether a repair call can finish
 TEXT = {
     "fr": {
         "busy": "Le service est très demandé en ce moment.",
         "retry": "Réessaie dans {s} s, ta question n'est pas perdue.",
         "excerpt": "En attendant, voici ce que dit ton cours :",
+        "unchecked": "Je n'ai pas pu rédiger une explication fiable. Voici ce que dit ton cours :",
         "too_fast": "Tu enchaînes vite ! Relis la réponse précédente, et réessaie dans {s} s.",
         "bravo": "Bravo, c'est juste !",
     },
@@ -47,10 +51,41 @@ TEXT = {
         "busy": "The service is very busy right now.",
         "retry": "Try again in {s} s, your question is not lost.",
         "excerpt": "Meanwhile, here is what your course says:",
+        "unchecked": "I couldn't write a reliable explanation. Here is what your course says:",
         "too_fast": "You're going fast! Re-read the previous answer and try again in {s} s.",
         "bravo": "Well done, that's right!",
     },
+    "ar": {
+        "busy": "الخدمة مطلوبة بكثرة في الوقت الحالي.",
+        "retry": "أعد المحاولة بعد {s} ثانية، فسؤالك لم يضِع.",
+        "excerpt": "في انتظار ذلك، هذا ما يقوله درسك:",
+        "unchecked": "لم أتمكن من كتابة شرح موثوق. هذا ما يقوله درسك:",
+        "too_fast": "أنت سريع جدًا! أعد قراءة الإجابة السابقة وحاول مجددًا بعد {s} ثانية.",
+        "bravo": "أحسنت، إجابتك صحيحة!",
+    },
 }
+NEW_EXERCISE = {"fr": "Choisis un nouvel exercice.", "en": "Choose a new exercise.", "ar": "اختر تمرينًا جديدًا."}
+CANNOT_VERIFY = {
+    "fr": "Je n'ai pas pu vérifier. Peux-tu reformuler ta réponse ?",
+    "en": "I couldn't verify this. Can you rephrase your answer?",
+    "ar": "لم أتمكن من التحقق. هل يمكنك إعادة صياغة إجابتك؟",
+}
+
+
+def repair_request(problems: list[str], allowed: list[str]) -> str:
+    """Spells the validator's problem codes out: a bare code like "missing_citation" reads as a new task."""
+    example = f"[[{allowed[0]}]]" if allowed else "[[identifiant]]"
+    fixes = {
+        "missing_citation": f"cite au moins un extrait du cours avec son identifiant entre doubles crochets, "
+                            f"par exemple {example}",
+        "invented_citations": "retire les identifiants qui ne figurent pas dans les extraits fournis",
+        "empty": "ta réponse était vide : écris-la",
+        "wrong_language": "réponds dans la langue demandée",
+        "foreign_script": "écris uniquement dans la langue demandée, sans caractères d'une autre écriture",
+    }
+    asked = [fixes.get(p.split(":")[0], p) for p in problems]
+    return ("Réécris ta réponse précédente à l'élève en corrigeant ceci : " + " ; ".join(asked)
+            + ". Donne uniquement la réponse corrigée, sans commentaire.")
 
 
 async def _no_stage(_: str) -> None:
@@ -68,7 +103,7 @@ class ChatRequest(BaseModel):
     section: str = Field(default="mathematiques", pattern=r"^[a-z0-9_]{1,40}$")
     subject: str = Field(default="math", pattern=r"^[a-z0-9_]{1,40}$")
     subject_selected: bool = False
-    reply_language: Literal["fr", "en"] = "fr"
+    reply_language: Literal["fr", "en", "ar"] = "fr"
     preferred_style: Literal["visual", "step_by_step"] | None = None
 
     @property
@@ -113,14 +148,23 @@ class Orchestrator:
         self.learners.ensure_active(req.learner)
         if is_distress(req.message):
             return await self._handle_request(req, stage, trace)
+        started = time.monotonic()
+        _deadline.set(started + self.request_timeout_s)
+        lock_wait = 0.0
         try:
             async with asyncio.timeout(self.request_timeout_s):
                 async with self.learner_locks[req.learner]:
+                    lock_wait = time.monotonic() - started
                     self.learners.ensure_active(req.learner)
                     return await self._handle_request(req, stage, trace)
         except TimeoutError:
             self.learners.ensure_active(req.learner)
             trace.events.append("request_timeout")
+            # The lock wait counts against the budget: a queued second message can time out early.
+            trace.rule(
+                "request_timeout", elapsed_s=round(time.monotonic() - started, 1), lock_wait_s=round(lock_wait, 1),
+                llm_calls=sum(1 for s in trace.steps if s.tier),
+            )
             message, _ = redact(req.message)
             try:
                 async with asyncio.timeout(self.fallback_timeout_s):
@@ -134,6 +178,7 @@ class Orchestrator:
                     "retry_after": 5,
                 }
             self.learners.ensure_active(req.learner)
+            self._remember_turn(req, message, result["answer"])
             return self._finish(req, result, trace, [])
 
     async def purge(self, learner_id: str, session_ids: list[str]) -> None:
@@ -164,10 +209,17 @@ class Orchestrator:
             except CeilingExceeded:
                 trace.events.append("ceiling_exceeded")
                 result = await self._excerpt_or_wait(req, message, 0, trace)
-            session.history.append(("élève", message))
-            session.history.append(("ednova", result["answer"]))
-            self.learners.save(req.learner)
+            self._remember_turn(req, message, result["answer"], session)
         return self._finish(req, result, trace, keys)
+
+    def _remember_turn(self, req: ChatRequest, message: str, answer: str, session: Session | None = None) -> None:
+        """Keeps the exchange even when the answer is degraded, so the conversation can continue."""
+        session = session or self.sessions.get(req.session_id)
+        session.history.append(("élève", message))
+        session.history.append(("ednova", answer))
+        self.learners.save(req.learner)
+        if hasattr(self.sessions, "save"):
+            self.sessions.save(req.session_id, session)
 
     def _finish(self, req: ChatRequest, result: dict, trace: Trace, keys: list[str]) -> dict:
         response_id = uuid4().hex
@@ -200,7 +252,7 @@ class Orchestrator:
             return await self._continue_ladder(req, message, session, profile, trace)
         if req.mode == "guided" and req.action == "attempt" and session.ladder is None:
             return {
-                "answer": "Choisis un nouvel exercice." if req.reply_language == "fr" else "Choose a new exercise.",
+                "answer": NEW_EXERCISE[req.reply_language],
                 "badge": Badge.CLARIFY.value,
                 "sources": [],
             }
@@ -380,29 +432,58 @@ class Orchestrator:
             chunks=chunks,
             history_summary=session.summary(),
             subject=req.subject if req.subject_selected else None,
+            short_keys=badge is Badge.COURSE,
+            language_reminder=True,
         )
         result = await self.client.call(tier, messages, MAX_TOKENS[task], shrink=shrink)
         trace.llm(task, result, route=reason)
+        first_call_s, first_tier = result.completion.latency_ms / 1000, result.completion.tier
         text = result.completion.text
         allowed = {c.chunk_id for c in chunks}
         if badge is Badge.COURSE:
             await stage("verifying")
-            check = check_answer(text, allowed, req.reply_language, require_citation=True)
-            if not check.ok:
+            keys = evidence_keys(chunks)
+            resolved = resolve_keys(strip_prompt_echo(text), keys)
+            seen = [
+                p.split(":")[0] if p.startswith("invented") else p
+                for p in check_answer(resolved, allowed, req.reply_language, require_citation=True).problems
+            ]
+            draft = strip_invented(resolved, allowed)
+            check = check_answer(draft, allowed, req.reply_language, require_citation=True)
+            blocking = [p for p in check.problems if p != "missing_citation"]
+            if blocking:
+                trace.rule("validation", stage="first_draft", problems=seen)
                 repair_tier, _ = self.router.choose("repair", ctx)
+                repair_tier = self._affordable_repair(repair_tier, first_tier, first_call_s)
+                if repair_tier is None:
+                    # A repair would finish after the deadline: answer now with the passage itself.
+                    trace.events.append("repair_skipped_budget")
+                    return self._unchecked_excerpt(req, t, chunks)
                 fix = messages + [
                     {"role": "assistant", "content": text},
-                    {"role": "user", "content": "Corrige ces problèmes: " + ", ".join(check.problems)},
+                    {"role": "user", "content": repair_request(blocking, list(keys.values()))},
                 ]
                 result = await self.client.call(repair_tier, fix, MAX_TOKENS[task], shrink=shrink)
-                trace.llm("repair", result, problems=[p.split(":")[0] for p in check.problems])
-                text = strip_invented(result.completion.text, allowed)
-                check = check_answer(text, allowed, req.reply_language, require_citation=True)
-                if not check.ok:
+                trace.llm("repair", result, problems=[p.split(":")[0] for p in seen])
+                draft = strip_invented(resolve_keys(strip_prompt_echo(result.completion.text), keys), allowed)
+                check = check_answer(draft, allowed, req.reply_language, require_citation=True)
+                if any(p != "missing_citation" for p in check.problems):
+                    trace.rule("validation", stage="after_repair", problems=check.problems)
+                    # A second bad draft is not shown: the retrieved passage itself is a sound answer.
                     trace.events.append("repair_failed")
-                if not check.citations:
-                    badge = Badge.GENERAL
+                    return self._unchecked_excerpt(req, t, chunks)
+            text = draft
             cited = set(check.citations)
+            if not cited:
+                # Small models rarely cite. Name the excerpt the answer shares most wording with; with none, the
+                # answer is still useful but is not presented as coming from the course.
+                support = supporting_chunk(text, {c.chunk_id: c.content for c in chunks})
+                if support:
+                    trace.events.append("citation_inferred")
+                    cited = {support}
+                else:
+                    trace.events.append("uncited_answer")
+                    badge = Badge.GENERAL
         else:
             text, cited = strip_invented(text, set()), set()
         session.last_style = style
@@ -486,14 +567,19 @@ class Orchestrator:
                         "sources": [],
                         "retry_after": wait,
                     }
-            correct, feedback = await grade_attempt(message, ladder, self.client, trace)
+            correct, feedback, mistake_type = await grade_attempt(message, ladder, self.client, trace)
             if correct is None:
-                question = "Je n'ai pas pu vérifier. Peux-tu reformuler ta réponse ?" if lang == "fr" else "I couldn't verify this. Can you rephrase your answer?"
+                question = CANNOT_VERIFY[lang]
                 return {"answer": question, "badge": Badge.CLARIFY.value, "sources": [], "topic": ladder.topic,
                         "hint_rung": max(0, min(2, ladder.next - 1)),
-                        "attempt_result": {"verdict": "unknown", "issue": "", "guiding_question": question, "source": None}}
+                        "attempt_result": {"verdict": "unknown", "issue": "",
+                                           "guiding_question": question, "source": None}}
             attempt_result = {"verdict": "correct" if correct else "incorrect", "issue": feedback,
                               "guiding_question": feedback, "source": None}
+            if not correct:
+                attempt_result["mistake_type"] = mistake_type
+                if mistake_type:
+                    profile.record_mistake(ladder.topic, ladder.subtopic, mistake_type)
             if correct:
                 stats.attempts += 1
                 stats.solved += 1
@@ -529,6 +615,33 @@ class Orchestrator:
         return result
 
     # ---- helpers -----------------------------------------------------------------------------
+    @staticmethod
+    def _affordable_repair(preferred: Tier, first_tier: Tier, first_call_s: float) -> Tier | None:
+        """The tier whose repair call should still finish before the deadline, or None.
+
+        The mid model measured about twice as slow as the compact one, so a mid repair after a compact draft
+        is costed at 2.5x the draft; the compact model is the cheaper retry when time is short.
+        """
+        deadline = _deadline.get()
+        if deadline is None:
+            return preferred
+        left = deadline - time.monotonic() - REPAIR_SLACK_S
+        for tier in dict.fromkeys([preferred, Tier.COMPACT]):
+            slowdown = 1.25 if tier is first_tier else 2.5 if tier is Tier.MID else 1.0
+            if left > first_call_s * slowdown:
+                return tier
+        return None
+
+    @staticmethod
+    def _unchecked_excerpt(req: ChatRequest, t: Triage, chunks: list[Chunk]) -> dict:
+        c = max(chunks, key=lambda chunk: chunk.score)
+        return {
+            "answer": f"{TEXT[req.reply_language]['unchecked']}\n\n> {c.content}\n\n({c.source}, p. {c.page})",
+            "badge": "course_excerpt",
+            "sources": [{"chunk_id": c.chunk_id, "source": c.source, "page": c.page}],
+            "topic": t.topic,
+        }
+
     async def _excerpt_or_wait(self, req: ChatRequest, message: str, retry_after: float, trace: Trace) -> dict:
         """No model available: still teach, by showing the course passage itself (retrieval has its own quota)."""
         t = TEXT[req.reply_language]

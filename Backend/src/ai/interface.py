@@ -1,5 +1,6 @@
 import asyncio
 import json
+import logging
 import math
 import time
 from collections.abc import AsyncIterator
@@ -11,6 +12,8 @@ from pydantic import BaseModel, Field, ValidationError
 
 REQUEST_DEADLINE_S = 60.0
 TIMEOUT = httpx.Timeout(60.0, connect=5.0)
+logger = logging.getLogger("ednova.agent_client")
+AGENT_NOT_FOUND = {"not_in_course", "unknown_topic"}
 
 
 class _ChatResult(BaseModel):
@@ -37,6 +40,8 @@ class AgentBusy(HTTPException):
 def _raise_for(resp: httpx.Response) -> None:
     if resp.is_success:
         return
+    if resp.status_code >= 500:
+        logger.warning("agent returned HTTP %s", resp.status_code)
     try:
         detail = resp.json().get("detail")
     except (ValueError, AttributeError):
@@ -46,9 +51,16 @@ def _raise_for(resp: httpx.Response) -> None:
         if isinstance(retry_after, int | float):
             raise AgentBusy(retry_after)
         raise AgentUnavailable()
+    if resp.status_code == 404 and isinstance(detail, dict) and detail.get("error") in AGENT_NOT_FOUND:
+        raise HTTPException(status.HTTP_404_NOT_FOUND, detail)
     if resp.status_code == 422:
         raise HTTPException(status.HTTP_422_UNPROCESSABLE_ENTITY, detail)
     raise HTTPException(status.HTTP_502_BAD_GATEWAY, {"error": "agent_error"})
+
+
+def _route(path: str) -> str:
+    # The first path segment only: later segments can carry learner pseudonyms.
+    return "/" + path.strip("/").split("/")[0]
 
 
 class AgentClient:
@@ -64,6 +76,7 @@ class AgentClient:
         try:
             resp = await asyncio.wait_for(self._http.request(method, url, **kwargs), REQUEST_DEADLINE_S)
         except (httpx.TransportError, asyncio.TimeoutError) as e:
+            logger.warning("agent %s %s unreachable at %s: %r", method, _route(url), self._http.base_url, e)
             raise AgentUnavailable() from e
         _raise_for(resp)
         try:
@@ -71,6 +84,7 @@ class AgentClient:
             if not isinstance(body, dict):
                 raise ValueError("agent response must be an object")
         except ValueError as e:
+            logger.warning("agent %s %s sent an invalid body", method, _route(url))
             raise HTTPException(status.HTTP_502_BAD_GATEWAY, {"error": "agent_error"}) from e
         return body
 
@@ -95,6 +109,7 @@ class AgentClient:
                     await resp.aclose()
                 _raise_for(resp)
         except (httpx.TransportError, asyncio.TimeoutError) as e:
+            logger.warning("agent /chat/events unreachable at %s: %r", self._http.base_url, e)
             raise AgentUnavailable() from e
         return _sse_events(resp, deadline)
 
@@ -104,6 +119,27 @@ class AgentClient:
 
     async def group_check(self, payload: dict) -> dict:
         return await self._request("POST", "/group/check", json=payload)
+
+    async def quiz(self, payload: dict) -> dict:
+        return await self._request("POST", "/quiz", json=payload)
+
+    async def mind_map(self, payload: dict) -> dict:
+        return await self._request("POST", "/mind-map", json=payload)
+
+    async def revision_pack(self, payload: dict) -> dict:
+        return await self._request("POST", "/revision-pack", json=payload)
+
+    async def room_goal(self, payload: dict) -> dict:
+        return await self._request("POST", "/room/goal", json=payload)
+
+    async def room_prompt(self, payload: dict) -> dict:
+        return await self._request("POST", "/room/prompt", json=payload)
+
+    async def room_notes(self, payload: dict) -> dict:
+        return await self._request("POST", "/room/notes", json=payload)
+
+    async def room_tutor(self, payload: dict) -> dict:
+        return await self._request("POST", "/room/tutor", json=payload)
 
     async def diagnostic_items(self) -> dict:
         return await self._request("GET", "/diagnostic")
@@ -145,10 +181,13 @@ async def _sse_events(resp: httpx.Response, deadline: float | None = None) -> As
                 if kind in ("result", "error"):
                     return
                 kind, data = "message", []
+        logger.warning("agent stream ended without a result")
         yield "error", {"error": "agent_error"}
-    except (httpx.TransportError, asyncio.TimeoutError):
+    except (httpx.TransportError, asyncio.TimeoutError) as e:
+        logger.warning("agent stream interrupted: %r", e)
         yield "error", {"error": "agent_unavailable"}
     except ValueError:
+        logger.warning("agent stream sent an invalid event")
         yield "error", {"error": "agent_error"}
     finally:
         await resp.aclose()

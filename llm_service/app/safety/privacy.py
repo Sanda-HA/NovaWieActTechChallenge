@@ -59,6 +59,13 @@ def is_distress(text: str) -> bool:
 
 
 def wellbeing_message(reply_language: str, contact: str) -> str:
+    if reply_language == "ar":
+        base = (
+            "يؤسفني حقًا أنك تشعر بهذا الشعور. لست مضطرًا إلى مواجهة ذلك وحدك: تحدّث الآن إلى شخص تثق به، "
+            "كأحد والديك أو أحد أساتذتك أو مرشد معهدك."
+        )
+        extra = f" يمكنك أيضًا التواصل مع: {contact}." if contact else ""
+        return base + extra + " أنا موجود لمساعدتك في المراجعة متى أردت العودة."
     if reply_language == "en":
         base = (
             "I'm really sorry you're feeling this way. You don't have to deal with it alone: please talk "

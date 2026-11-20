@@ -50,7 +50,15 @@ async def run_config(
             for case in cases:
                 started = time.monotonic()
                 r = await orch.handle(
-                    ChatRequest(session_id=f"{name}-{case['id']}-{p}", message=case["question"], mode=case["mode"])
+                    ChatRequest(
+                        session_id=f"{name}-{case['id']}-{p}",
+                        message=case["question"],
+                        mode=case["mode"],
+                        section=case["section"],
+                        subject=case["subject"],
+                        subject_selected=True,
+                        reply_language=case["reply_language"],
+                    )
                 )
                 tools = [s for s in r["trace"] if s["name"] == "tool"]
                 triage_step = next((s for s in r["trace"] if s["name"] == "triage"), None)
@@ -62,6 +70,7 @@ async def run_config(
                         "pass": p,
                         "id": case["id"],
                         "type": case["type"],
+                        "section": case["section"],
                         "action": action,
                         "action_ok": (action == case["expected_action"]) if action else None,
                         "badge": r["badge"],
@@ -71,6 +80,10 @@ async def run_config(
                             if case["gold_chunks"]
                             else None
                         ),
+                        "repaired": any(s["name"] == "repair" for s in r["trace"]),
+                        "excerpt": r["badge"] == "course_excerpt",
+                        "capacity": bool(r["degraded"]) or r.get("retry_after") is not None,
+                        "cited": " ".join(sorted(cited)),
                         "tool_calls": len(tools),
                         **{
                             k: r["receipt"][k]
@@ -93,14 +106,19 @@ def summarize(rows: list[dict]) -> list[dict]:
         rep = [r for r in rows if r["config"] == name and r["pass"] == 1]
         calls = sum(r["llm_calls"] for r in rs) or 1
         lat = sorted(r["wall_ms"] for r in rs)
-        recall = [r["gold_recall"] for r in rs if r["gold_recall"] is not None]
-        actions = [r["action_ok"] for r in rs if r["action_ok"] is not None]
+        # Rows cut short by platform capacity say nothing about answer quality.
+        scored = [r for r in rs if not r["capacity"]]
+        recall = [r["gold_recall"] for r in scored if r["gold_recall"] is not None]
+        actions = [r["action_ok"] for r in scored if r["action_ok"] is not None]
         out.append(
             {
                 "config": CONFIGS[name]["label"],
                 "action_accuracy": round(sum(actions) / len(actions), 2) if actions else None,
-                "badge_accuracy": round(sum(r["badge_ok"] for r in rs) / len(rs), 2),
+                "badge_accuracy": round(sum(r["badge_ok"] for r in scored) / len(scored), 2) if scored else None,
                 "citation_recall": round(statistics.mean(recall), 2) if recall else None,
+                "repair_rate": round(sum(r["repaired"] for r in rs) / len(rs), 2),
+                "excerpt_rate": round(sum(r["excerpt"] for r in rs) / len(rs), 2),
+                "capacity_rows": sum(r["capacity"] for r in rs),
                 "calls_per_q": round(calls / len(rs), 2),
                 "mid_share": round(sum(r["mid_calls"] for r in rs) / calls, 2),
                 "tokens_per_q": int(sum(r["tokens_in"] + r["tokens_out"] for r in rs) / len(rs)),
@@ -113,15 +131,40 @@ def summarize(rows: list[dict]) -> list[dict]:
     return out
 
 
+def by_type(rows: list[dict]) -> list[dict]:
+    out = []
+    first = [r for r in rows if r["pass"] == 0 and not r["capacity"]]
+    for kind in dict.fromkeys(r["type"] for r in first):
+        rs = [r for r in first if r["type"] == kind]
+        recall = [r["gold_recall"] for r in rs if r["gold_recall"] is not None]
+        out.append(
+            {
+                "type": kind,
+                "n": len(rs),
+                "badge_accuracy": round(sum(r["badge_ok"] for r in rs) / len(rs), 2),
+                "citation_recall": round(statistics.mean(recall), 2) if recall else None,
+            }
+        )
+    return out
+
+
+def _table(items: list[dict]) -> list[str]:
+    cols = list(items[0])
+    return ["| " + " | ".join(cols) + " |", "|" + "---|" * len(cols)] + [
+        "| " + " | ".join(str(i[c]) for c in cols) + " |" for i in items
+    ]
+
+
 def write(rows: list[dict], summary: list[dict], out: Path) -> None:
     out.mkdir(parents=True, exist_ok=True)
     with (out / "runs.csv").open("w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=list(rows[0]))
         w.writeheader()
         w.writerows(rows)
-    cols = list(summary[0])
-    lines = ["| " + " | ".join(cols) + " |", "|" + "---|" * len(cols)]
-    lines += ["| " + " | ".join(str(s[c]) for c in cols) + " |" for s in summary]
+    lines = _table(summary)
+    types = by_type(rows)
+    if types:
+        lines += ["", "By question type (first pass, capacity rows excluded):", ""] + _table(types)
     (out / "summary.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
     print("\n".join(lines))
 

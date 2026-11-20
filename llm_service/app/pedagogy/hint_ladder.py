@@ -14,8 +14,14 @@ SAFE_RUNGS = [
     "Écris la première ligne du calcul et montre-la-moi.",
 ]
 
-GRADE_SYSTEM = """Compare la réponse de l'élève au résultat attendu.
-Réponds UNIQUEMENT en JSON: {"correct": true|false, "feedback": "une phrase encourageante, sans donner le résultat"}"""
+GRADE_SYSTEM = (
+    "Compare la réponse de l'élève au résultat attendu.\n"
+    'Réponds UNIQUEMENT en JSON: {"correct": true|false, "feedback": "une phrase encourageante, '
+    'sans donner le résultat", "mistake_type": "concept|calculation|notation|incomplete"}\n'
+    "mistake_type nomme la nature de l'erreur si la réponse est fausse: concept (notion mal comprise), "
+    "calculation (erreur de calcul), notation (écriture ou forme incorrecte), incomplete (réponse partielle)."
+)
+MISTAKE_TYPES = ("concept", "calculation", "notation", "incomplete")
 
 
 def parse_ladder(text: str, topic: str = "autre") -> Ladder | None:
@@ -56,20 +62,24 @@ async def compile_ladder(
     return parse_ladder(result.completion.text, topic)
 
 
-async def grade_attempt(attempt: str, ladder: Ladder, client: ResilientClient, trace: Trace) -> tuple[bool | None, str]:
+async def grade_attempt(
+    attempt: str, ladder: Ladder, client: ResilientClient, trace: Trace
+) -> tuple[bool | None, str, str | None]:
     if matches_answer(attempt, ladder.final_answer):
         trace.rule("grade_attempt", correct=True, by="exact_match")
-        return True, ""
+        return True, "", None
     messages = [
         {"role": "system", "content": GRADE_SYSTEM},
         {"role": "user", "content": f"Attendu: {ladder.final_answer}\nÉlève: {attempt}"},
     ]
-    result = await client.call(Tier.COMPACT, messages, 120, json_mode=True)
+    result = await client.call(Tier.COMPACT, messages, 140, json_mode=True)
     try:
         data = json.loads(result.completion.text)
         correct = data.get("correct") if isinstance(data, dict) and type(data.get("correct")) is bool else None
         feedback = str(data.get("feedback", "")) if isinstance(data, dict) else ""
+        kind = data.get("mistake_type") if isinstance(data, dict) else None
+        mistake_type = kind if correct is False and isinstance(kind, str) and kind in MISTAKE_TYPES else None
     except (json.JSONDecodeError, KeyError, TypeError):
-        correct, feedback = None, ""
+        correct, feedback, mistake_type = None, "", None
     trace.llm("grade_attempt", result, correct=correct)
-    return correct, feedback
+    return correct, feedback, mistake_type

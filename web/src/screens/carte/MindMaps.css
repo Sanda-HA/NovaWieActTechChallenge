@@ -1,0 +1,57 @@
+.mind-map-card {
+  display: grid;
+  gap: .75rem;
+  min-inline-size: 0;
+  padding: 1rem;
+  border: 1px solid currentColor;
+  border-radius: 1rem;
+}
+.mind-map-card h2,
+.mind-map-card p { margin: 0; }
+.mind-map-card select {
+  max-inline-size: 100%;
+  margin-inline-start: .4rem;
+  font: inherit;
+}
+.mind-map-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .45rem;
+}
+.mind-map-viewport {
+  overflow: auto;
+  max-block-size: min(55vh, 30rem);
+  border: 1px solid currentColor;
+  border-radius: .75rem;
+  direction: ltr;
+}
+.mind-map-scroll { position: relative; overflow: hidden; }
+.mind-map-plane { position: absolute; inset: 0 auto auto 0; transform-origin: top left; }
+.mind-map-plane svg { position: absolute; inset: 0; pointer-events: none; }
+.mind-map-plane path { fill: none; stroke: currentColor; stroke-width: 2; opacity: .55; }
+.mind-map-position { position: absolute; }
+.mind-map-node { display: flex; align-items: stretch; gap: .25rem; block-size: 100%; }
+.mind-map-label,
+.mind-map-toggle,
+.mind-map-actions > button[aria-pressed] {
+  border: 1px solid currentColor;
+  border-radius: .65rem;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  min-block-size: 44px;
+  padding: .4rem .65rem;
+  cursor: pointer;
+}
+.mind-map-label { flex: 1; min-inline-size: 0; overflow-wrap: anywhere; line-height: 1.2; font-weight: 600; }
+.mind-map-card button[aria-pressed="true"] {
+  outline: 2px solid currentColor;
+  outline-offset: -2px;
+  background: color-mix(in srgb, currentColor 12%, transparent);
+}
+.mind-map-toggle { flex: 0 0 44px; padding: .25rem; font-size: 1.25rem; }
+.mind-map-card :is(button, select, [tabindex]):focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
+.mind-map-outline, .mind-map-outline ul { list-style: none; padding: 0; margin: 0; }
+.mind-map-outline ul { margin-inline-start: .6rem; border-inline-start: 1px solid currentColor; padding-inline-start: .65rem; }
+.mind-map-outline li { display: grid; gap: .5rem; margin-block: .5rem; }

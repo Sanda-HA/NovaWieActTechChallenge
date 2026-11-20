@@ -15,7 +15,8 @@ class TopicGraph:
         self.metadata = {k: data[k] for k in ("version", "status", "subject", "program") if k in data}
 
     def catalog(self) -> dict:
-        return {"version": 1, **self.metadata, "topics": list(self.topics.values()), "subtopics": list(self.subtopics.values())}
+        return {"version": 1, **self.metadata, "topics": list(self.topics.values()),
+                "subtopics": list(self.subtopics.values())}
 
     def valid_subtopic(self, slug: str | None, parent: str) -> bool:
         return self.subtopics.get(slug, {}).get("parent") == parent

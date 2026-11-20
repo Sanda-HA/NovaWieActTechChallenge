@@ -5,6 +5,7 @@ from typing import Literal
 from app.pedagogy.topics import UNKNOWN, TopicGraph
 from app.sessions import Profile
 
+MISTAKE_THRESHOLD = 2
 Event = Literal["answered", "confused", "solved"]
 
 TEXT = {
@@ -15,6 +16,8 @@ TEXT = {
         "prerequisite_msg": "Explique-moi {label} simplement",
         "next_topic": "Passer à « {label} »",
         "next_topic_msg": "Explique-moi {label}",
+        "practice_mistake": "Retravaille « {label} » : tu y as déjà fait des erreurs",
+        "practice_mistake_msg": "Donne-moi un exercice guidé sur {label} pour corriger mes erreurs",
     },
     "en": {
         "exercise": "Practise « {label} » with a guided exercise",
@@ -23,6 +26,18 @@ TEXT = {
         "prerequisite_msg": "Explain {label} simply",
         "next_topic": "Move on to « {label} »",
         "next_topic_msg": "Explain {label}",
+        "practice_mistake": "Rework « {label} »: you have already made mistakes there",
+        "practice_mistake_msg": "Give me a guided exercise on {label} to fix my mistakes",
+    },
+    "ar": {
+        "exercise": "تدرّب على « {label} » بتمرين موجَّه",
+        "exercise_msg": "أعطني تمرينًا حول {label}",
+        "prerequisite": "هل تراجع « {label} » أولًا؟",
+        "prerequisite_msg": "اشرح لي {label} ببساطة",
+        "next_topic": "الانتقال إلى « {label} »",
+        "next_topic_msg": "اشرح لي {label}",
+        "practice_mistake": "أعد العمل على « {label} »: لقد أخطأت فيه أكثر من مرة",
+        "practice_mistake_msg": "أعطني تمرينًا موجَّهًا حول {label} لأصحح أخطائي",
     },
 }
 
@@ -57,6 +72,8 @@ def recommend(
 ) -> dict | None:
     if topic == UNKNOWN or not graph.known(topic):
         return None
+    if sum(m["topic"] == topic for m in profile.mistakes) >= MISTAKE_THRESHOLD:
+        return _step("practice_mistake", topic, "guided", graph, lang)
     stats = profile.topics.get(topic)
     struggling = event == "confused" and (asks_this_session >= 2 or (stats and stats.confusions >= 2))
     if struggling and graph.prerequisites(topic):

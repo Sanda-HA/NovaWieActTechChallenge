@@ -1,8 +1,10 @@
 import json
 import sqlite3
+import time
 from collections import Counter, deque
 from dataclasses import asdict, dataclass, field
 
+MAX_MISTAKES = 20
 STYLES = ["step_by_step", "examples", "visual", "analogy"]
 
 
@@ -36,6 +38,7 @@ class Profile:
     topics: dict[str, TopicStats] = field(default_factory=dict)
     diagnostic_score: int | None = None
     subtopics: dict[str, TopicStats] = field(default_factory=dict)
+    mistakes: list[dict] = field(default_factory=list)
 
     @property
     def style(self) -> str:
@@ -53,6 +56,11 @@ class Profile:
     def subtopic(self, slug: str) -> TopicStats:
         return self.subtopics.setdefault(slug, TopicStats())
 
+    def record_mistake(self, topic: str, subtopic: str | None, kind: str, ts: float | None = None) -> None:
+        stamp = time.time() if ts is None else ts
+        self.mistakes.append({"topic": topic, "subtopic": subtopic, "type": kind, "ts": stamp})
+        del self.mistakes[:-MAX_MISTAKES]
+
     def to_json(self) -> str:
         return json.dumps(
             {
@@ -62,6 +70,7 @@ class Profile:
                 "diagnostic_score": self.diagnostic_score,
                 "subtopics": {k: asdict(v) for k, v in self.subtopics.items()},
                 "topics": {k: asdict(v) for k, v in self.topics.items()},
+                "mistakes": self.mistakes,
             }
         )
 
@@ -72,6 +81,7 @@ class Profile:
             d["weights"], d["level_estimate"], d["diagnosed"], {k: TopicStats(**v) for k, v in d["topics"].items()},
             d.get("diagnostic_score"),
             {k: TopicStats(**v) for k, v in d.get("subtopics", {}).items()},
+            d.get("mistakes", []),
         )
 
 
@@ -127,6 +137,62 @@ class SessionStore:
             if session.ladder_key in keys:
                 session.ladder = None
                 session.ladder_key = None
+
+
+class RedisSessionStore:
+    """Shared conversation state for multiple agent workers."""
+
+    def __init__(self, url: str, ttl_seconds: int = 24 * 60 * 60):
+        import redis
+
+        self.redis = redis.Redis.from_url(url, decode_responses=True)
+        self.redis.ping()
+        self.ttl_seconds = ttl_seconds
+
+    def _key(self, session_id: str) -> str:
+        return f"ednova:session:{session_id}"
+
+    def get(self, session_id: str) -> Session:
+        raw = self.redis.get(self._key(session_id))
+        if raw is None:
+            session = Session()
+        else:
+            data = json.loads(raw)
+            ladder = Ladder(**data["ladder"]) if data.get("ladder") else None
+            session = Session(
+                history=deque(data.get("history", []), maxlen=6),
+                ladder=ladder,
+                ladder_key=data.get("ladder_key"),
+                last_style=data.get("last_style"),
+                topic_asks=Counter(data.get("topic_asks", {})),
+            )
+        return session
+
+    def save(self, session_id: str, session: Session) -> None:
+        data = {
+            "history": list(session.history),
+            "ladder": asdict(session.ladder) if session.ladder else None,
+            "ladder_key": session.ladder_key,
+            "last_style": session.last_style,
+            "topic_asks": dict(session.topic_asks),
+        }
+        self.redis.setex(self._key(session_id), self.ttl_seconds, json.dumps(data, ensure_ascii=False))
+
+    def discard(self, session_ids: list[str]) -> None:
+        keys = [self._key(session_id) for session_id in session_ids]
+        if keys:
+            self.redis.delete(*keys)
+
+    def invalidate_ladders(self, keys: list[str]) -> None:
+        for raw_key in self.redis.scan_iter(match="ednova:session:*"):
+            raw = self.redis.get(raw_key)
+            if not raw:
+                continue
+            data = json.loads(raw)
+            if data.get("ladder_key") in keys:
+                data["ladder"] = None
+                data["ladder_key"] = None
+                self.redis.setex(raw_key, self.ttl_seconds, json.dumps(data, ensure_ascii=False))
 
 
 class LearnerStore:

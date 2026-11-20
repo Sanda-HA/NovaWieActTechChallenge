@@ -67,5 +67,12 @@ class RequestLog:
                 for s in response.get("trace", [])
             ],
         }
+        self._append(line)
+
+    def failure(self, kind: str, error: str) -> None:
+        """Failed requests leave a line too, so a broken chain shows up in the log."""
+        self._append({"ts": round(time.time(), 3), "kind": kind, "error": error})
+
+    def _append(self, line: dict) -> None:
         with self.path.open("a", encoding="utf-8") as f:
             f.write(json.dumps(line, ensure_ascii=False) + "\n")

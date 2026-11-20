@@ -11,6 +11,7 @@ ROOT = Path(__file__).resolve().parent.parent
 # ---- data locations -------------------------------------------------------
 DOCS_DIR = Path(os.getenv("DOCS_DIR", ROOT / "data" / "documents"))
 MANIFEST_PATH = ROOT / "data" / "source_manifest.csv"
+APPROVED_SOURCES_PATH = ROOT / "data" / "approved_sources.csv"
 GLOSSARY_PATH = ROOT / "data" / "glossary_fr_ar.json"
 EVAL_PATH = ROOT / "data" / "eval_questions.jsonl"
 THRESHOLDS_PATH = ROOT / "data" / "thresholds.json"

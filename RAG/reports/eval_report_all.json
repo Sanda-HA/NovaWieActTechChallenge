@@ -1,92 +1,136 @@
 {
   "split": "all",
   "backend": "local",
-  "n_questions": 34,
+  "n_questions": 70,
   "thresholds": {
-    "sufficient": 0.6,
-    "partial": 0.26
+    "sufficient": 0.58,
+    "partial": 0.19
   },
   "retrieval": {
     "direct": {
-      "n": 6,
-      "recall@1": 1.0,
-      "recall@3": 1.0,
-      "recall@5": 1.0,
-      "MRR": 1.0
+      "n": 35,
+      "recall@1": 0.629,
+      "recall@3": 0.857,
+      "recall@5": 0.857,
+      "MRR": 0.743
     },
     "paraphrased": {
-      "n": 10,
-      "recall@1": 1.0,
-      "recall@3": 1.0,
-      "recall@5": 1.0,
-      "MRR": 1.0
+      "n": 11,
+      "recall@1": 0.909,
+      "recall@3": 0.909,
+      "recall@5": 0.909,
+      "MRR": 0.909
     },
     "conceptual": {
-      "n": 4,
-      "recall@1": 0.75,
-      "recall@3": 1.0,
+      "n": 6,
+      "recall@1": 0.833,
+      "recall@3": 0.833,
       "recall@5": 1.0,
-      "MRR": 0.833
+      "MRR": 0.875
     },
     "exercise": {
-      "n": 4,
+      "n": 5,
       "recall@1": 1.0,
       "recall@3": 1.0,
       "recall@5": 1.0,
       "MRR": 1.0
     },
     "multi_chunk": {
-      "n": 3,
-      "recall@1": 0.444,
-      "recall@3": 1.0,
+      "n": 4,
+      "recall@1": 0.333,
+      "recall@3": 0.875,
       "recall@5": 1.0,
-      "MRR": 1.0
+      "MRR": 0.875
     },
     "ALL": {
-      "n": 27,
-      "recall@1": 0.901,
-      "recall@3": 1.0,
-      "recall@5": 1.0,
-      "MRR": 0.975
+      "n": 61,
+      "recall@1": 0.71,
+      "recall@3": 0.877,
+      "recall@5": 0.902,
+      "MRR": 0.816
     }
   },
-  "misses_at_5": [],
+  "misses_at_5": [
+    "ma_e01",
+    "ma_c01",
+    "svt_d01",
+    "svt_p01",
+    "svt_d07",
+    "svt_d09"
+  ],
   "hints": {
     "direct": {
-      "sufficient": 5,
-      "partial": 1,
+      "sufficient": 29,
+      "partial": 6,
       "insufficient": 0
     },
     "paraphrased": {
       "sufficient": 10,
-      "partial": 0,
+      "partial": 1,
       "insufficient": 0
     },
     "conceptual": {
-      "sufficient": 3,
+      "sufficient": 5,
       "partial": 1,
       "insufficient": 0
     },
     "exercise": {
-      "sufficient": 3,
+      "sufficient": 4,
       "partial": 1,
       "insufficient": 0
     },
     "multi_chunk": {
-      "sufficient": 3,
+      "sufficient": 4,
       "partial": 0,
       "insufficient": 0
     },
     "unanswerable": {
       "sufficient": 0,
       "partial": 0,
-      "insufficient": 4
+      "insufficient": 5
     },
     "ambiguous": {
       "sufficient": 1,
-      "partial": 2,
+      "partial": 3,
       "insufficient": 0
     }
   },
-  "seconds": 0.08
+  "ablation": {
+    "bm25 only": {
+      "n": 61,
+      "recall@1": 0.694,
+      "recall@3": 0.855,
+      "recall@5": 0.861,
+      "MRR": 0.801
+    },
+    "dense only": {
+      "n": 61,
+      "recall@1": 0.686,
+      "recall@3": 0.855,
+      "recall@5": 0.877,
+      "MRR": 0.799
+    },
+    "RRF fusion": {
+      "n": 61,
+      "recall@1": 0.694,
+      "recall@3": 0.885,
+      "recall@5": 0.885,
+      "MRR": 0.811
+    },
+    "hybrid + rerank": {
+      "n": 61,
+      "recall@1": 0.727,
+      "recall@3": 0.893,
+      "recall@5": 0.893,
+      "MRR": 0.828
+    },
+    "hybrid + rerank + glossary": {
+      "n": 61,
+      "recall@1": 0.71,
+      "recall@3": 0.877,
+      "recall@5": 0.902,
+      "MRR": 0.816
+    }
+  },
+  "seconds": 10.22
 }

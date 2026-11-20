@@ -3,6 +3,16 @@ from enum import Enum
 
 from app.capacity.resilient import CallResult
 
+DEGRADED_EVENTS = {
+    "fallback_compact",
+    "fallback_compact_timeout",
+    "eco_downgrade",
+    "capacity_unavailable",
+    "excerpt_only",
+    "request_timeout",
+}
+NO_CACHE_EVENTS = DEGRADED_EVENTS | {"rag_unavailable", "repair_failed", "ceiling_exceeded"}
+
 
 class Badge(str, Enum):
     COURSE = "course"  # "D'après ton cours (source, p.)"

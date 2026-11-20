@@ -49,6 +49,33 @@ async def test_http_rag_sends_subject_alias(subject, expected):
         await HttpRag("http://rag.test", client).search("search_courses", replace(REQ, subject=subject))
 
 
+async def test_http_rag_retries_without_section_when_the_section_has_no_passages():
+    sections = []
+
+    def handler(request):
+        section = json.loads(request.content)["section"]
+        sections.append(section)
+        chunks = [] if section else [{"chunk_id": "c1", "content": "x", "score": 0.8, "source": "s", "page": 2}]
+        return httpx.Response(200, json={"chunks": chunks})
+
+    async with httpx.AsyncClient(transport=httpx.MockTransport(handler)) as client:
+        chunks = await HttpRag("http://rag.test", client).search("search_courses", REQ)
+    assert sections == ["sc_exp", None] and [c.chunk_id for c in chunks] == ["c1"]
+
+
+async def test_http_rag_keeps_section_results_without_a_second_search():
+    calls = []
+
+    def handler(request):
+        calls.append(json.loads(request.content)["section"])
+        chunk = {"chunk_id": "c1", "content": "x", "score": 0.8, "source": "s", "page": 2}
+        return httpx.Response(200, json={"chunks": [chunk]})
+
+    async with httpx.AsyncClient(transport=httpx.MockTransport(handler)) as client:
+        await HttpRag("http://rag.test", client).search("search_courses", REQ)
+    assert calls == ["sc_exp"]
+
+
 async def test_http_rag_reads_nested_metadata():
     chunk = {
         "rank": 1,

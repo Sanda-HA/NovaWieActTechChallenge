@@ -1,12 +1,20 @@
 import uuid
-from sqlalchemy import String, ForeignKey, text
+from datetime import datetime
+from sqlalchemy import CheckConstraint, DateTime, Float, String, ForeignKey, func, text
 from sqlalchemy.dialects.postgresql import JSONB   # importe le type PostgreSQL JSONB pour créer une colonne capable de stocker du JSON de façon optimisée.
 from sqlalchemy.orm import Mapped, mapped_column
 from ..Database.core import Base
+from ..student_plans import StudentPlan
 
 
 class LearnerProfile(Base):
     __tablename__= "learner_profiles"
+    __table_args__ = (
+        CheckConstraint("student_plan IN ('free', 'pro')", name="ck_learner_profiles_student_plan"),
+    )
+
+    pro_requested: Mapped[bool] = mapped_column(server_default=text("false"))
+    student_plan: Mapped[StudentPlan] = mapped_column(String(4), server_default="free")
     id: Mapped[int] = mapped_column(primary_key=True)
     user_id: Mapped[uuid.UUID] = mapped_column(ForeignKey("users.id", ondelete="CASCADE"), unique=True)
     level: Mapped[str] = mapped_column(String(20), default="beginner")
@@ -22,3 +30,29 @@ class LearnerProfile(Base):
     enabled_tools: Mapped[list[str]] = mapped_column(
         JSONB, server_default=text("""'["guided", "feynman"]'::jsonb"""),
     )
+
+
+class LearningQuiz(Base):
+    __tablename__ = "learning_quizzes"
+
+    id: Mapped[str] = mapped_column(String(36), primary_key=True)
+    user_id: Mapped[uuid.UUID] = mapped_column(ForeignKey("users.id", ondelete="CASCADE"), index=True)
+    quiz: Mapped[dict] = mapped_column(JSONB)
+    created_at: Mapped[float] = mapped_column(Float, nullable=False)
+
+
+class MindMap(Base):
+    __tablename__ = "mind_maps"
+
+    user_id: Mapped[uuid.UUID] = mapped_column(
+        ForeignKey("users.id", ondelete="CASCADE", name="fk_mind_maps_user"), primary_key=True,
+    )
+    grade: Mapped[str] = mapped_column(String(40), primary_key=True)
+    section: Mapped[str] = mapped_column(String(40), primary_key=True)
+    subject: Mapped[str] = mapped_column(String(40), primary_key=True)
+    topic: Mapped[str] = mapped_column(String(40), primary_key=True)
+    reply_language: Mapped[str] = mapped_column(String(2), primary_key=True)
+    generated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
+    source_revision: Mapped[int]
+    schema_version: Mapped[int]
+    artifact: Mapped[dict] = mapped_column(JSONB)

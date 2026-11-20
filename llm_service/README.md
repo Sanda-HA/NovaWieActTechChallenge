@@ -8,7 +8,7 @@ The study-partner agent of EdNova: a capacity-aware orchestrator over the WIE AC
 1. Python 3.11+. `python -m venv .venv`, activate it, `pip install -e ".[dev]"`.
 2. In `llm_service/`, copy `.env.example` to `.env` and add the team key. The agent reads this file at startup. Shell variables take precedence.
 3. Start the [verified-source retrieval service](../RAG/README.md#official-platform-demo) and run `python -m uvicorn app.api.main:create_app --factory --host 127.0.0.1 --port 8100` from `llm_service/`.
-4. Set the backend's `AGENT_URL=http://127.0.0.1:8100` and start the [connected UI](../ui-preview/README.md).
+4. Set the backend's `AGENT_URL=http://127.0.0.1:8100` and start the [web app](../web/).
 
 Use only the assigned Tunis-time slot. Run one agent worker per team key and keep benchmarks or other
 clients using that key stopped while the demo runs. The agent caps outbound chat attempts (including
@@ -30,9 +30,10 @@ private network interface accessible only to that backend. The backend is the so
 ## How it works
 
 Chat generation, including time waiting for a learner's previous turn, is limited by `REQUEST_TIMEOUT_S`
-(45 seconds by default). On expiry the agent returns a course passage, or a retry message if retrieval
+(52 seconds by default; with the 5-second fallback it ends before the backend's 60-second deadline). On expiry the agent returns a course passage, or a retry message if retrieval
 does not finish within `FALLBACK_TIMEOUT_S` (5 more seconds). Timed-out requests are degraded and are never
-cached. The standalone checker uses the same generation limit and returns `unknown` with a guiding
+cached. Chapter quizzes use the larger model and get `QUIZ_TIMEOUT_S` (55 seconds), which stays under the
+backend's 60-second deadline. The standalone checker uses the same generation limit and returns `unknown` with a guiding
 question on timeout. Wellbeing messages bypass a learner's queued ordinary turn.
 
 Shared model calls survive a single subscriber disconnecting, but are cancelled when their last

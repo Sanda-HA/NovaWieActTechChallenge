@@ -7,30 +7,25 @@ Usage:
     python ingest.py --backend platform
 """
 import argparse
-import csv
 import sys
 
 import numpy as np
 
 from app import config, embeddings
 from app.chunking import chunk_document
+from app.sources import read_approved_sources, read_manifest
 from app.store import save_index
-
-
-def read_manifest(path):
-    with open(path, encoding="utf-8", newline="") as f:
-        return {row["document_id"]: row for row in csv.DictReader(f)}
 
 
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--backend", default=config.EMBED_BACKEND, choices=["local", "platform"])
-    permission = parser.add_mutually_exclusive_group()
-    permission.add_argument("--strict", action="store_true", help="fail unless every document has permission_verified=yes")
-    permission.add_argument("--verified-only", action="store_true", help="skip documents without verified usage permission")
+    parser.add_argument("--strict", action="store_true", help="fail unless every document is reviewed and permission is verified")
+    parser.add_argument("--verified-only", action="store_true", help="skip documents without verified usage permission")
     args = parser.parse_args()
 
     manifest = read_manifest(config.MANIFEST_PATH)
+    approved = read_approved_sources(config.APPROVED_SOURCES_PATH)
     files = sorted(config.DOCS_DIR.glob("*.md"))
     if not files:
         sys.exit("No documents found in %s" % config.DOCS_DIR)
@@ -38,6 +33,11 @@ def main():
     chunks, problems, documents = [], [], 0
     for path in files:
         row = manifest.get(path.stem)
+        approved_for_use = path.stem in approved
+        if (args.strict or args.verified_only) and not approved_for_use:
+            if args.strict:
+                problems.append("%s: not listed with approved=yes in data/approved_sources.csv" % path.stem)
+            continue
         if args.verified_only and (row is None or row["permission_verified"].strip().lower() != "yes"):
             continue
         raw = path.read_text(encoding="utf-8")

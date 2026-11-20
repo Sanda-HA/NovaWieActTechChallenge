@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "ednova-llm-service"
 version = "0.1.0"
 requires-python = ">=3.11"
-dependencies = ["fastapi", "uvicorn", "httpx", "pydantic>=2", "pyyaml", "python-dotenv"]
+dependencies = ["fastapi", "uvicorn", "httpx", "pydantic>=2", "pyyaml", "python-dotenv", "redis>=5"]
 
 [project.optional-dependencies]
 dev = ["pytest", "pytest-asyncio", "ruff"]

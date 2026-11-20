@@ -18,8 +18,13 @@ def test_profile_update(client, auth):
 
 
 def test_profile_rejects_bad_values(client, auth):
-    for body in ({"section": "Sciences Exp"}, {"reply_language": "ar"}, {"preferred_format": "analogie"}):
+    for body in ({"section": "Sciences Exp"}, {"reply_language": "de"}, {"preferred_format": "analogie"}):
         assert client.put("/me/profile", headers=auth, json=body).status_code == 422
+
+
+def test_profile_accepts_ar(client, auth):
+    assert client.put("/me/profile", headers=auth, json={"reply_language": "ar"}).status_code == 200
+    assert client.get("/me/profile", headers=auth).json()["reply_language"] == "ar"
 
 
 def test_profile_requires_auth(client):

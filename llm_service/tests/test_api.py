@@ -69,6 +69,8 @@ async def test_stream_terminates_after_upstream_failure(settings, monkeypatch, i
     assert response.status_code == 200
     if internal_error:
         assert response.text == 'event: error\ndata: {"error": "internal_error"}\n\n'
+        line = json.loads(Path(settings.request_log_path).read_text(encoding="utf-8").splitlines()[-1])
+        assert line["kind"] == "chat" and line["error"] == "internal_error"
     else:
         data = json.loads(response.text.split("event: result\ndata: ")[1])
         assert data["badge"] == "course_excerpt"
@@ -177,6 +179,8 @@ def test_group_checks_share_the_learners_model_allowance(settings):
         assert http.post("/group/check", json=body).status_code == 200
         assert http.post("/group/check", json=body).status_code == 503
         assert http.get("/metrics").json()["llm_calls"] == 1
+    failure = json.loads(Path(settings.request_log_path).read_text(encoding="utf-8").splitlines()[-1])
+    assert failure["kind"] == "group" and failure["error"] == "http_503"
 
 
 async def test_group_check_has_a_bounded_model_wait(settings):
@@ -212,3 +216,27 @@ def test_purge_removes_learner_and_rejects_late_writes(settings):
         assert http.request("DELETE", "/learner/p1", json={"session_ids": ["s"]}).status_code == 200
         assert http.get("/learner/p1/progress").status_code == 404
         assert http.post("/diagnostic/p1", json={"s1": "visual"}).status_code == 404
+
+
+def test_progress_lists_mistakes_by_topic_and_type_newest_first(settings):
+    from app.sessions import LearnerStore, Profile
+
+    profile = Profile()
+    for topic, kind, ts in [
+        ("derivabilite", "calculation", 1.0),
+        ("integrales", "concept", 2.0),
+        ("derivabilite", "calculation", 3.0),
+        ("derivabilite", "notation", 4.0),
+    ]:
+        profile.record_mistake(topic, None, kind, ts=ts)
+    store = LearnerStore(settings.learner_db_path)
+    store._live["p1"] = profile
+    store.save("p1")
+    with TestClient(build(settings, fake_platform(settings))) as http:
+        mistakes = http.get("/learner/p1/progress").json()["mistakes"]
+    assert [(m["topic"], m["type"], m["count"]) for m in mistakes] == [
+        ("derivabilite", "notation", 1),
+        ("derivabilite", "calculation", 2),
+        ("integrales", "concept", 1),
+    ]
+    assert mistakes[0]["label"] == "Dérivabilité"

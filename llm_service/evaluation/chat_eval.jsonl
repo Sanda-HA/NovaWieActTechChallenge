@@ -1,0 +1,10 @@
+{"id": "c01", "chapter": "derivabilite", "reply_language": "fr", "message": "Explique-moi la dérivabilité en un point."}
+{"id": "c02", "chapter": "derivabilite", "reply_language": "fr", "message": "Comment trouver l'équation de la tangente à une courbe ?"}
+{"id": "c03", "chapter": "limites_continuite", "reply_language": "fr", "message": "Qu'est-ce que la continuité d'une fonction en un point ?"}
+{"id": "c04", "chapter": "suites", "reply_language": "fr", "message": "Comment montrer qu'une suite est croissante ?"}
+{"id": "c05", "chapter": "probabilites", "reply_language": "fr", "message": "Explique la formule des probabilités totales."}
+{"id": "c06", "chapter": "derivabilite", "reply_language": "en", "message": "What does it mean for a function to be differentiable at a point?"}
+{"id": "c07", "chapter": "suites", "reply_language": "en", "message": "When does a geometric sequence converge?"}
+{"id": "c08", "chapter": "probabilites", "reply_language": "en", "message": "What is conditional probability?"}
+{"id": "c09", "chapter": "derivabilite", "reply_language": "ar", "message": "ما معنى أن تكون الدالة قابلة للاشتقاق في نقطة؟"}
+{"id": "c10", "chapter": "limites_continuite", "reply_language": "ar", "message": "كيف أحسب نهاية دالة عند اللانهاية؟"}

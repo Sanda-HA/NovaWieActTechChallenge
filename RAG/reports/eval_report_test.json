@@ -1,25 +1,25 @@
 {
   "split": "test",
   "backend": "local",
-  "n_questions": 34,
+  "n_questions": 51,
   "thresholds": {
-    "sufficient": 0.6,
-    "partial": 0.26
+    "sufficient": 0.58,
+    "partial": 0.19
   },
   "retrieval": {
     "direct": {
-      "n": 21,
-      "recall@1": 0.619,
-      "recall@3": 0.905,
-      "recall@5": 0.905,
-      "MRR": 0.762
+      "n": 32,
+      "recall@1": 0.562,
+      "recall@3": 0.781,
+      "recall@5": 0.781,
+      "MRR": 0.667
     },
     "paraphrased": {
-      "n": 5,
-      "recall@1": 1.0,
-      "recall@3": 1.0,
-      "recall@5": 1.0,
-      "MRR": 1.0
+      "n": 6,
+      "recall@1": 0.833,
+      "recall@3": 0.833,
+      "recall@5": 0.833,
+      "MRR": 0.833
     },
     "conceptual": {
       "n": 2,
@@ -29,7 +29,7 @@
       "MRR": 0.5
     },
     "exercise": {
-      "n": 2,
+      "n": 5,
       "recall@1": 1.0,
       "recall@3": 1.0,
       "recall@5": 1.0,
@@ -43,27 +43,33 @@
       "MRR": 1.0
     },
     "ALL": {
-      "n": 31,
-      "recall@1": 0.694,
-      "recall@3": 0.903,
-      "recall@5": 0.903,
-      "MRR": 0.806
+      "n": 46,
+      "recall@1": 0.641,
+      "recall@3": 0.804,
+      "recall@5": 0.804,
+      "MRR": 0.725
     }
   },
   "misses_at_5": [
     "c04",
     "ma_e01",
-    "ma_c01"
+    "ma_c01",
+    "svt_p01",
+    "svt_d07",
+    "svt_d09",
+    "ext_d02",
+    "ext_d04",
+    "ext_s01"
   ],
   "hints": {
     "direct": {
-      "sufficient": 16,
+      "sufficient": 26,
       "partial": 5,
-      "insufficient": 0
+      "insufficient": 1
     },
     "paraphrased": {
       "sufficient": 5,
-      "partial": 0,
+      "partial": 1,
       "insufficient": 0
     },
     "conceptual": {
@@ -72,7 +78,7 @@
       "insufficient": 0
     },
     "exercise": {
-      "sufficient": 1,
+      "sufficient": 4,
       "partial": 1,
       "insufficient": 0
     },
@@ -84,50 +90,50 @@
     "unanswerable": {
       "sufficient": 0,
       "partial": 0,
-      "insufficient": 2
+      "insufficient": 3
     },
     "ambiguous": {
       "sufficient": 0,
-      "partial": 1,
+      "partial": 2,
       "insufficient": 0
     }
   },
   "ablation": {
     "bm25 only": {
-      "n": 31,
-      "recall@1": 0.661,
-      "recall@3": 0.855,
-      "recall@5": 0.855,
-      "MRR": 0.769
+      "n": 46,
+      "recall@1": 0.62,
+      "recall@3": 0.793,
+      "recall@5": 0.793,
+      "MRR": 0.71
     },
     "dense only": {
-      "n": 31,
-      "recall@1": 0.694,
-      "recall@3": 0.903,
-      "recall@5": 0.903,
-      "MRR": 0.806
+      "n": 46,
+      "recall@1": 0.554,
+      "recall@3": 0.772,
+      "recall@5": 0.804,
+      "MRR": 0.676
     },
     "RRF fusion": {
-      "n": 31,
-      "recall@1": 0.694,
-      "recall@3": 0.919,
-      "recall@5": 0.919,
-      "MRR": 0.823
+      "n": 46,
+      "recall@1": 0.62,
+      "recall@3": 0.815,
+      "recall@5": 0.815,
+      "MRR": 0.725
     },
     "hybrid + rerank": {
-      "n": 31,
-      "recall@1": 0.726,
-      "recall@3": 0.919,
-      "recall@5": 0.919,
-      "MRR": 0.839
+      "n": 46,
+      "recall@1": 0.663,
+      "recall@3": 0.815,
+      "recall@5": 0.815,
+      "MRR": 0.746
     },
     "hybrid + rerank + glossary": {
-      "n": 31,
-      "recall@1": 0.694,
-      "recall@3": 0.903,
-      "recall@5": 0.903,
-      "MRR": 0.806
+      "n": 46,
+      "recall@1": 0.641,
+      "recall@3": 0.804,
+      "recall@5": 0.804,
+      "MRR": 0.725
     }
   },
-  "seconds": 7.29
+  "seconds": 13.32
 }

@@ -11,7 +11,6 @@ language: fr
 source: Livre scolaire - Mathématiques, 4e année secondaire, section Mathématiques, Tome 2 (Ministère de l'Éducation/enseignement, Tunisie) - manuel officiel distribué publiquement
 ---
 <!-- page: 122 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 122 Géométrie dans l’espace Dans tout le chapitre, l’espace E est orienté dans le sens direct. I. Produit scalaire dans l’espace Activité 1 Soit ABCDEFGH un cube d’arête a. Exprimer en fonction de a les produits scalaires ci-dessous. AF.AB JJJG JJJG , AF.DC JJJG JJJG , AF.DG JJJG JJJG , AF.DH JJJG JJJG , AF.DE JJJG JJJG . * Soit A, B et C des points. Le produit scalaire des vecteurs AB et AC JJJG JJJG est le réel défini par < AB . AC 0
 
@@ -52,7 +51,6 @@ M x , y , z c c c c ,
 .
 
 <!-- page: 123 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 123 Géométrie dans l’espace 2. a. Calculer KA.KC JJJG JJJG . b. En déduire la mesure en radian de l’angle n AKC . Activité 4 Dans la figure ci-contre, ABCD est un tétraèdre tel que les triangles ABC, ABD et ACD sont rectangles en A. Soit G le centre de gravité de ABCD et I le symétrique de A par rapport à G. En choisissant un repère convenable, montrer que I est le centre de la sphère circonscrite au tétraèdre ABCD. II. Produit vectoriel Activité 1 En utilisant la figure ci-contre d’une pyramide ABCDE, déterminer une base directe et une base indirecte de l’espace. Activité 2 A B C D E Dans la figure ci-dessous, ABCDEFGH est un cube d’arête 1. Déterminer AB AD  JJJG JJJG , AD AB  JJJG JJJG , AB FG  JJJG JJJG , EF EF  JJG JJG , EF GH  JJG JJJG et HF DC  JJJG JJJG . Soit A, B et C des points de l'espace. Le produit vectoriel de AB par AC JJJG JJJG est le vecteur noté AB AC  JJJG JJJG et défini comme suit * si AB et AC JJJG JJJG colinéaires, alors AB AC 0 
 
@@ -85,7 +83,6 @@ u v w u v u w 
 u v u v D  E DE  G G G G .
 
 <!-- page: 124 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 124 Géométrie dans l’espace Activité 4 L’espace est muni d’un repère orthonormé direct
 
@@ -144,7 +141,6 @@ JJJG JJJG . 1. Déterminer les coordonnées de DL DM  JJJG JJJJG à l’aide d
 DL DM .DK  JJJG JJJJG JJJG à l’aide de a. 3. En déduire le volume du tétraèdre DLMK à l’aide de a.
 
 <!-- page: 125 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 125 Géométrie dans l’espace Activité 8 Dans la figure ci-contre, ABCDEFGH est un parallélépipède, M est le point tel que AB AD AM 
 
@@ -191,7 +187,6 @@ D D G JJJJG G . 1. Déterminer un point et un vecteur directeur de ' . 2. Montre
 AB et ' sont sécantes en un point I que l’on précisera. 3. Déterminer une représentation paramétrique de la droite c ' passant par A et parallèle à '.
 
 <!-- page: 126 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 126 Géométrie dans l’espace Activité 2 L’espace est muni d’un repère
 
@@ -246,7 +241,6 @@ d A , P , égal à 0 0 0 2 2 2 ax by cz d a b c
 . b. Déterminer une équation cartésienne du plan P tangent à S en A.
 
 <!-- page: 127 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 127 Géométrie dans l’espace 3. Soit
 
@@ -287,7 +281,6 @@ D A,u G et H le projeté orthogonal de M sur la droite D. 1. Montrer que MA u MH
 JJJJG G G .
 
 <!-- page: 128 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 128 Géométrie dans l’espace Définition On appelle distance d’un point M à une droite D, la distance MH où H est le projeté orthogonal de M sur D . Cette distance est notée
 
@@ -326,7 +319,6 @@ AD AB BA GD t E et t A
 JJJG JJJG JJJG JJJG .
 
 <!-- page: 129 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 129 Géométrie dans l’espace Activité 2 Soit ABCD un tétraèdre et f l’application qui à tout point M associe le point Mc tel que MM MA 3MB MC MB c
 
@@ -361,7 +353,6 @@ JJJJG JJJJJG . Il en résulte que AA MM c c
 JJJJG JJJJJG . On en déduit que f est la translation de vecteur AAc JJJJG .
 
 <!-- page: 130 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 130 Géométrie dans l’espace Conséquences < Toute translation de l’espace conserve la distance. < Toute translation de l’espace conserve le produit scalaire. Activité Soit un parallélépipède ABCDEFGH, I le point de l’espace vérifiant 1 3 AI AB AD 2 4
 
@@ -382,7 +373,6 @@ JJG JJJG . 1. Construire le plan P image du plan (BCD) par la translation de vec
 JJJG JJJG JJJG JJJG b. En déduire que J est l’image de I par la translation de vecteur BI JJG . 2. On désigne par O le milieu de > @ FC et par Oc le point tel que OO BI c JJJJG JJG . Montrer que Oc appartient au plan (DEG). 3. La parallèle à la droite (BH) menée de A coupe le plan (DEG) en Ac. Montrer que les points O , A et J c c sont alignés.
 
 <!-- page: 131 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 131 Géométrie dans l’espace Activité 4 L’espace est muni d’un repère
 
@@ -409,7 +399,6 @@ f * * . 1. Vérifier que les points A, B et C définissent un plan. 2. Montrer q
 S ABCD  . Une pyramide IABCD de sommet I est dite régulière si, sa base ABCD est un carré et le projeté orthogonal de I sur le plan (ABCD) est le centre du carré ABCD.
 
 <!-- page: 132 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 132 Géométrie dans l’espace IV.4 Expression analytique d’une translation Théorème L’espace est muni d’un repère
 
@@ -454,7 +443,6 @@ D D '
 E ® ® ° ° D E ¯ ¯
 
 <!-- page: 133 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 133 Géométrie dans l’espace 1. Montrer que les droites D et ' ne sont pas coplanaires. 2. Soit c ' l’image de ' par la translation de vecteur 1 u 1 2
 
@@ -481,7 +469,6 @@ D h D cc c
 . Déterminer la nature du quadrilatère B D D B c c cc cc. Activité 3 Soit ABCDEFGH un parallélépipède, I, J et K les milieux respectifs des segments > @ AC , > @ AD et > @ AH . On désigne par L et Lc les centres de gravité respectifs des triangles CDH et IJK. Montrer que Lc est l’image de L par une homothétie de centre A dont on précisera le rapport.
 
 <!-- page: 134 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 134 Géométrie dans l’espace Théorème Toute homothétie de centre I et de rapport non nul k est une bijection de l’espace et admet comme application réciproque l’homothétie de centre I et de rapport 1 k . Pour tous points M et N de l’espace,
 
@@ -510,7 +497,6 @@ AAc et
 BBc sont sécantes en un point J tel que JA k JA c JJJG JJG . b. En déduire la nature de f. Théorème Soit f une application de l’espace dans lui-même et k un réel non nul et différent de 1. f est une homothétie de rapport k, si et seulement si, pour tous points M et N d’images respectives M et N c c par f, M N k MN c c JJJJJG JJJJG . Conséquences Soit h une homothétie de l’espace de rapport k. Pour tous points M et N d’images respectives M et N c c par h, M N k MN c c .
 
 <!-- page: 135 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 135 Géométrie dans l’espace Activité 2 Soit un parallélépipède ABCDEFGH et I un point du segment > @ BC distinct de B et C. La parallèle à (FC) passant par I coupe > @ BF en J. 1. Soit f l’homothétie qui transforme H en B et E en I. Préciser le centre et le rapport de f. 2. Montrer que f D J
 
@@ -545,7 +531,6 @@ I 1,1,1 et le plan P : x 3y z 1 0
 Montrer que le plan P est globalement invariant par toutes les homothéties de centre I.
 
 <!-- page: 136 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 136 Géométrie dans l’espace Activité 4 Soit un réel a 0 ! et un parallélépipède droit ABCDEFGH tels que AE 2AB 2AD 2a
 
@@ -558,7 +543,6 @@ AE et PF se coupent en : . On désigne par h l’homothétie de centre : qui tra
 I et AC : sont sécantes. Activité 5 Soit ABCDEFGH un cube d’arête a. Pour tout point M du plan (EFGH), on désigne par N le centre de gravité du triangle MAB. 1. Déterminer l’ensemble des points N lorsque M varie. 2. Soit P le centre de gravité du triangle MBC. Montrer que la distance PN est constante. 3. Soit Q et R les centres de gravité respectifs des triangles MCD et MAD. Montrer que NPQR est un carré et déterminer son aire. Théorème L’image d’une sphère S de centre I et de rayon R par une homothétie de l’espace de rapport k est une sphère Sc de centre Ic image de I et de rayon k R . Démonstration Soit k un réel non nul et h une homothétie de rapport k. Soit A un point de l’espace et S la sphère de centre A et de rayon R. On désigne par Ac l’image de A par h et par Sc la sphère de centre Ac et de rayon k R . On se propose de montrer que l’image de la sphère S par h est la sphère Sc. Pour tout point M de S d’image Mc par h, A M k AM c c . Il en résulte que Mc appartient à la sphère Sc. Réciproquement, pour tout point Mc de Sc d’antécédent M par h, A M k AM c c . Il en résulte que M appartient à la sphère S.
 
 <!-- page: 137 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 137 Géométrie dans l’espace Activité 6 L’espace est muni d’un repère orthonormé
 
@@ -611,7 +595,6 @@ et x y 1 0
 . b. En déduire un vecteur directeur de la droite c ' intersection des plans P et R.
 
 <!-- page: 138 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 138 Géométrie dans l’espace QCM Cocher la réponse exacte. 1. Soit A, B et C trois points non alignés. Le vecteur AB AC  JJJG JJJG est Normal au plan ABC. directeur du plan ABC. directeur à la droite (BC). 2. Si ABCD est un parallélogramme alors AB AD BA BC. 
 
@@ -640,7 +623,6 @@ G JJG . c. u v v w 
  G G G JJG , si et seulement si, u et v G G sont colinéaires. 2. L’image d’un cube d’arête a par une homothétie de rapport a est un cube de volume 6 a . 3. Si S et Sc sont deux sphères de même rayon alors il existe une seule translation qui transforme S en Sc et une seule homothétie qui transforme S en Sc.
 
 <!-- page: 139 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 139 Géométrie dans l’espace Dans tous les exercices, l’espace est orienté dans le sens direct. 1 Dans la figure ci-dessous ABCD est un tétraèdre, I est le milieu de > @ CD , G est le centre de gravité du triangle BCD, K est le milieu de > @ AG et J est le point tel que 1 AJ AB 4
 
@@ -679,7 +661,6 @@ JJJG JJJG . A B F K L G H D I J C E 1. Montrer que ABKLIJGH est un parallélépi
 A,AB,AD,AE JJJG JJJG JJJG . a. Déterminer les composantes des vecteurs AB JJJG , AI JJG et AL JJJG . b. En déduire le volume du parallélépipède ABKLIJGH. 5 Soit ABCDEFGH un cube de centre O d’arête a. On désigne par I le milieu du segment > @ AB , J et K les centres respectifs des faces ABFE et ABCD. 1. Montrer que O, I, J et K sont coplanaires. 2. Quelle est la nature du quadrilatère OKIJ ? 3. Quel est le volume de la pyramide BIJOK ?
 
 <!-- page: 140 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 140 Géométrie dans l’espace 6 Soit ABCD un tétraèdre régulier. 1. a. Calculer AB.AD JJJG JJJG et AB.AC JJJG JJJG . b. En déduire AB.CD JJJG JJJG . c. En déduire que deux arêtes opposées sont orthogonales. 2. Soit Ac le centre de gravité du triangle BCD. Montrer que la droite
 
@@ -764,7 +745,6 @@ G G et j k
 G G .
 
 <!-- page: 141 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 141 Géométrie dans l’espace 15 Soit ABCDEFGH un parallélépipède rectangle tel que AB 2, AD 1 et AE 1
 
@@ -813,7 +793,6 @@ JJJG G JJJG G JJJG G JJJG j G un vecteur du plan (OAB) tel que
 i , j G G soit une base orthonormée de ce plan.
 
 <!-- page: 142 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 142 Géométrie dans l’espace k G un vecteur de l’espace tel que
 
@@ -860,7 +839,6 @@ J0,1,0 et de rayon 1. Soit et D E deux réels donnés, M et N sont les points d�
 A 0,2,0 . 1. Déterminer une équation cartésienne de la sphère S. 2. Déterminer une représentation paramétrique de la droite (MN) à l’aide de et D E . 3. a. Montrer que la droite (MN) est tangente à la sphère S si et seulement si 2 2 . 4 D E . b. Dans le cas où la droite (MN) est tangente à S, calculer les coordonnées du point de contact à l’aide de et D E .
 
 <!-- page: 143 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 143 Géométrie dans l’espace 22 Soit ABCD un tétraèdre. Le point G est le centre de gravité du triangle BCD. Les points I et J sont les milieux respectifs des segments > @ > @ BC et CD . Soit K le point tel que 5KA KD 0
 
@@ -905,7 +883,6 @@ x 2 f x 4 3x 4
 . a. Etudier les variations de f sur @ > 0,1 . b. En déduire la position du plan P qui réalise le maximum de l’aire du pentagone IJKLM. Vérifier qu’il s’agit d’un plan qui passe par le centre de gravité du triangle OAC.
 
 <!-- page: 144 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 144 Géométrie dans l’espace 25 Soit ABCDEFGH un parallélépipède. 1. Soit Ac le point tel que 1 FA FG 4 c JJJJG JJJG . Soit Dc le point tel que 1 GD GF4 c JJJJG JJJG . Les droites
 
@@ -944,7 +921,6 @@ ACF . 2. Soit K le milieu de > @ FG . a. Quelles sont les images des points H et
 PQ est orthogonale aux droites (EG) et (FC).
 
 <!-- page: 145 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 145 Géométrie dans l’espace 33 Soit ABCDE une pyramide à base carrée de sommet A. On appelle P le plan parallèle au plan (BCD) passant par G le centre de gravité de la face ABC. 1. Montrer que P passe par les centres de gravité des quatre faces triangulaires de la pyramide. 2. Un point M décrit les côtés du carré BCDE et N désigne le point d’intersection de la droite (AM) avec le plan P. a. Déterminer le lieu géométrique * du point N lorsque M décrit le carré BCDE. b. Quel est le périmètre de * c. Quel le volume de la pyramide de sommet A dont * est une base ? 34 Soit ABCD un tétraèdre, I est le milieu de > @ CD et E un point de la droite
 
@@ -965,7 +941,6 @@ AB recoupe S en M et recoupe la sphère Sc en N. Montrer que les droites (BM) et
 JJG JJG G . La droite (IC) coupe la droite (AD) en O. Soit h l’homothétie de centre O qui transforme A en D. 1. Déterminer le rapport de h. 2. La droite (OE) perce le plan (CDHG) en J.
 
 <!-- page: 146 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 146 Géométrie dans l’espace Montrer que les points D, H et J sont alignés. 3. Soit P le plan parallèle au plan (IED) et passant par J. Montrer que la droite (AD) perce le plan P en un point K tel que 2 OD OA.OK
 

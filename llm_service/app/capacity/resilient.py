@@ -22,6 +22,10 @@ class CapacityUnavailable(Exception):
         self.retry_after = retry_after
 
 
+class DispatchDenied(Exception):
+    pass
+
+
 @dataclass
 class CallResult:
     completion: Completion
@@ -56,8 +60,23 @@ class ResilientClient:
         self.inflight: dict[str, _SharedCall] = {}
 
     async def call(
-        self, tier: Tier, messages: list[dict], max_tokens: int, json_mode: bool = False, shrink=None
+        self,
+        tier: Tier,
+        messages: list[dict],
+        max_tokens: int,
+        json_mode: bool = False,
+        shrink=None,
+        *,
+        single_attempt: bool = False,
+        before_attempt=None,
     ) -> CallResult:
+        if single_attempt:
+            # A gated dispatch must not wait behind another request or outlive its caller.
+            if self.sem.locked():
+                raise CapacityUnavailable(1)
+            return await self._call(
+                tier, messages, max_tokens, json_mode, None, single_attempt=True, before_attempt=before_attempt,
+            )
         key = hashlib.sha256(json.dumps([tier, messages, max_tokens, json_mode]).encode()).hexdigest()
         shared = self.inflight.get(key)
         if shared is None:
@@ -84,7 +103,9 @@ class ResilientClient:
                     self.inflight.pop(key, None)
                 shared.task.cancel()
 
-    async def _call(self, tier, messages, max_tokens, json_mode, shrink) -> CallResult:
+    async def _call(
+        self, tier, messages, max_tokens, json_mode, shrink, *, single_attempt=False, before_attempt=None,
+    ) -> CallResult:
         requested = tier
         if tier is Tier.MID and self.governor.level >= Level.ECO:
             tier = Tier.COMPACT
@@ -93,11 +114,15 @@ class ResilientClient:
         while True:
             try:
                 async with self.sem:
+                    if before_attempt is not None and not await before_attempt():
+                        raise DispatchDenied
                     c = await self.provider.complete(tier, messages, max_tokens, json_mode)
                 self.governor.observe_quota(c.quota_remaining, c.quota_limit)
                 return CallResult(c, requested, events)
             except ModelSaturated as e:
                 self.governor.observe_saturation()
+                if single_attempt:
+                    raise CapacityUnavailable(e.retry_after) from e
                 if not retried["503"] and e.retry_after <= self.MAX_503_WAIT_S:
                     retried["503"] = True
                     events.append("retry_503")
@@ -110,6 +135,8 @@ class ResilientClient:
                 raise CapacityUnavailable(e.retry_after) from e
             except QuotaExhausted as e:
                 self.governor.observe_exhausted(e.retry_after)
+                if single_attempt:
+                    raise CapacityUnavailable(e.retry_after) from e
                 if not retried["quota"] and e.retry_after <= self.MAX_QUOTA_WAIT_S:
                     retried["quota"] = True
                     events.append("retry_quota")
@@ -117,7 +144,7 @@ class ResilientClient:
                     continue
                 raise CapacityUnavailable(e.retry_after) from e
             except ConcurrencyLimited as e:
-                if e.retry_after > self.MAX_QUOTA_WAIT_S:
+                if single_attempt or e.retry_after > self.MAX_QUOTA_WAIT_S:
                     raise CapacityUnavailable(e.retry_after) from e
                 if retried["concurrency"] < 2:
                     retried["concurrency"] += 1
@@ -126,6 +153,8 @@ class ResilientClient:
                     continue
                 raise CapacityUnavailable(e.retry_after) from e
             except ProviderUnavailable as e:
+                if single_attempt:
+                    raise CapacityUnavailable(max(e.retry_after, 5.0)) from e
                 if tier is Tier.MID:
                     tier = Tier.COMPACT
                     events.append("fallback_compact_timeout")

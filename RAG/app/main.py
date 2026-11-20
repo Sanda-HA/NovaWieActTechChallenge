@@ -1,4 +1,4 @@
-"""FastAPI RAG service exposing POST /retrieve (the only coupling with the LLM/agent service).
+"""FastAPI RAG service for ranked retrieval and verified chapter excerpts.
 
 Run:  uvicorn app.main:app --port 8001
 No pydantic models: the request body is validated by a plain function.
@@ -8,12 +8,13 @@ import logging
 import time
 from collections import OrderedDict
 
-from fastapi import FastAPI, Request
+from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import JSONResponse
 from starlette.concurrency import run_in_threadpool
 
 from app import config, embeddings
 from app.retrieval import load_thresholds, retrieve
+from app.sources import chapter_excerpts, read_approved_sources, read_manifest
 from app.store import load_index
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
@@ -84,6 +85,22 @@ def stats():
         "cache_hit_rate": round(STATE["hits"] / calls, 3) if calls else 0.0,
         "platform_embedding_calls": embeddings.STATS["platform_calls"],
     }
+
+
+@app.get("/chapter-excerpts/{document_id}")
+def read_chapter_excerpts(document_id: str, grade: str, section: str, subject: str):
+    try:
+        approved = read_approved_sources(config.APPROVED_SOURCES_PATH)
+        entry = read_manifest(config.MANIFEST_PATH).get(document_id, {})
+        chunks = (
+            chapter_excerpts(get_index(), document_id, grade, section, subject)
+            if document_id in approved and entry.get("permission_verified", "").strip().casefold() == "yes" else []
+        )
+    except OSError as exc:
+        raise HTTPException(503, detail={"error": "corpus_unavailable"}) from exc
+    if not chunks:
+        raise HTTPException(404, detail={"error": "not_in_course"})
+    return {"chunks": chunks}
 
 
 @app.post("/retrieve")

@@ -38,3 +38,9 @@ def test_rejects_limits_above_the_team_allowance(monkeypatch, name, value):
     monkeypatch.setenv(name, value)
     with pytest.raises(ValueError, match=name):
         Settings.from_env()
+
+
+def test_default_time_limits_end_before_the_backends_60_second_deadline():
+    s = Settings(llm_base_url="http://x/v1", llm_api_key="k", compact_model="c", mid_model="m")
+    assert s.request_timeout_s + s.fallback_timeout_s < 60
+    assert s.quiz_timeout_s < 60 and s.mid_timeout_s <= s.quiz_timeout_s

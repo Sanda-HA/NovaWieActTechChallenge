@@ -11,14 +11,12 @@ language: fr
 source: Livre scolaire - Mathématiques, 4e année secondaire, section Mathématiques, Tome 2 (Ministère de l'Éducation/enseignement, Tunisie) - manuel officiel distribué publiquement
 ---
 <!-- page: 209 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 209 Statistiques Il arrive que l’on soit amené à effectuer deux séries de mesure X et Y sur un même échantillon composé de n individus et que l’on s’interroge sur les relations possibles entre ces mesures. On dit alors que l’on a une série statistique double
 
 X,Y . I. Distributions marginales Activité 1 On a relevé dans le tableau ci-dessous, l’intensité de travail X (en kilojoules par minute) et la fréquence cardiaque Y de 100 personnes. X Y 9.6 12.8 18.4 31.2 36.8 47.2 49.6 56.8 Total 70 4 2 6 86 3 5 6 4 1 2 21 90 2 5 12 3 4 1 1 28 104 1 12 14 8 5 3 2 45 Total 9 13 30 21 13 6 4 4 100 1. a. Quelle est la signification du nombre 12 encadré dans le tableau ? b. Quelle est le nombre d’individus dont la fréquence cardiaque est supérieure à 100 ? c. Quelle est le nombre d’individus qui ont fourni un travail d’intensité supérieure à 49 ? d. Quelle est le nombre d’individus qui ont fourni un travail d’intensité supérieure à 49 et ayant une fréquence cardiaque supérieure à 100 ? 2. Déterminer la distribution marginale de X, puis calculer la moyenne X et l’écart- type X V . 3. Déterminer la distribution marginale de Y, puis calculer la moyenne Y et l’écart- type Y V .
 
 <!-- page: 210 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 210 Statistiques Activité 2 On a recueilli dans le tableau ci-contre la distance parcourue avant la première grande panne et la puissance en chevaux de 20 voitures. 1. a. Quelle sont les valeurs prises par Y ? b. Calculer la moyenne Y et l’écart type Y V . 2. Compléter le tableau suivant donnant la répartition des 20 voitures suivant la distance parcourue. X (distance parcourue en mille km) Effectifs Moins de 50 > > 50,60 > > 60,70 70 et plus 3. Déterminer le pourcentage des voitures ayant parcouru une distance inférieure à 60000 km et qui ont une puissance supérieure ou égale à 6 chevaux. (X) Distance parcourue en mille km (Y) Puissance en chevaux 42 4 55 5 57 6 81 6 64 4 70 7 75 6 58 5 61 4 65 5 48 4 58 4 65 4 72 6 75 4 80 7 65 7 73 5 43 6 61 5 Définitions Soit
 
@@ -41,12 +39,10 @@ X V X V
 , où les valeurs 1 2 p x , x ,...,x désignent les valeurs distinctes prise par la variable X si elle est discrète, ou les centres des classes si la variable X est continue. L’entier in désigne l’effectif de la valeur ix .
 
 <!-- page: 211 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 211 Statistiques Activité 3 Dans le tableau suivant, on a reproduit les effectifs d’individus d’un échantillon selon leur poids X (en kg )et leur taille Y(en cm). X Y > > 40,45 > > 45,50 > > 50,55 > > 55,60 Effectif selon la taille Fréquence selon la taille > > 120,155 20 9 1 0 30 0.30 > > 155,160 2 18 4 1 25 0.25 > > 160,165 0 5 12 6 23 0.23 > > 165,170 0 1 7 14 22 0.22 Effectif selon le poids 22 33 24 21 100 1 Fréquence selon le poids 0.22 0.23 0.24 0.21 1 1. Déterminer la distribution marginale de X et celle de Y. 2. Calculer la moyenne X et l’écart- type X V de la variable X. 3. Calculer la moyenne Y et l’écart- type Y V de la variable Y. II. Covariance d’une série statistique double II. 1 Cas d’un échantillon simple Activité 1 Dans le tableau ci-dessous, on a relevé les exportations (en million de dinars) et les importations (en million de dinars) mensuelles de la Tunisie pour l’année 2006. Mois exportations (X) importations (Y) Janvier 1081.1 1312.1 Février 1225.6 1367.6 Mars 1378.6 1641.6 Avril 1193.7 1613.1 Mai 1205.8 1827.3 Juin 1374.6 1705.8 Juillet 1283.8 1713.4 Août 1157.8 1494.1 Septembre 1349.4 1859.8 Octobre 1230.1 1668.1 Novembre 1488.5 1902.6 Décembre 1347.3 1660.6
 
 <!-- page: 212 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 212 Statistiques 1. Déterminer la taille de l’échantillon étudié. 2. a. Calculer la moyenne X et l’écart- type X V de la variable X. b. Calculer la moyenne Y et l’écart- type Y V de la variable Y. 3. Calculer 12 i i i 1 1 x y XY 12
 
@@ -69,7 +65,6 @@ X,Y . 2. a. Calculer X et Y . b. Calculer
 cov X,Y . Interpréter le résultat.
 
 <!-- page: 213 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 213 Statistiques Activité 3 Dans le graphique ci-contre, on a représenté les points
 
@@ -86,7 +81,6 @@ q p ij i j j 1 i 1 1 cov X,Y n x y XY n
 ¦¦ . Exercice résolu Le tableau ci-dessous donne le poids Y (en kg) de 63 nouveaux-nés ainsi que le poids maternel X. X Y @ @ 40,50 @ @ 50,60 @ @ 60,70 @ @ 70,80 Total @ @ 1.5,2.5 1 0 1 0 2 @ @ 2.5,3.5 11 17 13 2 43 @ @ 3.5,4.5 4 4 8 2 18 Total 16 21 22 4 63 1. Calculer X et X V , ainsi que Y et Y V . 2. Déterminer la covariance de X et Y. Interpréter.
 
 <!-- page: 214 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 214 Statistiques Solution 1. < Etude de la variable X ix (centres des classes de la variable X) 45 55 65 75 in 16 21 22 4 4 i i 1 n 63
 
@@ -151,7 +145,6 @@ i j x ,y
 75,4 Effectifs ij n 1 11 4 17 4 1 13 8 2 2 ij i j n .x .y 90 1485 720 2805 880 130 2535 2080 450 600
 
 <!-- page: 215 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 215 Statistiques Le calcul donne 3 4 ij i j j 1 i 1 n x y 11775
 
@@ -172,7 +165,6 @@ u ¦ la calculatrice affiche 0.705467372 (la valeur de
 cov X,Y ).
 
 <!-- page: 216 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 216 Statistiques Activité 1 Dans une population de 100 ménages, on a considéré le nombre d’enfants X et le revenu du chef de famille Y (en DT). 1. a. Déterminer le nombre de ménages qui ont 4 enfants et dont le revenu est supérieur à 600 dinars. b. Déterminer le nombre de ménages qui n’ont pas d’enfants et ayant un revenu inférieur à 200 dinars. X Y 0 1 2 3 4 5 Total Moins de 200 6 4 1 0 0 0 11 > > 200, 400 3 11 10 5 1 0 30 > > 400, 600 1 3 16 13 4 1 38 > > 600, 800 0 1 3 5 8 4 21 Total 10 19 30 23 13 5 100 c. Déterminer le nombre de ménages qui ont moins de 4 enfants et dont le revenu est compris entre 400 et 600 dinars. 2. a. Calculer la moyenne X et l’écart- type X V de la variable X. b. Calculer la moyenne Y et l’écart- type Y V de la variable Y. 3. a. Peut-on prévoir le signe de la covariance de X et Y ? b. Calculer la covariance de X et Y. III. Ajustement d’une série statistique double Lorsque un statisticien étudie une série statistique double. L’une des questions qu’il se pose est : peut-on prévoir la valeur de Y lorsqu’on connaît la variable X ? Pour répondre à une telle question, le statisticien essaiera de trouver une fonction f qui modélise le phénomène étudié, grâce à la relation
 
@@ -185,7 +177,6 @@ soit un modèle acceptable du phénomène étudié. La droite d’équation y ax
 sera appelée droite d’ajustement affine de Y en X.
 
 <!-- page: 217 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 217 Statistiques III. 1 Méthode de Mayer Activité 1 On a relevé dans le tableau ci-contre, le montant total (en million de dinars) du commerce extérieur en Tunisie (importations et exportations) depuis l’année 1990 jusqu’à l’année 2004. 1. a. Calculer la moyenne X et l’écart- type X V de la variable X. b. Calculer la moyenne Y et l’écart- type Y V de la variable Y. Année Importations (X) Exportations (Y) 1990 4826.4 3087.4 1991 4788.9 3417.1 1992 5688.8 3549.7 1993 6172.1 3760 1994 6647.3 4696.6 1995 7464.3 5172.5 1996 7498.8 5372 1997 8793.5 6147.9 1998 9489.5 6518.3 1999 10070.5 6966.9 2000 11738 8004.8 2001 13697.3 9536.2 2002 13510.9 9748.6 2003 14038.9 10342.6 2004 15960.3 12054.9 2. On a représenté ci-contre, dans un même repère, le nuage de points de la série double
 
@@ -200,7 +191,6 @@ G X,Y . 4000 7000 10000 13000 16000 3000 5000 7000 9000 11000 13000 Y X 3. On sc
 X,Y . d. Donner une estimation du montant des exportations si le montant de l’importation est égal à 17000 millions de dinars.
 
 <!-- page: 218 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 218 Statistiques Définition Soit
 
@@ -229,7 +219,6 @@ i i i M x , y , 1 i n d d d’une série statistique double, ainsi qu’une droi
 i i i H x ,z le point de la droite D de même abscisse que i M .
 
 <!-- page: 219 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 219 Statistiques Le principe de la méthode d’ajustement par la méthode des moindres carrés consiste à déterminer les réels a et b tels que la somme n 2 i i i 1 M H ¦ soit minimale. Dans ce cas, le statisticien pourra faire des prévisions en remplaçant la valeur observée iy par la valeur théorique i i z ax b
 
@@ -268,7 +257,6 @@ n 2 i i i 1 ax b y
 ¨ ¸ ¨ ¸ V V © ¹ .
 
 <!-- page: 220 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 220 Statistiques Définition Soit
 
@@ -285,7 +273,6 @@ V est appelée droite des moindres carrés de X en Y, ou droite de régression d
 X,Y . Activité 2 Dans le tableau ci-dessous, on a relevé le poids (en Kg) et la surface corporelle (en m2) correspondante de 15 sujets. Masse (X) Surface corporelle (Y) 1 15 0.58 2 20 0.7 3 25 0.8 4 29 0.9 5 34 1 6 39 1.1 7 44 1.2 8 50 1.3 9 55 1.4 10 60 1.5 11 65 1.56 12 70 1.64 13 74 1.74 14 80 1.8 15 85 1.9
 
 <!-- page: 221 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 221 Statistiques 1. a. Calculer la moyenne X et l’écart- type X V de la variable X. b. Calculer la moyenne Y et l’écart- type Y V de la variable Y. 2. Déterminer la covariance la série
 
@@ -306,7 +293,6 @@ V V . Propriétés Soit
 X,Y une série statistique double. Alors XY 1 1 d U d . Le coefficient de corrélation linéaire est invariant par changement d’unité ou d’origine. Interprétation du coefficient de corrélation linéaire Les statisticiens conviennent que lorsque XY 3 2 U ! , l’ajustement affine est justifié et les prédictions faites au moyen de cet ajustement sont raisonnables.
 
 <!-- page: 222 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 222 Statistiques Activité 1 Le tableau suivant donne l’effectif de la population scolaire de la ème 3 année de l’enseignement secondaire du mois d’octobre 1997 au mois d’octobre 2002. 1. Calculer le coefficient de corrélation linéaire. 2. Déterminer un ajustement par les moindres carrés de la série double
 
@@ -319,7 +305,6 @@ X,ln Y , où X est le rang de l’année et Y est le nombre de paramédicaux de 
 X,Z . b. Donner la droite de régression de Z en X. 3. Quel sera le nombre de paramédicaux en 2010 ? Année Paramédicaux 1990 23743 1991 24555 1992 25070 1993 25291 1994 25466 1995 25874 1996 26130 1997 26369 19989 26676 1999 27050 2000 27392 2001 30292 2002 28629 2003 29976 2004 29584 2005 29607 Année (X) 1997 1998 1999 2000 2001 2002 Population scolaire en ème 3 année (Y) 67755 74581 79266 76138 80123 90087
 
 <!-- page: 223 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 223 Statistiques Solution 1. ix iy
 
@@ -350,7 +335,6 @@ z 0.015 x 7.5 10.199
 . Utilisation d’une calculatrice Dans cet exercice la série est à données simples. - Pour entrer les données taper i i x STO y M . - Pour afficher la valeur du coefficient de corrélation, appuyer sur RCL r . - Pour afficher la valeur de la pente de la droite de régression de Y en X, appuyer sur RCL b . - Pour afficher la valeur de l’ordonné à l’origine de la droite de régression de Y en X, appuyer sur RCL a .
 
 <!-- page: 224 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 224 Statistiques Activité La résistance à l’avancement d’un poids lourd est une fonction de la vitesse. L’objet de cette activité est de déterminer la meilleur expression possible de cette fonction dans un intervalle de vitesse compris entre 10 km/h et 100 km/h. Cette résistance est mesurée en kW. Les résultats de ces mesures sont consignés dans le tableau ci-dessous. V (km/h) 10 20 30 40 50 60 70 80 90 R (kW) 2.6 5.8 9.9 15.4 23.6 34.5 49 67.2 89.1 1. Dresser le tableau des valeurs de la série
 
@@ -359,14 +343,12 @@ X,Y où 2 R X V et Y V
 . 2. Donner le coefficient de corrélation linéaire entre X et Y et une équation de la droite de régression de Y en X. 3. En déduire une relation entre R et V. 4. Donner une évaluation de la valeur de R pour une vitesse de 100 km/h.
 
 <!-- page: 225 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 225 Statistiques 1 Pour chacun des graphiques suivants, indiquer si le nuage de points justifie la recherche d’un ajustement affine. 1. X Y 2. X Y 3. X Y 4. X Y 2 On a relevé dans le tableau ci-dessous les poids (en kg) respectif de 12 pères et de leurs fils aînés. X Poids du père Y Poids du fils 65 63 63 61 67 66 64 62 68 67 62 60 70 69 66 65 68 67 67 67 69 66 71 70 1. Tracer le nuage de la série
 
 X,Y . 2. Déterminer un ajustement affine par la méthode de Mayer. 3. Quel poids devrait avoir le fils aîné d’un homme qui pèse 77 kg ? 3 Le tableau ci-dessous indique l’évolution du nombre de médecins en Tunisie de l’année 1990 à l’année 2003. Année Rang de l’année (X) Nombre de médecins (Y) 1990 1 4425 1991 2 4500 1992 3 5099 1993 4 5257 1994 5 5344 1995 6 5965 1996 7 6177 1997 8 6464 1998 9 6819 1999 10 7149 2000 11 7444 2001 12 7767 2002 13 7964 2003 14 8189
 
 <!-- page: 226 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 226 Statistiques 1. Tracer le nuage de la série
 
@@ -379,7 +361,6 @@ X,Y est-il justifié ? 5 Le tableau ci-dessous donne la charge maximale Y, en to
 X,Y dans le plan rapporté à un repère orthogonal. 2. Déterminer le coefficient de corrélation linéaire entre X et Y. 3. Donner une équation de la droite de régression de Y en X . Pour les coefficients, on prendra les valeurs décimales arrondies à 1 10 près. Tracer cette droite dans le repère précédent. 4. Une clinique possède 35 lits.
 
 <!-- page: 227 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 227 Statistiques En utilisant les résultats obtenus dans la question 3, combien devrait-elle embaucher de personnel occupant un poste non médical ? 7 A/ Un club sportif a été crée en 1999, à l’origine le nombre d’adhérents était égal à 600. On donne dans le tableau suivant le nombre d’adhérents de 1999 à 2005. Année Rang (X) Nombre d’adhérents (Y) 1999 0 600 2000 1 690 2001 2 794 2002 3 913 2003 4 1045 2004 5 1207 2005 6 1380 On pose Z ln Y
 
@@ -410,7 +391,6 @@ T 130 M T 100 2
 . Utiliser cette relation pour estimer la masse d’une jeune fille mesurant 180 cm.
 
 <!-- page: 228 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 228 Statistiques 9 Onze élèves de ème 7 année de base travaillent sur la proportionnalité. Ils mesurent le rayon d’un disque puis évaluent l’aire de ce disque. Les rayons, exprimés en cm, forme la série X . Les aires correspondantes, exprimées en 2 cm , forment la série Y . Les résultat de cette expérience sont donnés dans le tableau suivant. X (en cm) Y (en 2 cm ) 2 12 2.5 20 3 28 3.5 38 4 50 4.5 64 5 78 5.5 95 6 113 6.5 133 7 154 1. Les deux séries sont-elles proportionnelles ? 2. On pose Z Y
 
@@ -427,7 +407,6 @@ par 2 f x 0.3x 226.5
 . c. En déduire le prix de vente pour lequel la recette est maximale. Calculer cette recette maximale. 11 Le tableau suivant donne la population d’une ville entre les années 1975 et 2005. Année Rang de l’année (X) Population (en milliers d’habitants) (Y) 1975 0 18 1980 5 21 1985 10 25 1990 15 30 1995 20 36 2000 25 42 2005 30 50 Le nuage de points associé à ce tableau est représenté graphiquement ci-après. 0 5 10 15 20 25 30 35 0 10 20 30 40 50 60 X Y
 
 <!-- page: 229 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 229 Statistiques A/ 1. Calculer le coefficient de corrélation entre X et Y. 2. a. Déterminer une équation de la droite de régression de Y en X. b. Tracer cette droite sur le graphique ci-dessus. c. En déduire une estimation de la population en 2008 à un millier prés. B/ 1. L’allure du nuage suggère à chercher un ajustement par une fonction f définie sur > > 0, f par
 
@@ -462,7 +441,6 @@ f t 1 f t f t
 et en donner une interprétation en terme de pourcentage. 5. Si le modèle exponentiel étudié dans la partie B restait valable après 2000, en quelle année la population aurait-elle dépassé les 19 millions d'habitants ?
 
 <!-- page: 230 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 230 Statistiques 15 On étudie la croissance d’une plante à partir d’un instant considéré comme initial. Le tableau ci-dessous indique le diamètre D de la tige après T semaines. Temps T en semaines Diamètre D en centimètres 0 0.4 2 1.2 6 5.4 8 5.8 10 6.4 12 6.9 1. Représenter le nuage de points associé à cette série statistique. 2. On pose 8 U ln 1 D § ·
 

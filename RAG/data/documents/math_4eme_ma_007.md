@@ -11,7 +11,6 @@ language: fr
 source: Livre scolaire - Mathématiques, 4e année secondaire, section Mathématiques, Tome 2 (Ministère de l'Éducation/enseignement, Tunisie) - manuel officiel distribué publiquement
 ---
 <!-- page: 148 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 148 Divisibilité dans ' Dans ce chapitre ` est l’ensemble des entiers naturels et ] est l’ensemble des entiers. I. Diviseurs et multiples d’entiers Activité 1 1. Soit l’entier a 599873120
 
@@ -34,7 +33,6 @@ source: Livre scolaire - Mathématiques, 4e année secondaire, section Mathémat
 ou a b . < Si a divise b et b divise c, alors a divise c. < Si a divise b et a divise c, alors a divise b c D E pour tous entiers D et E . Chapitre 7
 
 <!-- page: 149 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 149 Divisibilité dans ' Activité 4 1. L’entier 3 10 4200 3521
 
@@ -89,7 +87,6 @@ est –527. Donc q = –527. Dans le troisième cas b est strictement négatif. 
 y , la calculatrice affiche le résultat 526.6807.... Le plus petit entier supérieur à 526.6807.... est 527. Donc q = 527.
 
 <!-- page: 150 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 150 Divisibilité dans ' Activité 2 Calculer le quotient de a par b dans chacun des cas ci-dessous. 1. a 98765123
 
@@ -164,7 +161,6 @@ s'appelle division euclidienne de a par b, q est le quotient de a par b et r est
 .
 
 <!-- page: 151 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 151 Divisibilité dans ' Exercice résolu 3 Déterminer l’ensemble E de tous les entiers a tels que a 53
 
@@ -197,7 +193,6 @@ tel que
 a r mod n { . On dit que r est le reste modulo n de a. Conséquence Soit n un entier naturel non nul. Deux entiers sont congrus modulo n, si et seulement si, ils ont le même reste modulo n.
 
 <!-- page: 152 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 152 Divisibilité dans ' Activité 2 Vérifier que les entiers 19
 
@@ -264,7 +259,6 @@ implique que ac bd
 est un multiple de n.
 
 <!-- page: 153 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 153 Divisibilité dans ' < L’écriture ha hb h(a b)
 
@@ -317,7 +311,6 @@ k 2 mod 3 { . b. On vérifie facilement que
 349 247 2 mod 7 { .
 
 <!-- page: 154 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 154 Divisibilité dans ' 2. L'égalité 298 22 13 12
 
@@ -350,7 +343,6 @@ ab 1 mod 6 { , si et seulement si,
 a 1 mod 6 et b 1 mod 6 ou a 5 mod 6 et b 5 mod 6 { { { { .
 
 <!-- page: 155 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 155 Divisibilité dans ' Activité 8 Déterminer tous les entiers a et b tels que
 
@@ -371,7 +363,6 @@ p 1 a 1 mod p { . Exercice résolu 7 Déterminer les restes possibles modulo 9 d
 0 0 6 6 6 3 3 3 0
 
 <!-- page: 156 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 156 Divisibilité dans ' QCM Cocher la réponse exacte. 1. Le quotient de 20
 
@@ -418,7 +409,6 @@ n a a modn { . 3. Il existe un entier b non nul tel que
 5b 0 mod10 { .
 
 <!-- page: 157 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 157 Divisibilité dans ' 1 Déterminer pour chacun des entiers a ci-dessous, l’ensemble a D de tous ses diviseurs. a 13 ;a 57 ;a 205.
 
@@ -509,7 +499,6 @@ et c 5 mod17 { . Déterminer les restes modulo 17 de 2 2 2 a bc et a b c
 .
 
 <!-- page: 158 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 158 Divisibilité dans ' 17 Soit deux entiers a et b tels que
 
@@ -564,7 +553,6 @@ n 2 1 mod11 { . 31 Soit n un entier. Quels sont les restes possibles modulo 5 de
 2 x 3 mod 4 { .
 
 <!-- page: 159 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 159 Divisibilité dans ' 34 Résoudre dans ] , a.
 
@@ -661,7 +649,6 @@ n n n 2 3 5 mod 6
 { .
 
 <!-- page: 160 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 160 Divisibilité dans ' 47 Soit un entier n 4 t . On se propose d’étudier les solutions entières de l’équation 2 n E : x 9 2
 

@@ -1,0 +1,17 @@
+{"id": "r01", "kind": "explain", "topic": "derivabilite"}
+{"id": "r02", "kind": "hint", "topic": "derivabilite"}
+{"id": "r03", "kind": "explain", "topic": "derivabilite", "question": "Pourquoi |x| n'est pas dérivable en 0 ?"}
+{"id": "r04", "kind": "hint", "topic": "derivabilite", "question": "Comment trouver l'équation de la tangente ?"}
+{"id": "r05", "kind": "explain", "topic": "limites_continuite"}
+{"id": "r06", "kind": "hint", "topic": "limites_continuite", "question": "Comment montrer qu'une fonction est continue en un point ?"}
+{"id": "r07", "kind": "explain", "topic": "suites"}
+{"id": "r08", "kind": "hint", "topic": "suites", "question": "Comment prouver qu'une suite est croissante ?"}
+{"id": "r09", "kind": "explain", "topic": "probabilites"}
+{"id": "r10", "kind": "hint", "topic": "probabilites", "question": "Quand utiliser la formule des probabilités totales ?"}
+{"id": "r11", "kind": "explain", "topic": "derivabilite", "reply_language": "en"}
+{"id": "r12", "kind": "explain", "topic": "suites", "style": "examples", "level": "fragile"}
+{"id": "r13", "kind": "explain", "topic": "derivabilite", "reply_language": "ar"}
+{"id": "r14", "kind": "hint", "topic": "derivabilite", "reply_language": "en", "question": "How do I find the equation of the tangent?"}
+{"id": "r15", "kind": "explain", "topic": "suites", "reply_language": "en", "question": "When does a geometric sequence converge?"}
+{"id": "r16", "kind": "hint", "topic": "limites_continuite", "reply_language": "ar", "question": "كيف أبين أن دالة مستمرة في نقطة؟"}
+{"id": "r17", "kind": "explain", "topic": "suites", "question": "Quand une suite géométrique converge-t-elle ?"}

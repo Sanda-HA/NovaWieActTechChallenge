@@ -46,6 +46,16 @@ The ten Mathématiques Tome 2 chapters are all listed in the source manifest. Th
 still **unverified** (`permission_verified=no`); normal local ingestion warns, and `--strict` refuses them.
 Only the Probabilités chapter has undergone content review. The other chapters remain OCR drafts.
 
+The SVT book (`scolairedata/bac_math/math/svt_4M.pdf`, official CNP Tunisie textbook, section
+Mathématiques) is converted the same way: `python convert_scolaire.py --book SVT` produces the seven
+course chapters + one `definition` glossary document (`svt_4eme_ma_001` … `svt_4eme_ma_008`).
+After conversion, run `python polish_svt_drafts.py`: it turns the book's chapter titles, "SE RAPPELER" /
+"S'INTERROGER" / "Bilan" / "Activité" / "Document N" section labels into `##` headings, switches
+`<!-- type: exercise -->` at each "Tester les acquis" block, and fixes verified text-layer typos —
+it is idempotent (already-polished files are skipped). The drafts still carry `<!-- REVIEW -->`
+markers and sit at `permission_verified=no` in the manifest until a human pass on the PDF is done.
+Query them with `subject="SVT"`, `section="mathematiques"`.
+
 ### Official platform demo
 
 From `RAG/`, build and serve a separate index containing only sources with verified usage permissions.
@@ -101,8 +111,8 @@ Agent side (`rag_client.py` in the LLM service) only needs: `search_courses` -> 
 ```
 data/documents/*.md        corpus (one file per document)
 data/source_manifest.csv   origin + usage permission per document (ingest warns, or fails with --strict)
-data/glossary_fr_ar.json   FR/AR/EN concept map + Derja words
-data/eval_questions.jsonl  34 evaluation questions with gold (document, phrase) labels and a dev/test split
+data/glossary_fr_ar.json   FR/AR/EN concept map (17 maths + 20 SVT concepts) + Derja words
+data/eval_questions.jsonl  70 evaluation questions with gold (document, phrase) labels and a dev/test split (52 maths + 18 SVT)
 data/thresholds.json       evidence thresholds written by evaluate.py --calibrate --write-thresholds
 ```
 
@@ -140,6 +150,23 @@ python pdf_to_draft.py my.pdf --id math_4eme_se_010 --subject Mathematics --topi
 * `python ingest.py --strict` refuses documents that still contain REVIEW markers or have an unverified permission.
 * Needs `pdftotext`, `pdftoppm` (poppler) and `tesseract` with `fra`, `ara`, `eng` installed.
 
+### Bundled textbook batches: `convert_scolaire.py`
+
+```bash
+python convert_scolaire.py --book T2       # Term 2 maths, text layer
+python convert_scolaire.py --book SVT      # SVT, text layer
+python convert_scolaire.py --book ENG      # English (Skills for Life), text layer
+python convert_scolaire.py --book T1       # Term 1 maths, scanned: OCR (needs Tesseract + fra)
+python convert_scolaire.py --book T1 --chapter math_4eme_ma_015
+python convert_scolaire.py --backfill-manifest
+```
+
+* Works chapter by chapter and writes the same draft format as `pdf_to_draft.py`.
+* `ENG` reads the 280-page *Skills for Life* textbook (`scolairedata/bac_math/english/anglais_4eme.pdf`) and writes five unit drafts: `eng_4eme_ma_001`–`005` (First Impressions, Art Shows and Holidaying, Education Matters, Creative Inventive Minds, Life Issues). Lesson headings come from the book's CONTENTS pages; unit-outline tables are skipped. Decorative/song pages use an embedded font whose glyphs extract as gibberish, so those blocks are dropped. The drafts are tagged `section: mathematiques` because the book lives under `bac_math/`; English is a common subject, so production metadata may need a multi-section tag later. Review the tables, headings and `<!-- type: -->` switches, then delete the REVIEW lines and verify the permission before a strict build.
+* `T1` is a 207-page scan. The converter renders each page, OCRs it with Tesseract (`fra`), adds page markers, headings and `<!-- type: -->` switches heuristically, and records the OCR confidence on every page in its `<!-- REVIEW ... -->` line.
+* The generated headings/types are a first pass only. Formulas and notation are the weak spot: review every page, fix the formulas, then delete the REVIEW line.
+* `--backfill-manifest` adds a conservative row (`permission_verified=no`) for any document missing from `source_manifest.csv`; it is idempotent.
+
 ### Formula pages: `formula_ocr.py` (pix2tex, optional Mathpix)
 
 Page OCR (`pdf_to_draft.py`) is weak on formulas. For the formulas that matter, screenshot each one, put the images in a folder and run:
@@ -160,13 +187,22 @@ It prints and saves, for each image, the plain-text form to paste into the docum
 
 The [course template](templates/course_template.txt) and [exercise template](templates/exercise_template.txt) show the document format. Follow the [authoring instructions](templates/README.txt) and save completed sources as `data/documents/<document_id>.md`.
 
-### IMPORTANT: the shipped corpus is a placeholder
+### IMPORTANT: the local index is a mixed draft corpus
 
-The 10 documents (about 38 chunks: Maths 4ème sciences expérimentales, plus one Physics RC document; French, Arabic, English) are **synthetic sample content written for this demo**, not official curriculum and not copied from any textbook. They exist so the pipeline runs end to end. For the submission you should:
+`index/` is a local build. A full non-strict build currently contains 58 documents / 2,503 chunks: the 10 synthetic samples, 43 textbook/own-work drafts, and the 5 English unit drafts. 14 documents are review-clean; 44 still contain `<!-- REVIEW -->` markers. The textbook and English sources are official but reuse permission has not been confirmed, so do not treat a non-strict index as production content.
 
-1. Replace/extend them with real, **permission-verified** public sources (Edunet Tunisia, Ministry of Education, Université Virtuelle de Tunis, ...), recording each in `source_manifest.csv` with `permission_verified=yes`, then run `python ingest.py --strict`.
-2. Have a teacher or a native speaker review the Arabic documents and the glossary.
-3. Keep public/synthetic/anonymised data only (spec ethics rule).
+The full draft corpus builds with:
+
+```bash
+INDEX_DIR=.index_full python ingest.py          # all 58 documents, drafts included
+```
+
+Use a separate `INDEX_DIR` (as above) so the current local index is not overwritten. For the submission you should:
+
+1. Replace/extend the demo documents with real, **permission-verified** public sources (Edunet Tunisia, Ministry of Education, Université Virtuelle de Tunis, ...), recording each in `source_manifest.csv` with `permission_verified=yes`, then run `python ingest.py --strict`.
+2. Review the draft textbook chapters: fix OCR formulas, check headings/type switches, delete the REVIEW lines, then verify the permission.
+3. Have a teacher or a native speaker review the Arabic documents and the glossary.
+4. Keep public/synthetic/anonymised data only (spec ethics rule).
 
 ## Embeddings: local vs platform
 
@@ -178,7 +214,17 @@ The 10 documents (about 38 chunks: Maths 4ème sciences expérimentales, plus on
 
 `python evaluate.py` reports recall@1/3/5 and MRR on answerable questions, how the evidence hint splits across question types, and an ablation (BM25, dense, RRF, hybrid+rerank, +glossary). Thresholds are calibrated on the **dev** half only; report the **test** half (`--split test`). Plan advice: freeze the question set before tuning.
 
-Current numbers on the shipped sample (local embeddings, 38 chunks, 27 answerable questions): recall@3 = 1.00, recall@1 about 0.90, all 4 unanswerable questions flagged `insufficient`; one ambiguous question ("Explique-moi le théorème qu'on a étudié hier") is rated `sufficient`. **Do not quote these as results.** The corpus is tiny and the questions were written by the same author as the documents, so they are easy. Retrieval cannot detect ambiguity from the question alone, which is why `ASK_CLARIFICATION` and conversation history belong in the agent.
+Current numbers must be regenerated for the current 85-question corpus and 58-document index: run `python evaluate.py --split test`. The old 38-chunk synthetic-sample numbers (recall@3 = 1.00, recall@1 about 0.90) are **not** meaningful for the full corpus. Also note that the English unit drafts are not yet covered by `data/eval_questions.jsonl`. Retrieval cannot detect ambiguity from the question alone, which is why `ASK_CLARIFICATION` and conversation history belong in the agent.
+
+## Production source approval
+
+The Docker image and `--strict --verified-only` ingestion require every indexed source to be listed in
+`data/approved_sources.csv` with `approved=yes`, and to have `permission_verified=yes` in
+`data/source_manifest.csv`. A document that still contains `<!-- REVIEW` markers is also rejected.
+
+Add a source only after a teacher or subject reviewer has verified the content and after written reuse
+permission is confirmed. Record the reviewer, review date and permission reference in
+`approved_sources.csv`; do not remove this gate merely to make the demo start.
 
 ## Known limits
 

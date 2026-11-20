@@ -19,12 +19,16 @@ class Settings:
     learner_db_path: str = "ednova_learners.sqlite3"
     request_log_path: str = "logs/requests.jsonl"
     compact_timeout_s: float = 40.0
-    mid_timeout_s: float = 90.0
-    request_timeout_s: float = 45.0
+    mid_timeout_s: float = 55.0
+    request_timeout_s: float = 52.0
+    # Quiz generation uses the larger model; it must still finish before the backend's 60 s deadline.
+    quiz_timeout_s: float = 55.0
     fallback_timeout_s: float = 5.0
     learner_requests_per_min: float = 6.0
     learner_burst: int = 4
     wellbeing_contact: str = ""
+    room_tutor_permit_url: str = "http://127.0.0.1:9999/internal/room-tutor/permit"
+    redis_url: str = ""
 
     def __post_init__(self) -> None:
         if not 1 <= self.max_concurrency <= 2:
@@ -52,10 +56,13 @@ class Settings:
             learner_db_path=e.get("LEARNER_DB_PATH", "ednova_learners.sqlite3"),
             request_log_path=e.get("REQUEST_LOG_PATH", "logs/requests.jsonl"),
             compact_timeout_s=float(e.get("COMPACT_TIMEOUT_S", "40")),
-            mid_timeout_s=float(e.get("MID_TIMEOUT_S", "90")),
-            request_timeout_s=float(e.get("REQUEST_TIMEOUT_S", "45")),
+            mid_timeout_s=float(e.get("MID_TIMEOUT_S", "55")),
+            request_timeout_s=float(e.get("REQUEST_TIMEOUT_S", "52")),
+            quiz_timeout_s=float(e.get("QUIZ_TIMEOUT_S", "55")),
             fallback_timeout_s=float(e.get("FALLBACK_TIMEOUT_S", "5")),
             learner_requests_per_min=float(e.get("LEARNER_REQUESTS_PER_MIN", "6")),
             learner_burst=int(e.get("LEARNER_BURST", "4")),
             wellbeing_contact=e.get("WELLBEING_CONTACT", ""),
+            room_tutor_permit_url=e.get("ROOM_TUTOR_PERMIT_URL", cls.room_tutor_permit_url),
+            redis_url=e.get("REDIS_URL", ""),
         )

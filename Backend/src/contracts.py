@@ -26,7 +26,7 @@ class NextRequest(ResponseModel):
     message: str
 
 class NextStep(ResponseModel):
-    kind: Literal["exercise", "prerequisite", "next_topic"]
+    kind: Literal["exercise", "prerequisite", "next_topic", "practice_mistake"]
     topic: str
     label: str
     request: NextRequest
@@ -53,6 +53,8 @@ class VerdictResult(ResponseModel):
     verdict: Literal["correct", "incomplete", "incorrect", "unknown", "wellbeing"]
     issue: str = ""
     guiding_question: str = ""
+    missing_points: list[str] = Field(default_factory=list)
+    restate_prompt: str = ""
     source: Source | None = None
 
 class PeerResult(VerdictResult):
@@ -125,6 +127,7 @@ class ProgressResult(ResponseModel):
     diagnosed: bool
     topics: list[TopicProgress]
     subtopics: list["SubtopicProgress"] = Field(default_factory=list)
+    mistakes: list[dict] = Field(default_factory=list)
 
 class SubtopicProgress(TopicProgress):
     parent: str

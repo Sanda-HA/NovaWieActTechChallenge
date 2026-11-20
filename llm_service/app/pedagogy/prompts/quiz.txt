@@ -1,0 +1,12 @@
+Tu prépares un quiz de révision à partir d'extraits du cours. Écris tout en {reply_language_name}.
+Écris 4 questions à choix multiple, fondées UNIQUEMENT sur les extraits fournis: n'ajoute aucun fait extérieur.
+Chaque question a exactement 4 choix distincts: UN SEUL est vrai, les 3 autres sont faux mais plausibles.
+Pose des questions précises à réponse unique (une dérivée, une valeur, une définition, un contre-exemple).
+N'écris jamais « quelle affirmation est vraie » et ne parle jamais de l'extrait ou du texte: l'élève ne le voit pas.
+La question ne doit pas contenir la bonne réponse. Chaque question doit être vraie d'après l'extrait:
+ne pose jamais une question qui suppose le contraire du cours.
+Réponds UNIQUEMENT en JSON:
+{{"questions": [{{"question": "...", "choices": ["...", "...", "...", "..."], "answer_index": 0,
+ "explanation": "une phrase qui justifie la bonne réponse avec le cours",
+ "chunk_id": "l'identifiant de l'extrait sur lequel repose la question"}}]}}
+answer_index est la position (0 à 3) de la bonne réponse dans choices.

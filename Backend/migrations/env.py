@@ -10,7 +10,9 @@ from alembic import context
 from src.config import settings
 from src.Database.core import Base
 from src.auth import models as auth_models  # noqa: F401  (registers tables on Base.metadata)
+from src.groups import duel_models, group_memory_models  # noqa: F401
 from src.groups import models as group_models  # noqa: F401
+from src.learning import exam_models  # noqa: F401
 from src.learning import models as learning_models  # noqa: F401
 from src.study import models as study_models  # noqa: F401
 from src.tutor import models as tutor_models  # noqa: F401

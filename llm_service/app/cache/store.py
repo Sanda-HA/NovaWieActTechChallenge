@@ -105,6 +105,27 @@ def ladder_key(
     )
 
 
+def quiz_key(
+    topic: str,
+    reply_language: str,
+    *,
+    grade: str = "4eme_annee_secondaire",
+    section: str = "mathematiques",
+    subject: str = "math",
+    chunk_ids: list[str] | None = None,
+) -> str:
+    return "q:" + _digest(
+        {
+            "t": topic,
+            "lang": reply_language,
+            "grade": grade,
+            "section": section,
+            "subject": subject,
+            "chunks": sorted(chunk_ids or []),
+        }
+    )
+
+
 class CacheStore:
     def __init__(self, path: str):
         self.db = sqlite3.connect(path, check_same_thread=False)
@@ -133,3 +154,29 @@ class CacheStore:
             n += self.db.execute("DELETE FROM cache WHERE k = ?", (k,)).rowcount
         self.db.commit()
         return n
+
+
+class RedisCacheStore:
+    """Shared cache for multiple agent workers."""
+
+    def __init__(self, url: str):
+        import redis
+
+        self.redis = redis.Redis.from_url(url, decode_responses=True)
+        self.redis.ping()
+
+    def get(self, key: str) -> dict | None:
+        raw = self.redis.get(f"ednova:cache:{key}")
+        if raw is None:
+            return None
+        self.redis.hincrby("ednova:cache:hits", key, 1)
+        return json.loads(raw)
+
+    def put(self, key: str, value: dict) -> None:
+        self.redis.set(f"ednova:cache:{key}", json.dumps(value, ensure_ascii=False))
+
+    def delete(self, keys: list[str]) -> int:
+        if not keys:
+            return 0
+        names = [f"ednova:cache:{key}" for key in keys]
+        return self.redis.delete(*names)

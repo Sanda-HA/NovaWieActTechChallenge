@@ -11,7 +11,6 @@ language: fr
 source: Livre scolaire - Mathématiques, 4e année secondaire, section Mathématiques, Tome 2 (Ministère de l'Éducation/enseignement, Tunisie) - manuel officiel distribué publiquement
 ---
 <!-- page: 97 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 97 Coniques I. La parabole Activité 1 Le plan est muni d’un repère orthonormé
 
@@ -30,7 +29,6 @@ M tels que 1 MH ­ ½
 Vocabulaire Soit P une parabole de foyer F et de directrice D. La perpendiculaire à D passant par F est appelée axe focal de la parabole. La distance du foyer à la directrice est appelée paramètre de la parabole.
 
 <!-- page: 98 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 98 Coniques Activité 3 Soit P une parabole de foyer F et de directrice D. On désigne par K le projeté orthogonal de F sur D. 1. Montrer que la parabole P coupe la droite
 
@@ -49,7 +47,6 @@ x, y . Montrer que M appartient à P, si et seulement si, 2 y 2px
 .
 
 <!-- page: 99 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 99 Coniques Théorème Soit P une parabole de sommet S, de foyer F et de paramètre p. On munit le plan du repère orthonormé
 
@@ -106,7 +103,6 @@ et la parabole c P d’équation 2 y 2px
 0 0 0 M x , y de c P .
 
 <!-- page: 100 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 100 Coniques Théorème Le plan est rapporté à un repère orthonormé
 
@@ -149,7 +145,6 @@ permet de déduire que la tangente à P en 0 M est la médiatrice du segment > @
 0 0 M T . Le résultat en découle.
 
 <!-- page: 101 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 101 Coniques II. L’hyperbole Activité 1 Le plan est muni d’un repère orthonormé
 
@@ -172,7 +167,6 @@ K, 2 . Que vaut le rapport S F S K c c ? 3. Soit MF M tels que 2 MH ­ ½
 ® ¾ ¯ ¿ H où H est le projeté orthogonal de M sur D. On se propose de donner un procédé de construction d'un point de H. On considère le cercle C de centre S et passant par F. Soit B un point de C distinct de F et I le point d’intersection de D et de (FB). On désigne par h l’homothétie de centre I qui envoie B sur F, M l’image de S par h et H le projeté orthogonal de M sur D. a. Montrer que h envoie K en H. b. Que vaut le rapport MF MH ? En déduire que MH . c. Construire quelques points de H. Définition Soit D une droite, F un point n’appartenant pas à D et un réel e 1 ! . Pour tout point M du plan, on note H s on projeté orthogonal sur la droite D. On appelle hyperbole de foyer F , de directrice D et d’excentricité e, l’ensemble des points M tels que MF e MH .
 
 <!-- page: 102 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 102 Coniques Vocabulaire Soit H une hyperbole de foyer F et de directrice D. La perpendiculaire à D passant par F est appelée axe focal de l’hyperbole. Activité 3 Soit H une hyperbole de foyer F, de directrice D et d’excentricité e. On désigne par K le projeté orthogonal de F sur D. 1. Montrer que l’intersection de H avec la droite (FK) se réduit à deux points. 2. Montrer que M appartient à H, si et seulement si, son symétrique par rapport à (FK) appartient à H. Théorème Soit H une hyperbole de foyer F, de directrice D et d’excentricité e. < L’axe focal de H est un axe de symétrie pour H . < H rencontre son axe focal en deux points appelés sommets de l’hyperbole et ils sont les barycentres respectifs des points
 
@@ -207,7 +201,6 @@ x, y . Montrer que M appartient à H, si et seulement si, 2 2 2 2 2 x y 1 a c a
 .
 
 <!-- page: 103 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 103 Coniques Théorème Soit H une hyperbole de foyer F , de directrice D et d’excentricité e, de sommet S et Sc. On désigne par O le milieu de > @ SSc , on pose 1 i OF OF
 
@@ -264,7 +257,6 @@ F D K S(a , 0) S' a2+ b2 ( , 0) :x = a2 c i j H : x a 2 2 y b 2 2 = 1 O Vocabula
 (a 0 , b 0) ! ! est appelée équation réduite de l’hyperbole. Cette équation ne change pas si l’on change x en x ou y en y . On en déduit Théorème < Toute hyperbole admet un centre de symétrie, qui est le milieu de ses sommets. Ce centre de symétrie est appelé centre de l’hyperbole. < Toute hyperbole admet deux axes de symétrie qui sont l’axe focal et l’axe parallèle à la directrice et passant par le centre de symétrie.
 
 <!-- page: 104 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 104 Coniques Conséquence Soit H une hyperbole de foyer F et de directrice D. Le fait que l’ hyperbole H admette un centre de symétrie implique l’existence d’une autre directrice Dc et d’un autre foyer Fc symétriques respectifs de D et F. On dit alors que F est le foyer associé à la directrice D et Fc est le foyer associé à la directrice Dc. Activité 2 On munit le plan d’un repère orthonormé
 
@@ -307,7 +299,6 @@ sont asymptotes à H. c. Soit
 .
 
 <!-- page: 105 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 105 Coniques Vocabulaire On dit qu’une hyperbole est équilatère si ses asymptotes sont perpendiculaires. Théorème Soit H l’hyperbole d’équation 2 2 2 2 x y 1 a b
 
@@ -348,7 +339,6 @@ a, b et a, b
 . 2. En déduire un procédé de construction des asymptotes d’une hyperbole, sachant que l’on connaît un de ses foyers F et ses sommets S et Sc.
 
 <!-- page: 106 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 106 Coniques Solution 1. La tangente au sommet S a pour équation x a
 
@@ -381,7 +371,6 @@ JJJG JJJG . Il en résulte que S est le centre de gravité du triangle ABC et Sc
 .
 
 <!-- page: 107 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 107 Coniques 3. L’hyperbole a pour centre O et son équation réduite s’écrit 2 2 2 2 x y 1 a b
 
@@ -434,7 +423,6 @@ et
 F,1 , 1 (K, )2 .
 
 <!-- page: 108 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 108 Coniques b. Que valent les rapports SF SK et S F S K c c ? 2. Soit MF 1 M tels que ,où H est le projeté orthogonal de M sur D MH 2 ­ ½
 
@@ -447,7 +435,6 @@ F, 1 , K, e et F, 1 , K, e
 où K est le projeté orthogonal de F sur D. F K D E S S'
 
 <!-- page: 109 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 109 Coniques III. 1 Equation réduite d’une ellipse Activité 1 Soit E une ellipse de foyer F, de directrice D et d’excentricité e. On désigne par K le projeté orthogon al de F sur D et on note S et Sc les sommets principaux de E et O le milieu de > @ SSc . 1. Montrer que 1 OF eOS et OK OS e
 
@@ -484,7 +471,6 @@ c, 0 alors l’ellipse E a pour équation 2 2 2 2 x y 1 a b
 . Cette équation est appelée équation réduite de E. L’équation précédente ne change pas si l’on change x en –x ou y en –y. On en déduit Théorème Toute ellipse admet un centre de symétrie, qui est le milieu du segment formé par ses sommets principaux. Ce centre de symétrie est appelé centre de l’ellipse. Toute ellipse admet deux axes de symétrie qui sont l’axe focal et la droite perpendiculaire à l’axe focal en son centre.
 
 <!-- page: 110 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 110 Coniques La perpendiculaire à l’axe focal d’une ellipse en son centre coupe cette ellipse en deux points appelés sommets secondaires. Conséquence Soit E une ellipse de foyer F et de directrice D. Le fait que l’ellipse E admette un centre de symétrie implique l’existence d’une autre directrice Dc et d’un autre foyer Fc symétriques respectifs de D et F par rapport au centre de l’ellipse. On dit que F est le foyer associé à la directrice D et que Fc est le foyer associé à la directrice Dc. Exercice résolu 4 On connaît le foyer F d’une ellipse E et ses deux sommets S et Sc. Construire les points de l’ellipse qui se trouvent sur l’axe de symétrie perpendiculaire à l'axe focal. Solution On construit le centre O de l’ellipse, milieu de > @ SSc . Les points cherchés se trouvent sur la perpendiculaire ' à
 
@@ -521,7 +507,6 @@ M x, y tels que 2 x y 3 1 25
 et 5 x 5 d d . 3. En déduire une représentation graphique de E. Tracer alors E.
 
 <!-- page: 111 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 111 Coniques Théorème Le plan est muni d’un repère orthonormé
 
@@ -578,7 +563,6 @@ ou 2 2 b y a x a
 .
 
 <!-- page: 112 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 112 Coniques 2. On désigne par 1 2 et E E les courbes représentatives des fonctions 2 2 b x a x a
 
@@ -621,7 +605,6 @@ T, avec T appartenant à l’intervalle > > 0,2S . Lorsque le point P décrit le
 P P x , y c c sont telles que P x bcos c T et P y bsin c T.
 
 <!-- page: 113 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 113 Coniques Par suite les coordonnées
 
@@ -660,7 +643,6 @@ M x, y tels que 2 y 2y 4x 4 0
 ¨ ¸ © ¹ .
 
 <!-- page: 114 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 114 Coniques 2. Montrer que P est une parabole de foyer 7 F , 1 4 § ·
 
@@ -719,7 +701,6 @@ M X, Y tels que 2 2 X Y 1 36 4
 O, i, j G G .
 
 <!-- page: 115 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 115 Coniques 2. Déterminer l’ensemble des points
 
@@ -768,7 +749,6 @@ et on désigne parz x iy c c c
 l’affixe du point Mc.
 
 <!-- page: 116 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 116 Coniques On peut écrire,
 
@@ -819,7 +799,6 @@ C De l’expression analytique de f, on déduit que
 ¨ ¸ © ¹ .
 
 <!-- page: 117 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 117 Coniques Le plan est muni d’un repère orthonormé
 
@@ -886,7 +865,6 @@ O, i, j G G . 5. L’ellipse d’équation 2 2 9x 4y 36
 a pour excentricité 5 2 .
 
 <!-- page: 118 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 118 Coniques Dans tous les exercices le plan est muni d’un repère orthonormé
 
@@ -951,7 +929,6 @@ et e 3
 . Déterminer les asymptotes de H et construire H . 10 Calculer l’excentricité d’une hyperbole dont les asymptotes sont orthogonales.
 
 <!-- page: 119 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 119 Coniques 11 Soit H l’hyperbole d’équation xy 1
 
@@ -1000,7 +977,6 @@ X 2 x y Y 2 x y ­
 a. Déterminer une équation de C , ses foyers et ses directrices. b. En déduire que C est une conique que l’on caractérisera. c. Construire C et c C .
 
 <!-- page: 120 -->
-<!-- REVIEW (text-layer): fix formulas, add headings and type switches, then delete this line -->
 
 120 Coniques 19 Soit f l’application du plan dans lui-même qui à tout point
 

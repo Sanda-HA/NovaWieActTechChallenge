@@ -4,16 +4,12 @@ from pathlib import Path
 
 import pytest
 
-from app.agent.orchestrator import ChatRequest, Orchestrator
+from app.agent.orchestrator import ChatRequest
 from app.agent.tools import FakeRag, RagUnavailable, SearchRequest
-from app.cache.store import CacheStore, exact_key
+from app.cache.store import exact_key
 from app.capacity.fairness import FairShare
-from app.capacity.governor import CapacityGovernor
 from app.capacity.resilient import CapacityUnavailable
-from app.pedagogy.topics import TopicGraph
 from app.providers.platform import CeilingExceeded, Tier
-from app.routing.router import ModelRouter
-from app.sessions import LearnerStore, SessionStore
 from tests.fakes import FakeClient
 
 FIXTURE = Path(__file__).parent / "fixtures" / "chunks.json"
@@ -99,28 +95,6 @@ async def test_wellbeing_response_does_not_wait_for_an_existing_turn(make):
         lock.release()
     assert response["badge"] == "wellbeing"
     assert client.calls == []
-
-
-@pytest.fixture
-def make(tmp_path):
-    def _make(*texts, fallback_on_mid=False, rag=None, client=None, fair=None, agentic=True):
-        client = client or FakeClient(*texts, fallback_on_mid=fallback_on_mid)
-        orch = Orchestrator(
-            client,
-            CapacityGovernor(),
-            rag or FakeRag(FIXTURE),
-            CacheStore(str(tmp_path / "c.sqlite3")),
-            ModelRouter(),
-            SessionStore(),
-            LearnerStore(str(tmp_path / "l.sqlite3")),
-            TopicGraph(),
-            fair=fair,
-            wellbeing_contact="",
-            agentic=agentic,
-        )
-        return orch, client
-
-    return _make
 
 
 def ask(message, session="s", **kw):
@@ -265,7 +239,7 @@ async def test_concurrent_attempts_count_one_solved_exercise(make, monkeypatch):
     async def grade(*args):
         entered.set()
         await release.wait()
-        return True, ""
+        return True, "", None
 
     monkeypatch.setattr("app.agent.orchestrator.grade_attempt", grade)
     first = asyncio.create_task(orch.handle(ask("réponse calculée", mode="guided", action="attempt")))
@@ -310,11 +284,84 @@ async def test_downvote_cache_hit_removes_remaining_aliases(make, cache_kind):
     assert orch.cache.db.execute("SELECT count(*) FROM cache").fetchone() == (0,)
 
 
-async def test_invented_citation_triggers_one_repair(make):
-    orch, client = make(TRIAGE_COURSE, "Voir [[fake_99]].", "Corrigé [[math_4sc_derivee_001]].")
+async def test_an_invented_citation_is_stripped_without_a_repair_call(make):
+    orch, client = make(TRIAGE_COURSE, "Le taux de variation admet une limite finie [[fake_99]].")
     r = await orch.handle(ask("dérivable ?"))
-    assert r["trace"][-1]["name"] == "repair"
-    assert "fake_99" not in r["answer"] and r["badge"] == "course"
+    assert [s["name"] for s in r["trace"]].count("repair") == 0 and len(client.calls) == 2
+    assert "fake_99" not in r["answer"] and r["badge"] == "course" and "citation_inferred" in r["receipt"]["events"]
+    assert len(r["sources"]) == 1
+
+
+async def test_the_prompt_names_excerpts_by_short_keys_and_replies_are_mapped_back(make):
+    orch, client = make(TRIAGE_COURSE, "Le taux admet une limite finie [[E1]].")
+    r = await orch.handle(ask("dérivable ?"))
+    user = client.calls[-1][1][1]["content"]
+    assert "[[E1]] (" in user and "math_4sc_derivee_001" not in user
+    assert "[[math_4sc_derivee_001]]" in r["answer"] and "citation_inferred" not in r["receipt"]["events"]
+    assert [s["chunk_id"] for s in r["sources"]] == ["math_4sc_derivee_001"]
+
+
+async def test_a_missing_citation_is_not_worth_a_second_model_call(make):
+    orch, client = make(TRIAGE_COURSE, "Le taux de variation admet une limite finie quand h tend vers zéro.")
+    r = await orch.handle(ask("C'est quoi une fonction dérivable ?"))
+    assert len(client.calls) == 2 and r["badge"] == "course" and "citation_inferred" in r["receipt"]["events"]
+    assert [s["chunk_id"] for s in r["sources"]] == ["math_4sc_derivee_001"] and not r["degraded"]
+
+
+async def test_an_uncited_answer_unrelated_to_the_excerpts_is_not_labelled_as_the_course(make):
+    orch, client = make(TRIAGE_COURSE, "Une explication correcte mais sans rapport.")
+    r = await orch.handle(ask("C'est quoi une fonction dérivable ?"))
+    assert len(client.calls) == 2 and r["badge"] == "general" and r["sources"] == []
+    assert "uncited_answer" in r["receipt"]["events"] and not r["degraded"]
+
+
+WRONG_LANGUAGE = "The derivative is the limit of the rate and you take the limit of the ratio of the function."
+
+
+async def test_a_failed_repair_shows_the_course_passage_not_the_bad_draft(make):
+    orch, client = make(TRIAGE_COURSE, WRONG_LANGUAGE, WRONG_LANGUAGE + " Again.")
+    r = await orch.handle(ask("C'est quoi une fonction dérivable ?"))
+    assert "repair_failed" in r["receipt"]["events"]
+    assert r["badge"] == "course_excerpt" and WRONG_LANGUAGE not in r["answer"]
+    assert len(r["sources"]) == 1 and r["sources"][0]["source"] in r["answer"]
+    repair_prompt = client.calls[-1][1][-1]["content"]
+    assert "langue demandée" in repair_prompt and "wrong_language" not in repair_prompt
+    validation = [s["detail"] for s in r["trace"] if s["name"] == "validation"]
+    assert [v["stage"] for v in validation] == ["first_draft", "after_repair"]
+
+
+async def test_no_time_for_a_repair_answers_with_the_passage(make):
+    orch, client = make(TRIAGE_COURSE, WRONG_LANGUAGE)
+    orch._affordable_repair = lambda *args: None
+    r = await orch.handle(ask("C'est quoi une fonction dérivable ?"))
+    assert len(client.calls) == 2 and "repair_skipped_budget" in r["receipt"]["events"]
+    assert r["badge"] == "course_excerpt" and WRONG_LANGUAGE not in r["answer"]
+
+
+def test_a_repair_is_only_attempted_when_it_can_finish(make):
+    import time
+
+    from app.agent.orchestrator import _deadline
+
+    orch, _ = make()
+    _deadline.set(time.monotonic() + 30)
+    assert orch._affordable_repair(Tier.MID, Tier.COMPACT, 8) is Tier.MID  # 8 s x 2.5 fits in 27 s
+    assert orch._affordable_repair(Tier.MID, Tier.COMPACT, 14) is Tier.COMPACT  # mid would not fit, compact does
+    assert orch._affordable_repair(Tier.MID, Tier.COMPACT, 40) is None
+    _deadline.set(None)
+    assert orch._affordable_repair(Tier.MID, Tier.COMPACT, 40) is Tier.MID
+
+
+async def test_a_timed_out_turn_is_still_saved_in_the_session(make):
+    orch, _ = make(client=WaitingClient())
+    orch.request_timeout_s = 0.02
+    orch.fallback_timeout_s = 0.02
+    response = await orch.handle(ask("fonction dérivable limite taux variation"))
+    assert "request_timeout" in response["receipt"]["events"]
+    history = list(orch.sessions.get("s").history)
+    assert history[0] == ("élève", "fonction dérivable limite taux variation")
+    assert history[1] == ("ednova", response["answer"])
+    assert any(s["name"] == "request_timeout" and "lock_wait_s" in s["detail"] for s in response["trace"])
 
 
 async def test_unknown_topic_abstains(make):
@@ -344,10 +391,11 @@ async def test_rag_outage_does_not_seed_cache(make):
 
 async def test_failed_language_repair_is_not_cached(make):
     wrong_language = "The derivative is the limit of the rate and you take the limit [[math_4sc_derivee_001]]."
-    orch, _ = make(TRIAGE_COURSE, "Voir [[fake_99]].", wrong_language, TRIAGE_COURSE, ANSWER)
+    orch, _ = make(TRIAGE_COURSE, wrong_language, wrong_language, TRIAGE_COURSE, ANSWER)
     question = "C'est quoi une fonction dérivable ?"
     response = await orch.handle(ask(question))
     assert "repair_failed" in response["receipt"]["events"] and not response["degraded"]
+    assert response["badge"] == "course_excerpt" and wrong_language not in response["answer"]
     retry = await orch.handle(ask(question, session="t"))
     assert retry["answer"] == ANSWER and retry["receipt"]["cache"] is None
 

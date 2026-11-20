@@ -3,6 +3,7 @@ from fastapi.security import OAuth2PasswordRequestForm
 from sqlalchemy import select
 from ..ai.interface import Agent
 from ..Database.core import DbSession
+from ..groups import duel_services, room_tutor
 from ..tutor.models import ChatSession
 from ..utils import learner_pseudonym
 from . import services
@@ -30,8 +31,11 @@ async def delete_me(user: CurrentUser, db: DbSession, agent: Agent):
     session_ids = [str(sid) for sid in db.scalars(select(ChatSession.id).where(ChatSession.user_id == user.id))]
     await agent.purge_learner(learner_pseudonym(user.id), session_ids)
     try:
+        room_versions = duel_services.purge_account(db, user.id)
         db.delete(user)
         db.commit()
     except Exception:
         db.rollback()
         raise
+    for room_id, version in room_versions.items():
+        room_tutor.cancel_local(room_id, before_version=version)

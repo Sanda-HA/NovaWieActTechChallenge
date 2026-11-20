@@ -1,0 +1,3882 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: fr\n"
+
+#: src/screens/onboarding/Plan.tsx
+msgid "· Ta préférence"
+msgstr ""
+
+#: src/screens/salle/Members.tsx
+msgid "(toi)"
+msgstr ""
+
+#. placeholder {0}: languageName(item.language)
+#. placeholder {1}: item.item_count
+#. placeholder {2}: Math.round(item.duration_seconds / 60)
+#: src/screens/duel/Lobby.tsx
+msgid "{0} · {1} questions · {2} min"
+msgstr "{0} · {1} questions · {2} min"
+
+#. placeholder {0}: item.points
+#. placeholder {1}: item.max_points
+#: src/screens/duel/Result.tsx
+msgid "{0} / {1} pts"
+msgstr "{0} / {1} pts"
+
+#. placeholder {0}: player.answered_count
+#: src/screens/duel/DuelRoom.tsx
+msgid "{0} réponses"
+msgstr "{0} réponses"
+
+#: src/screens/duel/Play.tsx
+msgid "{answered} / {total} réponses"
+msgstr "{answered} / {total} réponses"
+
+#: src/screens/accueil/HomeOverview.tsx
+#: src/screens/carte/ChapterPanel.tsx
+#: src/screens/carte/MasteryRow.tsx
+msgid "{attempts, plural, one {# essai} other {# essais}}"
+msgstr ""
+
+#: src/screens/accueil/HomeOverview.tsx
+msgid "{confusions, plural, one {# confusion} other {# confusions}}"
+msgstr ""
+
+#: src/screens/salle/RoomsHome.tsx
+msgid "{count, plural, one {# membre} other {# membres}}"
+msgstr ""
+
+#: src/screens/onboarding/Outils.tsx
+msgid "{count, plural, one {# outil choisi} other {# outils choisis}}"
+msgstr ""
+
+#: src/ui/Streak.tsx
+msgid "{days, plural, one {jour} other {jours de suite}}"
+msgstr ""
+
+#: src/screens/onboarding/Plan.tsx
+msgid "{minutes} min"
+msgstr ""
+
+#: src/screens/seances/TimerControls.tsx
+msgid "{minutes} min {seconds} s restantes"
+msgstr ""
+
+#: src/screens/duel/Result.tsx
+msgid "{opponent} a abandonné ou n’a pas rendu de copie."
+msgstr "{opponent} a abandonné ou n’a pas rendu de copie."
+
+#: src/screens/duel/Play.tsx
+msgid "{points} pts"
+msgstr "{points} pts"
+
+#: src/screens/onboarding/Diagnostic.tsx
+msgid "{score} sur 3 pour les questions sur les méthodes de révision."
+msgstr ""
+
+#: src/screens/duel/Play.tsx
+msgid "{unsavedCount} modification(s) non enregistrée(s)"
+msgstr "{unsavedCount} modification(s) non enregistrée(s)"
+
+#: src/screens/tuteur/GuidedActions.tsx
+msgid "{used, plural, one {# marche montée} other {# marches montées}} sur {total}, puis ta réponse"
+msgstr ""
+
+#~ msgid "1) Apprends une notion. 2) Essaie de la retrouver de mémoire le lendemain. 3) Reviens-y quelques jours plus tard."
+#~ msgstr ""
+
+#: src/screens/onboarding/Compte.tsx
+msgid "3 à 30 caractères : lettres et chiffres."
+msgstr ""
+
+#: src/screens/reglages/Reglages.tsx
+msgid "50 caractères maximum."
+msgstr ""
+
+#~ msgid "6 caractères : lettres A à Z sans I ni O, chiffres 2 à 9."
+#~ msgstr ""
+
+#: src/screens/onboarding/Compte.tsx
+msgid "8 caractères minimum : ajoute quelques lettres ou chiffres."
+msgstr ""
+
+#: src/screens/onboarding/Compte.tsx
+msgid "8 caractères minimum."
+msgstr ""
+
+#: src/screens/onboarding/diagnosticBank.ts
+msgid "À découvrir"
+msgstr ""
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "À faire :"
+msgstr ""
+
+#: src/screens/salle/AskNova.tsx
+msgid "À propos d’un message (facultatif)"
+msgstr ""
+
+#: src/screens/accueil/HomeOverview.tsx
+msgid "À renforcer"
+msgstr ""
+
+#: src/screens/carte/Carte.tsx
+msgid "À retravailler"
+msgstr ""
+
+#: src/screens/duel/Result.tsx
+#: src/screens/salle/SessionPanel.tsx
+msgid "À revoir"
+msgstr ""
+
+#: src/screens/carte/GroupReview.tsx
+msgid "À revoir après tes séances de groupe"
+msgstr ""
+
+#: src/screens/carte/GroupReview.tsx
+msgid "À revoir avant le {until}"
+msgstr ""
+
+#: src/screens/carte/GroupReview.tsx
+msgid "À revoir en priorité, avant le {until}"
+msgstr ""
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "Abandon"
+msgstr "Abandon"
+
+#: src/screens/duel/Play.tsx
+msgid "Abandonner le duel"
+msgstr "Abandonner le duel"
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "Abandonner le duel ?"
+msgstr "Abandonner le duel ?"
+
+#: src/screens/salle/Members.tsx
+msgid "absent"
+msgstr ""
+
+#: src/screens/duel/Lobby.tsx
+msgid "Accepter"
+msgstr "Accepter"
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "Accepter le duel"
+msgstr "Accepter le duel"
+
+#: src/app/AppLayout.tsx
+msgid "Accueil"
+msgstr ""
+
+#: src/screens/salle/RoomCheck.tsx
+msgid "Active « Nova peut lire mes messages » dans tes choix pour que Nova relise ton texte."
+msgstr "Active « Nova peut lire mes messages » dans tes choix pour que Nova relise ton texte."
+
+#: src/screens/salle/RoomSettings.tsx
+msgid "Active d’abord Nova pour la salle."
+msgstr ""
+
+#: src/screens/salle/RoomSettings.tsx
+msgid "Activer ou désactiver Nova et ses relances automatiques est réservé à l’offre Pro. Le reste de la salle reste ouvert à tous."
+msgstr ""
+
+#: src/screens/salle/Consent.tsx
+msgid "Activer un choix est réservé à l’offre Pro. Tu peux toujours en retirer un."
+msgstr "Activer un choix est réservé à l’offre Pro. Tu peux toujours en retirer un."
+
+#: src/screens/salle/Consent.tsx
+msgid "Activer un choix pour Nova"
+msgstr "Activer un choix pour Nova"
+
+#: src/screens/plans/PlansSection.tsx
+msgid "Activité"
+msgstr ""
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "Adversaire"
+msgstr "Adversaire"
+
+#: src/screens/duel/Play.tsx
+msgid "Adversaire : {opponentCount} / {total} réponses"
+msgstr "Adversaire : {opponentCount} / {total} réponses"
+
+#: src/screens/onboarding/Compte.tsx
+msgid "Afficher le mot de passe"
+msgstr ""
+
+#: src/screens/plans/PlansSection.tsx
+msgid "Afficher les fonctionnalités"
+msgstr ""
+
+#: src/screens/duel/Duel.tsx
+msgid "Affronte un autre membre Pro sur la même épreuve chronométrée. Réservé à l’offre Pro, activée par l’équipe Nova : tu peux demander l’accès depuis la page des offres."
+msgstr "Affronte un autre membre Pro sur la même épreuve chronométrée. Réservé à l’offre Pro, activée par l’équipe Nova : tu peux demander l’accès depuis la page des offres."
+
+#: src/screens/salle/RoomPage.tsx
+msgid "Affronte un autre membre Pro sur la même épreuve chronométrée. Réservé à l’offre Pro."
+msgstr "Affronte un autre membre Pro sur la même épreuve chronométrée. Réservé à l’offre Pro."
+
+#~ msgid "Aide"
+#~ msgstr ""
+
+#~ msgid "Aide-moi à comprendre la notion de liberté."
+#~ msgstr ""
+
+#~ msgid "Aide-moi à comprendre les lois de Newton."
+#~ msgstr ""
+
+#: src/screens/tuteur/Conversation.tsx
+msgid "Aide-moi à préparer une fiche de révision."
+msgstr ""
+
+#~ msgid "Aide-moi à réviser la conjugaison française."
+#~ msgstr ""
+
+#: src/screens/seances/Seances.tsx
+msgid "Aller à la salle d’étude"
+msgstr ""
+
+#: src/screens/salle/Insights.tsx
+msgid "Analogie"
+msgstr ""
+
+#~ msgid "Analyse de texte"
+#~ msgstr ""
+
+#~ msgid "Anglais"
+#~ msgstr ""
+
+#: src/lib/plans.ts
+#: src/screens/salle/SessionPanel.tsx
+msgid "Animer une séance avec Nova"
+msgstr ""
+
+#: src/screens/plans/PlansSection.tsx
+msgid "Annulation indisponible. Réessaie."
+msgstr "Annulation indisponible. Réessaie."
+
+#: src/screens/duel/Lobby.tsx
+msgid "Annulé"
+msgstr "Annulé"
+
+#: src/screens/reglages/DeleteAccount.tsx
+#: src/screens/salle/Helpfulness.tsx
+#: src/screens/salle/Members.tsx
+#: src/screens/salle/RoomPage.tsx
+msgid "Annuler"
+msgstr ""
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "Annuler l’invitation"
+msgstr "Annuler l’invitation"
+
+#: src/screens/plans/PlansSection.tsx
+msgid "Annuler ma demande"
+msgstr "Annuler ma demande"
+
+#: src/screens/tuteur/Conversation.tsx
+msgid "Aperçu"
+msgstr ""
+
+#: src/screens/reglages/Reglages.tsx
+msgid "Apparence"
+msgstr ""
+
+#~ msgid "Après une erreur, quelle action t’aide à progresser ?"
+#~ msgstr ""
+
+#: src/ui/ProbabilityTree.tsx
+msgid "Arbre de probabilités : A avec 0,4 puis B avec 0,25 ; non A avec 0,6 puis B avec 0,5."
+msgstr ""
+
+#~ msgid "Argumentation"
+#~ msgstr ""
+
+#~ msgid "Attendre la veille"
+#~ msgstr ""
+
+#: src/screens/duel/Lobby.tsx
+msgid "Aucun duel pour le moment. Crée-en un, ou saisis un code reçu."
+msgstr "Aucun duel pour le moment. Crée-en un, ou saisis un code reçu."
+
+#: src/screens/salle/AskNova.tsx
+msgid "Aucun message en particulier"
+msgstr ""
+
+#: src/screens/salle/Posts.tsx
+msgid "Aucun nom affiché."
+msgstr ""
+
+#: src/screens/onboarding/Plan.tsx
+msgid "Aucun outil choisi : tu peux en ajouter dans les réglages."
+msgstr ""
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Aucun point à revoir pour toi."
+msgstr ""
+
+#: src/screens/duel/Lobby.tsx
+msgid "Aucune épreuve n’est disponible pour le moment."
+msgstr "Aucune épreuve n’est disponible pour le moment."
+
+#: src/screens/salle/Posts.tsx
+msgid "Aucune publication pour le moment."
+msgstr ""
+
+#~ msgid "Aucune séance en cours."
+#~ msgstr ""
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Aucune séance en cours. Choisis un chapitre pour commencer."
+msgstr ""
+
+#: src/screens/seances/History.tsx
+msgid "Aucune séance terminée pour l’instant. Lance le minuteur pour commencer."
+msgstr ""
+
+#: src/screens/salle/Insights.tsx
+msgid "Aucune tendance à afficher pour le moment. Elles apparaissent quand assez de membres ont choisi d’y contribuer."
+msgstr ""
+
+#: src/screens/accueil/HomeOverview.tsx
+#: src/screens/seances/Seances.tsx
+msgid "Aujourd’hui"
+msgstr ""
+
+#: src/screens/tuteur/FeedbackControl.tsx
+msgid "Autre"
+msgstr ""
+
+#: src/screens/seances/TimerControls.tsx
+msgid "Autre durée (min)"
+msgstr ""
+
+#: src/screens/onboarding/steps.ts
+#: src/screens/reglages/Reglages.tsx
+msgid "Autre section"
+msgstr ""
+
+#: src/screens/reglages/Reglages.tsx
+msgid "Avancé"
+msgstr ""
+
+#~ msgid "avant le palier «"
+#~ msgstr ""
+
+#: src/screens/onboarding/diagnosticBank.ts
+msgid "Avec des schémas"
+msgstr ""
+
+#: src/screens/salle/Posts.tsx
+msgid "Avec ton pseudo, visible par la salle."
+msgstr ""
+
+#: src/screens/tuteur/FeedbackControl.tsx
+msgid "Avis non envoyé."
+msgstr ""
+
+#: src/screens/onboarding/Outils.tsx
+#: src/screens/onboarding/Plan.tsx
+msgid "Bientôt"
+msgstr ""
+
+#~ msgid "Bienvenue dans la salle."
+#~ msgstr ""
+
+#: src/screens/accueil/HomeOverview.tsx
+msgid "Bonjour"
+msgstr ""
+
+#: src/screens/carte/InteractiveLab.tsx
+msgid "Bonne prédiction !"
+msgstr "Bonne prédiction !"
+
+#: src/screens/carte/QuizPanel.tsx
+msgid "Bonne réponse :"
+msgstr ""
+
+#~ msgid "Bonsoir"
+#~ msgstr ""
+
+#: src/ui/Streak.tsx
+msgid "Bouquet"
+msgstr ""
+
+#: src/ui/Streak.tsx
+msgid "Bouton"
+msgstr ""
+
+#: src/screens/onboarding/Bac.tsx
+msgid "C’est bien ça"
+msgstr ""
+
+#~ msgid "C'est comme répéter une chanson plusieurs jours de suite : chaque répétition ravive ce que tu commençais à oublier."
+#~ msgstr ""
+
+#: src/screens/tuteur/FeedbackControl.tsx
+msgid "C’est faux"
+msgstr ""
+
+#: src/screens/onboarding/Bienvenue.tsx
+msgid "C’est parti"
+msgstr ""
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "C’est parti : ouverture de l’épreuve…"
+msgstr "C’est parti : ouverture de l’épreuve…"
+
+#: src/screens/carte/Carte.tsx
+msgid "Calcul"
+msgstr ""
+
+#~ msgid "Calcul intégral"
+#~ msgstr ""
+
+#: src/app/AppLayout.tsx
+msgid "Carte"
+msgstr ""
+
+#: src/screens/carte/RevisionPack.tsx
+msgid "Carte d’exemple"
+msgstr "Carte d’exemple"
+
+#: src/app/AppLayout.tsx
+#: src/screens/accueil/HomeOverview.tsx
+#: src/screens/carte/Carte.tsx
+#: src/screens/carte/ChapterMap.tsx
+msgid "Carte des chapitres"
+msgstr ""
+
+#: src/lib/plans.ts
+msgid "Carte des chapitres, erreurs repérées, minuteur et historique de révision."
+msgstr ""
+
+#: src/screens/carte/RevisionPack.tsx
+msgid "Cartes de rappel"
+msgstr "Cartes de rappel"
+
+#: src/screens/carte/Carte.tsx
+msgid "Catalogue de mathématiques en brouillon"
+msgstr ""
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Ce chapitre n’est pas disponible."
+msgstr ""
+
+#: src/screens/carte/QuizPanel.tsx
+msgid "Ce chapitre n'est pas encore dans le corpus vérifié."
+msgstr ""
+
+#~ msgid "Ce code n’existe pas ou la salle a été fermée. Demande un nouveau code à la personne qui t’a invité."
+#~ msgstr ""
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "Ce duel a expiré"
+msgstr "Ce duel a expiré"
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "Ce duel est annulé"
+msgstr "Ce duel est annulé"
+
+#: src/screens/duel/messages.ts
+msgid "Ce duel est fermé."
+msgstr "Ce duel est fermé."
+
+#: src/screens/duel/messages.ts
+msgid "Ce duel est introuvable dans cette salle."
+msgstr "Ce duel est introuvable dans cette salle."
+
+#: src/screens/carte/InteractiveLab.tsx
+msgid "Ce labo n’est pas disponible pour ce chapitre."
+msgstr "Ce labo n’est pas disponible pour ce chapitre."
+
+#: src/screens/salle/AskNova.tsx
+msgid "Ce message n’est plus disponible dans la séance. Choisis-en un autre ou demande sans message précis."
+msgstr ""
+
+#: src/screens/onboarding/Diagnostic.tsx
+msgid "Ce n’est pas une note : c’est l’endroit d’où on part."
+msgstr ""
+
+#: src/screens/onboarding/Compte.tsx
+msgid "Ce pseudo est déjà pris."
+msgstr ""
+
+#: src/screens/onboarding/Bienvenue.tsx
+msgid "Ce qu’on va préparer ensemble"
+msgstr ""
+
+#: src/screens/salle/AskNova.tsx
+msgid "Ce que tu demandes"
+msgstr ""
+
+#: src/screens/tuteur/CheckCard.tsx
+msgid "Ce que tu ressens compte plus que n’importe quel exercice. Parles-en à un adulte de confiance : un parent, un professeur, l’infirmière ou le conseiller de ton lycée. Je serai là quand tu voudras reprendre."
+msgstr ""
+
+#: src/screens/tuteur/CheckCard.tsx
+msgid "Ce qui manque"
+msgstr ""
+
+#: src/screens/carte/QuizPanel.tsx
+msgid "Ce quiz a expiré. Recommence-le."
+msgstr ""
+
+#: src/screens/onboarding/Plan.tsx
+msgid "Ce soir"
+msgstr ""
+
+#: src/screens/reglages/Reglages.tsx
+msgid "Ces informations peuvent être laissées vides."
+msgstr ""
+
+#: src/screens/carte/GroupReview.tsx
+msgid "Ces notions restent privées : seul toi les vois, ici."
+msgstr ""
+
+#: src/screens/duel/messages.ts
+msgid "Cet adversaire n’est pas disponible : il doit être membre de la salle et avoir l’offre Pro."
+msgstr "Cet adversaire n’est pas disponible : il doit être membre de la salle et avoir l’offre Pro."
+
+#: src/screens/duel/messages.ts
+msgid "Cette action a changé : relance-la."
+msgstr "Cette action a changé : relance-la."
+
+#: src/screens/reglages/DeleteAccount.tsx
+msgid "Cette action est définitive : ton compte et tes données seront effacés."
+msgstr ""
+
+#: src/screens/salle/AskNova.tsx
+#: src/screens/salle/SessionPanel.tsx
+msgid "Cette activité est réservée à l’offre Pro."
+msgstr ""
+
+#: src/screens/salle/AskNova.tsx
+msgid "Cette demande a changé : relance-la."
+msgstr ""
+
+#: src/screens/carte/Carte.tsx
+msgid "Cette erreur ne figure plus dans ta progression."
+msgstr ""
+
+#: src/screens/salle/Helpfulness.tsx
+msgid "Cette explication n’est plus dans la séance."
+msgstr ""
+
+#: src/screens/salle/Helpfulness.tsx
+msgid "Cette explication t’a-t-elle aidé ?"
+msgstr ""
+
+#: src/screens/duel/messages.ts
+msgid "Cette invitation a expiré. Demande un nouveau duel."
+msgstr "Cette invitation a expiré. Demande un nouveau duel."
+
+#: src/screens/duel/messages.ts
+msgid "Cette invitation n’est plus ouverte."
+msgstr "Cette invitation n’est plus ouverte."
+
+#: src/screens/duel/messages.ts
+msgid "Cette invitation n’existe pas ou n’est plus disponible."
+msgstr "Cette invitation n’existe pas ou n’est plus disponible."
+
+#: src/screens/duel/messages.ts
+msgid "Cette réponse n’est pas valide."
+msgstr "Cette réponse n’est pas valide."
+
+#: src/screens/tuteur/FeedbackControl.tsx
+msgid "Cette réponse t’a aidé ?"
+msgstr ""
+
+#~ msgid "Cette salle est complète (8 membres maximum)."
+#~ msgstr ""
+
+#~ msgid "Cette salle n’est plus disponible : elle a été fermée, ou tu en as été retiré."
+#~ msgstr ""
+
+#: src/screens/onboarding/Plan.tsx
+#: src/screens/seances/Seances.tsx
+msgid "Cette semaine"
+msgstr ""
+
+#~ msgid "Cette semaine :"
+#~ msgstr ""
+
+#: src/screens/accueil/HomeOverview.tsx
+msgid "Cette semaine : {summary}"
+msgstr ""
+
+#: src/screens/accueil/HomeOverview.tsx
+msgid "cette visite"
+msgstr ""
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Chacun explique la notion avec ses mots. Pour de l’aide, demande à Nova ou relis ton texte avec la liste de contrôle."
+msgstr ""
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Chacun répond au quiz du chapitre de son côté."
+msgstr ""
+
+#: src/screens/carte/ChapterPanel.tsx
+msgid "Chapitre"
+msgstr ""
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Chapitre de la séance"
+msgstr ""
+
+#: src/screens/salle/Consent.tsx
+msgid "Chaque choix est indépendant et tu peux le retirer à tout moment. Refuser n’empêche pas de participer."
+msgstr ""
+
+#: src/app/guards.tsx
+msgid "Chargement de ta session…"
+msgstr "Chargement de ta session…"
+
+#: src/app/guards.tsx
+#: src/screens/accueil/Accueil.tsx
+#: src/screens/carte/Carte.tsx
+#: src/screens/plans/PlansSection.tsx
+#: src/screens/reglages/Reglages.tsx
+#: src/screens/seances/History.tsx
+#: src/screens/seances/Seances.tsx
+msgid "Chargement indisponible. Réessaie."
+msgstr ""
+
+#: src/screens/carte/InteractiveLab.tsx
+#: src/screens/carte/QuizPanel.tsx
+#: src/screens/salle/RoomsHome.tsx
+#: src/screens/salle/SessionPanel.tsx
+msgid "Chargement…"
+msgstr ""
+
+#~ msgid "Chercher sa cause puis réessayer"
+#~ msgstr ""
+
+#~ msgid "Chimie"
+#~ msgstr ""
+
+#~ msgid "choisi"
+#~ msgstr ""
+
+#: src/lib/plans.ts
+msgid "Choisir le chapitre et guider le groupe de l’explication au quiz, avec les relances et les notes de Nova."
+msgstr ""
+
+#: src/lib/plans.ts
+msgid "Choisir un chapitre de maths et obtenir un quiz personnel avec correction si les sources sont disponibles."
+msgstr ""
+
+#: src/screens/onboarding/Style.tsx
+msgid "Choisis la façon dont Nova te présentera ses explications."
+msgstr ""
+
+#: src/screens/onboarding/Outils.tsx
+msgid "Choisis les outils à afficher sur ton accueil."
+msgstr ""
+
+#: src/screens/onboarding/Bac.tsx
+msgid "Choisis ta section du bac et la langue de Nova."
+msgstr ""
+
+#~ msgid "Choisis un chapitre"
+#~ msgstr ""
+
+#: src/screens/onboarding/Compte.tsx
+msgid "Choisis un pseudo. Pas besoin de ton vrai nom."
+msgstr ""
+
+#: src/screens/onboarding/Style.tsx
+msgid "Choisis une des deux façons pour continuer."
+msgstr ""
+
+#: src/screens/seances/TimerControls.tsx
+msgid "Choisis une durée entre 1 et 240 minutes."
+msgstr ""
+
+#: src/screens/accueil/HomeOverview.tsx
+msgid "Choisis une pièce de la mosaïque pour t’entraîner sur ce chapitre."
+msgstr ""
+
+#~ msgid "Cinétique chimique"
+#~ msgstr ""
+
+#: src/lib/plans.ts
+msgid "Cinq questions de dérivabilité en dix minutes, avec le score et les corrections détaillées."
+msgstr "Cinq questions de dérivabilité en dix minutes, avec le score et les corrections détaillées."
+
+#: src/screens/carte/Carte.tsx
+msgid "Cinq questions de dérivabilité en dix minutes, avec le score et les corrections."
+msgstr "Cinq questions de dérivabilité en dix minutes, avec le score et les corrections."
+
+#~ msgid "Circuits électriques et dipôle RC"
+#~ msgstr ""
+
+#: src/screens/salle/Invite.tsx
+msgid "Code :"
+msgstr "Code :"
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "Code à donner à ton adversaire"
+msgstr "Code à donner à ton adversaire"
+
+#: src/screens/duel/DuelRoom.tsx
+#: src/screens/salle/Invite.tsx
+msgid "Code copié."
+msgstr ""
+
+#: src/screens/salle/Invite.tsx
+#: src/screens/salle/JoinForm.tsx
+msgid "Code d’invitation"
+msgstr ""
+
+#: src/screens/duel/DuelRoom.tsx
+#: src/screens/duel/Lobby.tsx
+msgid "Code du duel"
+msgstr "Code du duel"
+
+#: src/app/FloatingTimer.tsx
+msgid "Commandes du minuteur"
+msgstr ""
+
+#: src/screens/onboarding/Plan.tsx
+msgid "Commencer"
+msgstr ""
+
+#: src/screens/carte/Carte.tsx
+msgid "Commencer l’entraînement"
+msgstr "Commencer l’entraînement"
+
+#: src/screens/onboarding/Plan.tsx
+msgid "Commencer ma première séance"
+msgstr ""
+
+#: src/screens/accueil/HomeOverview.tsx
+msgid "Commencer une séance"
+msgstr ""
+
+#~ msgid "Comment équilibrer une équation chimique ?"
+#~ msgstr ""
+
+#: src/screens/onboarding/Plan.tsx
+msgid "Comment je vais t’expliquer"
+msgstr ""
+
+#~ msgid "Comment vérifier que tu as compris une leçon ?"
+#~ msgstr ""
+
+#: src/screens/onboarding/Bac.tsx
+msgid "Comment veux-tu réviser ?"
+msgstr ""
+
+#: src/screens/carte/InteractiveLab.tsx
+msgid "Compare ta prédiction au résultat."
+msgstr "Compare ta prédiction au résultat."
+
+#: src/screens/plans/PlansSection.tsx
+msgid "Comparer les fonctionnalités"
+msgstr ""
+
+#: src/screens/plans/LockedNotice.tsx
+msgid "Comparer les offres"
+msgstr ""
+
+#~ msgid "Compréhension écrite"
+#~ msgstr ""
+
+#: src/lib/plans.ts
+msgid "Comprendre avec Nova"
+msgstr ""
+
+#: src/screens/onboarding/Compte.tsx
+msgid "Compte créé. Réessaie pour continuer."
+msgstr ""
+
+#: src/screens/reglages/Reglages.tsx
+msgid "Compte élève"
+msgstr ""
+
+#~ msgid "Compter les pages"
+#~ msgstr ""
+
+#~ msgid "Conditions et boucles"
+#~ msgstr ""
+
+#: src/screens/reglages/Reglages.tsx
+msgid "Confidentialité"
+msgstr ""
+
+#: src/screens/reglages/DeleteAccount.tsx
+msgid "Confirme ton pseudo"
+msgstr ""
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "Confirmer l’abandon"
+msgstr "Confirmer l’abandon"
+
+#: src/screens/salle/RoomPage.tsx
+msgid "Confirmer la fermeture"
+msgstr ""
+
+#: src/screens/salle/RoomPage.tsx
+msgid "Confirmer le départ"
+msgstr ""
+
+#: src/screens/salle/Members.tsx
+msgid "Confirmer le retrait"
+msgstr ""
+
+#: src/screens/salle/Members.tsx
+msgid "Confirmer le transfert"
+msgstr ""
+
+#~ msgid "Coniques"
+#~ msgstr ""
+
+#~ msgid "Conjugaison"
+#~ msgstr ""
+
+#: src/screens/salle/JoinForm.tsx
+msgid "Connexion à la salle…"
+msgstr ""
+
+#: src/screens/onboarding/Compte.tsx
+msgid "Connexion indisponible. Réessaie."
+msgstr ""
+
+#: src/screens/duel/messages.ts
+msgid "Connexion perdue : tes dernières modifications ne sont pas enregistrées."
+msgstr "Connexion perdue : tes dernières modifications ne sont pas enregistrées."
+
+#: src/screens/onboarding/Compte.tsx
+msgid "Connexion…"
+msgstr ""
+
+#: src/screens/onboarding/Compte.tsx
+msgid "Content de te revoir."
+msgstr ""
+
+#: src/screens/duel/Play.tsx
+#: src/screens/onboarding/Outils.tsx
+#: src/screens/onboarding/Style.tsx
+msgid "Continuer"
+msgstr ""
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "Continuer le duel"
+msgstr "Continuer le duel"
+
+#: src/screens/salle/Consent.tsx
+msgid "Contribuer aux tendances du groupe"
+msgstr ""
+
+#: src/screens/tuteur/Conversation.tsx
+msgid "Conversation avec le tuteur"
+msgstr ""
+
+#: src/screens/tuteur/ThreadList.tsx
+msgid "Conversations"
+msgstr ""
+
+#: src/screens/duel/DuelRoom.tsx
+#: src/screens/salle/Invite.tsx
+msgid "Copie impossible : sélectionne le texte et copie-le toi-même."
+msgstr ""
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "Copie rendue"
+msgstr "Copie rendue"
+
+#~ msgid "Copier la correction"
+#~ msgstr ""
+
+#: src/screens/duel/DuelRoom.tsx
+#: src/screens/salle/Invite.tsx
+msgid "Copier le code"
+msgstr ""
+
+#: src/screens/salle/Invite.tsx
+msgid "Copier le lien"
+msgstr ""
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Correct"
+msgstr ""
+
+#: src/screens/duel/Lobby.tsx
+msgid "Correction"
+msgstr "Correction"
+
+#: src/lib/plans.ts
+msgid "Création de salles, invitations, discussions et vérification privée des explications."
+msgstr ""
+
+#: src/screens/onboarding/Compte.tsx
+msgid "Création…"
+msgstr ""
+
+#: src/screens/salle/CreateForm.tsx
+msgid "Créer la salle"
+msgstr ""
+
+#: src/screens/duel/Lobby.tsx
+msgid "Créer le duel"
+msgstr "Créer le duel"
+
+#: src/screens/onboarding/Compte.tsx
+msgid "Créer mon compte"
+msgstr ""
+
+#: src/screens/duel/Lobby.tsx
+msgid "Créer un duel"
+msgstr "Créer un duel"
+
+#: src/screens/salle/CreateForm.tsx
+msgid "Créer une salle"
+msgstr ""
+
+#: src/screens/carte/ChapterPanel.tsx
+msgid "Dans ce chapitre"
+msgstr ""
+
+#: src/lib/plans.ts
+msgid "Dans une salle animée par un membre Pro : manches en groupe, quiz de la salle, notes partagées et Nova sur demande."
+msgstr "Dans une salle animée par un membre Pro : manches en groupe, quiz de la salle, notes partagées et Nova sur demande."
+
+#: src/screens/duel/Lobby.tsx
+msgid "De {other}. "
+msgstr "De {other}. "
+
+#: src/screens/accueil/HomeOverview.tsx
+#: src/screens/carte/ChapterMap.tsx
+msgid "de ta mosaïque est posée"
+msgstr ""
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "Début dans"
+msgstr "Début dans"
+
+#: src/screens/reglages/Reglages.tsx
+msgid "Débutant"
+msgstr ""
+
+#~ msgid "Décolonisation"
+#~ msgstr ""
+
+#: src/screens/duel/Result.tsx
+msgid "Défaite"
+msgstr "Défaite"
+
+#: src/screens/onboarding/Plan.tsx
+msgid "Demain"
+msgstr ""
+
+#: src/screens/plans/PlansSection.tsx
+msgid "Demande indisponible. Réessaie."
+msgstr ""
+
+#: src/screens/plans/PlansSection.tsx
+msgid "Demande Pro enregistrée. L’équipe Nova activera ton accès : reviens ici pour le voir."
+msgstr ""
+
+#: src/screens/salle/AskNova.tsx
+msgid "Demander à Nova"
+msgstr ""
+
+#: src/screens/plans/PlansSection.tsx
+msgid "Demander l’accès Pro"
+msgstr ""
+
+#: src/screens/seances/TimerControls.tsx
+msgid "Démarrer"
+msgstr ""
+
+#~ msgid "Dénombrement"
+#~ msgstr ""
+
+#: src/screens/carte/Carte.tsx
+msgid "Déplace le curseur, prédis le résultat, puis compare avec le graphique."
+msgstr "Déplace le curseur, prédis le résultat, puis compare avec le graphique."
+
+#~ msgid "Déplacements et antidéplacements"
+#~ msgstr ""
+
+#: src/lib/plans.ts
+msgid "Depuis une erreur repérée, lancer un exercice guidé sur la notion correspondante."
+msgstr ""
+
+#~ msgid "Dérivabilité"
+#~ msgstr ""
+
+#: src/screens/duel/Result.tsx
+msgid "Dérivabilité en un point"
+msgstr "Dérivabilité en un point"
+
+#: src/screens/duel/Result.tsx
+msgid "Dérivée d’un produit"
+msgstr "Dérivée d’un produit"
+
+#: src/screens/duel/Result.tsx
+msgid "Dérivée d’une composée"
+msgstr "Dérivée d’une composée"
+
+#~ msgid "des étapes numérotées"
+#~ msgstr ""
+
+#: src/screens/onboarding/steps.ts
+msgid "Des fiches tirées de ton manuel."
+msgstr ""
+
+#: src/screens/onboarding/steps.ts
+msgid "Des indices marche par marche, jamais la réponse toute faite."
+msgstr ""
+
+#: src/screens/onboarding/Style.tsx
+msgid "Des schémas, des arbres et des courbes, comme au tableau."
+msgstr ""
+
+#: src/screens/onboarding/steps.ts
+msgid "Des sujets type bac, chronométrés si tu veux."
+msgstr ""
+
+#: src/screens/salle/RoomSettings.tsx
+msgid "Désactiver Nova ne bloque ni les publications, ni les séances, ni le quiz de la salle."
+msgstr ""
+
+#: src/screens/carte/Carte.tsx
+msgid "Détail par chapitre"
+msgstr ""
+
+#: src/screens/onboarding/Diagnostic.tsx
+msgid "Diagnostic indisponible. Réessaie."
+msgstr ""
+
+#: src/lib/plans.ts
+msgid "Diagnostic, programme de départ et préférences de langue et de présentation."
+msgstr ""
+
+#: src/screens/plans/PlansSection.tsx
+msgid "Différences"
+msgstr ""
+
+#~ msgid "Divisibilité dans Z"
+#~ msgstr ""
+
+#: src/screens/duel/Result.tsx
+msgid "Duel abandonné"
+msgstr "Duel abandonné"
+
+#: src/lib/plans.ts
+#: src/screens/duel/Duel.tsx
+#: src/screens/duel/DuelError.tsx
+#: src/screens/salle/RoomPage.tsx
+msgid "Duel Exam"
+msgstr "Duel Exam"
+
+#. placeholder {0}: topicLabel(view.topic)
+#: src/screens/duel/DuelRoom.tsx
+msgid "Duel Exam · {0}"
+msgstr "Duel Exam · {0}"
+
+#: src/screens/duel/Result.tsx
+msgid "Duel sans résultat"
+msgstr "Duel sans résultat"
+
+#~ msgid "Durée"
+#~ msgstr ""
+
+#: src/screens/seances/TimerControls.tsx
+msgid "Durée de la séance"
+msgstr ""
+
+#: src/screens/tuteur/GuidedActions.tsx
+msgid "Échelle d’indices : {steps}"
+msgstr ""
+
+#: src/screens/tuteur/Conversation.tsx
+msgid "Écris ta réponse…"
+msgstr ""
+
+#~ msgid "Effacer la réponse"
+#~ msgstr ""
+
+#: src/screens/duel/Play.tsx
+msgid "Effacer ma réponse"
+msgstr "Effacer ma réponse"
+
+#: src/screens/duel/Result.tsx
+msgid "Égalité"
+msgstr "Égalité"
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "En attente d’un adversaire"
+msgstr "En attente d’un adversaire"
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "En attente de ton adversaire : l’invitation expire dans {remaining}."
+msgstr "En attente de ton adversaire : l’invitation expire dans {remaining}."
+
+#~ msgid "En attente que"
+#~ msgstr ""
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "En attente que {owner} lance la séance…"
+msgstr ""
+
+#: src/screens/duel/Lobby.tsx
+#: src/screens/seances/TimerControls.tsx
+msgid "En cours"
+msgstr ""
+
+#: src/screens/salle/Members.tsx
+msgid "en ligne"
+msgstr ""
+
+#: src/screens/seances/TimerControls.tsx
+msgid "En pause"
+msgstr ""
+
+#: src/ui/Mosaic.tsx
+msgid "En route"
+msgstr ""
+
+#: src/ui/Streak.tsx
+msgid "encore {left, plural, one {# jour} other {# jours}} avant le palier « {nextName} »"
+msgstr ""
+
+#: src/screens/duel/Play.tsx
+msgid "Enregistré"
+msgstr "Enregistré"
+
+#: src/app/OnboardingLayout.tsx
+#: src/screens/duel/Play.tsx
+msgid "Enregistrement…"
+msgstr ""
+
+#: src/screens/reglages/Reglages.tsx
+msgid "Enregistrer"
+msgstr ""
+
+#: src/screens/carte/QuizPanel.tsx
+msgid "Entraînement Bac"
+msgstr "Entraînement Bac"
+
+#: src/screens/carte/QuizPanel.tsx
+msgid "Entraînement Bac :"
+msgstr "Entraînement Bac :"
+
+#: src/lib/plans.ts
+#: src/screens/carte/Carte.tsx
+msgid "Entraînement Bac chronométré"
+msgstr "Entraînement Bac chronométré"
+
+#: src/screens/tuteur/Conversation.tsx
+msgid "Entrée pour envoyer · Maj + Entrée pour aller à la ligne · formule entre dollars :"
+msgstr ""
+
+#~ msgid "Environ"
+#~ msgstr ""
+
+#: src/screens/onboarding/Plan.tsx
+msgid "Environ {total} min en tout"
+msgstr ""
+
+#: src/screens/duel/Lobby.tsx
+msgid "Épreuve"
+msgstr "Épreuve"
+
+#: src/screens/duel/Result.tsx
+msgid "Équation de la tangente"
+msgstr "Équation de la tangente"
+
+#~ msgid "Équations différentielles"
+#~ msgstr ""
+
+#~ msgid "Équilibrage des équations"
+#~ msgstr ""
+
+#: src/screens/carte/Carte.tsx
+msgid "Essaie une carte de rappel gratuite. La fiche complète est en Pro."
+msgstr "Essaie une carte de rappel gratuite. La fiche complète est en Pro."
+
+#: src/screens/carte/Carte.tsx
+#: src/screens/plans/PlansSection.tsx
+msgid "Essayer le quiz d’exemple"
+msgstr ""
+
+#: src/screens/plans/PlansSection.tsx
+msgid "Essayer un exercice guidé"
+msgstr ""
+
+#: src/screens/plans/PlansSection.tsx
+msgid "Essayer un quiz de chapitre"
+msgstr ""
+
+#: src/screens/carte/Carte.tsx
+msgid "Essayer une carte"
+msgstr "Essayer une carte"
+
+#~ msgid "Étape"
+#~ msgstr ""
+
+#: src/app/OnboardingLayout.tsx
+#: src/screens/tuteur/StageView.tsx
+msgid "Étape {position} sur {total}"
+msgstr ""
+
+#~ msgid "Étude de fonctions"
+#~ msgstr ""
+
+#: src/screens/salle/Helpfulness.tsx
+msgid "Évaluer cette explication"
+msgstr ""
+
+#: src/screens/onboarding/Compte.tsx
+msgid "ex. yasmine07…"
+msgstr ""
+
+#: src/screens/onboarding/steps.ts
+msgid "Examens blancs"
+msgstr ""
+
+#~ msgid "Exemple"
+#~ msgstr ""
+
+#: src/screens/onboarding/Plan.tsx
+msgid "Exemple · ce programme n’est pas enregistré dans ton compte."
+msgstr ""
+
+#: src/screens/onboarding/Plan.tsx
+msgid "Exemple de programme pour cette semaine."
+msgstr ""
+
+#: src/screens/salle/Insights.tsx
+msgid "Exemples"
+msgstr ""
+
+#: src/screens/accueil/Accueil.tsx
+#: src/screens/onboarding/steps.ts
+#: src/screens/reglages/Reglages.tsx
+msgid "Exercices guidés"
+msgstr ""
+
+#: src/screens/duel/Lobby.tsx
+msgid "Expiré"
+msgstr "Expiré"
+
+#. placeholder {0}: time(duel.invite_expires_at)
+#: src/screens/duel/Lobby.tsx
+msgid "Expire à {0}."
+msgstr "Expire à {0}."
+
+#: src/screens/salle/Posts.tsx
+#: src/screens/salle/SessionPanel.tsx
+msgid "Explication"
+msgstr ""
+
+#: src/screens/tuteur/CheckCard.tsx
+msgid "Explication vérifiée"
+msgstr ""
+
+#~ msgid "Explique la photosynthèse étape par étape."
+#~ msgstr ""
+
+#~ msgid "Explique les boucles avec un exemple de code."
+#~ msgstr ""
+
+#~ msgid "Explique les dérivées avec un exemple simple."
+#~ msgstr ""
+
+#~ msgid "Explique les zones climatiques avec des exemples."
+#~ msgstr ""
+
+#: src/screens/salle/ExplanationCheck.tsx
+msgid "Explique une notion avec tes propres mots pour recevoir un retour privé de Nova. Rien n’est partagé."
+msgstr ""
+
+#: src/screens/tuteur/Conversation.tsx
+msgid "Explique-moi une notion de mon cours avec un exemple."
+msgstr ""
+
+#: src/screens/onboarding/Plan.tsx
+msgid "Expliquer une notion avec tes propres mots"
+msgstr ""
+
+#~ msgid "Expression écrite"
+#~ msgstr ""
+
+#: src/screens/tuteur/AnswerMessage.tsx
+msgid "Extrait du manuel"
+msgstr ""
+
+#: src/screens/seances/TimerControls.tsx
+msgid "Faire une pause (5 min)"
+msgstr "Faire une pause (5 min)"
+
+#: src/screens/carte/RevisionPack.tsx
+msgid "Fermer la fiche"
+msgstr "Fermer la fiche"
+
+#: src/screens/salle/RoomPage.tsx
+msgid "Fermer la salle"
+msgstr ""
+
+#: src/screens/carte/InteractiveLab.tsx
+msgid "Fermer le labo"
+msgstr "Fermer le labo"
+
+#: src/screens/carte/QuizPanel.tsx
+msgid "Fermer le quiz"
+msgstr ""
+
+#: src/screens/carte/RevisionPack.tsx
+msgid "Fiche"
+msgstr "Fiche"
+
+#: src/screens/carte/RevisionPack.tsx
+msgid "Fiche générée par l’IA : vérifie-la avec ton cours."
+msgstr "Fiche générée par l’IA : vérifie-la avec ton cours."
+
+#: src/lib/plans.ts
+#: src/screens/carte/Carte.tsx
+#: src/screens/carte/RevisionPack.tsx
+msgid "Fiches de révision Nova"
+msgstr "Fiches de révision Nova"
+
+#: src/screens/carte/RevisionPack.tsx
+msgid "Fiches de révision Nova : Dérivabilité"
+msgstr "Fiches de révision Nova : Dérivabilité"
+
+#: src/screens/onboarding/steps.ts
+msgid "Fiches IA"
+msgstr ""
+
+#: src/ui/Streak.tsx
+msgid "Fleur"
+msgstr ""
+
+#~ msgid "Fonction exponentielle"
+#~ msgstr ""
+
+#~ msgid "Fonction logarithme népérien"
+#~ msgstr ""
+
+#~ msgid "Fonctions"
+#~ msgstr ""
+
+#: src/screens/salle/Helpfulness.tsx
+msgid "Format de l’explication"
+msgstr ""
+
+#: src/screens/salle/Posts.tsx
+msgid "Format de ton explication (facultatif)"
+msgstr "Format de ton explication (facultatif)"
+
+#: src/screens/salle/Insights.tsx
+msgid "Formats jugés utiles"
+msgstr ""
+
+#: src/ui/Mosaic.tsx
+msgid "Fragile"
+msgstr ""
+
+#~ msgid "Français"
+#~ msgstr ""
+
+#: src/screens/carte/RevisionPack.tsx
+msgid "Générer ma fiche"
+msgstr "Générer ma fiche"
+
+#~ msgid "Géographie"
+#~ msgstr ""
+
+#~ msgid "Géométrie dans l'espace"
+#~ msgstr ""
+
+#: src/screens/plans/PlanBadge.tsx
+#: src/screens/plans/PlanChip.tsx
+#: src/screens/plans/PlansSection.tsx
+msgid "Gratuit"
+msgstr ""
+
+#: src/screens/tuteur/Conversation.tsx
+msgid "Guidé"
+msgstr ""
+
+#~ msgid "Histoire"
+#~ msgstr ""
+
+#: src/screens/tuteur/AnswerMessage.tsx
+msgid "Hors programme"
+msgstr ""
+
+#~ msgid "Identité de Bézout"
+#~ msgstr ""
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "Il le saisit dans « Rejoindre avec un code »."
+msgstr "Il le saisit dans « Rejoindre avec un code »."
+
+#: src/screens/duel/DuelRoom.tsx
+#~ msgid "Il le saisit dans « Rejoindre avec un code ». Le code n’est affiché qu’ici, à la création."
+#~ msgstr "Il le saisit dans « Rejoindre avec un code ». Le code n’est affiché qu’ici, à la création."
+
+#. placeholder {0}: total - answered
+#: src/screens/duel/Play.tsx
+msgid "Il te reste {0} question(s) sans réponse. Tu ne pourras plus modifier ta copie."
+msgstr "Il te reste {0} question(s) sans réponse. Tu ne pourras plus modifier ta copie."
+
+#~ msgid "Imagine trois points sur un calendrier : lundi → mardi → vendredi. Chaque point représente un rappel de la même notion."
+#~ msgstr ""
+
+#~ msgid "Immunité"
+#~ msgstr ""
+
+#~ msgid "Impossible de charger tes salles."
+#~ msgstr ""
+
+#~ msgid "Impossible de créer la salle."
+#~ msgstr ""
+
+#~ msgid "Impossible de créer la salle. Réessaie."
+#~ msgstr ""
+
+#: src/screens/duel/messages.ts
+msgid "Impossible de créer un code d’invitation pour l’instant. Réessaie."
+msgstr "Impossible de créer un code d’invitation pour l’instant. Réessaie."
+
+#: src/screens/carte/Carte.tsx
+msgid "Impossible de lancer l’exercice. Réessaie."
+msgstr ""
+
+#: src/screens/salle/Posts.tsx
+msgid "Impossible de publier dans la salle."
+msgstr ""
+
+#~ msgid "Impossible de quitter ou de fermer la salle."
+#~ msgstr ""
+
+#~ msgid "Impossible de quitter ou de fermer la salle. Réessaie."
+#~ msgstr ""
+
+#~ msgid "Impossible de rejoindre la salle pour le moment. Réessaie."
+#~ msgstr ""
+
+#: src/screens/plans/PlansSection.tsx
+msgid "Inclus"
+msgstr ""
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Incomplet"
+msgstr ""
+
+#~ msgid "Informatique"
+#~ msgstr ""
+
+#: src/screens/reglages/Reglages.tsx
+msgid "Intermédiaire"
+msgstr ""
+
+#: src/screens/duel/Lobby.tsx
+msgid "Invitation envoyée"
+msgstr "Invitation envoyée"
+
+#: src/screens/duel/Lobby.tsx
+msgid "Invitation reçue"
+msgstr "Invitation reçue"
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "Invitation valable encore {remaining}."
+msgstr "Invitation valable encore {remaining}."
+
+#: src/screens/salle/Invite.tsx
+msgid "Inviter des amis"
+msgstr ""
+
+#: src/screens/duel/Lobby.tsx
+msgid "Inviter un membre (facultatif)"
+msgstr "Inviter un membre (facultatif)"
+
+#~ msgid "Isométries du plan"
+#~ msgstr ""
+
+#: src/screens/onboarding/Bienvenue.tsx
+#: src/screens/onboarding/Compte.tsx
+msgid "J’ai déjà un compte"
+msgstr ""
+
+#: src/screens/tuteur/StageView.tsx
+msgid "J’écris la réponse"
+msgstr ""
+
+#: src/screens/tuteur/StageView.tsx
+msgid "Je cherche dans ton manuel"
+msgstr ""
+
+#: src/screens/tuteur/StageView.tsx
+msgid "Je comprends ta question"
+msgstr ""
+
+#: src/screens/onboarding/Compte.tsx
+msgid "Je n’ai pas encore de compte"
+msgstr ""
+
+#: src/screens/tuteur/CheckCard.tsx
+msgid "Je n'ai pas pu vérifier"
+msgstr ""
+
+#: src/screens/tuteur/AnswerMessage.tsx
+msgid "Je n’ai pas trouvé ce point dans ton manuel"
+msgstr ""
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "Je ne suis plus prêt"
+msgstr "Je ne suis plus prêt"
+
+#: src/screens/tuteur/AnswerMessage.tsx
+msgid "Je précise ta question"
+msgstr ""
+
+#: src/screens/onboarding/Diagnostic.tsx
+msgid "Je prépare tes pistes pour mieux réviser."
+msgstr ""
+
+#: src/screens/onboarding/Diagnostic.tsx
+msgid "Je prépare ton point de départ…"
+msgstr ""
+
+#: src/screens/onboarding/Diagnostic.tsx
+msgid "Je regarde tes réponses…"
+msgstr ""
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "Je suis prêt"
+msgstr "Je suis prêt"
+
+#: src/screens/onboarding/Bac.tsx
+msgid "Je te réponds en…"
+msgstr ""
+
+#: src/screens/tuteur/StageView.tsx
+msgid "Je vérifie"
+msgstr ""
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "Joueurs"
+msgstr "Joueurs"
+
+#~ msgid "jour"
+#~ msgstr ""
+
+#: src/screens/reglages/Reglages.tsx
+msgid "Jour"
+msgstr ""
+
+#~ msgid "jours"
+#~ msgstr ""
+
+#~ msgid "jours de suite"
+#~ msgstr ""
+
+#: src/screens/duel/Result.tsx
+#: src/screens/tuteur/CheckCard.tsx
+#: src/screens/tuteur/Tuteur.tsx
+msgid "Juste"
+msgstr ""
+
+#~ msgid "Justice"
+#~ msgstr ""
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "L’abandon décide le duel : ton adversaire gagne et tu ne pourras pas reprendre."
+msgstr "L’abandon décide le duel : ton adversaire gagne et tu ne pourras pas reprendre."
+
+#: src/screens/carte/Carte.tsx
+msgid "L’entraînement Bac chronométré est réservé à l’offre Pro."
+msgstr "L’entraînement Bac chronométré est réservé à l’offre Pro."
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "L’épreuve commence : vous êtes prêts tous les deux, la préparation est verrouillée."
+msgstr "L’épreuve commence : vous êtes prêts tous les deux, la préparation est verrouillée."
+
+#~ msgid "L’expliquer sans notes"
+#~ msgstr ""
+
+#: src/screens/onboarding/Compte.tsx
+#: src/screens/reglages/Reglages.tsx
+#: src/screens/tuteur/Conversation.tsx
+msgid "L'historique de tes échanges n'est pas enregistré dans ton compte."
+msgstr ""
+
+#: src/screens/plans/PlansSection.tsx
+msgid "L’offre Pro est activée par l’équipe Nova pendant le pilote. Prix proposé : {PRO_PRICE_TND} TND par mois."
+msgstr ""
+
+#~ msgid "La connexion a été coupée avant la fin de la réponse. Tu peux réessayer."
+#~ msgstr ""
+
+#: src/screens/duel/messages.ts
+msgid "La connexion a été coupée. Réessaie."
+msgstr "La connexion a été coupée. Réessaie."
+
+#: src/screens/salle/AskNova.tsx
+msgid "La demande a été annulée, par exemple parce que les réglages de Nova ont changé. Réessaie si besoin."
+msgstr ""
+
+#: src/screens/carte/RevisionPack.tsx
+msgid "La fiche citée et les trois cartes de rappel sur la dérivabilité sont réservées à l’offre Pro."
+msgstr "La fiche citée et les trois cartes de rappel sur la dérivabilité sont réservées à l’offre Pro."
+
+#: src/screens/carte/RevisionPack.tsx
+msgid "La fiche n’a pas pu être préparée. Réessaie."
+msgstr "La fiche n’a pas pu être préparée. Réessaie."
+
+#: src/screens/salle/RoomCheck.tsx
+msgid "La liste de contrôle est indisponible. Réessaie."
+msgstr ""
+
+#: src/screens/carte/QuizPanel.tsx
+msgid "La manche du quiz est terminée."
+msgstr ""
+
+#~ msgid "La pause n’a pas pu être enregistrée."
+#~ msgstr ""
+
+#: src/screens/onboarding/Plan.tsx
+msgid "La probabilité de $B$ sachant $A$ :\n"
+"\n"
+"$$P_A(B) = \\frac'{'P(A \\cap B)'}{'P(A)'}' = \\frac'{'0'{','}'1'}{'0'{','}'4'}' = 0'{','}'25.$$"
+msgstr ""
+
+#: src/screens/carte/RevisionPack.tsx
+msgid "La règle des puissances donne $f′(x)=2x$."
+msgstr "La règle des puissances donne $f′(x)=2x$."
+
+#: src/screens/salle/RoomCheck.tsx
+msgid "La relecture par Nova est réservée à l’offre Pro."
+msgstr "La relecture par Nova est réservée à l’offre Pro."
+
+#~ msgid "La réponse a été interrompue. Tu peux réessayer."
+#~ msgstr ""
+
+#~ msgid "la révision espacée ?"
+#~ msgstr ""
+
+#: src/screens/salle/RoomPage.tsx
+msgid "La salle et ses publications seront supprimées pour tous ses membres."
+msgstr ""
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "La séance a changé : voici son état à jour."
+msgstr ""
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "La séance est momentanément indisponible. Réessaie."
+msgstr ""
+
+#~ msgid "La séance n’a pas pu démarrer."
+#~ msgstr ""
+
+#~ msgid "La suppression a échoué."
+#~ msgstr ""
+
+#: src/screens/reglages/DeleteAccount.tsx
+msgid "La suppression a échoué. Ton compte est conservé. Réessaie."
+msgstr ""
+
+#: src/lib/plans.ts
+#: src/screens/carte/Carte.tsx
+#: src/screens/carte/ChapterPanel.tsx
+#: src/screens/carte/InteractiveLab.tsx
+msgid "Labo interactif"
+msgstr "Labo interactif"
+
+#~ msgid "lance la séance…"
+#~ msgstr ""
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Lancer la séance"
+msgstr ""
+
+#: src/screens/carte/Carte.tsx
+msgid "Lancer un exercice depuis une erreur repérée est réservé à l’offre Pro. Ta liste d’erreurs reste visible."
+msgstr ""
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Lancer une séance, suivre ses manches et lire les notes de Nova est réservé à l’offre Pro. Le reste de la salle reste ouvert à tous."
+msgstr ""
+
+#: src/app/OnboardingLayout.tsx
+msgid "Langue"
+msgstr ""
+
+#: src/screens/onboarding/Bac.tsx
+msgid "Langue de mes réponses"
+msgstr ""
+
+#: src/screens/carte/QuizPanel.tsx
+msgid "Langue des questions :"
+msgstr ""
+
+#: src/screens/reglages/Reglages.tsx
+msgid "Langue des réponses"
+msgstr ""
+
+#: src/screens/duel/Result.tsx
+msgid "Le bilan de Nova"
+msgstr "Le bilan de Nova"
+
+#: src/screens/salle/Members.tsx
+msgid "Le code d’invitation va changer."
+msgstr ""
+
+#: src/screens/duel/messages.ts
+msgid "Le duel a déjà démarré ou a été fermé."
+msgstr "Le duel a déjà démarré ou a été fermé."
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "Le duel démarre dès que vous êtes prêts tous les deux, dans {remaining} au plus."
+msgstr "Le duel démarre dès que vous êtes prêts tous les deux, dans {remaining} au plus."
+
+#: src/screens/duel/messages.ts
+msgid "Le Duel Exam est momentanément indisponible. Réessaie."
+msgstr "Le Duel Exam est momentanément indisponible. Réessaie."
+
+#: src/screens/duel/messages.ts
+msgid "Le Duel Exam est réservé à l’offre Pro."
+msgstr "Le Duel Exam est réservé à l’offre Pro."
+
+#: src/screens/duel/Result.tsx
+msgid "Le duel n’a pas pu être corrigé : il ne compte pour personne."
+msgstr "Le duel n’a pas pu être corrigé : il ne compte pour personne."
+
+#: src/screens/duel/messages.ts
+msgid "Le duel n’est pas en cours."
+msgstr "Le duel n’est pas en cours."
+
+#: src/screens/carte/Carte.tsx
+msgid "Le labo interactif compare des situations de ce cours. Il est réservé à l’offre Pro."
+msgstr "Le labo interactif compare des situations de ce cours. Il est réservé à l’offre Pro."
+
+#: src/screens/carte/Carte.tsx
+msgid "Le labo interactif est réservé à l’offre Pro."
+msgstr "Le labo interactif est réservé à l’offre Pro."
+
+#: src/screens/carte/InteractiveLab.tsx
+msgid "Le labo interactif est réservé à l’offre Pro. Les autres outils de révision restent ouverts."
+msgstr "Le labo interactif est réservé à l’offre Pro. Les autres outils de révision restent ouverts."
+
+#: src/screens/carte/InteractiveLab.tsx
+msgid "Le labo ne s’est pas chargé. Réessaie."
+msgstr "Le labo ne s’est pas chargé. Réessaie."
+
+#~ msgid "Le minuteur n’a pas pu être réinitialisé."
+#~ msgstr ""
+
+#~ msgid "Le minuteur n’a pas pu se synchroniser."
+#~ msgstr ""
+
+#: src/screens/seances/Seances.tsx
+msgid "Le minuteur reste en haut de l’écran sur toutes les pages. Seul le temps en cours compte dans tes statistiques."
+msgstr ""
+
+#: src/screens/salle/RoomSettings.tsx
+msgid "Le propriétaire a désactivé Nova dans cette salle."
+msgstr ""
+
+#: src/screens/duel/Lobby.tsx
+msgid "Le pseudo compte 3 à 30 lettres ou chiffres."
+msgstr "Le pseudo compte 3 à 30 lettres ou chiffres."
+
+#~ msgid "Le quiz est très demandé. Réessaie dans"
+#~ msgstr ""
+
+#: src/screens/carte/QuizPanel.tsx
+msgid "Le quiz est très demandé. Réessaie dans {seconds} s."
+msgstr ""
+
+#: src/screens/carte/QuizPanel.tsx
+msgid "Le quiz est très demandé. Réessaie dans quelques instants."
+msgstr ""
+
+#: src/screens/carte/QuizPanel.tsx
+msgid "Le quiz n’est pas disponible pour le moment. Réessaie."
+msgstr ""
+
+#: src/screens/carte/ChapterPanel.tsx
+msgid "Le quiz personnel par chapitre est réservé à l’offre Pro. Le quiz d’exemple reste ouvert à tous."
+msgstr ""
+
+#: src/screens/duel/Result.tsx
+msgid "Le résultat se prépare…"
+msgstr "Le résultat se prépare…"
+
+#~ msgid "Le serveur de Nova est injoignable. Vérifie ta connexion puis réessaie."
+#~ msgstr ""
+
+#: src/screens/duel/messages.ts
+msgid "Le temps d’écriture est terminé : tes dernières modifications n’ont pas pu être enregistrées."
+msgstr "Le temps d’écriture est terminé : tes dernières modifications n’ont pas pu être enregistrées."
+
+#: src/screens/carte/QuizPanel.tsx
+msgid "Le temps est écoulé : ta copie a été envoyée telle quelle."
+msgstr "Le temps est écoulé : ta copie a été envoyée telle quelle."
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "Le temps est écoulé. La correction est en cours, le résultat arrive dans un instant."
+msgstr "Le temps est écoulé. La correction est en cours, le résultat arrive dans un instant."
+
+#: src/screens/duel/Play.tsx
+msgid "Le temps est écoulé. On enregistre le dernier état de ta copie…"
+msgstr "Le temps est écoulé. On enregistre le dernier état de ta copie…"
+
+#: src/screens/salle/Consent.tsx
+msgid "Le traitement du texte par l’IA est désactivé sur ce service : ce choix n’a pas d’effet pour l’instant."
+msgstr "Le traitement du texte par l’IA est désactivé sur ce service : ce choix n’a pas d’effet pour l’instant."
+
+#: src/screens/salle/RoomCheck.tsx
+msgid "Le traitement du texte par l’IA est désactivé sur ce service."
+msgstr "Le traitement du texte par l’IA est désactivé sur ce service."
+
+#: src/screens/tuteur/AnswerMessage.tsx
+msgid "Le tuteur est occupé. Réessaie dans {seconds} s."
+msgstr ""
+
+#: src/screens/accueil/Accueil.tsx
+#: src/screens/onboarding/Plan.tsx
+#: src/screens/onboarding/Style.tsx
+#: src/screens/reglages/Reglages.tsx
+msgid "Lecture"
+msgstr ""
+
+#: src/ui/Mosaic.tsx
+msgid "Légende"
+msgstr ""
+
+#: src/screens/carte/LabPlot.tsx
+msgid "Légende du graphique"
+msgstr "Légende du graphique"
+
+#: src/screens/duel/Lobby.tsx
+msgid "Les 8 caractères que ton adversaire t’a donnés."
+msgstr "Les 8 caractères que ton adversaire t’a donnés."
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Les chapitres n’ont pas pu être chargés."
+msgstr ""
+
+#: src/screens/carte/RevisionPack.tsx
+msgid "Les fiches sont en pilote pour le bac Sciences expérimentales, avec les sources vérifiées."
+msgstr "Les fiches sont en pilote pour le bac Sciences expérimentales, avec les sources vérifiées."
+
+#: src/screens/salle/RoomSettings.tsx
+msgid "Les membres peuvent demander une explication ou un indice à Nova pendant une séance."
+msgstr ""
+
+#: src/screens/salle/Consent.tsx
+msgid "Les notions à revoir pour toi sont gardées pour te proposer une révision privée, visible seulement par toi."
+msgstr ""
+
+#: src/screens/plans/PlansSection.tsx
+msgid "Les offres Nova"
+msgstr ""
+
+#: src/screens/salle/Posts.tsx
+msgid "Les publications n’ont pas pu être chargées."
+msgstr ""
+
+#: src/screens/salle/RoomSettings.tsx
+msgid "Les publications, les séances et le quiz restent disponibles dans les deux cas."
+msgstr ""
+
+#~ msgid "Les réglages n’ont pas pu être enregistrés."
+#~ msgstr ""
+
+#: src/screens/salle/RoomSettings.tsx
+msgid "Les réglages n’ont pas pu être enregistrés. Réessaie."
+msgstr ""
+
+#: src/screens/reglages/Reglages.tsx
+msgid "Les réglages n’ont pas pu être enregistrés. Tes saisies sont conservées."
+msgstr ""
+
+#: src/screens/carte/QuizPanel.tsx
+msgid "Les réponses non données comptent comme fausses."
+msgstr "Les réponses non données comptent comme fausses."
+
+#: src/screens/seances/Seances.tsx
+msgid "Les séances de groupe se lancent dans une salle d’étude, avec Nova comme animatrice."
+msgstr ""
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Les tendances du groupe et les avis sur les explications sont réservés à l’offre Pro. Le reste de la séance reste ouvert à tous."
+msgstr "Les tendances du groupe et les avis sur les explications sont réservés à l’offre Pro. Le reste de la séance reste ouvert à tous."
+
+#~ msgid "Liberté"
+#~ msgstr ""
+
+#: src/screens/tuteur/Conversation.tsx
+msgid "Libre"
+msgstr ""
+
+#: src/screens/salle/Invite.tsx
+msgid "Lien copié. Tes amis rejoignent la salle en l’ouvrant."
+msgstr ""
+
+#: src/screens/tuteur/Conversation.tsx
+msgid "Limite de 2 000 caractères par message."
+msgstr ""
+
+#: src/screens/tuteur/Conversation.tsx
+msgid "Limite de 2 000 caractères par message. Raccourcis ton texte et renvoie-le."
+msgstr ""
+
+#~ msgid "Limites et continuité"
+#~ msgstr ""
+
+#~ msgid "Lire seulement le résumé"
+#~ msgstr ""
+
+#: src/screens/salle/RoomCheck.tsx
+msgid "Liste de contrôle"
+msgstr ""
+
+#: src/screens/salle/RoomCheck.tsx
+msgid "Liste de contrôle de la séance"
+msgstr ""
+
+#~ msgid "Listes et tableaux"
+#~ msgstr ""
+
+#~ msgid "Loi binomiale"
+#~ msgstr ""
+
+#~ msgid "Lois de Newton"
+#~ msgstr ""
+
+#: src/screens/duel/Result.tsx
+msgid "M’entraîner sur la carte"
+msgstr "M’entraîner sur la carte"
+
+#: src/screens/duel/Result.tsx
+msgid "Ma correction"
+msgstr "Ma correction"
+
+#: src/screens/tuteur/AnswerMessage.tsx
+#: src/screens/tuteur/GuidedActions.tsx
+msgid "Ma réponse"
+msgstr ""
+
+#: src/ui/Streak.tsx
+msgid "Machmoum"
+msgstr ""
+
+#: src/ui/Streak.tsx
+msgid "Machmoum d’or"
+msgstr ""
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Manche suivante"
+msgstr ""
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Manches de la séance"
+msgstr ""
+
+#: src/lib/plans.ts
+#~ msgid "Manches en groupe, quiz de la salle, notes partagées et points personnels à revoir."
+#~ msgstr ""
+
+#: src/lib/plans.ts
+msgid "Manipuler des modèles de maths ou comparer des situations dans chaque cours de révision."
+msgstr "Manipuler des modèles de maths ou comparer des situations dans chaque cours de révision."
+
+#: src/screens/onboarding/Compte.tsx
+msgid "Masquer le mot de passe"
+msgstr ""
+
+#: src/screens/onboarding/steps.ts
+#: src/screens/reglages/Reglages.tsx
+msgid "Mathématiques"
+msgstr ""
+
+#: src/screens/carte/Carte.tsx
+#: src/screens/tuteur/Conversation.tsx
+msgid "Matière"
+msgstr ""
+
+#~ msgid "Matières"
+#~ msgstr ""
+
+#: src/screens/reglages/Reglages.tsx
+msgid "Matières (facultatif)"
+msgstr ""
+
+#: src/screens/onboarding/Compte.tsx
+msgid "Me connecter"
+msgstr ""
+
+#: src/lib/plans.ts
+msgid "Me tester sur un chapitre"
+msgstr ""
+
+#: src/screens/salle/Members.tsx
+msgid "Membres"
+msgstr ""
+
+#: src/screens/salle/Members.tsx
+msgid "Membres ({count})"
+msgstr ""
+
+#: src/screens/tuteur/FeedbackControl.tsx
+msgid "Merci, c’est noté."
+msgstr ""
+
+#: src/screens/salle/Helpfulness.tsx
+msgid "Merci, ton avis est enregistré."
+msgstr ""
+
+#: src/screens/onboarding/Plan.tsx
+msgid "Mercredi"
+msgstr ""
+
+#: src/screens/salle/Consent.tsx
+msgid "Mes choix pour cette salle"
+msgstr ""
+
+#: src/screens/duel/Duel.tsx
+#: src/screens/duel/Lobby.tsx
+msgid "Mes duels"
+msgstr "Mes duels"
+
+#: src/screens/onboarding/steps.ts
+msgid "Mes notes"
+msgstr ""
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Mes points à revoir"
+msgstr ""
+
+#: src/screens/onboarding/steps.ts
+msgid "Mes propres fiches"
+msgstr ""
+
+#: src/screens/salle/RoomPage.tsx
+#: src/screens/salle/RoomsHome.tsx
+msgid "Mes salles"
+msgstr ""
+
+#: src/screens/tuteur/CheckCard.tsx
+msgid "Message de bien-être"
+msgstr ""
+
+#: src/screens/tuteur/Conversation.tsx
+msgid "Messages"
+msgstr ""
+
+#: src/screens/onboarding/Diagnostic.tsx
+msgid "Méthodes de révision"
+msgstr ""
+
+#: src/screens/seances/TimerControls.tsx
+msgid "Mettre la séance en pause"
+msgstr ""
+
+#: src/screens/onboarding/steps.ts
+msgid "Mini-diagnostic"
+msgstr ""
+
+#: src/app/FloatingTimer.tsx
+msgid "Minuteur d’étude"
+msgstr ""
+
+#: src/app/FloatingTimer.tsx
+msgid "Minuteur d’étude : {word}"
+msgstr ""
+
+#: src/screens/seances/Seances.tsx
+msgid "Minuteur de concentration"
+msgstr ""
+
+#~ msgid "Minuteur réinitialisé."
+#~ msgstr ""
+
+#: src/screens/tuteur/Conversation.tsx
+msgid "Mode"
+msgstr ""
+
+#: src/screens/onboarding/steps.ts
+msgid "Mode Feynman"
+msgstr ""
+
+#: src/screens/onboarding/Plan.tsx
+msgid "Mode Feynman · Exemple"
+msgstr ""
+
+#: src/screens/tuteur/GuidedActions.tsx
+msgid "Mode guidé"
+msgstr ""
+
+#: src/screens/plans/PlansSection.tsx
+msgid "Mon offre"
+msgstr ""
+
+#: src/screens/plans/PlanChip.tsx
+msgid "Mon offre : {name}. Voir les offres"
+msgstr ""
+
+#~ msgid "Mondialisation"
+#~ msgstr ""
+
+#: src/screens/onboarding/Compte.tsx
+msgid "Mot de passe"
+msgstr ""
+
+#: src/app/AppLayout.tsx
+msgid "Navigation principale"
+msgstr ""
+
+#~ msgid "Niveau"
+#~ msgstr ""
+
+#: src/screens/reglages/Reglages.tsx
+msgid "Niveau (facultatif)"
+msgstr ""
+
+#: src/screens/onboarding/QuizCard.tsx
+msgid "Niveau de départ"
+msgstr ""
+
+#: src/screens/salle/CreateForm.tsx
+msgid "Nom de la salle"
+msgstr ""
+
+#~ msgid "Nombres complexes"
+#~ msgstr ""
+
+#: src/screens/salle/Members.tsx
+msgid "Nommer {member} propriétaire ?"
+msgstr ""
+
+#: src/screens/salle/Members.tsx
+msgid "Nommer {name} propriétaire"
+msgstr ""
+
+#: src/screens/salle/Members.tsx
+msgid "Nommer propriétaire"
+msgstr ""
+
+#: src/screens/duel/Play.tsx
+msgid "Non enregistré"
+msgstr "Non enregistré"
+
+#: src/screens/plans/PlansSection.tsx
+msgid "Non inclus"
+msgstr ""
+
+#~ msgid "non précisée"
+#~ msgstr ""
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Non vérifié"
+msgstr ""
+
+#: src/screens/tuteur/FeedbackControl.tsx
+msgid "Non, pas utile"
+msgstr ""
+
+#: src/screens/carte/Carte.tsx
+msgid "Notation"
+msgstr ""
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Notes de la séance"
+msgstr ""
+
+#: src/screens/carte/Carte.tsx
+msgid "Notion"
+msgstr ""
+
+#: src/screens/salle/Insights.tsx
+msgid "Notions à revoir ensemble"
+msgstr ""
+
+#: src/screens/salle/AskNova.tsx
+msgid "Notions concernées (facultatif)"
+msgstr ""
+
+#: src/screens/salle/Insights.tsx
+msgid "Notions déjà abordées"
+msgstr ""
+
+#: src/screens/salle/Insights.tsx
+msgid "Notions les plus demandées"
+msgstr ""
+
+#: src/screens/tuteur/Conversation.tsx
+msgid "Nouvel exercice"
+msgstr ""
+
+#: src/screens/tuteur/ThreadList.tsx
+#: src/screens/tuteur/Tuteur.tsx
+msgid "Nouvelle conversation"
+msgstr ""
+
+#: src/screens/tuteur/GuidedActions.tsx
+msgid "Nouvelle question"
+msgstr ""
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Nouvelle séance"
+msgstr ""
+
+#: src/screens/NotFound.tsx
+msgid "Nova a cherché partout, mais cette page n’existe pas."
+msgstr "Nova a cherché partout, mais cette page n’existe pas."
+
+#: src/screens/salle/AskNova.tsx
+msgid "Nova a déjà beaucoup répondu à la salle. Réessaie dans un moment."
+msgstr ""
+
+#: src/screens/salle/AskNova.tsx
+msgid "Nova a été désactivée dans cette salle. Ta place est gardée : tu peux continuer à étudier, publier et faire le quiz."
+msgstr ""
+
+#~ msgid "Nova a rencontré une erreur interne. Tu peux réessayer."
+#~ msgstr ""
+
+#~ msgid "Nova a renvoyé une réponse invalide. Tu peux réessayer."
+#~ msgstr ""
+
+#: src/screens/salle/AskNova.tsx
+msgid "Nova a répondu : sa réponse est dans les publications de la salle."
+msgstr ""
+
+#: src/screens/salle/RoomSettings.tsx
+msgid "Nova aide la salle"
+msgstr ""
+
+#: src/screens/onboarding/Bac.tsx
+msgid "Nova choisit les extraits du cours selon ta section. Tu pourras la changer dans les réglages."
+msgstr ""
+
+#: src/screens/carte/QuizPanel.tsx
+msgid "Nova corrige ta copie…"
+msgstr "Nova corrige ta copie…"
+
+#: src/screens/salle/RoomSettings.tsx
+msgid "Nova dans la salle"
+msgstr ""
+
+#: src/screens/salle/AskNova.tsx
+msgid "Nova est désactivée dans cette salle. Tu peux toujours étudier, publier et faire le quiz."
+msgstr ""
+
+#~ msgid "Nova est hors ligne pour le moment. Réessaie dans quelques minutes."
+#~ msgstr ""
+
+#: src/screens/salle/AskNova.tsx
+msgid "Nova est momentanément indisponible. Réessaie."
+msgstr ""
+
+#: src/screens/carte/RevisionPack.tsx
+#: src/screens/salle/AskNova.tsx
+msgid "Nova est très sollicitée. Réessaie dans {seconds} s."
+msgstr ""
+
+#: src/screens/carte/RevisionPack.tsx
+#: src/screens/salle/AskNova.tsx
+#: src/screens/salle/SessionPanel.tsx
+msgid "Nova est très sollicitée. Réessaie dans quelques instants."
+msgstr ""
+
+#: src/screens/onboarding/Bienvenue.tsx
+msgid "Nova l’axolotl te fait coucou"
+msgstr ""
+
+#: src/screens/salle/RoomCheck.tsx
+msgid "Nova n’a pas pu relire ton texte à l’instant."
+msgstr "Nova n’a pas pu relire ton texte à l’instant."
+
+#: src/screens/salle/AskNova.tsx
+msgid "Nova n’a pas pu répondre cette fois. Réessaie."
+msgstr ""
+
+#: src/screens/salle/Posts.tsx
+msgid "Nova ne lit tes messages que si tu l’as autorisé dans « Mes choix pour cette salle »."
+msgstr ""
+
+#: src/screens/salle/Consent.tsx
+msgid "Nova peut lire mes messages"
+msgstr ""
+
+#: src/screens/salle/RoomSettings.tsx
+msgid "Nova peut proposer une relance à la fin d’une manche et un résumé en fin de séance."
+msgstr ""
+
+#: src/screens/salle/RoomSettings.tsx
+msgid "Nova peut répondre aux demandes de la salle pendant une séance."
+msgstr ""
+
+#: src/screens/salle/Consent.tsx
+msgid "Nova peut tenir compte de mes préférences"
+msgstr ""
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Nova prépare l’objectif de la séance…"
+msgstr ""
+
+#: src/screens/salle/AskNova.tsx
+msgid "Nova prépare sa réponse…"
+msgstr ""
+
+#: src/screens/duel/Result.tsx
+msgid "Nova prépare son bilan… il apparaîtra ici."
+msgstr "Nova prépare son bilan… il apparaîtra ici."
+
+#: src/screens/carte/RevisionPack.tsx
+msgid "Nova prépare ta fiche…"
+msgstr "Nova prépare ta fiche…"
+
+#: src/screens/carte/RevisionPack.tsx
+msgid "Nova prépare une fiche avec ses sources et trois cartes de rappel. Cela peut prendre un moment."
+msgstr "Nova prépare une fiche avec ses sources et trois cartes de rappel. Cela peut prendre un moment."
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Nova rédige les notes de la séance…"
+msgstr ""
+
+#: src/screens/salle/AskNova.tsx
+msgid "Nova reprend la notion pour le groupe."
+msgstr ""
+
+#: src/screens/accueil/HomeOverview.tsx
+msgid "Nova te propose"
+msgstr ""
+
+#: src/screens/salle/ExplanationCheck.tsx
+msgid "Nova vérifie ton explication…"
+msgstr ""
+
+#: src/app/OnboardingLayout.tsx
+msgid "Nova, revenir au début"
+msgstr ""
+
+#: src/screens/reglages/Reglages.tsx
+msgid "Nuit"
+msgstr ""
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Objectif :"
+msgstr ""
+
+#: src/screens/plans/PlansSection.tsx
+msgid "Offre gratuite"
+msgstr "Offre gratuite"
+
+#: src/screens/plans/PlansSection.tsx
+msgid "Offre Pro"
+msgstr "Offre Pro"
+
+#: src/screens/seances/TimerControls.tsx
+msgid "OK"
+msgstr ""
+
+#: src/screens/tuteur/CheckCard.tsx
+msgid "On fait une pause ensemble ?"
+msgstr ""
+
+#~ msgid "Ondes"
+#~ msgstr ""
+
+#: src/screens/tuteur/FeedbackControl.tsx
+msgid "Oui, utile"
+msgstr ""
+
+#~ msgid "outil"
+#~ msgstr ""
+
+#~ msgid "outils"
+#~ msgstr ""
+
+#: src/screens/carte/Carte.tsx
+msgid "Outils de révision"
+msgstr "Outils de révision"
+
+#: src/screens/duel/Lobby.tsx
+msgid "Ouvrir"
+msgstr "Ouvrir"
+
+#: src/screens/carte/Carte.tsx
+msgid "Ouvrir le labo"
+msgstr "Ouvrir le labo"
+
+#: src/screens/carte/Carte.tsx
+msgid "Ouvrir le labo : {topic}"
+msgstr "Ouvrir le labo : {topic}"
+
+#: src/screens/carte/RevisionPack.tsx
+#: src/screens/tuteur/AnswerMessage.tsx
+#: src/ui/SourceChip.tsx
+msgid "p. {page}"
+msgstr ""
+
+#: src/screens/NotFound.tsx
+msgid "Page introuvable"
+msgstr "Page introuvable"
+
+#: src/screens/onboarding/diagnosticBank.ts
+msgid "Par analogies"
+msgstr ""
+
+#: src/screens/onboarding/diagnosticBank.ts
+msgid "Par étapes"
+msgstr ""
+
+#: src/screens/onboarding/diagnosticBank.ts
+msgid "Par exemples"
+msgstr ""
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Participer à une séance de groupe"
+msgstr ""
+
+#: src/lib/plans.ts
+msgid "Participer à une séance Nova"
+msgstr ""
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Partiel"
+msgstr ""
+
+#: src/screens/tuteur/FeedbackControl.tsx
+msgid "Pas à mon niveau"
+msgstr ""
+
+#: src/screens/salle/Insights.tsx
+msgid "Pas à pas"
+msgstr ""
+
+#: src/screens/tuteur/FeedbackControl.tsx
+msgid "Pas clair"
+msgstr ""
+
+#: src/screens/onboarding/Compte.tsx
+msgid "Pas d’e-mail, pas de numéro de téléphone. Tu peux supprimer ton compte et toutes tes données à tout moment."
+msgstr ""
+
+#: src/screens/tuteur/AnswerMessage.tsx
+msgid "Pas dans ton cours"
+msgstr ""
+
+#: src/screens/salle/Posts.tsx
+msgid "Pas de format précisé"
+msgstr "Pas de format précisé"
+
+#: src/screens/onboarding/Diagnostic.tsx
+msgid "Pas de note, pas de chrono. Si tu hésites, choisis ce qui te semble le plus juste."
+msgstr ""
+
+#: src/screens/tuteur/CheckCard.tsx
+msgid "Pas encore"
+msgstr ""
+
+#: src/screens/accueil/HomeOverview.tsx
+#: src/screens/carte/ChapterMap.tsx
+msgid "Pas encore de données"
+msgstr ""
+
+#: src/screens/onboarding/Diagnostic.tsx
+#: src/ui/Mosaic.tsx
+msgid "Pas encore évalué"
+msgstr ""
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "Pas prêt"
+msgstr "Pas prêt"
+
+#: src/screens/salle/Helpfulness.tsx
+msgid "Pas utile"
+msgstr ""
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Passage à la manche suivante…"
+msgstr ""
+
+#: src/screens/tuteur/AnswerMessage.tsx
+msgid "Passage de ton manuel, sans IA"
+msgstr ""
+
+#~ msgid "Passer à un autre sujet"
+#~ msgstr ""
+
+#: src/app/ThemeToggle.tsx
+msgid "Passer en mode Jour"
+msgstr ""
+
+#: src/app/ThemeToggle.tsx
+msgid "Passer en mode Nuit"
+msgstr ""
+
+#: src/lib/plans.ts
+msgid "Passer la même épreuve chronométrée qu’un autre membre Pro de la salle et recevoir un résultat immédiat."
+msgstr "Passer la même épreuve chronométrée qu’un autre membre Pro de la salle et recevoir un résultat immédiat."
+
+#: src/screens/seances/TimerControls.tsx
+msgid "Passer la pause"
+msgstr "Passer la pause"
+
+#: src/screens/onboarding/Diagnostic.tsx
+msgid "Passer les questions"
+msgstr ""
+
+#: src/screens/seances/TimerControls.tsx
+msgid "Pause"
+msgstr ""
+
+#: src/screens/seances/Seances.tsx
+#~ msgid "Pause : Nova fait une sieste jusqu’à ton retour."
+#~ msgstr "Pause : Nova fait une sieste jusqu’à ton retour."
+
+#: src/screens/seances/Seances.tsx
+msgid "Pause de 5 minutes : Nova fait une sieste. Ce temps ne compte pas dans tes statistiques."
+msgstr "Pause de 5 minutes : Nova fait une sieste. Ce temps ne compte pas dans tes statistiques."
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "Personne n’a démarré à temps. Tu peux créer un nouveau duel."
+msgstr "Personne n’a démarré à temps. Tu peux créer un nouveau duel."
+
+#~ msgid "Philosophie"
+#~ msgstr ""
+
+#~ msgid "Photosynthèse"
+#~ msgstr ""
+
+#~ msgid "Physique"
+#~ msgstr ""
+
+#: src/screens/carte/Carte.tsx
+msgid "Pistes de révision"
+msgstr ""
+
+#: src/screens/tuteur/GuidedActions.tsx
+msgid "Plus d’indice"
+msgstr ""
+
+#: src/screens/salle/RoomCheck.tsx
+msgid "Points du cours à ajouter :"
+msgstr "Points du cours à ajouter :"
+
+#: src/screens/tuteur/Conversation.tsx
+msgid "Pose ta question…"
+msgstr ""
+
+#: src/screens/tuteur/Conversation.tsx
+msgid "Pose une question ou choisis une idée pour commencer."
+msgstr ""
+
+#: src/screens/accueil/HomeOverview.tsx
+msgid "Poser ma première question"
+msgstr ""
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Posez vos questions anonymes sur ce qui reste flou."
+msgstr ""
+
+#: src/screens/plans/PlansSection.tsx
+msgid "Pour tes révisions au quotidien"
+msgstr ""
+
+#: src/screens/tuteur/FeedbackControl.tsx
+msgid "Pourquoi ?"
+msgstr ""
+
+#: src/screens/carte/Carte.tsx
+msgid "Préparer ma fiche"
+msgstr "Préparer ma fiche"
+
+#: src/lib/plans.ts
+msgid "Préparer mes révisions"
+msgstr ""
+
+#: src/screens/reglages/Reglages.tsx
+msgid "Présentation"
+msgstr ""
+
+#: src/screens/accueil/Accueil.tsx
+msgid "Présentation : {style}"
+msgstr ""
+
+#: src/screens/tuteur/CheckCard.tsx
+msgid "Presque : il manque une pièce"
+msgstr ""
+
+#: src/screens/duel/DuelRoom.tsx
+#: src/screens/seances/TimerControls.tsx
+msgid "Prêt"
+msgstr ""
+
+#~ msgid "Prévoir plusieurs rappels"
+#~ msgstr ""
+
+#~ msgid "Primitives"
+#~ msgstr ""
+
+#: src/screens/plans/LockedNotice.tsx
+#: src/screens/plans/PlanBadge.tsx
+#: src/screens/plans/PlanChip.tsx
+#: src/screens/plans/PlansSection.tsx
+msgid "Pro"
+msgstr ""
+
+#~ msgid "Probabilités"
+#~ msgstr ""
+
+#~ msgid "Probabilités conditionnelles"
+#~ msgstr ""
+
+#: src/screens/accueil/HomeOverview.tsx
+msgid "Prochaine étape"
+msgstr ""
+
+#: src/screens/reglages/Reglages.tsx
+msgid "Profil facultatif"
+msgstr ""
+
+#~ msgid "Propose des exercices de grammaire anglaise."
+#~ msgstr ""
+
+#: src/screens/tuteur/Conversation.tsx
+msgid "Propose un exercice pour m’entraîner."
+msgstr ""
+
+#: src/screens/plans/PlansSection.tsx
+msgid "Propose un exercice sur la dérivabilité."
+msgstr ""
+
+#: src/screens/tuteur/Conversation.tsx
+msgid "Propose un nouvel exercice dans cette matière."
+msgstr ""
+
+#: src/screens/tuteur/Conversation.tsx
+msgid "Propose un nouvel exercice."
+msgstr ""
+
+#: src/screens/salle/Members.tsx
+msgid "Propriétaire"
+msgstr ""
+
+#: src/app/OnboardingLayout.tsx
+msgid "Prototype : contenus, pages du manuel et résultats d’exemple."
+msgstr ""
+
+#: src/screens/onboarding/Compte.tsx
+#: src/screens/reglages/Reglages.tsx
+msgid "Pseudo"
+msgstr ""
+
+#: src/screens/salle/Posts.tsx
+msgid "Publication…"
+msgstr ""
+
+#: src/screens/salle/Posts.tsx
+msgid "Publications de la salle"
+msgstr ""
+
+#: src/screens/salle/Posts.tsx
+msgid "Publier"
+msgstr ""
+
+#: src/screens/onboarding/Outils.tsx
+msgid "Qu’est-ce que tu veux avoir sous la main ?"
+msgstr ""
+
+#~ msgid "qu'on te dessine la situation"
+#~ msgstr ""
+
+#~ msgid "qu'on te donne la prochaine étape"
+#~ msgstr ""
+
+#~ msgid "qu'on te l'explique avec une image"
+#~ msgstr ""
+
+#~ msgid "Quand tu bloques sur un exercice, tu aimerais…"
+#~ msgstr ""
+
+#~ msgid "Quand tu découvres une nouvelle notion, tu préfères…"
+#~ msgstr ""
+
+#: src/screens/tuteur/Conversation.tsx
+msgid "Que veux-tu apprendre aujourd’hui ?"
+msgstr ""
+
+#: src/screens/carte/RevisionPack.tsx
+msgid "Quelle est la dérivée de $f(x)=x^2$ ?"
+msgstr "Quelle est la dérivée de $f(x)=x^2$ ?"
+
+#~ msgid "Quelle explication préfères-tu pour {topic}"
+#~ msgstr ""
+
+#~ msgid "Question"
+#~ msgstr ""
+
+#. placeholder {0}: index + 1
+#: src/screens/duel/Play.tsx
+msgid "Question {0}"
+msgstr "Question {0}"
+
+#: src/screens/duel/Result.tsx
+msgid "Question {n}"
+msgstr "Question {n}"
+
+#: src/screens/onboarding/QuizCard.tsx
+msgid "Question {step} sur {total}"
+msgstr ""
+
+#: src/screens/salle/AskNova.tsx
+#: src/screens/salle/Posts.tsx
+msgid "Question anonyme"
+msgstr ""
+
+#: src/lib/plans.ts
+msgid "Question sur la dérivation avec correction, à refaire à tout moment."
+msgstr ""
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Questions"
+msgstr ""
+
+#: src/lib/plans.ts
+msgid "Questions de cours et exercices guidés"
+msgstr ""
+
+#: src/lib/plans.ts
+msgid "Questions de cours, sources disponibles, exercices guidés, indices et corrections."
+msgstr ""
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "Quitter avant le début"
+msgstr "Quitter avant le début"
+
+#: src/screens/salle/RoomPage.tsx
+msgid "Quitter la salle"
+msgstr ""
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "Quitter le duel"
+msgstr "Quitter le duel"
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Quiz"
+msgstr ""
+
+#: src/lib/plans.ts
+#: src/screens/carte/Carte.tsx
+#: src/screens/carte/QuizPanel.tsx
+msgid "Quiz d’exemple"
+msgstr ""
+
+#: src/screens/carte/QuizPanel.tsx
+msgid "Quiz de la séance"
+msgstr ""
+
+#: src/screens/carte/ChapterPanel.tsx
+#: src/screens/carte/QuizPanel.tsx
+#: src/screens/salle/RoomQuiz.tsx
+msgid "Quiz du chapitre"
+msgstr ""
+
+#: src/screens/carte/QuizPanel.tsx
+msgid "Quiz du chapitre :"
+msgstr ""
+
+#: src/screens/reglages/Reglages.tsx
+msgid "Raccourcis sur l’accueil"
+msgstr ""
+
+#~ msgid "Réactions acido-basiques"
+#~ msgstr ""
+
+#: src/screens/duel/Lobby.tsx
+msgid "Récents"
+msgstr "Récents"
+
+#: src/screens/reglages/DeleteAccount.tsx
+msgid "Recopie exactement ton pseudo."
+msgstr ""
+
+#~ msgid "Recopier le texte"
+#~ msgstr ""
+
+#: src/screens/carte/InteractiveLab.tsx
+#: src/screens/carte/QuizPanel.tsx
+#: src/screens/carte/RevisionPack.tsx
+#: src/screens/tuteur/FeedbackControl.tsx
+#: src/ui/ErrorBanner.tsx
+msgid "Réessayer"
+msgstr ""
+
+#: src/screens/tuteur/CheckCard.tsx
+msgid "Réexpliquer"
+msgstr ""
+
+#: src/screens/carte/QuizPanel.tsx
+msgid "Refaire le quiz"
+msgstr ""
+
+#: src/app/AppLayout.tsx
+#: src/screens/reglages/Reglages.tsx
+#: src/screens/reglages/ReglagesScreen.tsx
+msgid "Réglages"
+msgstr ""
+
+#: src/screens/reglages/Reglages.tsx
+msgid "Réglages enregistrés."
+msgstr ""
+
+#: src/screens/salle/RoomSettings.tsx
+msgid "Régler Nova pour la salle"
+msgstr ""
+
+#: src/screens/duel/Result.tsx
+msgid "Règles de dérivation"
+msgstr "Règles de dérivation"
+
+#: src/screens/seances/TimerControls.tsx
+msgid "Réinitialiser"
+msgstr ""
+
+#: src/screens/seances/TimerControls.tsx
+msgid "Réinitialiser le minuteur"
+msgstr ""
+
+#: src/screens/salle/JoinForm.tsx
+msgid "Rejoindre"
+msgstr ""
+
+#: src/screens/duel/Lobby.tsx
+#: src/screens/salle/JoinForm.tsx
+msgid "Rejoindre avec un code"
+msgstr ""
+
+#: src/screens/duel/Lobby.tsx
+msgid "Rejoindre le duel"
+msgstr "Rejoindre le duel"
+
+#: src/screens/salle/RoomSettings.tsx
+msgid "Relances automatiques à chaque manche"
+msgstr ""
+
+#: src/screens/salle/RoomCheck.tsx
+msgid "Relecture de Nova"
+msgstr "Relecture de Nova"
+
+#: src/screens/salle/RoomCheck.tsx
+msgid "Relecture générée par l’IA : vérifie-la avec ton cours."
+msgstr "Relecture générée par l’IA : vérifie-la avec ton cours."
+
+#: src/screens/salle/RoomCheck.tsx
+msgid "Relire avec la liste de contrôle"
+msgstr ""
+
+#~ msgid "Relire seulement le titre"
+#~ msgstr ""
+
+#: src/screens/salle/RoomCheck.tsx
+msgid "Relis ton explication point par point. Cette liste ne la note pas."
+msgstr ""
+
+#: src/screens/duel/Play.tsx
+msgid "Rendre ma copie"
+msgstr "Rendre ma copie"
+
+#: src/screens/duel/Play.tsx
+msgid "Rendre ta copie ?"
+msgstr "Rendre ta copie ?"
+
+#: src/screens/tuteur/AnswerMessage.tsx
+msgid "Réponse appuyée sur ton manuel"
+msgstr ""
+
+#: src/screens/tuteur/AnswerMessage.tsx
+msgid "Réponse générale, hors de ton programme"
+msgstr ""
+
+#~ msgid "réponse générée par IA"
+#~ msgstr ""
+
+#: src/screens/salle/Posts.tsx
+msgid "Réponse générée par l’IA : vérifie-la avec ton cours."
+msgstr ""
+
+#: src/screens/carte/Carte.tsx
+msgid "Réponse incomplète"
+msgstr ""
+
+#~ msgid "Réponse indisponible. Tu peux réessayer."
+#~ msgstr ""
+
+#: src/screens/seances/TimerControls.tsx
+msgid "Repos"
+msgstr "Repos"
+
+#: src/screens/seances/TimerControls.tsx
+msgid "Reprendre"
+msgstr ""
+
+#: src/screens/accueil/HomeOverview.tsx
+msgid "Reprendre ·"
+msgstr ""
+
+#: src/screens/plans/LockedNotice.tsx
+msgid "Réservé à l’offre Pro, activée par l’équipe Nova. Tu peux demander l’accès depuis la page des offres."
+msgstr ""
+
+#~ msgid "résolu"
+#~ msgstr ""
+
+#: src/screens/carte/InteractiveLab.tsx
+msgid "Résultat attendu"
+msgstr "Résultat attendu"
+
+#: src/screens/duel/DuelRoom.tsx
+#: src/screens/duel/Result.tsx
+msgid "Résultat du duel"
+msgstr "Résultat du duel"
+
+#~ msgid "Résume les grandes étapes de la Révolution française."
+#~ msgstr ""
+
+#: src/screens/salle/Members.tsx
+msgid "Retirer"
+msgstr ""
+
+#: src/screens/salle/Members.tsx
+msgid "Retirer {member} de la salle ?"
+msgstr ""
+
+#: src/screens/salle/Members.tsx
+msgid "Retirer {name}"
+msgstr ""
+
+#: src/screens/onboarding/StepFrame.tsx
+msgid "Retour"
+msgstr ""
+
+#: src/screens/NotFound.tsx
+msgid "Retour à l’accueil"
+msgstr "Retour à l’accueil"
+
+#: src/screens/NotFound.tsx
+msgid "Retour à la bienvenue"
+msgstr "Retour à la bienvenue"
+
+#: src/screens/duel/Duel.tsx
+#: src/screens/duel/DuelRoom.tsx
+#: src/screens/duel/Result.tsx
+msgid "Retour à la salle"
+msgstr "Retour à la salle"
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "Retour aux duels"
+msgstr "Retour aux duels"
+
+#: src/lib/plans.ts
+#: src/screens/carte/Carte.tsx
+msgid "Retravailler une erreur"
+msgstr ""
+
+#: src/screens/onboarding/Plan.tsx
+msgid "Retrouver de mémoire ce que tu as appris"
+msgstr ""
+
+#: src/screens/carte/Carte.tsx
+msgid "Révise ces notions avec Nova. Le suivi par chapitre est disponible en mathématiques."
+msgstr ""
+
+#: src/screens/onboarding/Bienvenue.tsx
+msgid "Révise tes matières, pose des questions et entraîne-toi à expliquer avec tes propres mots. Préparons ton espace."
+msgstr ""
+
+#: src/screens/carte/Carte.tsx
+msgid "Réviser : {topic}"
+msgstr ""
+
+#: src/screens/salle/RoomsHome.tsx
+#: src/screens/seances/Seances.tsx
+msgid "Réviser à plusieurs"
+msgstr ""
+
+#: src/lib/plans.ts
+msgid "Réviser avec mes amis"
+msgstr ""
+
+#: src/screens/onboarding/Plan.tsx
+msgid "Réviser une notion dans la matière de ton choix"
+msgstr ""
+
+#: src/screens/onboarding/Plan.tsx
+msgid "Révision · Exemple"
+msgstr ""
+
+#~ msgid "Révolution française"
+#~ msgstr ""
+
+#~ msgid "Révolution industrielle"
+#~ msgstr ""
+
+#: src/screens/carte/Carte.tsx
+msgid "S’entraîner"
+msgstr ""
+
+#: src/screens/accueil/HomeOverview.tsx
+#: src/screens/carte/ChapterPanel.tsx
+msgid "S’entraîner sur ce chapitre"
+msgstr ""
+
+#: src/screens/salle/JoinForm.tsx
+msgid "Saisis le code que ton ami t’a envoyé. La salle s’ouvre dès que les 6 caractères sont bons."
+msgstr ""
+
+#: src/app/AppLayout.tsx
+msgid "Salle"
+msgstr ""
+
+#~ msgid "Salle créée. Partage le code ou le lien pour inviter tes amis."
+#~ msgstr ""
+
+#: src/screens/duel/Lobby.tsx
+msgid "Salle d’attente"
+msgstr "Salle d’attente"
+
+#: src/app/AppLayout.tsx
+#: src/screens/salle/Salle.tsx
+msgid "Salle d’étude"
+msgstr ""
+
+#: src/screens/salle/CreateForm.tsx
+msgid "Salle de {owner}"
+msgstr ""
+
+#~ msgid "Salle fermée."
+#~ msgstr ""
+
+#: src/lib/plans.ts
+#~ msgid "Salles d’étude et quiz d’exemple"
+#~ msgstr ""
+
+#: src/lib/plans.ts
+msgid "Salles d’étude, séances Nova des salles Pro et quiz d’exemple"
+msgstr "Salles d’étude, séances Nova des salles Pro et quiz d’exemple"
+
+#: src/screens/onboarding/Bienvenue.tsx
+msgid "Salut, moi c’est Nova."
+msgstr ""
+
+#: src/screens/tuteur/AnswerMessage.tsx
+msgid "sans IA"
+msgstr ""
+
+#: src/screens/tuteur/Tuteur.tsx
+msgid "Sans matière"
+msgstr ""
+
+#: src/screens/tuteur/Conversation.tsx
+msgid "Sans préférence"
+msgstr ""
+
+#: src/screens/salle/Insights.tsx
+msgid "Schéma"
+msgstr ""
+
+#: src/screens/onboarding/steps.ts
+#: src/screens/reglages/Reglages.tsx
+msgid "Sciences expérimentales"
+msgstr ""
+
+#: src/screens/carte/QuizPanel.tsx
+msgid "Score :"
+msgstr ""
+
+#: src/screens/reglages/Reglages.tsx
+msgid "Se déconnecter"
+msgstr ""
+
+#~ msgid "Séance"
+#~ msgstr ""
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Séance de groupe"
+msgstr ""
+
+#: src/screens/accueil/HomeOverview.tsx
+#: src/screens/salle/RoomsHome.tsx
+msgid "Séance en cours"
+msgstr ""
+
+#~ msgid "Séance en cours."
+#~ msgstr ""
+
+#: src/screens/seances/Seances.tsx
+msgid "Séance en pause : reprends quand tu veux."
+msgstr "Séance en pause : reprends quand tu veux."
+
+#~ msgid "Séance en pause."
+#~ msgstr ""
+
+#: src/screens/seances/Seances.tsx
+msgid "Séance terminée. Bravo !"
+msgstr ""
+
+#~ msgid "Séances"
+#~ msgstr ""
+
+#: src/screens/seances/Seances.tsx
+msgid "Séances récentes"
+msgstr ""
+
+#: src/screens/reglages/Reglages.tsx
+msgid "Section du bac"
+msgstr ""
+
+#: src/screens/reglages/Reglages.tsx
+msgid "Selon le diagnostic"
+msgstr ""
+
+#: src/screens/reglages/Reglages.tsx
+msgid "Sépare les matières par une virgule."
+msgstr ""
+
+#: src/screens/accueil/HomeOverview.tsx
+#: src/screens/seances/Seances.tsx
+msgid "Série"
+msgstr ""
+
+#: src/ui/Streak.tsx
+msgid "Série : {days, plural, one {# jour} other {# jours}} de suite"
+msgstr ""
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Seul le propriétaire de la salle peut lancer ou terminer la séance."
+msgstr ""
+
+#~ msgid "Si tu apprends cinq mots lundi, teste-toi mardi puis vendredi au lieu de relire la liste cinq fois lundi."
+#~ msgstr ""
+
+#~ msgid "Similitudes"
+#~ msgstr ""
+
+#: src/screens/carte/InteractiveLab.tsx
+msgid "Situation"
+msgstr "Situation"
+
+#: src/screens/onboarding/Diagnostic.tsx
+msgid "Six questions rapides pour savoir par où commencer."
+msgstr ""
+
+#: src/ui/Mosaic.tsx
+msgid "Solide"
+msgstr ""
+
+#: src/screens/duel/Lobby.tsx
+msgid "Son pseudo, tel qu’il apparaît dans la salle. Sans pseudo, tu reçois un code à lui donner."
+msgstr "Son pseudo, tel qu’il apparaît dans la salle. Sans pseudo, tu reçois un code à lui donner."
+
+#: src/screens/onboarding/Plan.tsx
+msgid "Source"
+msgstr ""
+
+#: src/ui/SourceChip.tsx
+msgid "Source : {book}, page {page}"
+msgstr ""
+
+#: src/screens/tuteur/AnswerMessage.tsx
+msgid "Sources"
+msgstr ""
+
+#~ msgid "Statistiques"
+#~ msgstr ""
+
+#~ msgid "Suites réelles"
+#~ msgstr ""
+
+#: src/screens/onboarding/QuizCard.tsx
+msgid "Suivant"
+msgstr ""
+
+#: src/lib/plans.ts
+msgid "Suivi des chapitres et du temps de révision"
+msgstr ""
+
+#: src/screens/salle/Consent.tsx
+msgid "Suivi personnel après la séance"
+msgstr ""
+
+#: src/screens/salle/SessionPanel.tsx
+#~ msgid "Suivre les manches, répondre au quiz de la salle et lire les notes est réservé à l’offre Pro. Le reste de la salle reste ouvert à tous."
+#~ msgstr ""
+
+#: src/lib/plans.ts
+msgid "Suivre ma progression"
+msgstr ""
+
+#: src/screens/carte/InteractiveLab.tsx
+msgid "Sujet du labo"
+msgstr "Sujet du labo"
+
+#: src/screens/reglages/DeleteAccount.tsx
+msgid "Supprimer définitivement"
+msgstr ""
+
+#: src/screens/reglages/DeleteAccount.tsx
+msgid "Supprimer mon compte"
+msgstr ""
+
+#: src/screens/reglages/DeleteAccount.tsx
+msgid "Supprimer ton compte ?"
+msgstr ""
+
+#: src/screens/reglages/DeleteAccount.tsx
+msgid "Supprimer ton compte et les données qui lui sont associées. Cette action est définitive. Pour confirmer, recopie ton pseudo."
+msgstr ""
+
+#~ msgid "sur"
+#~ msgstr ""
+
+#: src/screens/onboarding/Plan.tsx
+msgid "Sur un arbre, on multiplie le long d’un chemin : $P(A \\cap B) = 0'{','}'4 \\times 0'{','}'25 = 0'{','}'1$."
+msgstr ""
+
+#~ msgid "SVT"
+#~ msgstr ""
+
+#: src/screens/reglages/Reglages.tsx
+msgid "Système"
+msgstr ""
+
+#: src/screens/accueil/HomeOverview.tsx
+#: src/screens/carte/ChapterMap.tsx
+msgid "Ta carte se remplit dès ta première question."
+msgstr ""
+
+#: src/screens/duel/Play.tsx
+msgid "Ta copie est rendue. On attend ton adversaire ou la fin du temps."
+msgstr "Ta copie est rendue. On attend ton adversaire ou la fin du temps."
+
+#: src/screens/onboarding/QuizCard.tsx
+#: src/screens/onboarding/steps.ts
+#: src/screens/onboarding/Style.tsx
+msgid "Ta façon d’apprendre"
+msgstr ""
+
+#: src/screens/carte/ChapterMap.tsx
+msgid "Ta mosaïque"
+msgstr ""
+
+#: src/screens/salle/Consent.tsx
+msgid "Ta participation peut compter dans les notions repérées pour la salle et te permet d’évaluer l’utilité d’une explication. Seules des notions sont partagées, jamais ton texte."
+msgstr ""
+
+#: src/screens/carte/InteractiveLab.tsx
+msgid "Ta prédiction"
+msgstr "Ta prédiction"
+
+#: src/screens/accueil/HomeOverview.tsx
+msgid "Ta prochaine étape"
+msgstr ""
+
+#: src/screens/tuteur/Conversation.tsx
+msgid "Ta question"
+msgstr ""
+
+#: src/screens/duel/Play.tsx
+#: src/screens/tuteur/CheckCard.tsx
+#: src/screens/tuteur/Conversation.tsx
+msgid "Ta réponse"
+msgstr ""
+
+#: src/screens/duel/Play.tsx
+msgid "Ta réponse (un nombre)"
+msgstr "Ta réponse (un nombre)"
+
+#: src/screens/onboarding/Bac.tsx
+msgid "Ta section du bac"
+msgstr ""
+
+#: src/app/AppLayout.tsx
+msgid "Temps"
+msgstr ""
+
+#: src/app/AppLayout.tsx
+#: src/screens/seances/Seances.tsx
+msgid "Temps d’étude"
+msgstr ""
+
+#: src/screens/carte/QuizPanel.tsx
+#: src/screens/duel/Play.tsx
+msgid "Temps restant"
+msgstr "Temps restant"
+
+#~ msgid "Temps verbaux"
+#~ msgstr ""
+
+#: src/screens/salle/Insights.tsx
+#: src/screens/salle/SessionPanel.tsx
+msgid "Tendances du groupe"
+msgstr ""
+
+#: src/screens/duel/Lobby.tsx
+#: src/screens/seances/TimerControls.tsx
+msgid "Terminé"
+msgstr ""
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Terminée"
+msgstr ""
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Terminer avec les notes de Nova"
+msgstr ""
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Terminer la séance"
+msgstr ""
+
+#: src/screens/salle/Consent.tsx
+msgid "Tes choix n’ont pas pu être chargés."
+msgstr ""
+
+#: src/app/OnboardingLayout.tsx
+#: src/screens/onboarding/Plan.tsx
+msgid "Tes choix n’ont pas pu être enregistrés. Réessaie."
+msgstr ""
+
+#: src/screens/duel/messages.ts
+msgid "Tes dernières modifications n’ont pas pu être enregistrées."
+msgstr "Tes dernières modifications n’ont pas pu être enregistrées."
+
+#: src/screens/salle/Consent.tsx
+msgid "Tes explications et questions éligibles peuvent être traitées pour aider la salle. Ton accord ne suffit pas : le service doit aussi avoir autorisé ce traitement du texte."
+msgstr ""
+
+#: src/screens/onboarding/steps.ts
+msgid "Tes fiches, avec des formules bien écrites."
+msgstr ""
+
+#: src/screens/onboarding/steps.ts
+msgid "Tes notes de cours au même endroit."
+msgstr ""
+
+#: src/screens/accueil/HomeOverview.tsx
+#: src/screens/onboarding/Plan.tsx
+#: src/screens/onboarding/steps.ts
+msgid "Tes outils"
+msgstr ""
+
+#: src/screens/onboarding/Outils.tsx
+msgid "Tes outils d’étude"
+msgstr ""
+
+#: src/screens/duel/messages.ts
+msgid "Tes réponses ont été rechargées depuis le serveur. Vérifie-les puis recommence."
+msgstr "Tes réponses ont été rechargées depuis le serveur. Vérifie-les puis recommence."
+
+#: src/screens/duel/messages.ts
+msgid "Tes réponses sont déjà rendues."
+msgstr "Tes réponses sont déjà rendues."
+
+#: src/screens/seances/Seances.tsx
+msgid "Tes statistiques"
+msgstr ""
+
+#: src/screens/plans/PlansSection.tsx
+msgid "TND / mois"
+msgstr ""
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "toi"
+msgstr "toi"
+
+#: src/screens/duel/Result.tsx
+msgid "Toi {mine} – {theirs} {opponent}"
+msgstr "Toi {mine} – {theirs} {opponent}"
+
+#: src/screens/duel/Result.tsx
+msgid "Ton adversaire"
+msgstr "Ton adversaire"
+
+#: src/screens/duel/Play.tsx
+msgid "Ton adversaire a abandonné."
+msgstr "Ton adversaire a abandonné."
+
+#: src/screens/duel/Play.tsx
+msgid "Ton adversaire a rendu sa copie."
+msgstr "Ton adversaire a rendu sa copie."
+
+#: src/screens/salle/Helpfulness.tsx
+msgid "Ton avis n’a pas pu être envoyé. Réessaie."
+msgstr ""
+
+#: src/screens/onboarding/steps.ts
+msgid "Ton bac"
+msgstr ""
+
+#: src/screens/salle/Consent.tsx
+msgid "Ton choix n’a pas pu être enregistré. Réessaie."
+msgstr ""
+
+#: src/screens/onboarding/Bienvenue.tsx
+msgid "Ton compagnon de révision"
+msgstr ""
+
+#: src/screens/onboarding/steps.ts
+msgid "Ton compte"
+msgstr ""
+
+#: src/screens/tuteur/AnswerMessage.tsx
+msgid "Ton cours"
+msgstr ""
+
+#: src/screens/accueil/HomeOverview.tsx
+msgid "Ton espace de révision"
+msgstr ""
+
+#: src/screens/onboarding/Compte.tsx
+msgid "Ton espace t’attend là où tu l’as laissé."
+msgstr ""
+
+#: src/screens/salle/ExplanationCheck.tsx
+msgid "Ton explication"
+msgstr ""
+
+#: src/screens/salle/Posts.tsx
+msgid "Ton message pour la salle"
+msgstr ""
+
+#: src/screens/salle/Consent.tsx
+msgid "Ton niveau et ton format d’explication préféré, en termes généraux, peuvent orienter l’aide donnée au groupe."
+msgstr ""
+
+#: src/screens/plans/PlansSection.tsx
+msgid "Ton offre"
+msgstr "Ton offre"
+
+#: src/screens/plans/PlansSection.tsx
+msgid "Ton offre Pro est active."
+msgstr ""
+
+#: src/screens/onboarding/steps.ts
+msgid "Ton plan"
+msgstr ""
+
+#: src/screens/onboarding/QuizCard.tsx
+msgid "Ton point de départ"
+msgstr ""
+
+#: src/screens/carte/RevisionPack.tsx
+msgid "Touche la question pour voir la réponse."
+msgstr "Touche la question pour voir la réponse."
+
+#: src/screens/carte/ChapterPanel.tsx
+msgid "Touche une pièce de la carte pour ouvrir le chapitre."
+msgstr ""
+
+#~ msgid "Touches 1 à"
+#~ msgstr ""
+
+#: src/screens/onboarding/QuizCard.tsx
+msgid "Touches 1 à {count} pour choisir"
+msgstr ""
+
+#: src/screens/duel/Play.tsx
+msgid "Tout est enregistré"
+msgstr "Tout est enregistré"
+
+#~ msgid "Tout relire en une fois"
+#~ msgstr ""
+
+#: src/screens/plans/PlansSection.tsx
+msgid "Toute l’offre gratuite, plus"
+msgstr ""
+
+#: src/screens/plans/PlansSection.tsx
+msgid "Toutes"
+msgstr ""
+
+#~ msgid "Transmission de l’information génétique"
+#~ msgstr ""
+
+#: src/screens/duel/messages.ts
+msgid "Trop d’essais. Réessaie dans une minute."
+msgstr "Trop d’essais. Réessaie dans une minute."
+
+#: src/screens/tuteur/FeedbackControl.tsx
+msgid "Trop long"
+msgstr ""
+
+#: src/screens/duel/Result.tsx
+msgid "Tu as abandonné le duel, ou ta copie n’a pas été rendue."
+msgstr "Tu as abandonné le duel, ou ta copie n’a pas été rendue."
+
+#~ msgid "Tu as quitté la salle."
+#~ msgstr ""
+
+#: src/screens/onboarding/Style.tsx
+msgid "Tu comprends mieux avec un dessin ou avec un texte bien posé ?"
+msgstr ""
+
+#: src/screens/salle/CreateForm.tsx
+msgid "Tu deviens propriétaire : tu invites tes amis et tu lances les séances."
+msgstr ""
+
+#~ msgid "Tu es déjà dans cette salle : la voici."
+#~ msgstr ""
+
+#: src/screens/salle/RoomsHome.tsx
+msgid "Tu es propriétaire"
+msgstr ""
+
+#: src/screens/plans/PlansSection.tsx
+msgid "Tu es sur l’offre gratuite."
+msgstr "Tu es sur l’offre gratuite."
+
+#: src/screens/plans/PlansSection.tsx
+msgid "Tu es sur l’offre Pro."
+msgstr "Tu es sur l’offre Pro."
+
+#: src/screens/onboarding/steps.ts
+msgid "Tu expliques une notion, je te pose des questions."
+msgstr ""
+
+#: src/screens/salle/RoomsHome.tsx
+msgid "Tu ne fais encore partie d’aucune salle."
+msgstr ""
+
+#: src/screens/salle/Helpfulness.tsx
+msgid "Tu ne peux pas évaluer ta propre explication."
+msgstr ""
+
+#: src/screens/duel/messages.ts
+msgid "Tu ne peux pas t’inviter toi-même."
+msgstr "Tu ne peux pas t’inviter toi-même."
+
+#: src/screens/salle/Members.tsx
+msgid "Tu ne pourras plus gérer la salle."
+msgstr ""
+
+#: src/screens/duel/Play.tsx
+msgid "Tu ne pourras plus modifier ta copie."
+msgstr "Tu ne pourras plus modifier ta copie."
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Tu peux suivre une séance gratuitement quand le propriétaire de la salle a l’offre Pro. Ce n’est pas le cas ici. Le reste de la salle reste ouvert à tous."
+msgstr "Tu peux suivre une séance gratuitement quand le propriétaire de la salle a l’offre Pro. Ce n’est pas le cas ici. Le reste de la salle reste ouvert à tous."
+
+#: src/screens/salle/RoomPage.tsx
+msgid "Tu pourras revenir avec le code d’invitation."
+msgstr ""
+
+#~ msgid "Tu veux retenir une notion jusqu’à la semaine prochaine. Que fais-tu ?"
+#~ msgstr ""
+
+#: src/app/AppLayout.tsx
+#: src/screens/tuteur/Tuteur.tsx
+msgid "Tuteur"
+msgstr ""
+
+#: src/screens/onboarding/Plan.tsx
+msgid "Tuteur · Exemple"
+msgstr ""
+
+#: src/screens/salle/Posts.tsx
+msgid "Type de message"
+msgstr ""
+
+#: src/screens/salle/AskNova.tsx
+msgid "Un coup de pouce, sans donner la réponse."
+msgstr ""
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "Un des joueurs a quitté le duel avant le début."
+msgstr "Un des joueurs a quitté le duel avant le début."
+
+#: src/screens/duel/messages.ts
+msgid "Un duel est déjà en cours dans cette salle. Attends sa fin pour en lancer un autre."
+msgstr "Un duel est déjà en cours dans cette salle. Attends sa fin pour en lancer un autre."
+
+#: src/screens/salle/AskNova.tsx
+msgid "Un duel est en cours dans la salle : Nova reprendra l’aide après le duel."
+msgstr ""
+
+#~ msgid "un exemple résolu d'abord"
+#~ msgstr ""
+
+#: src/screens/salle/AskNova.tsx
+#: src/screens/tuteur/GuidedActions.tsx
+msgid "Un indice"
+msgstr ""
+
+#: src/screens/tuteur/Conversation.tsx
+msgid "Un indice, s’il te plaît."
+msgstr ""
+
+#~ msgid "un schéma ou un graphique"
+#~ msgstr ""
+
+#: src/screens/onboarding/Style.tsx
+msgid "Un texte net, avec des formules bien composées."
+msgstr ""
+
+#~ msgid "une comparaison avec la vie de tous les jours"
+#~ msgstr ""
+
+#: src/screens/salle/AskNova.tsx
+msgid "Une de ces notions n’est pas proposée pour ce chapitre. Décoche-les et réessaie."
+msgstr ""
+
+#: src/screens/salle/AskNova.tsx
+msgid "Une explication"
+msgstr ""
+
+#: src/lib/plans.ts
+msgid "Une fiche citée et trois cartes de rappel sur la dérivabilité, en pilote pour le bac Sciences expérimentales. Gratuit : une carte de rappel d’exemple."
+msgstr "Une fiche citée et trois cartes de rappel sur la dérivabilité, en pilote pour le bac Sciences expérimentales. Gratuit : une carte de rappel d’exemple."
+
+#: src/screens/carte/Carte.tsx
+msgid "Une fiche citée et trois cartes de rappel sur la dérivabilité."
+msgstr "Une fiche citée et trois cartes de rappel sur la dérivabilité."
+
+#: src/screens/tuteur/AnswerMessage.tsx
+msgid "Une question pour mieux t’aider"
+msgstr ""
+
+#: src/screens/carte/Carte.tsx
+msgid "Une question sur la dérivation, avec sa correction. Ouvert à tous, à refaire à tout moment."
+msgstr ""
+
+#: src/screens/salle/RoomsHome.tsx
+msgid "Une salle réunit tes amis autour d’un chapitre. Nova anime la séance : explications, questions anonymes puis quiz."
+msgstr ""
+
+#: src/ui/Streak.tsx
+msgid "Une séance aujourd’hui fait éclore le premier bouton."
+msgstr ""
+
+#: src/screens/seances/Seances.tsx
+msgid "Une tuile de plus pour ta mosaïque."
+msgstr ""
+
+#~ msgid "Urbanisation"
+#~ msgstr ""
+
+#: src/screens/salle/Helpfulness.tsx
+msgid "Utile"
+msgstr ""
+
+#: src/screens/tuteur/FeedbackControl.tsx
+msgid "Utile ?"
+msgstr ""
+
+#: src/screens/onboarding/Bac.tsx
+msgid "Utiliser Nova en anglais."
+msgstr ""
+
+#: src/screens/onboarding/Bac.tsx
+msgid "Utiliser Nova en arabe."
+msgstr "Utiliser Nova en arabe."
+
+#: src/screens/onboarding/Bac.tsx
+msgid "Utiliser Nova en français."
+msgstr ""
+
+#: src/screens/duel/Lobby.tsx
+msgid "Va commencer"
+msgstr "Va commencer"
+
+#~ msgid "Variables aléatoires"
+#~ msgstr ""
+
+#: src/screens/tuteur/CheckCard.tsx
+msgid "Vérification de l’explication"
+msgstr ""
+
+#: src/screens/tuteur/CheckCard.tsx
+msgid "Vérification indisponible"
+msgstr ""
+
+#: src/screens/salle/ExplanationCheck.tsx
+msgid "Vérification indisponible."
+msgstr ""
+
+#: src/screens/carte/InteractiveLab.tsx
+msgid "Vérifier ma prédiction"
+msgstr "Vérifier ma prédiction"
+
+#: src/screens/salle/ExplanationCheck.tsx
+msgid "Vérifier mon explication"
+msgstr ""
+
+#: src/screens/salle/ExplanationCheck.tsx
+msgid "Vérifier seul une explication"
+msgstr ""
+
+#: src/screens/accueil/Accueil.tsx
+#: src/screens/reglages/Reglages.tsx
+msgid "Vérifier une explication"
+msgstr ""
+
+#~ msgid "Vérité"
+#~ msgstr ""
+
+#: src/screens/duel/Result.tsx
+msgid "Victoire !"
+msgstr "Victoire !"
+
+#: src/screens/duel/Result.tsx
+msgid "Victoire par abandon"
+msgstr "Victoire par abandon"
+
+#~ msgid "Ville"
+#~ msgstr ""
+
+#: src/screens/reglages/Reglages.tsx
+msgid "Ville (facultatif)"
+msgstr ""
+
+#: src/screens/accueil/Accueil.tsx
+#: src/screens/onboarding/Plan.tsx
+#: src/screens/onboarding/Style.tsx
+#: src/screens/reglages/Reglages.tsx
+msgid "Visuel"
+msgstr ""
+
+#: src/screens/onboarding/Diagnostic.tsx
+msgid "Voilà ton point de départ."
+msgstr ""
+
+#: src/screens/duel/Lobby.tsx
+msgid "Voir"
+msgstr "Voir"
+
+#: src/screens/salle/Posts.tsx
+msgid "Voir les messages précédents"
+msgstr ""
+
+#: src/screens/onboarding/QuizCard.tsx
+msgid "Voir mon résultat"
+msgstr ""
+
+#: src/app/FloatingTimer.tsx
+msgid "Voir mon temps d’étude"
+msgstr ""
+
+#: src/screens/onboarding/QuizCard.tsx
+msgid "Voir un exemple de programme"
+msgstr ""
+
+#~ msgid "voir un exercice semblable corrigé"
+#~ msgstr ""
+
+#: src/screens/duel/Result.tsx
+msgid "Vous avez le même score."
+msgstr "Vous avez le même score."
+
+#: src/screens/duel/Lobby.tsx
+msgid "Vous passez la même épreuve chronométrée, chacun de votre côté. Les deux joueurs doivent avoir l’offre Pro."
+msgstr "Vous passez la même épreuve chronométrée, chacun de votre côté. Les deux joueurs doivent avoir l’offre Pro."
+
+#~ msgid "Zones climatiques"
+#~ msgstr ""
+
+msgid "Ce programme est un exemple. Il ne sera pas enregistré."
+msgstr ""
+
+msgid "Essayer l’entraînement Bac"
+msgstr ""
+
+msgid "Essayer la fiche"
+msgstr ""
+
+msgid "Fiche d’exemple"
+msgstr ""
+
+msgid "L’offre Pro est activée par l’équipe Nova pendant le pilote."
+msgstr ""
+
+msgid "Ouvrir la fiche de révision"
+msgstr ""
+
+msgid "Ton plan de révision"
+msgstr ""
+
+msgid "Tu deviens propriétaire et tu peux inviter tes amis."
+msgstr ""
+
+msgid "Une carte mémoire pour réviser la dérivée de la fonction carré."
+msgstr ""
+
+msgid "Voir mon offre"
+msgstr ""
+
+msgid "Cartes mentales"
+msgstr ""
+
+msgid "Générer une carte mentale"
+msgstr ""
+
+msgid "Explore les notions de cinq chapitres du bac Sciences expérimentales."
+msgstr ""
+
+msgid "Affichage de la carte"
+msgstr ""
+
+msgid "Plan"
+msgstr ""
+
+msgid "Zoom arrière"
+msgstr ""
+
+msgid "Zoom avant"
+msgstr ""
+
+msgid "Réinitialiser le zoom"
+msgstr ""
+
+msgid "Replier {label}"
+msgstr ""
+
+msgid "Développer {label}"
+msgstr ""
+
+msgid "Carte des notions"
+msgstr ""
+
+msgid "Chargement de la carte…"
+msgstr ""
+
+msgid "Nova prépare ta carte…"
+msgstr ""
+
+msgid "La carte est indisponible."
+msgstr ""
+
+msgid "Les sources du cours sont indisponibles pour cette carte."
+msgstr ""
+
+msgid "La carte est indisponible. Tu peux réessayer."
+msgstr ""
+
+msgid "Mettre à jour la carte"
+msgstr ""
+
+msgid "Générer la carte"
+msgstr ""
+
+msgid "Choisir un chapitre"
+msgstr ""

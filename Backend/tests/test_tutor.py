@@ -180,3 +180,25 @@ def test_invalid_typed_turn_preserves_json_and_stream_errors(client, auth, agent
     assert "event: error" in response.text
     assert json.loads(response.text.split("data: ")[1]) == {"error": "agent_error"}
     assert db.scalar(select(ChatTurn)) is None
+
+
+def test_mistake_recommendation_keeps_answer_in_both_transports(client, auth, agent):
+    from src.manage import main
+
+    sid = new_session(client, auth)
+    step = {"kind": "practice_mistake", "topic": "probabilites", "label": "Practice this topic",
+            "request": {"mode": "guided", "message": "Give me another exercise."}}
+    body = chat_response(next_step=step)
+    for plan in ("free", "pro"):
+        main(["set-plan", "eleve01", plan])
+        body["response_id"] = plan + "-json"
+        agent.responses["/chat"] = httpx.Response(200, json=body)
+        reply = ask(client, auth, sid)
+        assert reply.status_code == 200
+        body["response_id"] = plan + "-stream"
+        agent.responses["/chat/events"] = httpx.Response(200, text="event: result\ndata: " + json.dumps(body) + "\n\n")
+        stream = client.post(f"/tutor/sessions/{sid}/messages/stream", headers=auth, json={"message": QUESTION})
+        assert stream.text.startswith("event: result\n")
+        for result in (reply.json(), json.loads(stream.text.split("data: ")[1])):
+            assert result["answer"] == body["answer"]
+            assert result["next_step"] == (step if plan == "pro" else None)

@@ -1,0 +1,3887 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2026-11-20 01:59+0100\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: ar\n"
+
+#: src/screens/onboarding/Plan.tsx
+msgid "· Ta préférence"
+msgstr "· تفضيلك"
+
+#: src/screens/salle/Members.tsx
+msgid "(toi)"
+msgstr "(أنت)"
+
+#. placeholder {0}: languageName(item.language)
+#. placeholder {1}: item.item_count
+#. placeholder {2}: Math.round(item.duration_seconds / 60)
+#: src/screens/duel/Lobby.tsx
+msgid "{0} · {1} questions · {2} min"
+msgstr "{0} · {1} أسئلة · {2} د"
+
+#. placeholder {0}: item.points
+#. placeholder {1}: item.max_points
+#: src/screens/duel/Result.tsx
+msgid "{0} / {1} pts"
+msgstr "{0} / {1} نقطة"
+
+#. placeholder {0}: player.answered_count
+#: src/screens/duel/DuelRoom.tsx
+msgid "{0} réponses"
+msgstr "{0} إجابات"
+
+#: src/screens/duel/Play.tsx
+msgid "{answered} / {total} réponses"
+msgstr "{answered} / {total} إجابات"
+
+#: src/screens/accueil/HomeOverview.tsx
+#: src/screens/carte/ChapterPanel.tsx
+#: src/screens/carte/MasteryRow.tsx
+msgid "{attempts, plural, one {# essai} other {# essais}}"
+msgstr "{attempts, plural, zero {# محاولة} one {محاولة واحدة} two {محاولتان} few {# محاولات} many {# محاولة} other {# محاولة}}"
+
+#: src/screens/accueil/HomeOverview.tsx
+msgid "{confusions, plural, one {# confusion} other {# confusions}}"
+msgstr "{confusions, plural, zero {# خلط} one {خلط واحد} two {خلطان} few {# حالات خلط} many {# حالة خلط} other {# حالة خلط}}"
+
+#: src/screens/salle/RoomsHome.tsx
+msgid "{count, plural, one {# membre} other {# membres}}"
+msgstr "{count, plural, zero {# عضو} one {عضو واحد} two {عضوان} few {# أعضاء} many {# عضوًا} other {# عضو}}"
+
+#: src/screens/onboarding/Outils.tsx
+msgid "{count, plural, one {# outil choisi} other {# outils choisis}}"
+msgstr "{count, plural, zero {# أداة مختارة} one {أداة واحدة مختارة} two {أداتان مختارتان} few {# أدوات مختارة} many {# أداة مختارة} other {# أداة مختارة}}"
+
+#: src/ui/Streak.tsx
+msgid "{days, plural, one {jour} other {jours de suite}}"
+msgstr "{days, plural, zero {أيام متتالية} one {يوم} two {يومان متتاليان} few {أيام متتالية} many {يومًا متتاليًا} other {يوم متتالٍ}}"
+
+#: src/screens/onboarding/Plan.tsx
+msgid "{minutes} min"
+msgstr "{minutes} د"
+
+#: src/screens/seances/TimerControls.tsx
+msgid "{minutes} min {seconds} s restantes"
+msgstr "{minutes} د {seconds} ث متبقية"
+
+#: src/screens/duel/Result.tsx
+msgid "{opponent} a abandonné ou n’a pas rendu de copie."
+msgstr "{opponent} انسحب أو لم يسلّم ورقته."
+
+#: src/screens/duel/Play.tsx
+msgid "{points} pts"
+msgstr "{points} نقطة"
+
+#: src/screens/onboarding/Diagnostic.tsx
+msgid "{score} sur 3 pour les questions sur les méthodes de révision."
+msgstr "{score} من 3 في أسئلة طرق المراجعة."
+
+#: src/screens/duel/Play.tsx
+msgid "{unsavedCount} modification(s) non enregistrée(s)"
+msgstr "{unsavedCount} تعديل(ات) غير محفوظة"
+
+#: src/screens/tuteur/GuidedActions.tsx
+msgid "{used, plural, one {# marche montée} other {# marches montées}} sur {total}, puis ta réponse"
+msgstr "{used, plural, zero {# درجة} one {درجة واحدة} two {درجتان} few {# درجات} many {# درجة} other {# درجة}} صُعدت من أصل {total}، ثم إجابتك"
+
+#~ msgid "1) Apprends une notion. 2) Essaie de la retrouver de mémoire le lendemain. 3) Reviens-y quelques jours plus tard."
+#~ msgstr "1) تعلّم مفهومًا. 2) حاول استرجاعه من الذاكرة في اليوم التالي. 3) عُد إليه بعد بضعة أيام."
+
+#: src/screens/onboarding/Compte.tsx
+msgid "3 à 30 caractères : lettres et chiffres."
+msgstr "من 3 إلى 30 حرفًا: حروف وأرقام."
+
+#: src/screens/reglages/Reglages.tsx
+msgid "50 caractères maximum."
+msgstr "50 حرفًا كحدّ أقصى."
+
+#~ msgid "6 caractères : lettres A à Z sans I ni O, chiffres 2 à 9."
+#~ msgstr "6 رموز: حروف من A إلى Z دون I وO، وأرقام من 2 إلى 9."
+
+#: src/screens/onboarding/Compte.tsx
+msgid "8 caractères minimum : ajoute quelques lettres ou chiffres."
+msgstr "8 أحرف على الأقل: أضف بعض الحروف أو الأرقام."
+
+#: src/screens/onboarding/Compte.tsx
+msgid "8 caractères minimum."
+msgstr "8 أحرف على الأقل."
+
+#: src/screens/onboarding/diagnosticBank.ts
+msgid "À découvrir"
+msgstr "للاكتشاف"
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "À faire :"
+msgstr "للإنجاز:"
+
+#: src/screens/salle/AskNova.tsx
+msgid "À propos d’un message (facultatif)"
+msgstr "حول رسالة (اختياري)"
+
+#: src/screens/accueil/HomeOverview.tsx
+msgid "À renforcer"
+msgstr "للتعزيز"
+
+#: src/screens/carte/Carte.tsx
+msgid "À retravailler"
+msgstr "لإعادة العمل"
+
+#: src/screens/duel/Result.tsx
+#: src/screens/salle/SessionPanel.tsx
+msgid "À revoir"
+msgstr "للمراجعة"
+
+#: src/screens/carte/GroupReview.tsx
+msgid "À revoir après tes séances de groupe"
+msgstr "للمراجعة بعد حصصك الجماعية"
+
+#: src/screens/carte/GroupReview.tsx
+msgid "À revoir avant le {until}"
+msgstr "للمراجعة قبل {until}"
+
+#: src/screens/carte/GroupReview.tsx
+msgid "À revoir en priorité, avant le {until}"
+msgstr "للمراجعة بالأولوية، قبل {until}"
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "Abandon"
+msgstr "انسحاب"
+
+#: src/screens/duel/Play.tsx
+msgid "Abandonner le duel"
+msgstr "الانسحاب من المبارزة"
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "Abandonner le duel ?"
+msgstr "الانسحاب من المبارزة؟"
+
+#: src/screens/salle/Members.tsx
+msgid "absent"
+msgstr "غائب"
+
+#: src/screens/duel/Lobby.tsx
+msgid "Accepter"
+msgstr "قبول"
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "Accepter le duel"
+msgstr "قبول المبارزة"
+
+#: src/app/AppLayout.tsx
+msgid "Accueil"
+msgstr "الرئيسية"
+
+#: src/screens/salle/RoomCheck.tsx
+msgid "Active « Nova peut lire mes messages » dans tes choix pour que Nova relise ton texte."
+msgstr "فعّل «يمكن لنوفا قراءة رسائلي» في اختياراتك حتى تراجع نوفا نصّك."
+
+#: src/screens/salle/RoomSettings.tsx
+msgid "Active d’abord Nova pour la salle."
+msgstr "فعّل نوفا للقاعة أولًا."
+
+#: src/screens/salle/RoomSettings.tsx
+msgid "Activer ou désactiver Nova et ses relances automatiques est réservé à l’offre Pro. Le reste de la salle reste ouvert à tous."
+msgstr "تفعيل نوفا وتنبيهاتها التلقائية أو إيقافها متاح في عرض Pro فقط. بقية القاعة تبقى مفتوحة للجميع."
+
+#: src/screens/salle/Consent.tsx
+msgid "Activer un choix est réservé à l’offre Pro. Tu peux toujours en retirer un."
+msgstr "تفعيل خيار متاح في عرض Pro فقط. يمكنك دائمًا إلغاء أحد الخيارات."
+
+#: src/screens/salle/Consent.tsx
+msgid "Activer un choix pour Nova"
+msgstr "تفعيل خيار لنوفا"
+
+#: src/screens/plans/PlansSection.tsx
+msgid "Activité"
+msgstr "النشاط"
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "Adversaire"
+msgstr "الخصم"
+
+#: src/screens/duel/Play.tsx
+msgid "Adversaire : {opponentCount} / {total} réponses"
+msgstr "الخصم: {opponentCount} / {total} إجابات"
+
+#: src/screens/onboarding/Compte.tsx
+msgid "Afficher le mot de passe"
+msgstr "إظهار كلمة المرور"
+
+#: src/screens/plans/PlansSection.tsx
+msgid "Afficher les fonctionnalités"
+msgstr "عرض الميزات"
+
+#: src/screens/duel/Duel.tsx
+msgid "Affronte un autre membre Pro sur la même épreuve chronométrée. Réservé à l’offre Pro, activée par l’équipe Nova : tu peux demander l’accès depuis la page des offres."
+msgstr "نافس عضوًا آخر في Pro على الاختبار المؤقّت نفسه. متاح في عرض Pro فقط، ويفعّله فريق نوفا: يمكنك طلب الوصول من صفحة العروض."
+
+#: src/screens/salle/RoomPage.tsx
+msgid "Affronte un autre membre Pro sur la même épreuve chronométrée. Réservé à l’offre Pro."
+msgstr "نافس عضوًا آخر في Pro على الاختبار المؤقّت نفسه. متاح في عرض Pro فقط."
+
+#~ msgid "Aide"
+#~ msgstr "مساعدة"
+
+#~ msgid "Aide-moi à comprendre la notion de liberté."
+#~ msgstr "ساعدني على فهم مفهوم الحرية."
+
+#~ msgid "Aide-moi à comprendre les lois de Newton."
+#~ msgstr "ساعدني على فهم قوانين نيوتن."
+
+#: src/screens/tuteur/Conversation.tsx
+msgid "Aide-moi à préparer une fiche de révision."
+msgstr "ساعدني على إعداد بطاقة مراجعة."
+
+#~ msgid "Aide-moi à réviser la conjugaison française."
+#~ msgstr "ساعدني على مراجعة تصريف الأفعال الفرنسية."
+
+#: src/screens/seances/Seances.tsx
+msgid "Aller à la salle d’étude"
+msgstr "الذهاب إلى قاعة الدراسة"
+
+#: src/screens/salle/Insights.tsx
+msgid "Analogie"
+msgstr "تشبيه"
+
+#~ msgid "Analyse de texte"
+#~ msgstr "تحليل النص"
+
+#~ msgid "Anglais"
+#~ msgstr "الإنجليزية"
+
+#: src/lib/plans.ts
+#: src/screens/salle/SessionPanel.tsx
+msgid "Animer une séance avec Nova"
+msgstr "إدارة حصة بقيادة نوفا"
+
+#: src/screens/plans/PlansSection.tsx
+msgid "Annulation indisponible. Réessaie."
+msgstr "الإلغاء غير متاح. حاول مرة أخرى."
+
+#: src/screens/duel/Lobby.tsx
+msgid "Annulé"
+msgstr "ملغاة"
+
+#: src/screens/reglages/DeleteAccount.tsx
+#: src/screens/salle/Helpfulness.tsx
+#: src/screens/salle/Members.tsx
+#: src/screens/salle/RoomPage.tsx
+msgid "Annuler"
+msgstr "إلغاء"
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "Annuler l’invitation"
+msgstr "إلغاء الدعوة"
+
+#: src/screens/plans/PlansSection.tsx
+msgid "Annuler ma demande"
+msgstr "إلغاء طلبي"
+
+#: src/screens/tuteur/Conversation.tsx
+msgid "Aperçu"
+msgstr "معاينة"
+
+#: src/screens/reglages/Reglages.tsx
+msgid "Apparence"
+msgstr "المظهر"
+
+#~ msgid "Après une erreur, quelle action t’aide à progresser ?"
+#~ msgstr "بعد الوقوع في خطأ، ما الإجراء الذي يساعدك على التقدّم؟"
+
+#: src/ui/ProbabilityTree.tsx
+msgid "Arbre de probabilités : A avec 0,4 puis B avec 0,25 ; non A avec 0,6 puis B avec 0,5."
+msgstr "شجرة احتمالات: A باحتمال 0,4 ثم B باحتمال 0,25؛ وغير A باحتمال 0,6 ثم B باحتمال 0,5."
+
+#~ msgid "Argumentation"
+#~ msgstr "الحجاج"
+
+#~ msgid "Attendre la veille"
+#~ msgstr "الانتظار إلى اليوم السابق للامتحان"
+
+#: src/screens/duel/Lobby.tsx
+msgid "Aucun duel pour le moment. Crée-en un, ou saisis un code reçu."
+msgstr "لا توجد مبارزات حاليًا. أنشئ مبارزة أو أدخل رمزًا وصلك."
+
+#: src/screens/salle/AskNova.tsx
+msgid "Aucun message en particulier"
+msgstr "لا رسالة بعينها"
+
+#: src/screens/salle/Posts.tsx
+msgid "Aucun nom affiché."
+msgstr "لا يوجد اسم معروض."
+
+#: src/screens/onboarding/Plan.tsx
+msgid "Aucun outil choisi : tu peux en ajouter dans les réglages."
+msgstr "لم تختر أي أداة: يمكنك إضافة أدوات من الإعدادات."
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Aucun point à revoir pour toi."
+msgstr "لا شيء للمراجعة عندك."
+
+#: src/screens/duel/Lobby.tsx
+msgid "Aucune épreuve n’est disponible pour le moment."
+msgstr "لا يوجد اختبار متاح حاليًا."
+
+#: src/screens/salle/Posts.tsx
+msgid "Aucune publication pour le moment."
+msgstr "لا توجد منشورات حاليًا."
+
+#~ msgid "Aucune séance en cours."
+#~ msgstr "لا توجد حصة جارية."
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Aucune séance en cours. Choisis un chapitre pour commencer."
+msgstr "لا توجد حصة جارية. اختر فصلًا لتبدأ."
+
+#: src/screens/seances/History.tsx
+msgid "Aucune séance terminée pour l’instant. Lance le minuteur pour commencer."
+msgstr "لا توجد حصص منتهية بعد. شغّل المؤقّت لتبدأ."
+
+#: src/screens/salle/Insights.tsx
+msgid "Aucune tendance à afficher pour le moment. Elles apparaissent quand assez de membres ont choisi d’y contribuer."
+msgstr "لا توجد اتجاهات لعرضها حاليًا. تظهر عندما يختار عدد كافٍ من الأعضاء المساهمة."
+
+#: src/screens/accueil/HomeOverview.tsx
+#: src/screens/seances/Seances.tsx
+msgid "Aujourd’hui"
+msgstr "اليوم"
+
+#: src/screens/tuteur/FeedbackControl.tsx
+msgid "Autre"
+msgstr "أخرى"
+
+#: src/screens/seances/TimerControls.tsx
+msgid "Autre durée (min)"
+msgstr "مدة أخرى (د)"
+
+#: src/screens/onboarding/steps.ts
+#: src/screens/reglages/Reglages.tsx
+msgid "Autre section"
+msgstr "شعبة أخرى"
+
+#: src/screens/reglages/Reglages.tsx
+msgid "Avancé"
+msgstr "متقدّم"
+
+#~ msgid "avant le palier «"
+#~ msgstr "قبل بلوغ المستوى «"
+
+#: src/screens/onboarding/diagnosticBank.ts
+msgid "Avec des schémas"
+msgstr "بالرسوم التوضيحية"
+
+#: src/screens/salle/Posts.tsx
+msgid "Avec ton pseudo, visible par la salle."
+msgstr "باسمك المستعار، ويراه أعضاء القاعة."
+
+#: src/screens/tuteur/FeedbackControl.tsx
+msgid "Avis non envoyé."
+msgstr "لم يُرسل الرأي."
+
+#: src/screens/onboarding/Outils.tsx
+#: src/screens/onboarding/Plan.tsx
+msgid "Bientôt"
+msgstr "قريبًا"
+
+#~ msgid "Bienvenue dans la salle."
+#~ msgstr "مرحبًا بك في القاعة."
+
+#: src/screens/accueil/HomeOverview.tsx
+msgid "Bonjour"
+msgstr "مرحبًا"
+
+#: src/screens/carte/InteractiveLab.tsx
+msgid "Bonne prédiction !"
+msgstr "توقّع صحيح!"
+
+#: src/screens/carte/QuizPanel.tsx
+msgid "Bonne réponse :"
+msgstr "الإجابة الصحيحة:"
+
+#~ msgid "Bonsoir"
+#~ msgstr "مساء الخير"
+
+#: src/ui/Streak.tsx
+msgid "Bouquet"
+msgstr "باقة"
+
+#: src/ui/Streak.tsx
+msgid "Bouton"
+msgstr "برعم"
+
+#: src/screens/onboarding/Bac.tsx
+msgid "C’est bien ça"
+msgstr "هذا صحيح"
+
+#~ msgid "C'est comme répéter une chanson plusieurs jours de suite : chaque répétition ravive ce que tu commençais à oublier."
+#~ msgstr "الأمر كترديد أغنية عدة أيام متتالية: كل تكرار يُنعش ما بدأتَ تنساه."
+
+#: src/screens/tuteur/FeedbackControl.tsx
+msgid "C’est faux"
+msgstr "هذا خطأ"
+
+#: src/screens/onboarding/Bienvenue.tsx
+msgid "C’est parti"
+msgstr "هيا نبدأ"
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "C’est parti : ouverture de l’épreuve…"
+msgstr "هيا نبدأ: جارٍ فتح الاختبار…"
+
+#: src/screens/carte/Carte.tsx
+msgid "Calcul"
+msgstr "حساب"
+
+#~ msgid "Calcul intégral"
+#~ msgstr "حساب التكامل"
+
+#: src/app/AppLayout.tsx
+msgid "Carte"
+msgstr "الخريطة"
+
+#: src/screens/carte/RevisionPack.tsx
+msgid "Carte d’exemple"
+msgstr "بطاقة تجريبية"
+
+#: src/app/AppLayout.tsx
+#: src/screens/accueil/HomeOverview.tsx
+#: src/screens/carte/Carte.tsx
+#: src/screens/carte/ChapterMap.tsx
+msgid "Carte des chapitres"
+msgstr "خريطة الفصول"
+
+#: src/lib/plans.ts
+msgid "Carte des chapitres, erreurs repérées, minuteur et historique de révision."
+msgstr "خريطة الفصول، والأخطاء المرصودة، ومؤقّت التركيز، وسجلّ المراجعة."
+
+#: src/screens/carte/RevisionPack.tsx
+msgid "Cartes de rappel"
+msgstr "بطاقات التذكّر"
+
+#: src/screens/carte/Carte.tsx
+msgid "Catalogue de mathématiques en brouillon"
+msgstr "فهرس الرياضيات (مسودة)"
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Ce chapitre n’est pas disponible."
+msgstr "هذا الفصل غير متاح."
+
+#: src/screens/carte/QuizPanel.tsx
+msgid "Ce chapitre n'est pas encore dans le corpus vérifié."
+msgstr "هذا الفصل ليس بعد في المدوّنة الموثّقة."
+
+#~ msgid "Ce code n’existe pas ou la salle a été fermée. Demande un nouveau code à la personne qui t’a invité."
+#~ msgstr "هذا الرمز غير موجود أو أُغلقت القاعة. اطلب رمزًا جديدًا من الشخص الذي دعاك."
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "Ce duel a expiré"
+msgstr "انتهت صلاحية هذه المبارزة"
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "Ce duel est annulé"
+msgstr "أُلغيت هذه المبارزة"
+
+#: src/screens/duel/messages.ts
+msgid "Ce duel est fermé."
+msgstr "هذه المبارزة مغلقة."
+
+#: src/screens/duel/messages.ts
+msgid "Ce duel est introuvable dans cette salle."
+msgstr "لا يمكن العثور على هذه المبارزة في هذه القاعة."
+
+#: src/screens/carte/InteractiveLab.tsx
+msgid "Ce labo n’est pas disponible pour ce chapitre."
+msgstr "هذا المختبر غير متاح لهذا الفصل."
+
+#: src/screens/salle/AskNova.tsx
+msgid "Ce message n’est plus disponible dans la séance. Choisis-en un autre ou demande sans message précis."
+msgstr "هذه الرسالة لم تعد موجودة في الحصة. اختر رسالة أخرى أو اسأل دون تحديد رسالة."
+
+#: src/screens/onboarding/Diagnostic.tsx
+msgid "Ce n’est pas une note : c’est l’endroit d’où on part."
+msgstr "هذه ليست علامة: إنها نقطة الانطلاق."
+
+#: src/screens/onboarding/Compte.tsx
+msgid "Ce pseudo est déjà pris."
+msgstr "هذا الاسم المستعار مستخدم بالفعل."
+
+#: src/screens/onboarding/Bienvenue.tsx
+msgid "Ce qu’on va préparer ensemble"
+msgstr "ما سنُعدّه معًا"
+
+#: src/screens/salle/AskNova.tsx
+msgid "Ce que tu demandes"
+msgstr "ما تطلبه"
+
+#: src/screens/tuteur/CheckCard.tsx
+msgid "Ce que tu ressens compte plus que n’importe quel exercice. Parles-en à un adulte de confiance : un parent, un professeur, l’infirmière ou le conseiller de ton lycée. Je serai là quand tu voudras reprendre."
+msgstr "ما تشعر به أهمّ من أي تمرين. تحدّث إلى شخص بالغ تثق به: أحد الوالدين، أو أستاذ، أو ممرّضة المعهد، أو المرشد. سأكون هنا حين تريد المتابعة."
+
+#: src/screens/tuteur/CheckCard.tsx
+msgid "Ce qui manque"
+msgstr "ما ينقص"
+
+#: src/screens/carte/QuizPanel.tsx
+msgid "Ce quiz a expiré. Recommence-le."
+msgstr "انتهت صلاحية هذا الاختبار القصير. ابدأه من جديد."
+
+#: src/screens/onboarding/Plan.tsx
+msgid "Ce soir"
+msgstr "هذا المساء"
+
+#: src/screens/reglages/Reglages.tsx
+msgid "Ces informations peuvent être laissées vides."
+msgstr "يمكن ترك هذه المعلومات فارغة."
+
+#: src/screens/carte/GroupReview.tsx
+msgid "Ces notions restent privées : seul toi les vois, ici."
+msgstr "تبقى هذه المفاهيم خاصة: أنت وحدك تراها هنا."
+
+#: src/screens/duel/messages.ts
+msgid "Cet adversaire n’est pas disponible : il doit être membre de la salle et avoir l’offre Pro."
+msgstr "هذا الخصم غير متاح: يجب أن يكون عضوًا في القاعة ولديه عرض Pro."
+
+#: src/screens/duel/messages.ts
+msgid "Cette action a changé : relance-la."
+msgstr "تغيّر هذا الإجراء: أعد تشغيله."
+
+#: src/screens/reglages/DeleteAccount.tsx
+msgid "Cette action est définitive : ton compte et tes données seront effacés."
+msgstr "هذا الإجراء نهائي: سيُحذف حسابك وبياناتك."
+
+#: src/screens/salle/AskNova.tsx
+#: src/screens/salle/SessionPanel.tsx
+msgid "Cette activité est réservée à l’offre Pro."
+msgstr "هذا النشاط متاح في عرض Pro فقط."
+
+#: src/screens/salle/AskNova.tsx
+msgid "Cette demande a changé : relance-la."
+msgstr "تغيّر هذا الطلب: أعد إرساله."
+
+#: src/screens/carte/Carte.tsx
+msgid "Cette erreur ne figure plus dans ta progression."
+msgstr "هذا الخطأ لم يعد في تقدّمك."
+
+#: src/screens/salle/Helpfulness.tsx
+msgid "Cette explication n’est plus dans la séance."
+msgstr "هذا الشرح لم يعد في الحصة."
+
+#: src/screens/salle/Helpfulness.tsx
+msgid "Cette explication t’a-t-elle aidé ?"
+msgstr "هل ساعدك هذا الشرح؟"
+
+#: src/screens/duel/messages.ts
+msgid "Cette invitation a expiré. Demande un nouveau duel."
+msgstr "انتهت صلاحية هذه الدعوة. اطلب مبارزة جديدة."
+
+#: src/screens/duel/messages.ts
+msgid "Cette invitation n’est plus ouverte."
+msgstr "هذه الدعوة لم تعد مفتوحة."
+
+#: src/screens/duel/messages.ts
+msgid "Cette invitation n’existe pas ou n’est plus disponible."
+msgstr "هذه الدعوة غير موجودة أو لم تعد متاحة."
+
+#: src/screens/duel/messages.ts
+msgid "Cette réponse n’est pas valide."
+msgstr "هذه الإجابة غير صالحة."
+
+#: src/screens/tuteur/FeedbackControl.tsx
+msgid "Cette réponse t’a aidé ?"
+msgstr "هل ساعدتك هذه الإجابة؟"
+
+#~ msgid "Cette salle est complète (8 membres maximum)."
+#~ msgstr "هذه القاعة ممتلئة (8 أعضاء كحدّ أقصى)."
+
+#~ msgid "Cette salle n’est plus disponible : elle a été fermée, ou tu en as été retiré."
+#~ msgstr "هذه القاعة لم تعد متاحة: إمّا أنها أُغلقت أو أُزيلتَ منها."
+
+#: src/screens/onboarding/Plan.tsx
+#: src/screens/seances/Seances.tsx
+msgid "Cette semaine"
+msgstr "هذا الأسبوع"
+
+#~ msgid "Cette semaine :"
+#~ msgstr "هذا الأسبوع:"
+
+#: src/screens/accueil/HomeOverview.tsx
+msgid "Cette semaine : {summary}"
+msgstr "هذا الأسبوع: {summary}"
+
+#: src/screens/accueil/HomeOverview.tsx
+msgid "cette visite"
+msgstr "هذه الزيارة"
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Chacun explique la notion avec ses mots. Pour de l’aide, demande à Nova ou relis ton texte avec la liste de contrôle."
+msgstr "يشرح كل واحد المفهوم بكلماته. للمساعدة، اسأل نوفا أو أعد قراءة نصّك مع قائمة التحقّق."
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Chacun répond au quiz du chapitre de son côté."
+msgstr "يجيب كل واحد عن الاختبار القصير للفصل بمفرده."
+
+#: src/screens/carte/ChapterPanel.tsx
+msgid "Chapitre"
+msgstr "الفصل"
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Chapitre de la séance"
+msgstr "فصل الحصة"
+
+#: src/screens/salle/Consent.tsx
+msgid "Chaque choix est indépendant et tu peux le retirer à tout moment. Refuser n’empêche pas de participer."
+msgstr "كل اختيار مستقلّ ويمكنك سحبه في أي وقت. الرفض لا يمنعك من المشاركة."
+
+#: src/app/guards.tsx
+msgid "Chargement de ta session…"
+msgstr "جارٍ تحميل جلستك…"
+
+#: src/app/guards.tsx
+#: src/screens/accueil/Accueil.tsx
+#: src/screens/carte/Carte.tsx
+#: src/screens/plans/PlansSection.tsx
+#: src/screens/reglages/Reglages.tsx
+#: src/screens/seances/History.tsx
+#: src/screens/seances/Seances.tsx
+msgid "Chargement indisponible. Réessaie."
+msgstr "التحميل غير متاح. حاول مرة أخرى."
+
+#: src/screens/carte/InteractiveLab.tsx
+#: src/screens/carte/QuizPanel.tsx
+#: src/screens/salle/RoomsHome.tsx
+#: src/screens/salle/SessionPanel.tsx
+msgid "Chargement…"
+msgstr "جارٍ التحميل…"
+
+#~ msgid "Chercher sa cause puis réessayer"
+#~ msgstr "البحث عن السبب ثم المحاولة من جديد"
+
+#~ msgid "Chimie"
+#~ msgstr "الكيمياء"
+
+#~ msgid "choisi"
+#~ msgstr "مختار"
+
+#: src/lib/plans.ts
+msgid "Choisir le chapitre et guider le groupe de l’explication au quiz, avec les relances et les notes de Nova."
+msgstr "اختيار الفصل وقيادة المجموعة من الشرح إلى الاختبار القصير، مع تنبيهات نوفا وملاحظاتها."
+
+#: src/lib/plans.ts
+msgid "Choisir un chapitre de maths et obtenir un quiz personnel avec correction si les sources sont disponibles."
+msgstr "اختيار فصل في الرياضيات والحصول على اختبار قصير شخصي مع التصحيح عند توفّر المصادر."
+
+#: src/screens/onboarding/Style.tsx
+msgid "Choisis la façon dont Nova te présentera ses explications."
+msgstr "اختر الطريقة التي تقدّم بها نوفا شروحاتها."
+
+#: src/screens/onboarding/Outils.tsx
+msgid "Choisis les outils à afficher sur ton accueil."
+msgstr "اختر الأدوات التي تظهر في صفحتك الرئيسية."
+
+#: src/screens/onboarding/Bac.tsx
+msgid "Choisis ta section du bac et la langue de Nova."
+msgstr "اختر شعبتك في الباكالوريا ولغة نوفا."
+
+#~ msgid "Choisis un chapitre"
+#~ msgstr "اختر فصلًا"
+
+#: src/screens/onboarding/Compte.tsx
+msgid "Choisis un pseudo. Pas besoin de ton vrai nom."
+msgstr "اختر اسمًا مستعارًا. لا حاجة لاسمك الحقيقي."
+
+#: src/screens/onboarding/Style.tsx
+msgid "Choisis une des deux façons pour continuer."
+msgstr "اختر إحدى الطريقتين للمتابعة."
+
+#: src/screens/seances/TimerControls.tsx
+msgid "Choisis une durée entre 1 et 240 minutes."
+msgstr "اختر مدة بين 1 و240 دقيقة."
+
+#: src/screens/accueil/HomeOverview.tsx
+msgid "Choisis une pièce de la mosaïque pour t’entraîner sur ce chapitre."
+msgstr "اختر قطعة من الفسيفساء لتتدرّب على هذا الفصل."
+
+#~ msgid "Cinétique chimique"
+#~ msgstr "الحركية الكيميائية"
+
+#: src/lib/plans.ts
+msgid "Cinq questions de dérivabilité en dix minutes, avec le score et les corrections détaillées."
+msgstr "خمسة أسئلة عن الاشتقاقية في عشر دقائق، مع النتيجة والتصحيحات المفصّلة."
+
+#: src/screens/carte/Carte.tsx
+msgid "Cinq questions de dérivabilité en dix minutes, avec le score et les corrections."
+msgstr "خمسة أسئلة عن الاشتقاقية في عشر دقائق، مع النتيجة والتصحيحات."
+
+#~ msgid "Circuits électriques et dipôle RC"
+#~ msgstr "الدارات الكهربائية والثنائي القطب RC"
+
+#: src/screens/salle/Invite.tsx
+msgid "Code :"
+msgstr "الرمز:"
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "Code à donner à ton adversaire"
+msgstr "الرمز الذي تعطيه لخصمك"
+
+#: src/screens/duel/DuelRoom.tsx
+#: src/screens/salle/Invite.tsx
+msgid "Code copié."
+msgstr "تم نسخ الرمز."
+
+#: src/screens/salle/Invite.tsx
+#: src/screens/salle/JoinForm.tsx
+msgid "Code d’invitation"
+msgstr "رمز الدعوة"
+
+#: src/screens/duel/DuelRoom.tsx
+#: src/screens/duel/Lobby.tsx
+msgid "Code du duel"
+msgstr "رمز المبارزة"
+
+#: src/app/FloatingTimer.tsx
+msgid "Commandes du minuteur"
+msgstr "أزرار المؤقّت"
+
+#: src/screens/onboarding/Plan.tsx
+msgid "Commencer"
+msgstr "ابدأ"
+
+#: src/screens/carte/Carte.tsx
+msgid "Commencer l’entraînement"
+msgstr "ابدأ التدريب"
+
+#: src/screens/onboarding/Plan.tsx
+msgid "Commencer ma première séance"
+msgstr "ابدأ حصتي الأولى"
+
+#: src/screens/accueil/HomeOverview.tsx
+msgid "Commencer une séance"
+msgstr "ابدأ حصة"
+
+#~ msgid "Comment équilibrer une équation chimique ?"
+#~ msgstr "كيف أوازن معادلة كيميائية؟"
+
+#: src/screens/onboarding/Plan.tsx
+msgid "Comment je vais t’expliquer"
+msgstr "كيف سأشرح لك"
+
+#~ msgid "Comment vérifier que tu as compris une leçon ?"
+#~ msgstr "كيف تتحقق من أنك فهمت درسًا؟"
+
+#: src/screens/onboarding/Bac.tsx
+msgid "Comment veux-tu réviser ?"
+msgstr "كيف تريد أن تراجع؟"
+
+#: src/screens/carte/InteractiveLab.tsx
+msgid "Compare ta prédiction au résultat."
+msgstr "قارن توقّعك بالنتيجة."
+
+#: src/screens/plans/PlansSection.tsx
+msgid "Comparer les fonctionnalités"
+msgstr "مقارنة الميزات"
+
+#: src/screens/plans/LockedNotice.tsx
+msgid "Comparer les offres"
+msgstr "مقارنة العروض"
+
+#~ msgid "Compréhension écrite"
+#~ msgstr "الفهم الكتابي"
+
+#: src/lib/plans.ts
+msgid "Comprendre avec Nova"
+msgstr "الفهم مع نوفا"
+
+#: src/screens/onboarding/Compte.tsx
+msgid "Compte créé. Réessaie pour continuer."
+msgstr "تم إنشاء الحساب. حاول مرة أخرى للمتابعة."
+
+#: src/screens/reglages/Reglages.tsx
+msgid "Compte élève"
+msgstr "حساب تلميذ"
+
+#~ msgid "Compter les pages"
+#~ msgstr "عدّ الصفحات"
+
+#~ msgid "Conditions et boucles"
+#~ msgstr "الشروط والحلقات التكرارية"
+
+#: src/screens/reglages/Reglages.tsx
+msgid "Confidentialité"
+msgstr "الخصوصية"
+
+#: src/screens/reglages/DeleteAccount.tsx
+msgid "Confirme ton pseudo"
+msgstr "أكّد اسمك المستعار"
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "Confirmer l’abandon"
+msgstr "تأكيد الانسحاب"
+
+#: src/screens/salle/RoomPage.tsx
+msgid "Confirmer la fermeture"
+msgstr "تأكيد الإغلاق"
+
+#: src/screens/salle/RoomPage.tsx
+msgid "Confirmer le départ"
+msgstr "تأكيد المغادرة"
+
+#: src/screens/salle/Members.tsx
+msgid "Confirmer le retrait"
+msgstr "تأكيد الإزالة"
+
+#: src/screens/salle/Members.tsx
+msgid "Confirmer le transfert"
+msgstr "تأكيد النقل"
+
+#~ msgid "Coniques"
+#~ msgstr "القطوع المخروطية"
+
+#~ msgid "Conjugaison"
+#~ msgstr "تصريف الأفعال"
+
+#: src/screens/salle/JoinForm.tsx
+msgid "Connexion à la salle…"
+msgstr "جارٍ الانضمام إلى القاعة…"
+
+#: src/screens/onboarding/Compte.tsx
+msgid "Connexion indisponible. Réessaie."
+msgstr "تعذّر تسجيل الدخول. حاول مرة أخرى."
+
+#: src/screens/duel/messages.ts
+msgid "Connexion perdue : tes dernières modifications ne sont pas enregistrées."
+msgstr "انقطع الاتصال: آخر تعديلاتك غير محفوظة."
+
+#: src/screens/onboarding/Compte.tsx
+msgid "Connexion…"
+msgstr "جارٍ تسجيل الدخول…"
+
+#: src/screens/onboarding/Compte.tsx
+msgid "Content de te revoir."
+msgstr "مرحبًا بعودتك."
+
+#: src/screens/duel/Play.tsx
+#: src/screens/onboarding/Outils.tsx
+#: src/screens/onboarding/Style.tsx
+msgid "Continuer"
+msgstr "متابعة"
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "Continuer le duel"
+msgstr "مواصلة المبارزة"
+
+#: src/screens/salle/Consent.tsx
+msgid "Contribuer aux tendances du groupe"
+msgstr "المساهمة في اتجاهات المجموعة"
+
+#: src/screens/tuteur/Conversation.tsx
+msgid "Conversation avec le tuteur"
+msgstr "محادثة مع المدرّس"
+
+#: src/screens/tuteur/ThreadList.tsx
+msgid "Conversations"
+msgstr "المحادثات"
+
+#: src/screens/duel/DuelRoom.tsx
+#: src/screens/salle/Invite.tsx
+msgid "Copie impossible : sélectionne le texte et copie-le toi-même."
+msgstr "تعذّر النسخ: حدّد النص وانسخه بنفسك."
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "Copie rendue"
+msgstr "تم تسليم الورقة"
+
+#~ msgid "Copier la correction"
+#~ msgstr "نسخ الإصلاح"
+
+#: src/screens/duel/DuelRoom.tsx
+#: src/screens/salle/Invite.tsx
+msgid "Copier le code"
+msgstr "نسخ الرمز"
+
+#: src/screens/salle/Invite.tsx
+msgid "Copier le lien"
+msgstr "نسخ الرابط"
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Correct"
+msgstr "صحيح"
+
+#: src/screens/duel/Lobby.tsx
+msgid "Correction"
+msgstr "التصحيح"
+
+#: src/lib/plans.ts
+msgid "Création de salles, invitations, discussions et vérification privée des explications."
+msgstr "إنشاء القاعات والدعوات والنقاشات والتحقّق الخاص من الشروحات."
+
+#: src/screens/onboarding/Compte.tsx
+msgid "Création…"
+msgstr "جارٍ إنشاء حسابك…"
+
+#: src/screens/salle/CreateForm.tsx
+msgid "Créer la salle"
+msgstr "إنشاء القاعة\n"
+""
+
+#: src/screens/duel/Lobby.tsx
+msgid "Créer le duel"
+msgstr "إنشاء المبارزة"
+
+#: src/screens/onboarding/Compte.tsx
+msgid "Créer mon compte"
+msgstr "إنشاء حسابي"
+
+#: src/screens/duel/Lobby.tsx
+msgid "Créer un duel"
+msgstr "إنشاء مبارزة"
+
+#: src/screens/salle/CreateForm.tsx
+msgid "Créer une salle"
+msgstr "إنشاء قاعة"
+
+#: src/screens/carte/ChapterPanel.tsx
+msgid "Dans ce chapitre"
+msgstr "في هذا الفصل"
+
+#: src/lib/plans.ts
+msgid "Dans une salle animée par un membre Pro : manches en groupe, quiz de la salle, notes partagées et Nova sur demande."
+msgstr "في غرفة يديرها عضو Pro: جولات جماعية واختبار الغرفة القصير وملاحظات مشتركة ونوفا عند الطلب."
+
+#: src/screens/duel/Lobby.tsx
+msgid "De {other}. "
+msgstr "من {other}. "
+
+#: src/screens/accueil/HomeOverview.tsx
+#: src/screens/carte/ChapterMap.tsx
+msgid "de ta mosaïque est posée"
+msgstr "من فسيفسائك مُنجَز"
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "Début dans"
+msgstr "تبدأ بعد"
+
+#: src/screens/reglages/Reglages.tsx
+msgid "Débutant"
+msgstr "مبتدئ"
+
+#~ msgid "Décolonisation"
+#~ msgstr "تصفية الاستعمار"
+
+#: src/screens/duel/Result.tsx
+msgid "Défaite"
+msgstr "هزيمة"
+
+#: src/screens/onboarding/Plan.tsx
+msgid "Demain"
+msgstr "غدًا"
+
+#: src/screens/plans/PlansSection.tsx
+msgid "Demande indisponible. Réessaie."
+msgstr "الطلب غير متاح. حاول مرة أخرى."
+
+#: src/screens/plans/PlansSection.tsx
+msgid "Demande Pro enregistrée. L’équipe Nova activera ton accès : reviens ici pour le voir."
+msgstr "تم تسجيل طلب Pro. سيفعّل فريق نوفا وصولك: عد إلى هنا لتراه."
+
+#: src/screens/salle/AskNova.tsx
+msgid "Demander à Nova"
+msgstr "اسأل نوفا"
+
+#: src/screens/plans/PlansSection.tsx
+msgid "Demander l’accès Pro"
+msgstr "طلب الوصول إلى Pro"
+
+#: src/screens/seances/TimerControls.tsx
+msgid "Démarrer"
+msgstr "ابدأ"
+
+#~ msgid "Dénombrement"
+#~ msgstr "التعداد"
+
+#: src/screens/carte/Carte.tsx
+msgid "Déplace le curseur, prédis le résultat, puis compare avec le graphique."
+msgstr "حرّك المؤشر، وتوقّع النتيجة، ثم قارنها بالرسم البياني."
+
+#~ msgid "Déplacements et antidéplacements"
+#~ msgstr "النقل والنقل المعاكس"
+
+#: src/lib/plans.ts
+msgid "Depuis une erreur repérée, lancer un exercice guidé sur la notion correspondante."
+msgstr "انطلاقًا من خطأ مرصود، ابدأ تمرينًا موجّهًا حول المفهوم المناسب."
+
+#~ msgid "Dérivabilité"
+#~ msgstr "قابلية الاشتقاق"
+
+#: src/screens/duel/Result.tsx
+msgid "Dérivabilité en un point"
+msgstr "قابلية الاشتقاق في نقطة"
+
+#: src/screens/duel/Result.tsx
+msgid "Dérivée d’un produit"
+msgstr "مشتقة جداء"
+
+#: src/screens/duel/Result.tsx
+msgid "Dérivée d’une composée"
+msgstr "مشتقة دالة مركّبة"
+
+#~ msgid "des étapes numérotées"
+#~ msgstr "خطوات مرقّمة"
+
+#: src/screens/onboarding/steps.ts
+msgid "Des fiches tirées de ton manuel."
+msgstr "بطاقات مراجعة مأخوذة من كتابك المدرسي."
+
+#: src/screens/onboarding/steps.ts
+msgid "Des indices marche par marche, jamais la réponse toute faite."
+msgstr "تلميحات خطوة بخطوة، دون إجابة جاهزة أبدًا."
+
+#: src/screens/onboarding/Style.tsx
+msgid "Des schémas, des arbres et des courbes, comme au tableau."
+msgstr "رسوم ومخططات وأشجار ومنحنيات، كما على السبّورة."
+
+#: src/screens/onboarding/steps.ts
+msgid "Des sujets type bac, chronométrés si tu veux."
+msgstr "مواضيع على نمط الباكالوريا، بتوقيت إن أردت."
+
+#: src/screens/salle/RoomSettings.tsx
+msgid "Désactiver Nova ne bloque ni les publications, ni les séances, ni le quiz de la salle."
+msgstr "إيقاف نوفا لا يمنع المنشورات ولا الحصص ولا الاختبار القصير في القاعة."
+
+#: src/screens/carte/Carte.tsx
+msgid "Détail par chapitre"
+msgstr "التفصيل حسب الفصل"
+
+#: src/screens/onboarding/Diagnostic.tsx
+msgid "Diagnostic indisponible. Réessaie."
+msgstr "الفحص التشخيصي غير متاح. حاول مرة أخرى."
+
+#: src/lib/plans.ts
+msgid "Diagnostic, programme de départ et préférences de langue et de présentation."
+msgstr "التشخيص والبرنامج الأوّلي وتفضيلات اللغة والعرض."
+
+#: src/screens/plans/PlansSection.tsx
+msgid "Différences"
+msgstr "الاختلافات"
+
+#~ msgid "Divisibilité dans Z"
+#~ msgstr "القابلية للقسمة في ℤ"
+
+#: src/screens/duel/Result.tsx
+msgid "Duel abandonné"
+msgstr "مبارزة منسحَب منها"
+
+#: src/lib/plans.ts
+#: src/screens/duel/Duel.tsx
+#: src/screens/duel/DuelError.tsx
+#: src/screens/salle/RoomPage.tsx
+msgid "Duel Exam"
+msgstr "مبارزة الامتحان"
+
+#. placeholder {0}: topicLabel(view.topic)
+#: src/screens/duel/DuelRoom.tsx
+msgid "Duel Exam · {0}"
+msgstr "مبارزة الامتحان · {0}"
+
+#: src/screens/duel/Result.tsx
+msgid "Duel sans résultat"
+msgstr "مبارزة بلا نتيجة"
+
+#~ msgid "Durée"
+#~ msgstr "المدة"
+
+#: src/screens/seances/TimerControls.tsx
+msgid "Durée de la séance"
+msgstr "مدة الحصة"
+
+#: src/screens/tuteur/GuidedActions.tsx
+msgid "Échelle d’indices : {steps}"
+msgstr "سلّم التلميحات: {steps}"
+
+#: src/screens/tuteur/Conversation.tsx
+msgid "Écris ta réponse…"
+msgstr "اكتب إجابتك…"
+
+#~ msgid "Effacer la réponse"
+#~ msgstr "مسح الإجابة"
+
+#: src/screens/duel/Play.tsx
+msgid "Effacer ma réponse"
+msgstr "مسح إجابتي"
+
+#: src/screens/duel/Result.tsx
+msgid "Égalité"
+msgstr "تعادل"
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "En attente d’un adversaire"
+msgstr "في انتظار خصم"
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "En attente de ton adversaire : l’invitation expire dans {remaining}."
+msgstr "في انتظار خصمك: تنتهي صلاحية الدعوة بعد {remaining}."
+
+#~ msgid "En attente que"
+#~ msgstr "في انتظار أن"
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "En attente que {owner} lance la séance…"
+msgstr "في انتظار أن يبدأ {owner} الحصة…"
+
+#: src/screens/duel/Lobby.tsx
+#: src/screens/seances/TimerControls.tsx
+msgid "En cours"
+msgstr "جارية"
+
+#: src/screens/salle/Members.tsx
+msgid "en ligne"
+msgstr "متصل"
+
+#: src/screens/seances/TimerControls.tsx
+msgid "En pause"
+msgstr "متوقفة مؤقتًا"
+
+#: src/ui/Mosaic.tsx
+msgid "En route"
+msgstr "في تقدّم"
+
+#: src/ui/Streak.tsx
+msgid "encore {left, plural, one {# jour} other {# jours}} avant le palier « {nextName} »"
+msgstr "{left, plural, zero {# أيام} one {يوم واحد آخر} two {يومان آخران} few {# أيام أخرى} many {# يومًا آخر} other {# يوم آخر}} قبل مرحلة «{nextName}»"
+
+#: src/screens/duel/Play.tsx
+msgid "Enregistré"
+msgstr "تم الحفظ"
+
+#: src/app/OnboardingLayout.tsx
+#: src/screens/duel/Play.tsx
+msgid "Enregistrement…"
+msgstr "جارٍ الحفظ…"
+
+#: src/screens/reglages/Reglages.tsx
+msgid "Enregistrer"
+msgstr "حفظ"
+
+#: src/screens/carte/QuizPanel.tsx
+msgid "Entraînement Bac"
+msgstr "تدريب الباكالوريا"
+
+#: src/screens/carte/QuizPanel.tsx
+msgid "Entraînement Bac :"
+msgstr "تدريب الباكالوريا:"
+
+#: src/lib/plans.ts
+#: src/screens/carte/Carte.tsx
+msgid "Entraînement Bac chronométré"
+msgstr "تدريب باكالوريا بتوقيت"
+
+#: src/screens/tuteur/Conversation.tsx
+msgid "Entrée pour envoyer · Maj + Entrée pour aller à la ligne · formule entre dollars :"
+msgstr "Enter للإرسال · Shift + Enter لسطر جديد · ضع الصيغة بين علامتي دولار:"
+
+#~ msgid "Environ"
+#~ msgstr "حوالي"
+
+#: src/screens/onboarding/Plan.tsx
+msgid "Environ {total} min en tout"
+msgstr "حوالي {total} د في المجموع"
+
+#: src/screens/duel/Lobby.tsx
+msgid "Épreuve"
+msgstr "اختبار"
+
+#: src/screens/duel/Result.tsx
+msgid "Équation de la tangente"
+msgstr "معادلة المماس"
+
+#~ msgid "Équations différentielles"
+#~ msgstr "المعادلات التفاضلية"
+
+#~ msgid "Équilibrage des équations"
+#~ msgstr "موازنة المعادلات"
+
+#: src/screens/carte/Carte.tsx
+msgid "Essaie une carte de rappel gratuite. La fiche complète est en Pro."
+msgstr "جرّب بطاقة تذكّر مجانية. البطاقة الكاملة متاحة في Pro."
+
+#: src/screens/carte/Carte.tsx
+#: src/screens/plans/PlansSection.tsx
+msgid "Essayer le quiz d’exemple"
+msgstr "جرّب الاختبار القصير التجريبي"
+
+#: src/screens/plans/PlansSection.tsx
+msgid "Essayer un exercice guidé"
+msgstr "جرّب تمرينًا موجّهًا"
+
+#: src/screens/plans/PlansSection.tsx
+msgid "Essayer un quiz de chapitre"
+msgstr "جرّب اختبارًا قصيرًا للفصل"
+
+#: src/screens/carte/Carte.tsx
+msgid "Essayer une carte"
+msgstr "جرّب بطاقة"
+
+#~ msgid "Étape"
+#~ msgstr "خطوة"
+
+#: src/app/OnboardingLayout.tsx
+#: src/screens/tuteur/StageView.tsx
+msgid "Étape {position} sur {total}"
+msgstr "الخطوة {position} من {total}"
+
+#~ msgid "Étude de fonctions"
+#~ msgstr "دراسة الدوال"
+
+#: src/screens/salle/Helpfulness.tsx
+msgid "Évaluer cette explication"
+msgstr "قيّم هذا الشرح"
+
+#: src/screens/onboarding/Compte.tsx
+msgid "ex. yasmine07…"
+msgstr "مثال: yasmine07…"
+
+#: src/screens/onboarding/steps.ts
+msgid "Examens blancs"
+msgstr "امتحانات تجريبية"
+
+#~ msgid "Exemple"
+#~ msgstr "مثال"
+
+#: src/screens/onboarding/Plan.tsx
+msgid "Exemple · ce programme n’est pas enregistré dans ton compte."
+msgstr "مثال · هذا البرنامج غير محفوظ في حسابك."
+
+#: src/screens/onboarding/Plan.tsx
+msgid "Exemple de programme pour cette semaine."
+msgstr "مثال على برنامج هذا الأسبوع."
+
+#: src/screens/salle/Insights.tsx
+msgid "Exemples"
+msgstr "أمثلة"
+
+#: src/screens/accueil/Accueil.tsx
+#: src/screens/onboarding/steps.ts
+#: src/screens/reglages/Reglages.tsx
+msgid "Exercices guidés"
+msgstr "تمارين موجّهة"
+
+#: src/screens/duel/Lobby.tsx
+msgid "Expiré"
+msgstr "منتهية الصلاحية"
+
+#. placeholder {0}: time(duel.invite_expires_at)
+#: src/screens/duel/Lobby.tsx
+msgid "Expire à {0}."
+msgstr "تنتهي الصلاحية عند {0}."
+
+#: src/screens/salle/Posts.tsx
+#: src/screens/salle/SessionPanel.tsx
+msgid "Explication"
+msgstr "شرح"
+
+#: src/screens/tuteur/CheckCard.tsx
+msgid "Explication vérifiée"
+msgstr "شرح تم التحقق منه"
+
+#~ msgid "Explique la photosynthèse étape par étape."
+#~ msgstr "اشرح التركيب الضوئي خطوة بخطوة."
+
+#~ msgid "Explique les boucles avec un exemple de code."
+#~ msgstr "اشرح الحلقات التكرارية بمثال برمجي."
+
+#~ msgid "Explique les dérivées avec un exemple simple."
+#~ msgstr "اشرح المشتقات بمثال بسيط."
+
+#~ msgid "Explique les zones climatiques avec des exemples."
+#~ msgstr "اشرح المناطق المناخية بأمثلة."
+
+#: src/screens/salle/ExplanationCheck.tsx
+msgid "Explique une notion avec tes propres mots pour recevoir un retour privé de Nova. Rien n’est partagé."
+msgstr "اشرح مفهومًا بكلماتك لتحصل على ملاحظات خاصة من نوفا. لا شيء يُشارك."
+
+#: src/screens/tuteur/Conversation.tsx
+msgid "Explique-moi une notion de mon cours avec un exemple."
+msgstr "اشرح لي مفهومًا من درسي مع مثال."
+
+#: src/screens/onboarding/Plan.tsx
+msgid "Expliquer une notion avec tes propres mots"
+msgstr "اشرح مفهومًا بكلماتك"
+
+#~ msgid "Expression écrite"
+#~ msgstr "التعبير الكتابي"
+
+#: src/screens/tuteur/AnswerMessage.tsx
+msgid "Extrait du manuel"
+msgstr "مقتطف من الكتاب المدرسي"
+
+#: src/screens/seances/TimerControls.tsx
+msgid "Faire une pause (5 min)"
+msgstr "أخذ استراحة (5 د)"
+
+#: src/screens/carte/RevisionPack.tsx
+msgid "Fermer la fiche"
+msgstr "إغلاق البطاقة"
+
+#: src/screens/salle/RoomPage.tsx
+msgid "Fermer la salle"
+msgstr "إغلاق القاعة"
+
+#: src/screens/carte/InteractiveLab.tsx
+msgid "Fermer le labo"
+msgstr "إغلاق المختبر"
+
+#: src/screens/carte/QuizPanel.tsx
+msgid "Fermer le quiz"
+msgstr "إغلاق الاختبار القصير"
+
+#: src/screens/carte/RevisionPack.tsx
+msgid "Fiche"
+msgstr "ملخّص"
+
+#: src/screens/carte/RevisionPack.tsx
+msgid "Fiche générée par l’IA : vérifie-la avec ton cours."
+msgstr "ملخّص مُنشأ بالذكاء الاصطناعي: تحقّق منه مع درسك."
+
+#: src/lib/plans.ts
+#: src/screens/carte/Carte.tsx
+#: src/screens/carte/RevisionPack.tsx
+msgid "Fiches de révision Nova"
+msgstr "بطاقات مراجعة نوفا"
+
+#: src/screens/carte/RevisionPack.tsx
+msgid "Fiches de révision Nova : Dérivabilité"
+msgstr "بطاقات مراجعة نوفا: الاشتقاقية"
+
+#: src/screens/onboarding/steps.ts
+msgid "Fiches IA"
+msgstr "بطاقات الذكاء الاصطناعي"
+
+#: src/ui/Streak.tsx
+msgid "Fleur"
+msgstr "زهرة"
+
+#~ msgid "Fonction exponentielle"
+#~ msgstr "الدالة الأسية"
+
+#~ msgid "Fonction logarithme népérien"
+#~ msgstr "دالة اللوغاريتم الطبيعي"
+
+#~ msgid "Fonctions"
+#~ msgstr "الدوال"
+
+#: src/screens/salle/Helpfulness.tsx
+msgid "Format de l’explication"
+msgstr "شكل الشرح"
+
+#: src/screens/salle/Posts.tsx
+msgid "Format de ton explication (facultatif)"
+msgstr "شكل شرحك (اختياري)"
+
+#: src/screens/salle/Insights.tsx
+msgid "Formats jugés utiles"
+msgstr "الأشكال التي وُجدت مفيدة"
+
+#: src/ui/Mosaic.tsx
+msgid "Fragile"
+msgstr "هشّ"
+
+#~ msgid "Français"
+#~ msgstr "الفرنسية"
+
+#: src/screens/carte/RevisionPack.tsx
+msgid "Générer ma fiche"
+msgstr "أنشئ بطاقتي"
+
+#~ msgid "Géographie"
+#~ msgstr "الجغرافيا"
+
+#~ msgid "Géométrie dans l'espace"
+#~ msgstr "الهندسة في الفضاء"
+
+#: src/screens/plans/PlanBadge.tsx
+#: src/screens/plans/PlanChip.tsx
+#: src/screens/plans/PlansSection.tsx
+msgid "Gratuit"
+msgstr "مجاني"
+
+#: src/screens/tuteur/Conversation.tsx
+msgid "Guidé"
+msgstr "موجَّه"
+
+#~ msgid "Histoire"
+#~ msgstr "التاريخ"
+
+#: src/screens/tuteur/AnswerMessage.tsx
+msgid "Hors programme"
+msgstr "خارج البرنامج"
+
+#~ msgid "Identité de Bézout"
+#~ msgstr "متطابقة بيزو"
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "Il le saisit dans « Rejoindre avec un code »."
+msgstr "يدخله في «الانضمام برمز»."
+
+#~ msgid "Il le saisit dans « Rejoindre avec un code ». Le code n’est affiché qu’ici, à la création."
+#~ msgstr "يُدخله في «الانضمام برمز». لا يظهر الرمز إلا هنا، عند الإنشاء."
+
+#. placeholder {0}: total - answered
+#: src/screens/duel/Play.tsx
+msgid "Il te reste {0} question(s) sans réponse. Tu ne pourras plus modifier ta copie."
+msgstr "بقيت لك {0} سؤال(أسئلة) دون إجابة. لن تتمكن من تعديل ورقتك بعد الآن."
+
+#~ msgid "Imagine trois points sur un calendrier : lundi → mardi → vendredi. Chaque point représente un rappel de la même notion."
+#~ msgstr "تخيّل ثلاث نقاط على تقويم: الاثنين ← الثلاثاء ← الجمعة. تمثل كل نقطة مراجعة للمفهوم نفسه."
+
+#~ msgid "Immunité"
+#~ msgstr "المناعة"
+
+#~ msgid "Impossible de charger tes salles."
+#~ msgstr "تعذّر تحميل قاعاتك."
+
+#~ msgid "Impossible de créer la salle."
+#~ msgstr "تعذّر إنشاء القاعة."
+
+#~ msgid "Impossible de créer la salle. Réessaie."
+#~ msgstr "تعذّر إنشاء القاعة. أعد المحاولة."
+
+#: src/screens/duel/messages.ts
+msgid "Impossible de créer un code d’invitation pour l’instant. Réessaie."
+msgstr "تعذّر إنشاء رمز دعوة الآن. حاول مرة أخرى."
+
+#: src/screens/carte/Carte.tsx
+msgid "Impossible de lancer l’exercice. Réessaie."
+msgstr "تعذّر بدء التمرين. حاول مرة أخرى."
+
+#: src/screens/salle/Posts.tsx
+msgid "Impossible de publier dans la salle."
+msgstr "تعذّر النشر في القاعة."
+
+#~ msgid "Impossible de quitter ou de fermer la salle."
+#~ msgstr "تعذّرت مغادرة القاعة أو إغلاقها."
+
+#~ msgid "Impossible de quitter ou de fermer la salle. Réessaie."
+#~ msgstr "تعذّرت مغادرة القاعة أو إغلاقها. أعد المحاولة."
+
+#~ msgid "Impossible de rejoindre la salle pour le moment. Réessaie."
+#~ msgstr "لا يمكن الانضمام إلى القاعة حاليًا. أعد المحاولة."
+
+#: src/screens/plans/PlansSection.tsx
+msgid "Inclus"
+msgstr "مضمَّن"
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Incomplet"
+msgstr "غير مكتمل"
+
+#~ msgid "Informatique"
+#~ msgstr "الإعلامية"
+
+#: src/screens/reglages/Reglages.tsx
+msgid "Intermédiaire"
+msgstr "متوسط"
+
+#: src/screens/duel/Lobby.tsx
+msgid "Invitation envoyée"
+msgstr "تم إرسال الدعوة"
+
+#: src/screens/duel/Lobby.tsx
+msgid "Invitation reçue"
+msgstr "تم استلام دعوة"
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "Invitation valable encore {remaining}."
+msgstr "الدعوة صالحة لمدة {remaining} أخرى."
+
+#: src/screens/salle/Invite.tsx
+msgid "Inviter des amis"
+msgstr "دعوة الأصدقاء"
+
+#: src/screens/duel/Lobby.tsx
+msgid "Inviter un membre (facultatif)"
+msgstr "دعوة عضو (اختياري)"
+
+#~ msgid "Isométries du plan"
+#~ msgstr "التقايسات المستوية"
+
+#: src/screens/onboarding/Bienvenue.tsx
+#: src/screens/onboarding/Compte.tsx
+msgid "J’ai déjà un compte"
+msgstr "لدي حساب بالفعل"
+
+#: src/screens/tuteur/StageView.tsx
+msgid "J’écris la réponse"
+msgstr "أكتب الإجابة"
+
+#: src/screens/tuteur/StageView.tsx
+msgid "Je cherche dans ton manuel"
+msgstr "أبحث في كتابك"
+
+#: src/screens/tuteur/StageView.tsx
+msgid "Je comprends ta question"
+msgstr "أفهم سؤالك"
+
+#: src/screens/onboarding/Compte.tsx
+msgid "Je n’ai pas encore de compte"
+msgstr "ليس لدي حساب بعد"
+
+#: src/screens/tuteur/CheckCard.tsx
+msgid "Je n'ai pas pu vérifier"
+msgstr "لم أستطع التحقق"
+
+#: src/screens/tuteur/AnswerMessage.tsx
+msgid "Je n’ai pas trouvé ce point dans ton manuel"
+msgstr "لم أجد هذه النقطة في كتابك"
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "Je ne suis plus prêt"
+msgstr "لم أعد جاهزًا"
+
+#: src/screens/tuteur/AnswerMessage.tsx
+msgid "Je précise ta question"
+msgstr "أوضّح سؤالك"
+
+#: src/screens/onboarding/Diagnostic.tsx
+msgid "Je prépare tes pistes pour mieux réviser."
+msgstr "أُعدّ لك مسارات لمراجعة أفضل."
+
+#: src/screens/onboarding/Diagnostic.tsx
+msgid "Je prépare ton point de départ…"
+msgstr "أُعدّ نقطة انطلاقك…"
+
+#: src/screens/onboarding/Diagnostic.tsx
+msgid "Je regarde tes réponses…"
+msgstr "أراجع إجاباتك…"
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "Je suis prêt"
+msgstr "أنا جاهز"
+
+#: src/screens/onboarding/Bac.tsx
+msgid "Je te réponds en…"
+msgstr "أجيبك بـ…"
+
+#: src/screens/tuteur/StageView.tsx
+msgid "Je vérifie"
+msgstr "أتحقق"
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "Joueurs"
+msgstr "اللاعبون"
+
+#~ msgid "jour"
+#~ msgstr "يوم"
+
+#: src/screens/reglages/Reglages.tsx
+msgid "Jour"
+msgstr "اليوم"
+
+#~ msgid "jours"
+#~ msgstr "أيام"
+
+#~ msgid "jours de suite"
+#~ msgstr "أيام متتالية"
+
+#: src/screens/duel/Result.tsx
+#: src/screens/tuteur/CheckCard.tsx
+#: src/screens/tuteur/Tuteur.tsx
+msgid "Juste"
+msgstr "صحيح"
+
+#~ msgid "Justice"
+#~ msgstr "العدالة"
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "L’abandon décide le duel : ton adversaire gagne et tu ne pourras pas reprendre."
+msgstr "الانسحاب يحسم المبارزة: يفوز خصمك ولا يمكنك الاستئناف."
+
+#: src/screens/carte/Carte.tsx
+msgid "L’entraînement Bac chronométré est réservé à l’offre Pro."
+msgstr "تدريب الباكالوريا بتوقيت متاح في عرض Pro فقط."
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "L’épreuve commence : vous êtes prêts tous les deux, la préparation est verrouillée."
+msgstr "يبدأ الاختبار: أنتما جاهزان، والتحضير مقفل."
+
+#~ msgid "L’expliquer sans notes"
+#~ msgstr "شرحه دون الرجوع إلى الملاحظات"
+
+#: src/screens/onboarding/Compte.tsx
+#: src/screens/reglages/Reglages.tsx
+#: src/screens/tuteur/Conversation.tsx
+msgid "L'historique de tes échanges n'est pas enregistré dans ton compte."
+msgstr "سجلّ محادثاتك غير محفوظ في حسابك."
+
+#: src/screens/plans/PlansSection.tsx
+msgid "L’offre Pro est activée par l’équipe Nova pendant le pilote. Prix proposé : {PRO_PRICE_TND} TND par mois."
+msgstr "يفعّل فريق نوفا عرض Pro خلال المرحلة التجريبية. السعر المقترح: {PRO_PRICE_TND} دينار تونسي شهريًا."
+
+#~ msgid "La connexion a été coupée avant la fin de la réponse. Tu peux réessayer."
+#~ msgstr "انقطع الاتصال قبل اكتمال الإجابة. يمكنك إعادة المحاولة."
+
+#: src/screens/duel/messages.ts
+msgid "La connexion a été coupée. Réessaie."
+msgstr "انقطع الاتصال. حاول مرة أخرى."
+
+#: src/screens/salle/AskNova.tsx
+msgid "La demande a été annulée, par exemple parce que les réglages de Nova ont changé. Réessaie si besoin."
+msgstr "أُلغي الطلب، مثلًا لأن إعدادات نوفا تغيّرت. أعد المحاولة عند الحاجة."
+
+#: src/screens/carte/RevisionPack.tsx
+msgid "La fiche citée et les trois cartes de rappel sur la dérivabilité sont réservées à l’offre Pro."
+msgstr "الملخّص المدعوم بالمصادر وبطاقات التذكّر الثلاث عن الاشتقاقية متاحة في عرض Pro فقط."
+
+#: src/screens/carte/RevisionPack.tsx
+msgid "La fiche n’a pas pu être préparée. Réessaie."
+msgstr "تعذّر إعداد الملخّص. حاول مرة أخرى."
+
+#: src/screens/salle/RoomCheck.tsx
+msgid "La liste de contrôle est indisponible. Réessaie."
+msgstr "قائمة التحقّق غير متاحة. حاول مرة أخرى."
+
+#: src/screens/carte/QuizPanel.tsx
+msgid "La manche du quiz est terminée."
+msgstr "انتهت جولة الاختبار القصير."
+
+#~ msgid "La pause n’a pas pu être enregistrée."
+#~ msgstr "تعذّر تسجيل الاستراحة."
+
+#: src/screens/onboarding/Plan.tsx
+msgid "La probabilité de $B$ sachant $A$ :\n"
+"\n"
+"$$P_A(B) = \\frac'{'P(A \\cap B)'}{'P(A)'}' = \\frac'{'0'{','}'1'}{'0'{','}'4'}' = 0'{','}'25.$$"
+msgstr "احتمال $B$ علمًا أن $A$ محقّقة:\n"
+"\n"
+"$$P_A(B) = \\frac'{'P(A \\cap B)'}{'P(A)'}' = \\frac'{'0'{','}'1'}{'0'{','}'4'}' = 0'{','}'25.$$"
+
+#: src/screens/carte/RevisionPack.tsx
+msgid "La règle des puissances donne $f′(x)=2x$."
+msgstr "قاعدة القوى تعطي $f′(x)=2x$."
+
+#: src/screens/salle/RoomCheck.tsx
+msgid "La relecture par Nova est réservée à l’offre Pro."
+msgstr "مراجعة نوفا متاحة في عرض Pro فقط."
+
+#~ msgid "La réponse a été interrompue. Tu peux réessayer."
+#~ msgstr "توقّفت الإجابة. يمكنك إعادة المحاولة."
+
+#~ msgid "la révision espacée ?"
+#~ msgstr "المراجعة المتباعدة؟"
+
+#: src/screens/salle/RoomPage.tsx
+msgid "La salle et ses publications seront supprimées pour tous ses membres."
+msgstr "ستُحذف القاعة ومنشوراتها لجميع أعضائها."
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "La séance a changé : voici son état à jour."
+msgstr "تغيّرت الحصة: هذه حالتها المحدّثة."
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "La séance est momentanément indisponible. Réessaie."
+msgstr "الحصة غير متاحة مؤقتًا. حاول مرة أخرى."
+
+#~ msgid "La séance n’a pas pu démarrer."
+#~ msgstr "تعذّر بدء الحصة."
+
+#~ msgid "La suppression a échoué."
+#~ msgstr "تعذّر حذف الحساب."
+
+#: src/screens/reglages/DeleteAccount.tsx
+msgid "La suppression a échoué. Ton compte est conservé. Réessaie."
+msgstr "فشل الحذف. حسابك محفوظ. حاول مرة أخرى."
+
+#: src/lib/plans.ts
+#: src/screens/carte/Carte.tsx
+#: src/screens/carte/ChapterPanel.tsx
+#: src/screens/carte/InteractiveLab.tsx
+msgid "Labo interactif"
+msgstr "المختبر التفاعلي"
+
+#~ msgid "lance la séance…"
+#~ msgstr "لبدء الحصة…"
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Lancer la séance"
+msgstr "بدء الحصة"
+
+#: src/screens/carte/Carte.tsx
+msgid "Lancer un exercice depuis une erreur repérée est réservé à l’offre Pro. Ta liste d’erreurs reste visible."
+msgstr "بدء تمرين انطلاقًا من خطأ مرصود متاح في عرض Pro فقط. تبقى قائمة أخطائك مرئية."
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Lancer une séance, suivre ses manches et lire les notes de Nova est réservé à l’offre Pro. Le reste de la salle reste ouvert à tous."
+msgstr "بدء حصة ومتابعة جولاتها وقراءة ملاحظات نوفا متاح في عرض Pro فقط. بقية القاعة تبقى مفتوحة للجميع."
+
+#: src/app/OnboardingLayout.tsx
+msgid "Langue"
+msgstr "اللغة"
+
+#: src/screens/onboarding/Bac.tsx
+msgid "Langue de mes réponses"
+msgstr "لغة إجاباتي"
+
+#: src/screens/carte/QuizPanel.tsx
+msgid "Langue des questions :"
+msgstr "لغة الأسئلة:"
+
+#: src/screens/reglages/Reglages.tsx
+msgid "Langue des réponses"
+msgstr "لغة الإجابات"
+
+#: src/screens/duel/Result.tsx
+msgid "Le bilan de Nova"
+msgstr "حصيلة نوفا"
+
+#: src/screens/salle/Members.tsx
+msgid "Le code d’invitation va changer."
+msgstr "سيتغيّر رمز الدعوة."
+
+#: src/screens/duel/messages.ts
+msgid "Le duel a déjà démarré ou a été fermé."
+msgstr "بدأت المبارزة بالفعل أو أُغلقت."
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "Le duel démarre dès que vous êtes prêts tous les deux, dans {remaining} au plus."
+msgstr "تبدأ المبارزة فور أن تكونا جاهزين، خلال {remaining} على الأكثر."
+
+#: src/screens/duel/messages.ts
+msgid "Le Duel Exam est momentanément indisponible. Réessaie."
+msgstr "مبارزة الامتحان غير متاحة مؤقتًا. حاول مرة أخرى."
+
+#: src/screens/duel/messages.ts
+msgid "Le Duel Exam est réservé à l’offre Pro."
+msgstr "مبارزة الامتحان متاحة في عرض Pro فقط."
+
+#: src/screens/duel/Result.tsx
+msgid "Le duel n’a pas pu être corrigé : il ne compte pour personne."
+msgstr "تعذّر تصحيح المبارزة: لا تُحتسب لأحد."
+
+#: src/screens/duel/messages.ts
+msgid "Le duel n’est pas en cours."
+msgstr "المبارزة غير جارية."
+
+#: src/screens/carte/Carte.tsx
+msgid "Le labo interactif compare des situations de ce cours. Il est réservé à l’offre Pro."
+msgstr "يقارن المختبر التفاعلي بين وضعيات من هذا الدرس. وهو متاح في عرض Pro فقط."
+
+#: src/screens/carte/Carte.tsx
+msgid "Le labo interactif est réservé à l’offre Pro."
+msgstr "المختبر التفاعلي متاح في عرض Pro فقط."
+
+#: src/screens/carte/InteractiveLab.tsx
+msgid "Le labo interactif est réservé à l’offre Pro. Les autres outils de révision restent ouverts."
+msgstr "المختبر التفاعلي متاح في عرض Pro فقط. أدوات المراجعة الأخرى تبقى متاحة."
+
+#: src/screens/carte/InteractiveLab.tsx
+msgid "Le labo ne s’est pas chargé. Réessaie."
+msgstr "لم يُحمَّل المختبر. حاول مرة أخرى."
+
+#~ msgid "Le minuteur n’a pas pu être réinitialisé."
+#~ msgstr "تعذّرت إعادة ضبط المؤقّت."
+
+#~ msgid "Le minuteur n’a pas pu se synchroniser."
+#~ msgstr "تعذّرت مزامنة المؤقّت."
+
+#: src/screens/seances/Seances.tsx
+msgid "Le minuteur reste en haut de l’écran sur toutes les pages. Seul le temps en cours compte dans tes statistiques."
+msgstr "يبقى المؤقّت أعلى الشاشة في كل الصفحات. الوقت الجاري فقط يُحتسب في إحصائياتك."
+
+#: src/screens/salle/RoomSettings.tsx
+msgid "Le propriétaire a désactivé Nova dans cette salle."
+msgstr "عطّل المالك نوفا في هذه القاعة."
+
+#: src/screens/duel/Lobby.tsx
+msgid "Le pseudo compte 3 à 30 lettres ou chiffres."
+msgstr "الاسم المستعار من 3 إلى 30 حرفًا أو رقمًا."
+
+#~ msgid "Le quiz est très demandé. Réessaie dans"
+#~ msgstr "الإقبال على الاختبار كبير. أعد المحاولة بعد"
+
+#: src/screens/carte/QuizPanel.tsx
+msgid "Le quiz est très demandé. Réessaie dans {seconds} s."
+msgstr "الاختبار القصير عليه طلب كبير. حاول مرة أخرى بعد {seconds} ث."
+
+#: src/screens/carte/QuizPanel.tsx
+msgid "Le quiz est très demandé. Réessaie dans quelques instants."
+msgstr "الاختبار القصير عليه طلب كبير. حاول مرة أخرى بعد لحظات."
+
+#: src/screens/carte/QuizPanel.tsx
+msgid "Le quiz n’est pas disponible pour le moment. Réessaie."
+msgstr "الاختبار القصير غير متاح حاليًا. حاول مرة أخرى."
+
+#: src/screens/carte/ChapterPanel.tsx
+msgid "Le quiz personnel par chapitre est réservé à l’offre Pro. Le quiz d’exemple reste ouvert à tous."
+msgstr "الاختبار القصير الشخصي لكل فصل متاح في عرض Pro فقط. يبقى الاختبار التجريبي مفتوحًا للجميع."
+
+#: src/screens/duel/Result.tsx
+msgid "Le résultat se prépare…"
+msgstr "جارٍ إعداد النتيجة…"
+
+#~ msgid "Le serveur de Nova est injoignable. Vérifie ta connexion puis réessaie."
+#~ msgstr "تعذّر الوصول إلى خادم نوفا. تحقّق من اتصالك ثم أعد المحاولة."
+
+#: src/screens/duel/messages.ts
+msgid "Le temps d’écriture est terminé : tes dernières modifications n’ont pas pu être enregistrées."
+msgstr "انتهى وقت الكتابة: تعذّر حفظ آخر تعديلاتك."
+
+#: src/screens/carte/QuizPanel.tsx
+msgid "Le temps est écoulé : ta copie a été envoyée telle quelle."
+msgstr "انتهى الوقت: أُرسلت ورقتك كما هي."
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "Le temps est écoulé. La correction est en cours, le résultat arrive dans un instant."
+msgstr "انتهى الوقت. التصحيح جارٍ، وستصل النتيجة بعد لحظات."
+
+#: src/screens/duel/Play.tsx
+msgid "Le temps est écoulé. On enregistre le dernier état de ta copie…"
+msgstr "انتهى الوقت. جارٍ حفظ آخر حالة لورقتك…"
+
+#: src/screens/salle/Consent.tsx
+msgid "Le traitement du texte par l’IA est désactivé sur ce service : ce choix n’a pas d’effet pour l’instant."
+msgstr "معالجة النص بالذكاء الاصطناعي معطّلة في هذه الخدمة: لا أثر لهذا الاختيار حاليًا."
+
+#: src/screens/salle/RoomCheck.tsx
+msgid "Le traitement du texte par l’IA est désactivé sur ce service."
+msgstr "معالجة النص بالذكاء الاصطناعي معطّلة في هذه الخدمة."
+
+#: src/screens/tuteur/AnswerMessage.tsx
+msgid "Le tuteur est occupé. Réessaie dans {seconds} s."
+msgstr "المدرّس مشغول. حاول مرة أخرى بعد {seconds} ث."
+
+#: src/screens/accueil/Accueil.tsx
+#: src/screens/onboarding/Plan.tsx
+#: src/screens/onboarding/Style.tsx
+#: src/screens/reglages/Reglages.tsx
+msgid "Lecture"
+msgstr "قراءة"
+
+#: src/ui/Mosaic.tsx
+msgid "Légende"
+msgstr "دليل الرموز"
+
+#: src/screens/carte/LabPlot.tsx
+msgid "Légende du graphique"
+msgstr "مفتاح الرسم البياني"
+
+#: src/screens/duel/Lobby.tsx
+msgid "Les 8 caractères que ton adversaire t’a donnés."
+msgstr "الأحرف الثمانية التي أعطاك إياها خصمك."
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Les chapitres n’ont pas pu être chargés."
+msgstr "تعذّر تحميل الفصول."
+
+#: src/screens/carte/RevisionPack.tsx
+msgid "Les fiches sont en pilote pour le bac Sciences expérimentales, avec les sources vérifiées."
+msgstr "البطاقات في مرحلة تجريبية لباكالوريا العلوم التجريبية، بمصادر موثّقة."
+
+#: src/screens/salle/RoomSettings.tsx
+msgid "Les membres peuvent demander une explication ou un indice à Nova pendant une séance."
+msgstr "يمكن للأعضاء أن يطلبوا من نوفا شرحًا أو تلميحًا أثناء الحصة."
+
+#: src/screens/salle/Consent.tsx
+msgid "Les notions à revoir pour toi sont gardées pour te proposer une révision privée, visible seulement par toi."
+msgstr "تُحفظ المفاهيم التي عليك مراجعتها لنقترح عليك مراجعة خاصة، لا يراها غيرك."
+
+#: src/screens/plans/PlansSection.tsx
+msgid "Les offres Nova"
+msgstr "عروض نوفا"
+
+#: src/screens/salle/Posts.tsx
+msgid "Les publications n’ont pas pu être chargées."
+msgstr "تعذّر تحميل المنشورات."
+
+#: src/screens/salle/RoomSettings.tsx
+msgid "Les publications, les séances et le quiz restent disponibles dans les deux cas."
+msgstr "تبقى المنشورات والحصص والاختبار القصير متاحة في الحالتين."
+
+#~ msgid "Les réglages n’ont pas pu être enregistrés."
+#~ msgstr "تعذّر حفظ الإعدادات."
+
+#: src/screens/salle/RoomSettings.tsx
+msgid "Les réglages n’ont pas pu être enregistrés. Réessaie."
+msgstr "تعذّر حفظ الإعدادات. حاول مرة أخرى."
+
+#: src/screens/reglages/Reglages.tsx
+msgid "Les réglages n’ont pas pu être enregistrés. Tes saisies sont conservées."
+msgstr "تعذّر حفظ الإعدادات. تبقى مدخلاتك محفوظة."
+
+#: src/screens/carte/QuizPanel.tsx
+msgid "Les réponses non données comptent comme fausses."
+msgstr "الأسئلة غير المجاب عنها تُحتسب خاطئة."
+
+#: src/screens/seances/Seances.tsx
+msgid "Les séances de groupe se lancent dans une salle d’étude, avec Nova comme animatrice."
+msgstr "تُجرى الحصص الجماعية في قاعة دراسة، وتقودها نوفا."
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Les tendances du groupe et les avis sur les explications sont réservés à l’offre Pro. Le reste de la séance reste ouvert à tous."
+msgstr "اتجاهات المجموعة وتقييم الشروح متاحة في عرض Pro فقط. بقية الحصة متاحة للجميع."
+
+#~ msgid "Liberté"
+#~ msgstr "الحرية"
+
+#: src/screens/tuteur/Conversation.tsx
+msgid "Libre"
+msgstr "حرّة"
+
+#: src/screens/salle/Invite.tsx
+msgid "Lien copié. Tes amis rejoignent la salle en l’ouvrant."
+msgstr "تم نسخ الرابط. ينضم أصدقاؤك إلى القاعة بفتحه."
+
+#: src/screens/tuteur/Conversation.tsx
+msgid "Limite de 2 000 caractères par message."
+msgstr "الحد الأقصى 2000 حرف لكل رسالة."
+
+#: src/screens/tuteur/Conversation.tsx
+msgid "Limite de 2 000 caractères par message. Raccourcis ton texte et renvoie-le."
+msgstr "الحد الأقصى 2000 حرف لكل رسالة. اختصر نصّك وأعد إرساله."
+
+#~ msgid "Limites et continuité"
+#~ msgstr "النهايات والاستمرارية"
+
+#~ msgid "Lire seulement le résumé"
+#~ msgstr "قراءة الملخّص فقط"
+
+#: src/screens/salle/RoomCheck.tsx
+msgid "Liste de contrôle"
+msgstr "قائمة التحقّق"
+
+#: src/screens/salle/RoomCheck.tsx
+msgid "Liste de contrôle de la séance"
+msgstr "قائمة التحقّق للحصة"
+
+#~ msgid "Listes et tableaux"
+#~ msgstr "القوائم والجداول"
+
+#~ msgid "Loi binomiale"
+#~ msgstr "القانون ثنائي الحدّين"
+
+#~ msgid "Lois de Newton"
+#~ msgstr "قوانين نيوتن"
+
+#: src/screens/duel/Result.tsx
+msgid "M’entraîner sur la carte"
+msgstr "التدرّب على الخريطة"
+
+#: src/screens/duel/Result.tsx
+msgid "Ma correction"
+msgstr "تصحيحاتي"
+
+#: src/screens/tuteur/AnswerMessage.tsx
+#: src/screens/tuteur/GuidedActions.tsx
+msgid "Ma réponse"
+msgstr "إجابتي"
+
+#: src/ui/Streak.tsx
+msgid "Machmoum"
+msgstr "مشموم"
+
+#: src/ui/Streak.tsx
+msgid "Machmoum d’or"
+msgstr "مشموم ذهبي\n"
+""
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Manche suivante"
+msgstr "الجولة التالية"
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Manches de la séance"
+msgstr "جولات الحصة"
+
+#: src/lib/plans.ts
+#~ msgid "Manches en groupe, quiz de la salle, notes partagées et points personnels à revoir."
+#~ msgstr "جولات جماعية، واختبار القاعة القصير، وملاحظات مشتركة، ونقاط شخصية للمراجعة."
+
+#: src/lib/plans.ts
+msgid "Manipuler des modèles de maths ou comparer des situations dans chaque cours de révision."
+msgstr "تعامل مع نماذج رياضية أو قارن بين وضعيات في كل درس مراجعة."
+
+#: src/screens/onboarding/Compte.tsx
+msgid "Masquer le mot de passe"
+msgstr "إخفاء كلمة المرور"
+
+#: src/screens/onboarding/steps.ts
+#: src/screens/reglages/Reglages.tsx
+msgid "Mathématiques"
+msgstr "الرياضيات"
+
+#: src/screens/carte/Carte.tsx
+#: src/screens/tuteur/Conversation.tsx
+msgid "Matière"
+msgstr "المادة"
+
+#~ msgid "Matières"
+#~ msgstr "المواد"
+
+#: src/screens/reglages/Reglages.tsx
+msgid "Matières (facultatif)"
+msgstr "المواد (اختياري)"
+
+#: src/screens/onboarding/Compte.tsx
+msgid "Me connecter"
+msgstr "تسجيل الدخول"
+
+#: src/lib/plans.ts
+msgid "Me tester sur un chapitre"
+msgstr "اختبر نفسك في فصل"
+
+#: src/screens/salle/Members.tsx
+msgid "Membres"
+msgstr "الأعضاء"
+
+#: src/screens/salle/Members.tsx
+msgid "Membres ({count})"
+msgstr "الأعضاء ({count})"
+
+#: src/screens/tuteur/FeedbackControl.tsx
+msgid "Merci, c’est noté."
+msgstr "شكرًا، تم تسجيل ملاحظتك."
+
+#: src/screens/salle/Helpfulness.tsx
+msgid "Merci, ton avis est enregistré."
+msgstr "شكرًا، تم حفظ رأيك."
+
+#: src/screens/onboarding/Plan.tsx
+msgid "Mercredi"
+msgstr "الأربعاء"
+
+#: src/screens/salle/Consent.tsx
+msgid "Mes choix pour cette salle"
+msgstr "اختياراتي لهذه القاعة"
+
+#: src/screens/duel/Duel.tsx
+#: src/screens/duel/Lobby.tsx
+msgid "Mes duels"
+msgstr "مبارزاتي"
+
+#: src/screens/onboarding/steps.ts
+msgid "Mes notes"
+msgstr "ملاحظاتي"
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Mes points à revoir"
+msgstr "نقاطي للمراجعة"
+
+#: src/screens/onboarding/steps.ts
+msgid "Mes propres fiches"
+msgstr "بطاقاتي الخاصة"
+
+#: src/screens/salle/RoomPage.tsx
+#: src/screens/salle/RoomsHome.tsx
+msgid "Mes salles"
+msgstr "قاعاتي"
+
+#: src/screens/tuteur/CheckCard.tsx
+msgid "Message de bien-être"
+msgstr "رسالة اهتمام"
+
+#: src/screens/tuteur/Conversation.tsx
+msgid "Messages"
+msgstr "الرسائل"
+
+#: src/screens/onboarding/Diagnostic.tsx
+msgid "Méthodes de révision"
+msgstr "طرق المراجعة"
+
+#: src/screens/seances/TimerControls.tsx
+msgid "Mettre la séance en pause"
+msgstr "إيقاف الحصة مؤقتًا"
+
+#: src/screens/onboarding/steps.ts
+msgid "Mini-diagnostic"
+msgstr "فحص تشخيصي مصغّر"
+
+#: src/app/FloatingTimer.tsx
+msgid "Minuteur d’étude"
+msgstr "مؤقّت الدراسة"
+
+#: src/app/FloatingTimer.tsx
+msgid "Minuteur d’étude : {word}"
+msgstr "مؤقّت الدراسة: {word}"
+
+#: src/screens/seances/Seances.tsx
+msgid "Minuteur de concentration"
+msgstr "مؤقّت التركيز"
+
+#~ msgid "Minuteur réinitialisé."
+#~ msgstr "أُعيد ضبط المؤقّت."
+
+#: src/screens/tuteur/Conversation.tsx
+msgid "Mode"
+msgstr "الوضع"
+
+#: src/screens/onboarding/steps.ts
+msgid "Mode Feynman"
+msgstr "طريقة فاينمان"
+
+#: src/screens/onboarding/Plan.tsx
+msgid "Mode Feynman · Exemple"
+msgstr "طريقة فاينمان · مثال"
+
+#: src/screens/tuteur/GuidedActions.tsx
+msgid "Mode guidé"
+msgstr "الوضع الموجَّه"
+
+#: src/screens/plans/PlansSection.tsx
+msgid "Mon offre"
+msgstr "عرضي"
+
+#: src/screens/plans/PlanChip.tsx
+msgid "Mon offre : {name}. Voir les offres"
+msgstr "عرضي: {name}. عرض العروض"
+
+#~ msgid "Mondialisation"
+#~ msgstr "العولمة"
+
+#: src/screens/onboarding/Compte.tsx
+msgid "Mot de passe"
+msgstr "كلمة المرور"
+
+#: src/app/AppLayout.tsx
+msgid "Navigation principale"
+msgstr "التنقل الرئيسي"
+
+#~ msgid "Niveau"
+#~ msgstr "المستوى"
+
+#: src/screens/reglages/Reglages.tsx
+msgid "Niveau (facultatif)"
+msgstr "المستوى (اختياري)"
+
+#: src/screens/onboarding/QuizCard.tsx
+msgid "Niveau de départ"
+msgstr "مستوى الانطلاق"
+
+#: src/screens/salle/CreateForm.tsx
+msgid "Nom de la salle"
+msgstr "اسم القاعة"
+
+#~ msgid "Nombres complexes"
+#~ msgstr "الأعداد المركبة"
+
+#: src/screens/salle/Members.tsx
+msgid "Nommer {member} propriétaire ?"
+msgstr "هل تجعل {member} مالكًا؟"
+
+#: src/screens/salle/Members.tsx
+msgid "Nommer {name} propriétaire"
+msgstr "جعل {name} مالكًا"
+
+#: src/screens/salle/Members.tsx
+msgid "Nommer propriétaire"
+msgstr "جعله مالكًا"
+
+#: src/screens/duel/Play.tsx
+msgid "Non enregistré"
+msgstr "غير محفوظ"
+
+#: src/screens/plans/PlansSection.tsx
+msgid "Non inclus"
+msgstr "غير مشمول"
+
+#~ msgid "non précisée"
+#~ msgstr "غير محدّدة"
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Non vérifié"
+msgstr "غير موثّق"
+
+#: src/screens/tuteur/FeedbackControl.tsx
+msgid "Non, pas utile"
+msgstr "لا، غير مفيد"
+
+#: src/screens/carte/Carte.tsx
+msgid "Notation"
+msgstr "الترميز"
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Notes de la séance"
+msgstr "ملاحظات الحصة"
+
+#: src/screens/carte/Carte.tsx
+msgid "Notion"
+msgstr "مفهوم"
+
+#: src/screens/salle/Insights.tsx
+msgid "Notions à revoir ensemble"
+msgstr "مفاهيم للمراجعة معًا"
+
+#: src/screens/salle/AskNova.tsx
+msgid "Notions concernées (facultatif)"
+msgstr "المفاهيم المعنية (اختياري)"
+
+#: src/screens/salle/Insights.tsx
+msgid "Notions déjà abordées"
+msgstr "مفاهيم سبق تناولها"
+
+#: src/screens/salle/Insights.tsx
+msgid "Notions les plus demandées"
+msgstr "المفاهيم الأكثر طلبًا"
+
+#: src/screens/tuteur/Conversation.tsx
+msgid "Nouvel exercice"
+msgstr "تمرين جديد"
+
+#: src/screens/tuteur/ThreadList.tsx
+#: src/screens/tuteur/Tuteur.tsx
+msgid "Nouvelle conversation"
+msgstr "محادثة جديدة"
+
+#: src/screens/tuteur/GuidedActions.tsx
+msgid "Nouvelle question"
+msgstr "سؤال جديد"
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Nouvelle séance"
+msgstr "حصة جديدة"
+
+#: src/screens/NotFound.tsx
+msgid "Nova a cherché partout, mais cette page n’existe pas."
+msgstr "بحثت نوفا في كل مكان، لكن هذه الصفحة غير موجودة."
+
+#: src/screens/salle/AskNova.tsx
+msgid "Nova a déjà beaucoup répondu à la salle. Réessaie dans un moment."
+msgstr "أجابت نوفا القاعة كثيرًا. حاول مرة أخرى بعد قليل."
+
+#: src/screens/salle/AskNova.tsx
+msgid "Nova a été désactivée dans cette salle. Ta place est gardée : tu peux continuer à étudier, publier et faire le quiz."
+msgstr "عُطّلت نوفا في هذه القاعة. مكانك محفوظ: يمكنك متابعة الدراسة والنشر والاختبار القصير."
+
+#~ msgid "Nova a rencontré une erreur interne. Tu peux réessayer."
+#~ msgstr "واجهت نوفا خطأً داخليًا. يمكنك إعادة المحاولة."
+
+#~ msgid "Nova a renvoyé une réponse invalide. Tu peux réessayer."
+#~ msgstr "أرسلت نوفا إجابة غير صالحة. يمكنك إعادة المحاولة."
+
+#: src/screens/salle/AskNova.tsx
+msgid "Nova a répondu : sa réponse est dans les publications de la salle."
+msgstr "أجابت نوفا: إجابتها في منشورات القاعة."
+
+#: src/screens/salle/RoomSettings.tsx
+msgid "Nova aide la salle"
+msgstr "نوفا تساعد القاعة"
+
+#: src/screens/onboarding/Bac.tsx
+msgid "Nova choisit les extraits du cours selon ta section. Tu pourras la changer dans les réglages."
+msgstr "تختار نوفا مقتطفات الدرس حسب شعبتك. يمكنك تغييرها من الإعدادات."
+
+#: src/screens/carte/QuizPanel.tsx
+msgid "Nova corrige ta copie…"
+msgstr "نوفا تصحّح ورقتك…"
+
+#: src/screens/salle/RoomSettings.tsx
+msgid "Nova dans la salle"
+msgstr "نوفا في القاعة"
+
+#: src/screens/salle/AskNova.tsx
+msgid "Nova est désactivée dans cette salle. Tu peux toujours étudier, publier et faire le quiz."
+msgstr "نوفا معطّلة في هذه القاعة. يمكنك مع ذلك الدراسة والنشر والاختبار القصير."
+
+#~ msgid "Nova est hors ligne pour le moment. Réessaie dans quelques minutes."
+#~ msgstr "نوفا غير متصلة حاليًا. أعد المحاولة بعد دقائق."
+
+#: src/screens/salle/AskNova.tsx
+msgid "Nova est momentanément indisponible. Réessaie."
+msgstr "نوفا غير متاحة مؤقتًا. حاول مرة أخرى."
+
+#: src/screens/carte/RevisionPack.tsx
+#: src/screens/salle/AskNova.tsx
+msgid "Nova est très sollicitée. Réessaie dans {seconds} s."
+msgstr "نوفا مشغولة جدًا. حاول مرة أخرى بعد {seconds} ث."
+
+#: src/screens/carte/RevisionPack.tsx
+#: src/screens/salle/AskNova.tsx
+#: src/screens/salle/SessionPanel.tsx
+msgid "Nova est très sollicitée. Réessaie dans quelques instants."
+msgstr "نوفا مشغولة جدًا. حاول مرة أخرى بعد لحظات."
+
+#: src/screens/onboarding/Bienvenue.tsx
+msgid "Nova l’axolotl te fait coucou"
+msgstr "نوفا السمندل المكسيكي تلوّح لك"
+
+#: src/screens/salle/RoomCheck.tsx
+msgid "Nova n’a pas pu relire ton texte à l’instant."
+msgstr "تعذّر على نوفا مراجعة نصّك الآن."
+
+#: src/screens/salle/AskNova.tsx
+msgid "Nova n’a pas pu répondre cette fois. Réessaie."
+msgstr "تعذّر على نوفا الرد هذه المرة. حاول مرة أخرى."
+
+#: src/screens/salle/Posts.tsx
+msgid "Nova ne lit tes messages que si tu l’as autorisé dans « Mes choix pour cette salle »."
+msgstr "لا تقرأ نوفا رسائلك إلا إذا سمحت لها بذلك في «اختياراتي لهذه القاعة»."
+
+#: src/screens/salle/Consent.tsx
+msgid "Nova peut lire mes messages"
+msgstr "يمكن لنوفا قراءة رسائلي"
+
+#: src/screens/salle/RoomSettings.tsx
+msgid "Nova peut proposer une relance à la fin d’une manche et un résumé en fin de séance."
+msgstr "يمكن لنوفا اقتراح تنبيه في نهاية الجولة وملخّص في نهاية الحصة."
+
+#: src/screens/salle/RoomSettings.tsx
+msgid "Nova peut répondre aux demandes de la salle pendant une séance."
+msgstr "يمكن لنوفا الرد على طلبات القاعة أثناء الحصة."
+
+#: src/screens/salle/Consent.tsx
+msgid "Nova peut tenir compte de mes préférences"
+msgstr "يمكن لنوفا أن تراعي تفضيلاتي"
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Nova prépare l’objectif de la séance…"
+msgstr "تُعدّ نوفا هدف الحصة…"
+
+#: src/screens/salle/AskNova.tsx
+msgid "Nova prépare sa réponse…"
+msgstr "تُعدّ نوفا ردّها…"
+
+#: src/screens/duel/Result.tsx
+msgid "Nova prépare son bilan… il apparaîtra ici."
+msgstr "تُعدّ نوفا حصيلتها… ستظهر هنا."
+
+#: src/screens/carte/RevisionPack.tsx
+msgid "Nova prépare ta fiche…"
+msgstr "نوفا تُعدّ ملخّصك…"
+
+#: src/screens/carte/RevisionPack.tsx
+msgid "Nova prépare une fiche avec ses sources et trois cartes de rappel. Cela peut prendre un moment."
+msgstr "تُعدّ نوفا ملخّصًا بمصادره وثلاث بطاقات تذكّر. قد يستغرق ذلك لحظات."
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Nova rédige les notes de la séance…"
+msgstr "تكتب نوفا ملاحظات الحصة…"
+
+#: src/screens/salle/AskNova.tsx
+msgid "Nova reprend la notion pour le groupe."
+msgstr "تعيد نوفا شرح المفهوم للمجموعة."
+
+#: src/screens/accueil/HomeOverview.tsx
+msgid "Nova te propose"
+msgstr "تقترح عليك نوفا"
+
+#: src/screens/salle/ExplanationCheck.tsx
+msgid "Nova vérifie ton explication…"
+msgstr "تتحقق نوفا من شرحك…"
+
+#: src/app/OnboardingLayout.tsx
+msgid "Nova, revenir au début"
+msgstr "نوفا، العودة إلى البداية"
+
+#: src/screens/reglages/Reglages.tsx
+msgid "Nuit"
+msgstr "ليل"
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Objectif :"
+msgstr "الهدف:"
+
+#: src/screens/plans/PlansSection.tsx
+msgid "Offre gratuite"
+msgstr "العرض المجاني"
+
+#: src/screens/plans/PlansSection.tsx
+msgid "Offre Pro"
+msgstr "عرض Pro"
+
+#: src/screens/seances/TimerControls.tsx
+msgid "OK"
+msgstr "حسنًا"
+
+#: src/screens/tuteur/CheckCard.tsx
+msgid "On fait une pause ensemble ?"
+msgstr "هل نأخذ استراحة معًا؟"
+
+#~ msgid "Ondes"
+#~ msgstr "الموجات"
+
+#: src/screens/tuteur/FeedbackControl.tsx
+msgid "Oui, utile"
+msgstr "نعم، مفيد"
+
+#~ msgid "outil"
+#~ msgstr "أداة"
+
+#~ msgid "outils"
+#~ msgstr "أدوات"
+
+#: src/screens/carte/Carte.tsx
+msgid "Outils de révision"
+msgstr "أدوات المراجعة"
+
+#: src/screens/duel/Lobby.tsx
+msgid "Ouvrir"
+msgstr "فتح"
+
+#: src/screens/carte/Carte.tsx
+msgid "Ouvrir le labo"
+msgstr "افتح المختبر"
+
+#: src/screens/carte/Carte.tsx
+msgid "Ouvrir le labo : {topic}"
+msgstr "افتح المختبر: {topic}"
+
+#: src/screens/carte/RevisionPack.tsx
+#: src/screens/tuteur/AnswerMessage.tsx
+#: src/ui/SourceChip.tsx
+msgid "p. {page}"
+msgstr "ص. {page}"
+
+#: src/screens/NotFound.tsx
+msgid "Page introuvable"
+msgstr "الصفحة غير موجودة"
+
+#: src/screens/onboarding/diagnosticBank.ts
+msgid "Par analogies"
+msgstr "بالتشبيهات"
+
+#: src/screens/onboarding/diagnosticBank.ts
+msgid "Par étapes"
+msgstr "على مراحل"
+
+#: src/screens/onboarding/diagnosticBank.ts
+msgid "Par exemples"
+msgstr "بالأمثلة"
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Participer à une séance de groupe"
+msgstr "المشاركة في حصة جماعية"
+
+#: src/lib/plans.ts
+msgid "Participer à une séance Nova"
+msgstr "المشاركة في حصة مع نوفا"
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Partiel"
+msgstr "جزئي"
+
+#: src/screens/tuteur/FeedbackControl.tsx
+msgid "Pas à mon niveau"
+msgstr "ليس في مستواي"
+
+#: src/screens/salle/Insights.tsx
+msgid "Pas à pas"
+msgstr "خطوة بخطوة"
+
+#: src/screens/tuteur/FeedbackControl.tsx
+msgid "Pas clair"
+msgstr "غير واضح"
+
+#: src/screens/onboarding/Compte.tsx
+msgid "Pas d’e-mail, pas de numéro de téléphone. Tu peux supprimer ton compte et toutes tes données à tout moment."
+msgstr "لا بريد إلكتروني ولا رقم هاتف. يمكنك حذف حسابك وكل بياناتك في أي وقت."
+
+#: src/screens/tuteur/AnswerMessage.tsx
+msgid "Pas dans ton cours"
+msgstr "خارج درسك"
+
+#: src/screens/salle/Posts.tsx
+msgid "Pas de format précisé"
+msgstr "دون تحديد شكل"
+
+#: src/screens/onboarding/Diagnostic.tsx
+msgid "Pas de note, pas de chrono. Si tu hésites, choisis ce qui te semble le plus juste."
+msgstr "لا علامة ولا مؤقّت. إن ترددت، اختر ما يبدو لك الأصحّ."
+
+#: src/screens/tuteur/CheckCard.tsx
+msgid "Pas encore"
+msgstr "ليس بعد"
+
+#: src/screens/accueil/HomeOverview.tsx
+#: src/screens/carte/ChapterMap.tsx
+msgid "Pas encore de données"
+msgstr "لا بيانات بعد"
+
+#: src/screens/onboarding/Diagnostic.tsx
+#: src/ui/Mosaic.tsx
+msgid "Pas encore évalué"
+msgstr "لم يُقيَّم بعد"
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "Pas prêt"
+msgstr "غير جاهز"
+
+#: src/screens/salle/Helpfulness.tsx
+msgid "Pas utile"
+msgstr "غير مفيد"
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Passage à la manche suivante…"
+msgstr "الانتقال إلى الجولة التالية…"
+
+#: src/screens/tuteur/AnswerMessage.tsx
+msgid "Passage de ton manuel, sans IA"
+msgstr "مقتطف من كتابك المدرسي، دون ذكاء اصطناعي"
+
+#~ msgid "Passer à un autre sujet"
+#~ msgstr "الانتقال إلى موضوع آخر"
+
+#: src/app/ThemeToggle.tsx
+msgid "Passer en mode Jour"
+msgstr "التحويل إلى الوضع الفاتح"
+
+#: src/app/ThemeToggle.tsx
+msgid "Passer en mode Nuit"
+msgstr "التحويل إلى الوضع الداكن"
+
+#: src/lib/plans.ts
+msgid "Passer la même épreuve chronométrée qu’un autre membre Pro de la salle et recevoir un résultat immédiat."
+msgstr "اجتز الاختبار المؤقّت نفسه مع عضو آخر في Pro من القاعة واحصل على نتيجة فورية."
+
+#: src/screens/seances/TimerControls.tsx
+msgid "Passer la pause"
+msgstr "تخطي الاستراحة"
+
+#: src/screens/onboarding/Diagnostic.tsx
+msgid "Passer les questions"
+msgstr "تخطي الأسئلة"
+
+#: src/screens/seances/TimerControls.tsx
+msgid "Pause"
+msgstr "إيقاف مؤقت"
+
+#~ msgid "Pause : Nova fait une sieste jusqu’à ton retour."
+#~ msgstr "استراحة: نوفا تغفو إلى حين عودتك."
+
+#: src/screens/seances/Seances.tsx
+msgid "Pause de 5 minutes : Nova fait une sieste. Ce temps ne compte pas dans tes statistiques."
+msgstr "استراحة 5 دقائق: نوفا تغفو. لا يُحتسب هذا الوقت في إحصائياتك."
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "Personne n’a démarré à temps. Tu peux créer un nouveau duel."
+msgstr "لم يبدأ أحد في الوقت المناسب. يمكنك إنشاء مبارزة جديدة."
+
+#~ msgid "Philosophie"
+#~ msgstr "الفلسفة"
+
+#~ msgid "Photosynthèse"
+#~ msgstr "التركيب الضوئي"
+
+#~ msgid "Physique"
+#~ msgstr "الفيزياء"
+
+#: src/screens/carte/Carte.tsx
+msgid "Pistes de révision"
+msgstr "مسارات المراجعة"
+
+#: src/screens/tuteur/GuidedActions.tsx
+msgid "Plus d’indice"
+msgstr "لا مزيد من التلميحات"
+
+#: src/screens/salle/RoomCheck.tsx
+msgid "Points du cours à ajouter :"
+msgstr "نقاط الدرس المطلوب إضافتها:"
+
+#: src/screens/tuteur/Conversation.tsx
+msgid "Pose ta question…"
+msgstr "اطرح سؤالك…"
+
+#: src/screens/tuteur/Conversation.tsx
+msgid "Pose une question ou choisis une idée pour commencer."
+msgstr "اطرح سؤالًا أو اختر فكرة لتبدأ."
+
+#: src/screens/accueil/HomeOverview.tsx
+msgid "Poser ma première question"
+msgstr "طرح سؤالي الأول"
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Posez vos questions anonymes sur ce qui reste flou."
+msgstr "اطرحوا أسئلتكم المجهولة حول ما بقي غامضًا."
+
+#: src/screens/plans/PlansSection.tsx
+msgid "Pour tes révisions au quotidien"
+msgstr "لمراجعاتك اليومية"
+
+#: src/screens/tuteur/FeedbackControl.tsx
+msgid "Pourquoi ?"
+msgstr "لماذا؟"
+
+#: src/screens/carte/Carte.tsx
+msgid "Préparer ma fiche"
+msgstr "أعدّ بطاقتي"
+
+#: src/lib/plans.ts
+msgid "Préparer mes révisions"
+msgstr "إعداد مراجعاتي"
+
+#: src/screens/reglages/Reglages.tsx
+msgid "Présentation"
+msgstr "العرض"
+
+#: src/screens/accueil/Accueil.tsx
+msgid "Présentation : {style}"
+msgstr "العرض: {style}"
+
+#: src/screens/tuteur/CheckCard.tsx
+msgid "Presque : il manque une pièce"
+msgstr "تكاد تنتهي: تنقص قطعة"
+
+#: src/screens/duel/DuelRoom.tsx
+#: src/screens/seances/TimerControls.tsx
+msgid "Prêt"
+msgstr "جاهز"
+
+#~ msgid "Prévoir plusieurs rappels"
+#~ msgstr "التخطيط لعدة مراجعات"
+
+#~ msgid "Primitives"
+#~ msgstr "الدوال الأصلية"
+
+#: src/screens/plans/LockedNotice.tsx
+#: src/screens/plans/PlanBadge.tsx
+#: src/screens/plans/PlanChip.tsx
+#: src/screens/plans/PlansSection.tsx
+msgid "Pro"
+msgstr "Pro"
+
+#~ msgid "Probabilités"
+#~ msgstr "الاحتمالات"
+
+#~ msgid "Probabilités conditionnelles"
+#~ msgstr "الاحتمالات الشرطية"
+
+#: src/screens/accueil/HomeOverview.tsx
+msgid "Prochaine étape"
+msgstr "الخطوة التالية"
+
+#: src/screens/reglages/Reglages.tsx
+msgid "Profil facultatif"
+msgstr "ملف شخصي اختياري"
+
+#~ msgid "Propose des exercices de grammaire anglaise."
+#~ msgstr "اقترح عليّ تمارين في قواعد اللغة الإنجليزية."
+
+#: src/screens/tuteur/Conversation.tsx
+msgid "Propose un exercice pour m’entraîner."
+msgstr "اقترح عليّ تمرينًا للتدرّب."
+
+#: src/screens/plans/PlansSection.tsx
+msgid "Propose un exercice sur la dérivabilité."
+msgstr "اقترح عليّ تمرينًا حول قابلية الاشتقاق."
+
+#: src/screens/tuteur/Conversation.tsx
+msgid "Propose un nouvel exercice dans cette matière."
+msgstr "اقترح عليّ تمرينًا جديدًا في هذه المادة."
+
+#: src/screens/tuteur/Conversation.tsx
+msgid "Propose un nouvel exercice."
+msgstr "اقترح عليّ تمرينًا جديدًا."
+
+#: src/screens/salle/Members.tsx
+msgid "Propriétaire"
+msgstr "المالك"
+
+#: src/app/OnboardingLayout.tsx
+msgid "Prototype : contenus, pages du manuel et résultats d’exemple."
+msgstr "نموذج أولي: محتويات وصفحات من الكتاب المدرسي ونتائج تجريبية."
+
+#: src/screens/onboarding/Compte.tsx
+#: src/screens/reglages/Reglages.tsx
+msgid "Pseudo"
+msgstr "الاسم المستعار"
+
+#: src/screens/salle/Posts.tsx
+msgid "Publication…"
+msgstr "جارٍ النشر…"
+
+#: src/screens/salle/Posts.tsx
+msgid "Publications de la salle"
+msgstr "منشورات القاعة"
+
+#: src/screens/salle/Posts.tsx
+msgid "Publier"
+msgstr "نشر"
+
+#: src/screens/onboarding/Outils.tsx
+msgid "Qu’est-ce que tu veux avoir sous la main ?"
+msgstr "ماذا تريد أن يكون في متناول يدك؟"
+
+#~ msgid "qu'on te dessine la situation"
+#~ msgstr "أن يرسموا لك الوضعية"
+
+#~ msgid "qu'on te donne la prochaine étape"
+#~ msgstr "أن يعطوك الخطوة التالية"
+
+#~ msgid "qu'on te l'explique avec une image"
+#~ msgstr "أن يشرحوها لك بصورة"
+
+#~ msgid "Quand tu bloques sur un exercice, tu aimerais…"
+#~ msgstr "عندما تتعثّر في تمرين، تودّ…"
+
+#~ msgid "Quand tu découvres une nouvelle notion, tu préfères…"
+#~ msgstr "عندما تكتشف مفهومًا جديدًا، تفضّل…"
+
+#: src/screens/tuteur/Conversation.tsx
+msgid "Que veux-tu apprendre aujourd’hui ?"
+msgstr "ماذا تريد أن تتعلّم اليوم؟"
+
+#: src/screens/carte/RevisionPack.tsx
+msgid "Quelle est la dérivée de $f(x)=x^2$ ?"
+msgstr "ما مشتقة الدالة $f(x)=x^2$ ؟"
+
+#~ msgid "Quelle explication préfères-tu pour {topic}"
+#~ msgstr "أي شرح تفضّل لـ {topic}"
+
+#~ msgid "Question"
+#~ msgstr "سؤال"
+
+#. placeholder {0}: index + 1
+#: src/screens/duel/Play.tsx
+msgid "Question {0}"
+msgstr "السؤال {0}"
+
+#: src/screens/duel/Result.tsx
+msgid "Question {n}"
+msgstr "السؤال {n}"
+
+#: src/screens/onboarding/QuizCard.tsx
+msgid "Question {step} sur {total}"
+msgstr "السؤال {step} من {total}"
+
+#: src/screens/salle/AskNova.tsx
+#: src/screens/salle/Posts.tsx
+msgid "Question anonyme"
+msgstr "سؤال مجهول"
+
+#: src/lib/plans.ts
+msgid "Question sur la dérivation avec correction, à refaire à tout moment."
+msgstr "سؤال حول الاشتقاق مع التصحيح، يمكنك إعادته في أي وقت."
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Questions"
+msgstr "الأسئلة"
+
+#: src/lib/plans.ts
+msgid "Questions de cours et exercices guidés"
+msgstr "أسئلة الدرس والتمارين الموجّهة"
+
+#: src/lib/plans.ts
+msgid "Questions de cours, sources disponibles, exercices guidés, indices et corrections."
+msgstr "أسئلة الدرس والمصادر المتاحة والتمارين الموجّهة والتلميحات والتصحيحات."
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "Quitter avant le début"
+msgstr "المغادرة قبل البداية"
+
+#: src/screens/salle/RoomPage.tsx
+msgid "Quitter la salle"
+msgstr "مغادرة القاعة"
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "Quitter le duel"
+msgstr "مغادرة المبارزة"
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Quiz"
+msgstr "اختبار قصير"
+
+#: src/lib/plans.ts
+#: src/screens/carte/Carte.tsx
+#: src/screens/carte/QuizPanel.tsx
+msgid "Quiz d’exemple"
+msgstr "اختبار قصير تجريبي"
+
+#: src/screens/carte/QuizPanel.tsx
+msgid "Quiz de la séance"
+msgstr "اختبار الحصة القصير"
+
+#: src/screens/carte/ChapterPanel.tsx
+#: src/screens/carte/QuizPanel.tsx
+#: src/screens/salle/RoomQuiz.tsx
+msgid "Quiz du chapitre"
+msgstr "اختبار الفصل القصير"
+
+#: src/screens/carte/QuizPanel.tsx
+msgid "Quiz du chapitre :"
+msgstr "اختبار الفصل القصير:"
+
+#: src/screens/reglages/Reglages.tsx
+msgid "Raccourcis sur l’accueil"
+msgstr "اختصارات الرئيسية"
+
+#~ msgid "Réactions acido-basiques"
+#~ msgstr "التفاعلات حمض-أساس"
+
+#: src/screens/duel/Lobby.tsx
+msgid "Récents"
+msgstr "الأخيرة"
+
+#: src/screens/reglages/DeleteAccount.tsx
+msgid "Recopie exactement ton pseudo."
+msgstr "أعد كتابة اسمك المستعار بدقة."
+
+#~ msgid "Recopier le texte"
+#~ msgstr "إعادة نسخ النص"
+
+#: src/screens/carte/InteractiveLab.tsx
+#: src/screens/carte/QuizPanel.tsx
+#: src/screens/carte/RevisionPack.tsx
+#: src/screens/tuteur/FeedbackControl.tsx
+#: src/ui/ErrorBanner.tsx
+msgid "Réessayer"
+msgstr "إعادة المحاولة"
+
+#: src/screens/tuteur/CheckCard.tsx
+msgid "Réexpliquer"
+msgstr "إعادة الشرح"
+
+#: src/screens/carte/QuizPanel.tsx
+msgid "Refaire le quiz"
+msgstr "إعادة الاختبار القصير"
+
+#: src/app/AppLayout.tsx
+#: src/screens/reglages/Reglages.tsx
+#: src/screens/reglages/ReglagesScreen.tsx
+msgid "Réglages"
+msgstr "الإعدادات"
+
+#: src/screens/reglages/Reglages.tsx
+msgid "Réglages enregistrés."
+msgstr "تم حفظ الإعدادات."
+
+#: src/screens/salle/RoomSettings.tsx
+msgid "Régler Nova pour la salle"
+msgstr "ضبط نوفا للقاعة"
+
+#: src/screens/duel/Result.tsx
+msgid "Règles de dérivation"
+msgstr "قواعد الاشتقاق"
+
+#: src/screens/seances/TimerControls.tsx
+msgid "Réinitialiser"
+msgstr "إعادة الضبط"
+
+#: src/screens/seances/TimerControls.tsx
+msgid "Réinitialiser le minuteur"
+msgstr "إعادة ضبط المؤقّت"
+
+#: src/screens/salle/JoinForm.tsx
+msgid "Rejoindre"
+msgstr "انضمام\n"
+""
+
+#: src/screens/duel/Lobby.tsx
+#: src/screens/salle/JoinForm.tsx
+msgid "Rejoindre avec un code"
+msgstr "الانضمام برمز"
+
+#: src/screens/duel/Lobby.tsx
+msgid "Rejoindre le duel"
+msgstr "الانضمام إلى المبارزة"
+
+#: src/screens/salle/RoomSettings.tsx
+msgid "Relances automatiques à chaque manche"
+msgstr "تنبيهات تلقائية في كل جولة"
+
+#: src/screens/salle/RoomCheck.tsx
+msgid "Relecture de Nova"
+msgstr "مراجعة نوفا"
+
+#: src/screens/salle/RoomCheck.tsx
+msgid "Relecture générée par l’IA : vérifie-la avec ton cours."
+msgstr "مراجعة مولَّدة بالذكاء الاصطناعي: تحقّق منها مع درسك."
+
+#: src/screens/salle/RoomCheck.tsx
+msgid "Relire avec la liste de contrôle"
+msgstr "إعادة القراءة مع قائمة التحقّق"
+
+#~ msgid "Relire seulement le titre"
+#~ msgstr "إعادة قراءة العنوان فقط"
+
+#: src/screens/salle/RoomCheck.tsx
+msgid "Relis ton explication point par point. Cette liste ne la note pas."
+msgstr "أعد قراءة شرحك نقطة نقطة. هذه القائمة لا تضع عليه علامة."
+
+#: src/screens/duel/Play.tsx
+msgid "Rendre ma copie"
+msgstr "تسليم ورقتي"
+
+#: src/screens/duel/Play.tsx
+msgid "Rendre ta copie ?"
+msgstr "هل تسلّم ورقتك؟"
+
+#: src/screens/tuteur/AnswerMessage.tsx
+msgid "Réponse appuyée sur ton manuel"
+msgstr "إجابة مستندة إلى كتابك"
+
+#: src/screens/tuteur/AnswerMessage.tsx
+msgid "Réponse générale, hors de ton programme"
+msgstr "إجابة عامة خارج برنامجك"
+
+#~ msgid "réponse générée par IA"
+#~ msgstr "إجابة مولَّدة بالذكاء الاصطناعي"
+
+#: src/screens/salle/Posts.tsx
+msgid "Réponse générée par l’IA : vérifie-la avec ton cours."
+msgstr "إجابة مولَّدة بالذكاء الاصطناعي: تحقّق منها مع درسك."
+
+#: src/screens/carte/Carte.tsx
+msgid "Réponse incomplète"
+msgstr "إجابة غير مكتملة"
+
+#~ msgid "Réponse indisponible. Tu peux réessayer."
+#~ msgstr "الإجابة غير متاحة. يمكنك إعادة المحاولة."
+
+#: src/screens/seances/TimerControls.tsx
+msgid "Repos"
+msgstr "راحة"
+
+#: src/screens/seances/TimerControls.tsx
+msgid "Reprendre"
+msgstr "استئناف"
+
+#: src/screens/accueil/HomeOverview.tsx
+msgid "Reprendre ·"
+msgstr "استئناف ·"
+
+#: src/screens/plans/LockedNotice.tsx
+msgid "Réservé à l’offre Pro, activée par l’équipe Nova. Tu peux demander l’accès depuis la page des offres."
+msgstr "متاح في عرض Pro فقط، ويفعّله فريق نوفا. يمكنك طلب الوصول من صفحة العروض."
+
+#~ msgid "résolu"
+#~ msgstr "محلول"
+
+#: src/screens/carte/InteractiveLab.tsx
+msgid "Résultat attendu"
+msgstr "النتيجة المنتظرة"
+
+#: src/screens/duel/DuelRoom.tsx
+#: src/screens/duel/Result.tsx
+msgid "Résultat du duel"
+msgstr "نتيجة المبارزة"
+
+#~ msgid "Résume les grandes étapes de la Révolution française."
+#~ msgstr "لخّص المراحل الكبرى للثورة الفرنسية."
+
+#: src/screens/salle/Members.tsx
+msgid "Retirer"
+msgstr "إزالة"
+
+#: src/screens/salle/Members.tsx
+msgid "Retirer {member} de la salle ?"
+msgstr "هل تُزيل {member} من القاعة؟"
+
+#: src/screens/salle/Members.tsx
+msgid "Retirer {name}"
+msgstr "إزالة {name}"
+
+#: src/screens/onboarding/StepFrame.tsx
+msgid "Retour"
+msgstr "رجوع"
+
+#: src/screens/NotFound.tsx
+msgid "Retour à l’accueil"
+msgstr "العودة إلى الرئيسية"
+
+#: src/screens/NotFound.tsx
+msgid "Retour à la bienvenue"
+msgstr "العودة إلى صفحة الترحيب"
+
+#: src/screens/duel/Duel.tsx
+#: src/screens/duel/DuelRoom.tsx
+#: src/screens/duel/Result.tsx
+msgid "Retour à la salle"
+msgstr "العودة إلى القاعة"
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "Retour aux duels"
+msgstr "العودة إلى المبارزات"
+
+#: src/lib/plans.ts
+#: src/screens/carte/Carte.tsx
+msgid "Retravailler une erreur"
+msgstr "إعادة العمل على خطأ"
+
+#: src/screens/onboarding/Plan.tsx
+msgid "Retrouver de mémoire ce que tu as appris"
+msgstr "استرجع من ذاكرتك ما تعلّمته"
+
+#: src/screens/carte/Carte.tsx
+msgid "Révise ces notions avec Nova. Le suivi par chapitre est disponible en mathématiques."
+msgstr "راجع هذه المفاهيم مع نوفا. متابعة الفصول متاحة في الرياضيات."
+
+#: src/screens/onboarding/Bienvenue.tsx
+msgid "Révise tes matières, pose des questions et entraîne-toi à expliquer avec tes propres mots. Préparons ton espace."
+msgstr "راجع موادك واطرح أسئلتك وتدرّب على الشرح بكلماتك. لنُعدّ فضاءك."
+
+#: src/screens/carte/Carte.tsx
+msgid "Réviser : {topic}"
+msgstr "مراجعة: {topic}"
+
+#: src/screens/salle/RoomsHome.tsx
+#: src/screens/seances/Seances.tsx
+msgid "Réviser à plusieurs"
+msgstr "المراجعة مع الآخرين"
+
+#: src/lib/plans.ts
+msgid "Réviser avec mes amis"
+msgstr "المراجعة مع أصدقائي"
+
+#: src/screens/onboarding/Plan.tsx
+msgid "Réviser une notion dans la matière de ton choix"
+msgstr "مراجعة مفهوم في المادة التي تختارها"
+
+#: src/screens/onboarding/Plan.tsx
+msgid "Révision · Exemple"
+msgstr "مراجعة · مثال"
+
+#~ msgid "Révolution française"
+#~ msgstr "الثورة الفرنسية"
+
+#~ msgid "Révolution industrielle"
+#~ msgstr "الثورة الصناعية"
+
+#: src/screens/carte/Carte.tsx
+msgid "S’entraîner"
+msgstr "التدرّب"
+
+#: src/screens/accueil/HomeOverview.tsx
+#: src/screens/carte/ChapterPanel.tsx
+msgid "S’entraîner sur ce chapitre"
+msgstr "التدرّب على هذا الفصل"
+
+#: src/screens/salle/JoinForm.tsx
+msgid "Saisis le code que ton ami t’a envoyé. La salle s’ouvre dès que les 6 caractères sont bons."
+msgstr "أدخل الرمز الذي أرسله لك صديقك. تُفتح القاعة بمجرد أن تكون الأحرف الستة صحيحة."
+
+#: src/app/AppLayout.tsx
+msgid "Salle"
+msgstr "القاعة"
+
+#~ msgid "Salle créée. Partage le code ou le lien pour inviter tes amis."
+#~ msgstr "أُنشئت القاعة. شارك الرمز أو الرابط لدعوة أصدقائك."
+
+#: src/screens/duel/Lobby.tsx
+msgid "Salle d’attente"
+msgstr "قاعة الانتظار"
+
+#: src/app/AppLayout.tsx
+#: src/screens/salle/Salle.tsx
+msgid "Salle d’étude"
+msgstr "قاعات الدراسة"
+
+#: src/screens/salle/CreateForm.tsx
+msgid "Salle de {owner}"
+msgstr "قاعة {owner}"
+
+#~ msgid "Salle fermée."
+#~ msgstr "أُغلقت القاعة."
+
+#: src/lib/plans.ts
+#~ msgid "Salles d’étude et quiz d’exemple"
+#~ msgstr "قاعات الدراسة والاختبار القصير التجريبي"
+
+#: src/lib/plans.ts
+msgid "Salles d’étude, séances Nova des salles Pro et quiz d’exemple"
+msgstr "غرف الدراسة وحصص نوفا في غرف Pro واختبار قصير تجريبي"
+
+#: src/screens/onboarding/Bienvenue.tsx
+msgid "Salut, moi c’est Nova."
+msgstr "مرحبًا، أنا نوفا."
+
+#: src/screens/tuteur/AnswerMessage.tsx
+msgid "sans IA"
+msgstr "دون ذكاء اصطناعي"
+
+#: src/screens/tuteur/Tuteur.tsx
+msgid "Sans matière"
+msgstr "دون مادة"
+
+#: src/screens/tuteur/Conversation.tsx
+msgid "Sans préférence"
+msgstr "دون تفضيل"
+
+#: src/screens/salle/Insights.tsx
+msgid "Schéma"
+msgstr "رسم توضيحي"
+
+#: src/screens/onboarding/steps.ts
+#: src/screens/reglages/Reglages.tsx
+msgid "Sciences expérimentales"
+msgstr "علوم تجريبية"
+
+#: src/screens/carte/QuizPanel.tsx
+msgid "Score :"
+msgstr "النتيجة:"
+
+#: src/screens/reglages/Reglages.tsx
+msgid "Se déconnecter"
+msgstr "تسجيل الخروج"
+
+#~ msgid "Séance"
+#~ msgstr "حصة"
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Séance de groupe"
+msgstr "حصة جماعية"
+
+#: src/screens/accueil/HomeOverview.tsx
+#: src/screens/salle/RoomsHome.tsx
+msgid "Séance en cours"
+msgstr "حصة جارية"
+
+#~ msgid "Séance en cours."
+#~ msgstr "الحصة جارية."
+
+#: src/screens/seances/Seances.tsx
+msgid "Séance en pause : reprends quand tu veux."
+msgstr "الحصة متوقفة مؤقتًا: استأنف متى شئت."
+
+#~ msgid "Séance en pause."
+#~ msgstr "الحصة في استراحة."
+
+#: src/screens/seances/Seances.tsx
+msgid "Séance terminée. Bravo !"
+msgstr "انتهت الحصة. أحسنت!"
+
+#~ msgid "Séances"
+#~ msgstr "الحصص"
+
+#: src/screens/seances/Seances.tsx
+msgid "Séances récentes"
+msgstr "الحصص الأخيرة"
+
+#: src/screens/reglages/Reglages.tsx
+msgid "Section du bac"
+msgstr "شعبة الباكالوريا"
+
+#: src/screens/reglages/Reglages.tsx
+msgid "Selon le diagnostic"
+msgstr "حسب الفحص التشخيصي"
+
+#: src/screens/reglages/Reglages.tsx
+msgid "Sépare les matières par une virgule."
+msgstr "افصل بين المواد بفاصلة."
+
+#: src/screens/accueil/HomeOverview.tsx
+#: src/screens/seances/Seances.tsx
+msgid "Série"
+msgstr "سلسلة الأيام"
+
+#: src/ui/Streak.tsx
+msgid "Série : {days, plural, one {# jour} other {# jours}} de suite"
+msgstr "سلسلة الأيام: {days, plural, zero {# أيام متتالية} one {يوم واحد} two {يومان متتاليان} few {# أيام متتالية} many {# يومًا متتاليًا} other {# يوم متتالٍ}}"
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Seul le propriétaire de la salle peut lancer ou terminer la séance."
+msgstr "لا يمكن إلا لمالك القاعة بدء الحصة أو إنهاؤها."
+
+#~ msgid "Si tu apprends cinq mots lundi, teste-toi mardi puis vendredi au lieu de relire la liste cinq fois lundi."
+#~ msgstr "إذا تعلّمت خمس كلمات يوم الاثنين، فاختبر نفسك يوم الثلاثاء ثم الجمعة بدل إعادة قراءة القائمة خمس مرات يوم الاثنين."
+
+#~ msgid "Similitudes"
+#~ msgstr "التشابهات"
+
+#: src/screens/carte/InteractiveLab.tsx
+msgid "Situation"
+msgstr "الوضعية"
+
+#: src/screens/onboarding/Diagnostic.tsx
+msgid "Six questions rapides pour savoir par où commencer."
+msgstr "ستة أسئلة سريعة لمعرفة من أين تبدأ."
+
+#: src/ui/Mosaic.tsx
+msgid "Solide"
+msgstr "متين"
+
+#: src/screens/duel/Lobby.tsx
+msgid "Son pseudo, tel qu’il apparaît dans la salle. Sans pseudo, tu reçois un code à lui donner."
+msgstr "اسمه المستعار كما يظهر في القاعة. دون اسم مستعار، تحصل على رمز تعطيه له."
+
+#: src/screens/onboarding/Plan.tsx
+msgid "Source"
+msgstr "المصدر"
+
+#: src/ui/SourceChip.tsx
+msgid "Source : {book}, page {page}"
+msgstr "المصدر: {book}، الصفحة {page}"
+
+#: src/screens/tuteur/AnswerMessage.tsx
+msgid "Sources"
+msgstr "المصادر"
+
+#~ msgid "Statistiques"
+#~ msgstr "الإحصاء"
+
+#~ msgid "Suites réelles"
+#~ msgstr "المتتاليات الحقيقية"
+
+#: src/screens/onboarding/QuizCard.tsx
+msgid "Suivant"
+msgstr "التالي"
+
+#: src/lib/plans.ts
+msgid "Suivi des chapitres et du temps de révision"
+msgstr "متابعة الفصول ووقت المراجعة"
+
+#: src/screens/salle/Consent.tsx
+msgid "Suivi personnel après la séance"
+msgstr "متابعة شخصية بعد الحصة"
+
+#: src/screens/salle/SessionPanel.tsx
+#~ msgid "Suivre les manches, répondre au quiz de la salle et lire les notes est réservé à l’offre Pro. Le reste de la salle reste ouvert à tous."
+#~ msgstr "متابعة الجولات والإجابة عن اختبار القاعة القصير وقراءة الملاحظات متاحة في عرض Pro فقط. بقية القاعة تبقى مفتوحة للجميع."
+
+#: src/lib/plans.ts
+msgid "Suivre ma progression"
+msgstr "متابعة تقدّمي"
+
+#: src/screens/carte/InteractiveLab.tsx
+msgid "Sujet du labo"
+msgstr "موضوع المختبر"
+
+#: src/screens/reglages/DeleteAccount.tsx
+msgid "Supprimer définitivement"
+msgstr "حذف نهائي"
+
+#: src/screens/reglages/DeleteAccount.tsx
+msgid "Supprimer mon compte"
+msgstr "حذف حسابي"
+
+#: src/screens/reglages/DeleteAccount.tsx
+msgid "Supprimer ton compte ?"
+msgstr "هل تحذف حسابك؟"
+
+#: src/screens/reglages/DeleteAccount.tsx
+msgid "Supprimer ton compte et les données qui lui sont associées. Cette action est définitive. Pour confirmer, recopie ton pseudo."
+msgstr "احذف حسابك والبيانات المرتبطة به. هذا الإجراء نهائي. للتأكيد، أعد كتابة اسمك المستعار."
+
+#~ msgid "sur"
+#~ msgstr "من"
+
+#: src/screens/onboarding/Plan.tsx
+msgid "Sur un arbre, on multiplie le long d’un chemin : $P(A \\cap B) = 0'{','}'4 \\times 0'{','}'25 = 0'{','}'1$."
+msgstr "على الشجرة، نضرب على امتداد مسار: $P(A \\cap B) = 0'{','}'4 \\times 0'{','}'25 = 0'{','}'1$."
+
+#~ msgid "SVT"
+#~ msgstr "علوم الحياة والأرض"
+
+#: src/screens/reglages/Reglages.tsx
+msgid "Système"
+msgstr "النظام"
+
+#: src/screens/accueil/HomeOverview.tsx
+#: src/screens/carte/ChapterMap.tsx
+msgid "Ta carte se remplit dès ta première question."
+msgstr "تبدأ خريطتك بالامتلاء مع أول سؤال."
+
+#: src/screens/duel/Play.tsx
+msgid "Ta copie est rendue. On attend ton adversaire ou la fin du temps."
+msgstr "تم تسليم ورقتك. في انتظار خصمك أو انتهاء الوقت."
+
+#: src/screens/onboarding/QuizCard.tsx
+#: src/screens/onboarding/steps.ts
+#: src/screens/onboarding/Style.tsx
+msgid "Ta façon d’apprendre"
+msgstr "طريقتك في التعلّم"
+
+#: src/screens/carte/ChapterMap.tsx
+msgid "Ta mosaïque"
+msgstr "فسيفساؤك"
+
+#: src/screens/salle/Consent.tsx
+msgid "Ta participation peut compter dans les notions repérées pour la salle et te permet d’évaluer l’utilité d’une explication. Seules des notions sont partagées, jamais ton texte."
+msgstr "قد تُحتسب مشاركتك ضمن المفاهيم المرصودة للقاعة، وتتيح لك تقييم فائدة شرح ما. تُشارك المفاهيم فقط، ولا يُشارك نصّك أبدًا."
+
+#: src/screens/carte/InteractiveLab.tsx
+msgid "Ta prédiction"
+msgstr "توقّعك"
+
+#: src/screens/accueil/HomeOverview.tsx
+msgid "Ta prochaine étape"
+msgstr "خطوتك التالية"
+
+#: src/screens/tuteur/Conversation.tsx
+msgid "Ta question"
+msgstr "سؤالك"
+
+#: src/screens/duel/Play.tsx
+#: src/screens/tuteur/CheckCard.tsx
+#: src/screens/tuteur/Conversation.tsx
+msgid "Ta réponse"
+msgstr "إجابتك"
+
+#: src/screens/duel/Play.tsx
+msgid "Ta réponse (un nombre)"
+msgstr "إجابتك (عدد)"
+
+#: src/screens/onboarding/Bac.tsx
+msgid "Ta section du bac"
+msgstr "شعبتك في الباكالوريا"
+
+#: src/app/AppLayout.tsx
+msgid "Temps"
+msgstr "الوقت"
+
+#: src/app/AppLayout.tsx
+#: src/screens/seances/Seances.tsx
+msgid "Temps d’étude"
+msgstr "وقت الدراسة"
+
+#: src/screens/carte/QuizPanel.tsx
+#: src/screens/duel/Play.tsx
+msgid "Temps restant"
+msgstr "الوقت المتبقي"
+
+#~ msgid "Temps verbaux"
+#~ msgstr "أزمنة الأفعال"
+
+#: src/screens/salle/Insights.tsx
+#: src/screens/salle/SessionPanel.tsx
+msgid "Tendances du groupe"
+msgstr "اتجاهات المجموعة"
+
+#: src/screens/duel/Lobby.tsx
+#: src/screens/seances/TimerControls.tsx
+msgid "Terminé"
+msgstr "منتهٍ"
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Terminée"
+msgstr "منتهية"
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Terminer avec les notes de Nova"
+msgstr "الإنهاء مع ملاحظات نوفا"
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Terminer la séance"
+msgstr "إنهاء الحصة"
+
+#: src/screens/salle/Consent.tsx
+msgid "Tes choix n’ont pas pu être chargés."
+msgstr "تعذّر تحميل اختياراتك."
+
+#: src/app/OnboardingLayout.tsx
+#: src/screens/onboarding/Plan.tsx
+msgid "Tes choix n’ont pas pu être enregistrés. Réessaie."
+msgstr "تعذّر حفظ اختياراتك. حاول مرة أخرى."
+
+#: src/screens/duel/messages.ts
+msgid "Tes dernières modifications n’ont pas pu être enregistrées."
+msgstr "تعذّر حفظ آخر تعديلاتك."
+
+#: src/screens/salle/Consent.tsx
+msgid "Tes explications et questions éligibles peuvent être traitées pour aider la salle. Ton accord ne suffit pas : le service doit aussi avoir autorisé ce traitement du texte."
+msgstr "يمكن معالجة شروحاتك وأسئلتك المؤهَّلة لمساعدة القاعة. موافقتك وحدها لا تكفي: يجب أن تكون الخدمة قد رخّصت أيضًا هذه المعالجة للنص."
+
+#: src/screens/onboarding/steps.ts
+msgid "Tes fiches, avec des formules bien écrites."
+msgstr "بطاقاتك، مع صيغ مكتوبة بوضوح."
+
+#: src/screens/onboarding/steps.ts
+msgid "Tes notes de cours au même endroit."
+msgstr "ملاحظات دروسك في مكان واحد."
+
+#: src/screens/accueil/HomeOverview.tsx
+#: src/screens/onboarding/Plan.tsx
+#: src/screens/onboarding/steps.ts
+msgid "Tes outils"
+msgstr "أدواتك"
+
+#: src/screens/onboarding/Outils.tsx
+msgid "Tes outils d’étude"
+msgstr "أدوات دراستك"
+
+#: src/screens/duel/messages.ts
+msgid "Tes réponses ont été rechargées depuis le serveur. Vérifie-les puis recommence."
+msgstr "أُعيد تحميل إجاباتك من الخادم. تحقّق منها ثم أعد المحاولة."
+
+#: src/screens/duel/messages.ts
+msgid "Tes réponses sont déjà rendues."
+msgstr "تم تسليم إجاباتك بالفعل."
+
+#: src/screens/seances/Seances.tsx
+msgid "Tes statistiques"
+msgstr "إحصائياتك"
+
+#: src/screens/plans/PlansSection.tsx
+msgid "TND / mois"
+msgstr "دينار تونسي / شهر"
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "toi"
+msgstr "أنت"
+
+#: src/screens/duel/Result.tsx
+msgid "Toi {mine} – {theirs} {opponent}"
+msgstr "أنت {mine} – {theirs} {opponent}"
+
+#: src/screens/duel/Result.tsx
+msgid "Ton adversaire"
+msgstr "خصمك"
+
+#: src/screens/duel/Play.tsx
+msgid "Ton adversaire a abandonné."
+msgstr "انسحب خصمك."
+
+#: src/screens/duel/Play.tsx
+msgid "Ton adversaire a rendu sa copie."
+msgstr "سلّم خصمك ورقته."
+
+#: src/screens/salle/Helpfulness.tsx
+msgid "Ton avis n’a pas pu être envoyé. Réessaie."
+msgstr "تعذّر إرسال رأيك. حاول مرة أخرى."
+
+#: src/screens/onboarding/steps.ts
+msgid "Ton bac"
+msgstr "باكالوريتك"
+
+#: src/screens/salle/Consent.tsx
+msgid "Ton choix n’a pas pu être enregistré. Réessaie."
+msgstr "تعذّر حفظ اختيارك. حاول مرة أخرى."
+
+#: src/screens/onboarding/Bienvenue.tsx
+msgid "Ton compagnon de révision"
+msgstr "رفيق مراجعتك"
+
+#: src/screens/onboarding/steps.ts
+msgid "Ton compte"
+msgstr "حسابك"
+
+#: src/screens/tuteur/AnswerMessage.tsx
+msgid "Ton cours"
+msgstr "درسك"
+
+#: src/screens/accueil/HomeOverview.tsx
+msgid "Ton espace de révision"
+msgstr "فضاء مراجعتك"
+
+#: src/screens/onboarding/Compte.tsx
+msgid "Ton espace t’attend là où tu l’as laissé."
+msgstr "فضاؤك في انتظارك حيث تركته."
+
+#: src/screens/salle/ExplanationCheck.tsx
+msgid "Ton explication"
+msgstr "شرحك"
+
+#: src/screens/salle/Posts.tsx
+msgid "Ton message pour la salle"
+msgstr "رسالتك إلى القاعة"
+
+#: src/screens/salle/Consent.tsx
+msgid "Ton niveau et ton format d’explication préféré, en termes généraux, peuvent orienter l’aide donnée au groupe."
+msgstr "يمكن لمستواك وشكل الشرح الذي تفضّله، بعبارات عامة، أن يوجّها المساعدة المقدّمة للمجموعة."
+
+#: src/screens/plans/PlansSection.tsx
+msgid "Ton offre"
+msgstr "عرضك"
+
+#: src/screens/plans/PlansSection.tsx
+msgid "Ton offre Pro est active."
+msgstr "عرض Pro الخاص بك مفعَّل."
+
+#: src/screens/onboarding/steps.ts
+msgid "Ton plan"
+msgstr "خطتك"
+
+#: src/screens/onboarding/QuizCard.tsx
+msgid "Ton point de départ"
+msgstr "نقطة انطلاقك"
+
+#: src/screens/carte/RevisionPack.tsx
+msgid "Touche la question pour voir la réponse."
+msgstr "المس السؤال لتظهر الإجابة."
+
+#: src/screens/carte/ChapterPanel.tsx
+msgid "Touche une pièce de la carte pour ouvrir le chapitre."
+msgstr "المس قطعة من الخريطة لفتح الفصل."
+
+#~ msgid "Touches 1 à"
+#~ msgstr "المفاتيح من 1 إلى"
+
+#: src/screens/onboarding/QuizCard.tsx
+msgid "Touches 1 à {count} pour choisir"
+msgstr "المفاتيح من 1 إلى {count} للاختيار"
+
+#: src/screens/duel/Play.tsx
+msgid "Tout est enregistré"
+msgstr "تم حفظ كل شيء"
+
+#~ msgid "Tout relire en une fois"
+#~ msgstr "إعادة قراءة كل شيء دفعة واحدة"
+
+#: src/screens/plans/PlansSection.tsx
+msgid "Toute l’offre gratuite, plus"
+msgstr "كل ما في العرض المجاني، إضافة إلى"
+
+#: src/screens/plans/PlansSection.tsx
+msgid "Toutes"
+msgstr "الكل"
+
+#~ msgid "Transmission de l’information génétique"
+#~ msgstr "انتقال المعلومة الوراثية"
+
+#: src/screens/duel/messages.ts
+msgid "Trop d’essais. Réessaie dans une minute."
+msgstr "محاولات كثيرة. حاول مرة أخرى بعد دقيقة."
+
+#: src/screens/tuteur/FeedbackControl.tsx
+msgid "Trop long"
+msgstr "طويل جدًا"
+
+#: src/screens/duel/Result.tsx
+msgid "Tu as abandonné le duel, ou ta copie n’a pas été rendue."
+msgstr "انسحبت من المبارزة، أو لم تُسلَّم ورقتك."
+
+#~ msgid "Tu as quitté la salle."
+#~ msgstr "غادرتَ القاعة."
+
+#: src/screens/onboarding/Style.tsx
+msgid "Tu comprends mieux avec un dessin ou avec un texte bien posé ?"
+msgstr "هل تفهم أفضل برسم أم بنص مرتّب؟"
+
+#: src/screens/salle/CreateForm.tsx
+msgid "Tu deviens propriétaire : tu invites tes amis et tu lances les séances."
+msgstr "ستصبح المالك: تدعو أصدقاءك وتبدأ الحصص."
+
+#~ msgid "Tu es déjà dans cette salle : la voici."
+#~ msgstr "أنت موجود بالفعل في هذه القاعة: ها هي."
+
+#: src/screens/salle/RoomsHome.tsx
+msgid "Tu es propriétaire"
+msgstr "أنت المالك"
+
+#: src/screens/plans/PlansSection.tsx
+msgid "Tu es sur l’offre gratuite."
+msgstr "أنت في العرض المجاني."
+
+#: src/screens/plans/PlansSection.tsx
+msgid "Tu es sur l’offre Pro."
+msgstr "أنت في عرض Pro."
+
+#: src/screens/onboarding/steps.ts
+msgid "Tu expliques une notion, je te pose des questions."
+msgstr "اشرح لي فكرة وسأطرح عليك أسئلة."
+
+#: src/screens/salle/RoomsHome.tsx
+msgid "Tu ne fais encore partie d’aucune salle."
+msgstr "لم تنضم بعدُ إلى أي قاعة."
+
+#: src/screens/salle/Helpfulness.tsx
+msgid "Tu ne peux pas évaluer ta propre explication."
+msgstr "لا يمكنك تقييم شرحك أنت."
+
+#: src/screens/duel/messages.ts
+msgid "Tu ne peux pas t’inviter toi-même."
+msgstr "لا يمكنك دعوة نفسك."
+
+#: src/screens/salle/Members.tsx
+msgid "Tu ne pourras plus gérer la salle."
+msgstr "لن تتمكن بعد الآن من إدارة القاعة."
+
+#: src/screens/duel/Play.tsx
+msgid "Tu ne pourras plus modifier ta copie."
+msgstr "لن تتمكن بعد الآن من تعديل ورقتك."
+
+#: src/screens/salle/SessionPanel.tsx
+msgid "Tu peux suivre une séance gratuitement quand le propriétaire de la salle a l’offre Pro. Ce n’est pas le cas ici. Le reste de la salle reste ouvert à tous."
+msgstr "يمكنك متابعة حصة مجانًا عندما يكون لدى صاحب الغرفة عرض Pro، وهذا غير متوفر هنا. بقية الغرفة متاحة للجميع."
+
+#: src/screens/salle/RoomPage.tsx
+msgid "Tu pourras revenir avec le code d’invitation."
+msgstr "يمكنك العودة برمز الدعوة."
+
+#~ msgid "Tu veux retenir une notion jusqu’à la semaine prochaine. Que fais-tu ?"
+#~ msgstr "تريد أن تحتفظ بمفهوم ما حتى الأسبوع القادم. ماذا تفعل؟"
+
+#: src/app/AppLayout.tsx
+#: src/screens/tuteur/Tuteur.tsx
+msgid "Tuteur"
+msgstr "المدرّس"
+
+#: src/screens/onboarding/Plan.tsx
+msgid "Tuteur · Exemple"
+msgstr "المدرّس · مثال"
+
+#: src/screens/salle/Posts.tsx
+msgid "Type de message"
+msgstr "نوع الرسالة"
+
+#: src/screens/salle/AskNova.tsx
+msgid "Un coup de pouce, sans donner la réponse."
+msgstr "دفعة بسيطة، دون إعطاء الإجابة."
+
+#: src/screens/duel/DuelRoom.tsx
+msgid "Un des joueurs a quitté le duel avant le début."
+msgstr "غادر أحد اللاعبين المبارزة قبل البداية."
+
+#: src/screens/duel/messages.ts
+msgid "Un duel est déjà en cours dans cette salle. Attends sa fin pour en lancer un autre."
+msgstr "هناك مبارزة جارية بالفعل في هذه القاعة. انتظر انتهاءها لبدء أخرى."
+
+#: src/screens/salle/AskNova.tsx
+msgid "Un duel est en cours dans la salle : Nova reprendra l’aide après le duel."
+msgstr "هناك مبارزة جارية في القاعة: ستعود نوفا إلى المساعدة بعد المبارزة."
+
+#~ msgid "un exemple résolu d'abord"
+#~ msgstr "مثال محلول أولًا"
+
+#: src/screens/salle/AskNova.tsx
+#: src/screens/tuteur/GuidedActions.tsx
+msgid "Un indice"
+msgstr "تلميح"
+
+#: src/screens/tuteur/Conversation.tsx
+msgid "Un indice, s’il te plaît."
+msgstr "تلميحًا من فضلك."
+
+#~ msgid "un schéma ou un graphique"
+#~ msgstr "مخطّط أو رسم بياني"
+
+#: src/screens/onboarding/Style.tsx
+msgid "Un texte net, avec des formules bien composées."
+msgstr "نص واضح، مع صيغ منسّقة جيدًا."
+
+#~ msgid "une comparaison avec la vie de tous les jours"
+#~ msgstr "مقارنة بالحياة اليومية"
+
+#: src/screens/salle/AskNova.tsx
+msgid "Une de ces notions n’est pas proposée pour ce chapitre. Décoche-les et réessaie."
+msgstr "أحد هذه المفاهيم غير مقترح لهذا الفصل. ألغِ تحديدها وحاول مرة أخرى."
+
+#: src/screens/salle/AskNova.tsx
+msgid "Une explication"
+msgstr "شرح"
+
+#: src/lib/plans.ts
+msgid "Une fiche citée et trois cartes de rappel sur la dérivabilité, en pilote pour le bac Sciences expérimentales. Gratuit : une carte de rappel d’exemple."
+msgstr "ملخّص مدعوم بالمصادر وثلاث بطاقات تذكّر عن الاشتقاقية، في مرحلة تجريبية لباكالوريا العلوم التجريبية. مجانًا: بطاقة تذكّر تجريبية واحدة."
+
+#: src/screens/carte/Carte.tsx
+msgid "Une fiche citée et trois cartes de rappel sur la dérivabilité."
+msgstr "ملخّص مدعوم بالمصادر وثلاث بطاقات تذكّر عن الاشتقاقية."
+
+#: src/screens/tuteur/AnswerMessage.tsx
+msgid "Une question pour mieux t’aider"
+msgstr "سؤال لأساعدك بشكل أفضل"
+
+#: src/screens/carte/Carte.tsx
+msgid "Une question sur la dérivation, avec sa correction. Ouvert à tous, à refaire à tout moment."
+msgstr "سؤال حول الاشتقاق مع تصحيحه. مفتوح للجميع، يمكن إعادته في أي وقت."
+
+#: src/screens/salle/RoomsHome.tsx
+msgid "Une salle réunit tes amis autour d’un chapitre. Nova anime la séance : explications, questions anonymes puis quiz."
+msgstr "القاعة تجمع أصدقاءك حول فصل واحد. تقود نوفا الحصة: شروحات، ثم أسئلة مجهولة، ثم اختبار قصير."
+
+#: src/ui/Streak.tsx
+msgid "Une séance aujourd’hui fait éclore le premier bouton."
+msgstr "حصة اليوم تُفتّح أول برعم."
+
+#: src/screens/seances/Seances.tsx
+msgid "Une tuile de plus pour ta mosaïque."
+msgstr "قطعة أخرى لفسيفسائك."
+
+#~ msgid "Urbanisation"
+#~ msgstr "التمدّن"
+
+#: src/screens/salle/Helpfulness.tsx
+msgid "Utile"
+msgstr "مفيد"
+
+#: src/screens/tuteur/FeedbackControl.tsx
+msgid "Utile ?"
+msgstr "هل هو مفيد؟"
+
+#: src/screens/onboarding/Bac.tsx
+msgid "Utiliser Nova en anglais."
+msgstr "استخدام نوفا بالإنجليزية."
+
+#: src/screens/onboarding/Bac.tsx
+msgid "Utiliser Nova en arabe."
+msgstr "استخدام نوفا بالعربية."
+
+#: src/screens/onboarding/Bac.tsx
+msgid "Utiliser Nova en français."
+msgstr "استخدام نوفا بالفرنسية."
+
+#: src/screens/duel/Lobby.tsx
+msgid "Va commencer"
+msgstr "على وشك البدء"
+
+#~ msgid "Variables aléatoires"
+#~ msgstr "المتغيرات العشوائية"
+
+#: src/screens/tuteur/CheckCard.tsx
+msgid "Vérification de l’explication"
+msgstr "التحقّق من الشرح"
+
+#: src/screens/tuteur/CheckCard.tsx
+msgid "Vérification indisponible"
+msgstr "التحقّق غير متاح"
+
+#: src/screens/salle/ExplanationCheck.tsx
+msgid "Vérification indisponible."
+msgstr "التحقّق من الشرح غير متاح."
+
+#: src/screens/carte/InteractiveLab.tsx
+msgid "Vérifier ma prédiction"
+msgstr "تحقّق من توقّعي"
+
+#: src/screens/salle/ExplanationCheck.tsx
+msgid "Vérifier mon explication"
+msgstr "تحقّق من شرحي"
+
+#: src/screens/salle/ExplanationCheck.tsx
+msgid "Vérifier seul une explication"
+msgstr "التحقّق من شرح بمفردك"
+
+#: src/screens/accueil/Accueil.tsx
+#: src/screens/reglages/Reglages.tsx
+msgid "Vérifier une explication"
+msgstr "التحقّق من شرح"
+
+#~ msgid "Vérité"
+#~ msgstr "الحقيقة"
+
+#: src/screens/duel/Result.tsx
+msgid "Victoire !"
+msgstr "فوز!"
+
+#: src/screens/duel/Result.tsx
+msgid "Victoire par abandon"
+msgstr "فوز بالانسحاب"
+
+#~ msgid "Ville"
+#~ msgstr "المدينة"
+
+#: src/screens/reglages/Reglages.tsx
+msgid "Ville (facultatif)"
+msgstr "المدينة (اختياري)"
+
+#: src/screens/accueil/Accueil.tsx
+#: src/screens/onboarding/Plan.tsx
+#: src/screens/onboarding/Style.tsx
+#: src/screens/reglages/Reglages.tsx
+msgid "Visuel"
+msgstr "بصري"
+
+#: src/screens/onboarding/Diagnostic.tsx
+msgid "Voilà ton point de départ."
+msgstr "هذه نقطة انطلاقك."
+
+#: src/screens/duel/Lobby.tsx
+msgid "Voir"
+msgstr "عرض"
+
+#: src/screens/salle/Posts.tsx
+msgid "Voir les messages précédents"
+msgstr "عرض الرسائل السابقة"
+
+#: src/screens/onboarding/QuizCard.tsx
+msgid "Voir mon résultat"
+msgstr "عرض نتيجتي\n"
+""
+
+#: src/app/FloatingTimer.tsx
+msgid "Voir mon temps d’étude"
+msgstr "عرض وقت دراستي"
+
+#: src/screens/onboarding/QuizCard.tsx
+msgid "Voir un exemple de programme"
+msgstr "عرض مثال على برنامج"
+
+#~ msgid "voir un exercice semblable corrigé"
+#~ msgstr "الاطلاع على تمرين مشابه مصحَّح"
+
+#: src/screens/duel/Result.tsx
+msgid "Vous avez le même score."
+msgstr "لديكما النتيجة نفسها."
+
+#: src/screens/duel/Lobby.tsx
+msgid "Vous passez la même épreuve chronométrée, chacun de votre côté. Les deux joueurs doivent avoir l’offre Pro."
+msgstr "تجتازان الاختبار المؤقّت نفسه، كلٌّ من جهته. يجب أن يملك اللاعبان عرض Pro.\n"
+""
+
+#~ msgid "Zones climatiques"
+#~ msgstr "المناطق المناخية"
+
+msgid "Ce programme est un exemple. Il ne sera pas enregistré."
+msgstr "هذه خطة نموذجية ولن تُحفظ."
+
+msgid "Essayer l’entraînement Bac"
+msgstr "جرّب تدريب البكالوريا"
+
+msgid "Essayer la fiche"
+msgstr "جرّب ورقة المراجعة"
+
+msgid "Fiche d’exemple"
+msgstr "نموذج ورقة مراجعة"
+
+msgid "L’offre Pro est activée par l’équipe Nova pendant le pilote."
+msgstr "يفعّل فريق نوفا اشتراك Pro خلال الفترة التجريبية."
+
+msgid "Ouvrir la fiche de révision"
+msgstr "افتح ورقة المراجعة"
+
+msgid "Ton plan de révision"
+msgstr "خطة مراجعتك"
+
+msgid "Tu deviens propriétaire et tu peux inviter tes amis."
+msgstr "تصبح مالك الغرفة ويمكنك دعوة أصدقائك."
+
+msgid "Une carte mémoire pour réviser la dérivée de la fonction carré."
+msgstr "بطاقة تذكّر لمراجعة مشتقة دالة التربيع."
+
+msgid "Voir mon offre"
+msgstr "عرض اشتراكي"
+
+msgid "Cartes mentales"
+msgstr "الخرائط الذهنية"
+
+msgid "Générer une carte mentale"
+msgstr "أنشئ خريطة ذهنية"
+
+msgid "Explore les notions de cinq chapitres du bac Sciences expérimentales."
+msgstr "استكشف مفاهيم خمسة فصول من بكالوريا العلوم التجريبية."
+
+msgid "Affichage de la carte"
+msgstr "عرض الخريطة"
+
+msgid "Plan"
+msgstr "المخطط"
+
+msgid "Zoom arrière"
+msgstr "تصغير"
+
+msgid "Zoom avant"
+msgstr "تكبير"
+
+msgid "Réinitialiser le zoom"
+msgstr "إعادة ضبط التكبير"
+
+msgid "Replier {label}"
+msgstr "طيّ {label}"
+
+msgid "Développer {label}"
+msgstr "توسيع {label}"
+
+msgid "Carte des notions"
+msgstr "خريطة المفاهيم"
+
+msgid "Chargement de la carte…"
+msgstr "جارٍ تحميل الخريطة…"
+
+msgid "Nova prépare ta carte…"
+msgstr "نوفا تعدّ خريطتك…"
+
+msgid "La carte est indisponible."
+msgstr "الخريطة غير متاحة."
+
+msgid "Les sources du cours sont indisponibles pour cette carte."
+msgstr "مصادر الدرس غير متاحة لهذه الخريطة."
+
+msgid "La carte est indisponible. Tu peux réessayer."
+msgstr "الخريطة غير متاحة. يمكنك إعادة المحاولة."
+
+msgid "Mettre à jour la carte"
+msgstr "تحديث الخريطة"
+
+msgid "Générer la carte"
+msgstr "إنشاء الخريطة"
+
+msgid "Choisir un chapitre"
+msgstr "اختر فصلًا"

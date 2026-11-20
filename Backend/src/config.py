@@ -8,7 +8,7 @@ class Settings(BaseSettings):
     secret_key: str
     access_token_expire_minutes: int = 60
     # All AI goes through llm_service; the backend never calls a model directly.
-    agent_url: str = "http://127.0.0.1:8000"
+    agent_url: str = "http://127.0.0.1:8100"
 
 
 settings = Settings()

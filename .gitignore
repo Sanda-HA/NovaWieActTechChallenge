@@ -6,3 +6,9 @@ dist/
 .env
 .env.local
 chroma/
+e2e/node_modules
+e2e/test-results
+e2e/playwright-report
+web/node_modules
+web/dist
+web/storybook-static
